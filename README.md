@@ -1,4 +1,4 @@
-Redmond Themes repository
+**Redmond Themes repository**
 
 http://b00merang.weebly.com/redmond-collection
 
