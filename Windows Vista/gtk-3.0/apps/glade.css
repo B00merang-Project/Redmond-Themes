@@ -1,0 +1,8 @@
+
+GladeEditor GtkContainer {
+    background-color: @bg_color
+}
+
+GladeWindow GtkGrid {
+    background-color: @bg_color
+}

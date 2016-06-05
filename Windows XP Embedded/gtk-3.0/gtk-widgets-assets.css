@@ -1,0 +1,159 @@
+/* Scrollbars */
+
+.scrollbar.button,
+.scrollbar.button:insensitive {
+	border-width: 0px;
+	border-style: none;
+        color: transparent;
+	
+}
+
+.scrollbar.button.vertical.top,
+.scrollbar.button.vertical.top:insensitive {
+	background-image: url("assets/scrolldown.png");
+        border-image: url("assets/scrolldown.png");
+    background-size: cover;
+	border-width: 0px;
+	border-style: none;
+        color: transparent;
+}
+
+.scrollbar.button.vertical.bottom,
+.scrollbar.button.vertical.bottom:insensitive {
+	background-image: url("assets/scrollup.png");
+        border-image: url("assets/scrollup.png");
+    background-size: cover;
+	border-width: 0px;
+	border-style: none;
+}
+
+.scrollbar.button.horizontal.left,
+.scrollbar.button.horizontal.left:insensitive {
+	background-image: url("assets/scrollright.png");
+        border-image: url("assets/scrollright.png");
+	border-width: 0px;
+	border-style: none;
+}
+
+.scrollbar.button.horizontal.right,
+.scrollbar.button.horizontal.right:insensitive {
+	background-image: url("assets/scrollleft.png");
+        border-image: url("assets/scrollleft.png");
+	border-width: 0px;
+	border-style: none;
+}
+
+/*******************
+ * check and radio *
+ *******************/
+/* draw regular check and radio items using our assets */
+.check,
+.check row:selected,
+.check row:selected:focus {
+    background-image: url("assets/checkbox-unchecked.png");
+}
+
+.check:insensitive,
+.check row:selected:insensitive,
+.check row:selected:focus:insensitive {
+    background-image: url("assets/checkbox-unchecked-insensitive.png");
+}
+
+.check:hover,
+.check row:selected:hover,
+.check row:selected:focus:hover {
+    background-image: url("assets/checkbox-unchecked-over.png");
+}
+
+.check:active,
+.check row:selected:active,
+.check row:selected:focus:active {
+    background-image: url("assets/checkbox-checked.png");
+}
+
+.check:active:hover,
+.check row:selected:active:hover,
+.check row:selected:focus:active:hover {
+    background-image: url("assets/checkbox-checked-over.png");
+}
+
+.check:active:insensitive,
+.check row:selected:active:insensitive,
+.check row:selected:focus:active:insensitive {
+    background-image: url("assets/checkbox-checked-insensitive.png");
+}
+
+.check:inconsistent,
+.check row:selected:inconsistent,
+.check row:selected:focus:inconsistent {
+    background-image: url("assets/checkbox-mixed.png");
+}
+
+.check:inconsistent:insensitive,
+.check row:selected:inconsistent:insensitive,
+.check row:selected:focus:inconsistent:insensitive {
+    background-image: url("assets/checkbox-mixed-insensitive.png");
+}
+
+
+.radio,
+.view.cell.radio {
+    background-image: url("assets/radio-unselected.png");
+}
+
+.radio:insensitive {
+    background-image: url("assets/radio-unselected-insensitive.png");
+}
+
+.radio:hover {
+    background-image: url("assets/radio-unselected-over.png");
+}
+
+.radio:active {
+    background-image: url("assets/radio-selected.png");
+}
+
+.radio:active:hover {
+    background-image: url("assets/radio-selected-over.png");
+}
+
+.radio:active:insensitive {
+    background-image: url("assets/radio-selected-insensitive.png");
+}
+
+.radio:inconsistent {
+    background-image: url("assets/radio-mixed.png");
+}
+
+.radio:inconsistent:insensitive {
+    background-image: url("assets/radio-mixed-insensitive.png");
+}
+
+/* menuitem */
+
+.menuitem.check:active {
+    background-image: url("assets/menuitem-checkbox-checked.png");
+}
+
+.menuitem.check:active:insensitive {
+    background-image: url("assets/menuitem-checkbox-checked-insensitive.png");
+}
+
+.menuitem.check:inconsistent,
+.menuitem.radio:inconsistent {
+    background-image: url("assets/menuitem-checkbox-mixed.png");
+}
+
+.menuitem.check:inconsistent:insensitive,
+.menuitem.radio:inconsistent:insensitive {
+    background-image: url("assets/menuitem-checkbox-mixed-insensitive.png");
+}
+
+.menuitem.radio:active {
+    background-image: url("assets/menuitem-radio-checked.png");
+}
+
+.menuitem.radio:active:insensitive {
+    background-image: url("assets/menuitem-radio-checked-insensitive.png");
+}
+

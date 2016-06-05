@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Windows 3.x
+Comment=Windows 3.x for Linux Desktops
+Version=v1.0.1
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Windows 3.x
+MetacityTheme=Windows 3.x
+ButtonLayout=:minimize,maximize,close

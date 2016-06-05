@@ -1,0 +1,64 @@
+########################################################################
+# Button
+########################################################################
+
+style "toolbar"
+{
+	engine "pixmap" 
+    {
+### Toggle Button ### 
+
+## Normal
+		image 
+		{
+			function = BOX
+			state = NORMAL
+			file = "toolbar/button.png"
+			border = {4, 4, 4, 4}
+			stretch = TRUE
+		}
+## Prelight
+		image 
+		{
+			function = BOX
+			state = PRELIGHT
+			file = "toolbar/button.png"
+			border = {4, 4, 4, 4}
+			stretch = TRUE
+		}
+
+## Insensitive
+		image 
+		{
+			function = BOX
+			state = INSENSITIVE
+			file = "toolbar/button-ins.png"
+			border = {4, 4, 4, 4}
+			stretch = TRUE
+		}
+
+## Active
+		image 
+		{
+			function = BOX
+			state = ACTIVE
+			file = "toolbar/button.png"
+			border = {4, 4, 4, 4}
+			stretch = TRUE
+		}
+
+### Focus ###
+		image 
+                {
+                        function = FOCUS
+                        file = "null.png"
+                }
+    }
+}
+
+
+class "GtkToolbar"                                      style "toolbar"
+class "GtkToolButton"                                   style "toolbar"
+widget_class "*.<GtkList>.<GtkButton>"                  style "toolbar"
+widget_class "*.<GtkList>.<GtkToggleButton>.<GtkLabel>" style "toolbar"
+

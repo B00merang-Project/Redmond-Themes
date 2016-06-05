@@ -1,0 +1,573 @@
+/**********
+ * button *
+ **********/
+
+.button,
+.button:hover,
+.toolbar .button.raised,
+.toolbar .raised .button,
+.toolbar .button.raised:hover,
+.toolbar .raised .button:hover,
+.primary-toolbar .raised .button,
+.primary-toolbar .button.raised,
+.primary-toolbar .raised .button:hover,
+.primary-toolbar .button.raised:hover,
+.toolbar GtkComboBox .button,
+.toolbar GtkComboBox .button:hover,
+.spinbutton.vertical .button,
+.spinbutton.vertical .button:hover,
+GtkSwitch.slider,
+GtkSwitch.slider:active {
+	background-color: @theme_bg_color;
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: inset 0 -2px shade(@theme_bg_color, 0.65),
+				inset -2px 0 shade(@theme_bg_color, 0.65),
+				inset 0 1px white,
+				inset 1px 0 white;
+	border-color: black;
+}
+
+.button:active,
+.button:active:hover,
+.toolbar .button.raised:active,
+.toolbar .raised .button:active,
+.toolbar .button.raised:active:hover,
+.toolbar .raised .button:active:hover,
+.primary-toolbar .button.raised:active,
+.primary-toolbar .button.raised:active:hover,
+.primary-toolbar .raised .button:active,
+.primary-toolbar .raised .button:active:hover,
+.toolbar GtkComboBox .button:active,
+.toolbar GtkComboBox .button:active:hover,
+.spinbutton.vertical .button:active,
+.spinbutton.vertical .button:active:hover,
+GtkSwitch.trough,
+GtkSwitch.trough:active,
+GtkLinkButton.button:active,
+GtkLinkButton.button:active:hover,
+GtkScaleButton.button:active,
+GtkScaleButton.button:active:hover,
+.notebook tab .button:active,
+.notebook tab .button:active:hover,
+.floating-bar .button:active,
+.floating-bar .button:active:hover,
+#gtk-scalebutton-popup-window .button:active,
+#gtk-scalebutton-popup-window .button:active:hover {
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: inset 0 2px shade(@theme_bg_color, 0.65),
+				inset 2px 0 shade(@theme_bg_color, 0.65),
+				inset 0 -1px white,
+				inset -1px 0 white;
+	border-color: black;
+}
+
+.button:insensitive,
+.button:insensitive:active,
+.toolbar .button.raised:insensitive,
+.toolbar .button.raised:insensitive:active,
+.toolbar .raised .button:insensitive,
+.toolbar .raised .button:insensitive:active,
+.toolbar GtkComboBox .button:insensitive,
+.toolbar GtkComboBox .button:insensitive:active,
+.spinbutton.vertical .button:insensitive,
+.spinbutton.vertical .button:insensitive:active,
+GtkSwitch.trough:insensitive,
+GtkSwitch.trough:insensitive:active,
+GtkSwitch.slider:insensitive,
+GtkSwitch.slider:insensitive:active,
+GtkLinkButton.button:insensitive,
+GtkLinkButton.button:insensitive:active,
+GtkScaleButton.button:insensitive,
+GtkScaleButton.button:insensitive:active,
+.notebook tab .button:insensitive,
+.notebook tab .button:insensitive:active,
+.floating-bar .button:insensitive,
+.floating-bar .button:insensitive:active,
+#gtk-scalebutton-popup-window .button:insensitive,
+#gtk-scalebutton-popup-window .button:insensitive:active {
+    background-color: @insensitive_inner_box;
+    background-image: none;
+}
+
+/***********
+* Toolbars *
+************/
+
+.inline-toolbar.toolbar,
+.inline-toolbar .toolbar {
+
+    border: 1px solid @borders_color;
+    border-radius: 0;
+    box-shadow: inset 0px 2px 3px -1px mix(black, @theme_bg_color, 0.6);
+	background-color: transparent;
+    background-image: linear-gradient(to bottom, @theme_bg_color);
+}
+
+.inline-toolbar.toolbar:last-child,
+.inline-toolbar .toolbar:last-child {
+    border-width: 0 1px 1px;
+}
+
+.inline-toolbar.toolbar.vertical:last-child,
+.inline-toolbar .toolbar.vertical:last-child {
+    border-width: 1px 1px 1px 0;
+}
+
+.titlebar,
+.header-bar,
+.cs-header,
+.primary-toolbar .toolbar,
+.primary-toolbar.toolbar {
+	border-radius: 0;
+	border-style: solid;
+	border-width: 0;
+	box-shadow: inset 0 -2px shade(@theme_bg_color, 0.65),
+				inset -2px 0 shade(@theme_bg_color, 0.65),
+				inset 0 1px white,
+				inset 1px 0 white;
+	border-color: black;
+	background-color: @theme_bg_color;
+	background: linear-gradient(to bottom,
+	                            @theme_bg_color, 1.1) 1px,
+	                            @theme_bg_color 2px,
+	                            @theme_bg_color 3px,
+	                            shade(@theme_bg_color, 0.5)
+	                            );
+}
+
+/**************************
+* Primary toolbar buttons *
+**************************/
+.primary-toolbar .button,
+.primary-toolbar .button:insensitive,
+.primary-toolbar .button:insensitive:active,
+GtkHandleBox.dock .toolbar .button,
+GtkHandleBox.dock .toolbar .button:insensitive,
+GtkHandleBox.dock .toolbar .button:insensitive:active {
+    background-color: transparent;
+    background-image: none;
+}
+
+.primary-toolbar .button:hover,
+GtkHandleBox.dock .toolbar .button:hover {
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: inset 0 -2px shade(@theme_bg_color, 0.65),
+				inset -2px 0 shade(@theme_bg_color, 0.65),
+				inset 0 1px white,
+				inset 1px 0 white;
+	border-color: black;
+}
+
+.primary-toolbar .button:active,
+.primary-toolbar .button:active:hover,
+GtkHandleBox.dock .toolbar .button:active,
+GtkHandleBox.dock .toolbar .button:active:hover {
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: inset 0 2px shade(@theme_bg_color, 0.65),
+				inset 2px 0 shade(@theme_bg_color, 0.65),
+				inset 0 -1px white,
+				inset -1px 0 white;
+	border-color: black;
+}
+
+/****************
+ * Flat Buttons *
+ ****************/
+GtkLinkButton.button,
+GtkScaleButton.button,
+.notebook tab .button,
+.floating-bar .button,
+#gtk-scalebutton-popup-window .button {
+	background: none;
+}
+
+GtkLinkButton.button:hover,
+GtkScaleButton.button:hover,
+.notebook tab .button:hover,
+.floating-bar .button:hover,
+#gtk-scalebutton-popup-window .button:hover {
+    background-image: linear-gradient(to bottom, alpha(@button_bg, 0.7));
+    background-clip: padding-box;
+}
+
+
+/*****************
+ * column-header *
+ *****************/
+
+column-header .button,
+column-header.button,
+column-header .button:insensitive,
+column-header.button:insensitive {
+    background-color: @theme_bg_color;
+    background-image: none;
+}
+
+column-header .button:hover,
+column-header.button:hover {
+    background-color: @theme_bg_color;
+    background-image: none;
+}
+
+column-header .button:active,
+column-header.button:active,
+column-header .button:active:hover,
+column-header.button:active:hover {
+    background-color: @theme_bg_color;
+    background-image: none;
+}
+
+/*********
+ * entry *
+ *********/
+
+.entry,
+.spinbutton.vertical.entry {
+    background-color: @theme_base_color;
+    background-image: none;
+}
+
+.entry:insensitive,
+.spinbutton.vertical.entry:insensitive {
+    background-color: @theme_bg_color;
+    box-shadow: inset 0px 0px 0px 2px @insensitive_inner_box;
+    background-image: none;
+}
+
+/************
+ * notebook *
+ ************/
+
+.notebook tab {
+	background-clip: padding-box;
+	background-color: @theme_bg_color;
+}
+
+.notebook tab:active {
+    background-color: @notebook_bg;
+    background-image: none;
+}
+
+/***************
+ * progressbar *
+ ***************/
+
+.progressbar {
+	background-color: @theme_selected_bg_color;
+}
+
+.progressbar.vertical {
+	background-color: @theme_selected_bg_color;
+}
+
+.progressbar row,
+.progressbar row:hover {
+	background-color: @theme_bg_color;
+}
+
+.progressbar row:selected,
+.progressbar row:selected:focus {
+	background-color: @theme_bg_color;
+}
+
+.trough,
+.trough.vertical {
+    background-color: @theme_base_color;
+	border: 1px solid black;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.trough row {
+	background-color: white;
+}
+
+.trough row:selected,
+.trough row:selected:focus {
+	background-color: alpha(@theme_selected_fg_color, 0.3);
+}
+
+/*************
+ * scrollbar *
+ *************/
+
+.scrollbar.slider,
+.scrollbar.slider:hover,
+.scrollbar.slider:active,
+	background-color: #c0c0c0;
+}
+/*******************************************
+ * Linked Button Backgrounds - Nomal/Hover *
+ *******************************************/
+ 
+.linked .button:last-child,
+.linked .button:last-child:hover,
+
+.toolbar .button.raised.linked:last-child,
+.toolbar .raised.linked .button:last-child,
+.toolbar .button.raised.linked:last-child:hover,
+.toolbar .raised.linked .button:last-child:hover,
+
+.primary-toolbar .linked .button:last-child,
+.primary-toolbar .linked .button:last-child:hover,
+
+.primary-toolbar .raised .linked .button:last-child,
+.primary-toolbar .raised .linked .button:last-child:hover,
+
+.primary-toolbar .button.raised.linked:last-child,
+.primary-toolbar .raised.linked .button:last-child,
+.primary-toolbar .button.raised.linked:last-child:hover,
+.primary-toolbar .raised.linked .button:last-child:hover,
+
+.inline-toolbar.toolbar .button:last-child,
+.inline-toolbar.toolbar .button:hover:last-child,
+
+.inline-toolbar.toolbar GtkToolButton:last-child > .button,
+.inline-toolbar.toolbar GtkToolButton:last-child > .button:hover {
+	background-image: linear-gradient(to left,
+                                      rgba(0, 0, 0, 0.045) 2px,
+                                      rgba(0, 0, 0, 0.006) 3px,
+                                      transparent 4px
+                                      ),
+                      linear-gradient(to top,
+                                      rgba(0, 0, 0, 0.13) 1px,
+                                      transparent 4px
+                                      ),
+                      linear-gradient(to bottom,
+                                      shade(@button_bg, 1.15) 1px,
+                                      shade(@button_bg, 1.035) 4px,
+                                      shade(@button_bg, 1.01) 8px,
+                                      @button_bg 50%,
+                                      shade(@button_bg, 1.02)
+                                      );
+}
+
+.linked .button,
+.linked .button:hover,
+.linked .button:first-child,
+.linked .button:first-child:hover,
+
+.toolbar .button.raised.linked,
+.toolbar .raised.linked .button,
+.toolbar .button.raised.linked:hover,
+.toolbar .raised.linked .button:hover,
+.toolbar .button.raised.linked:first-child,
+.toolbar .raised.linked .button:first-child,
+.toolbar .button.raised.linked:first-child:hover,
+.toolbar .raised.linked .button:first-child:hover,
+
+.primary-toolbar .linked .button,
+.primary-toolbar .linked .button:hover,
+.primary-toolbar .linked .button:first-child,
+.primary-toolbar .linked .button:first-child:hover,
+
+.primary-toolbar .raised .linked .button,
+.primary-toolbar .raised .linked .button:hover,
+.primary-toolbar .raised .linked .button:first-child,
+.primary-toolbar .raised .linked .button:first-child:hover,
+
+.primary-toolbar .button.raised.linked,
+.primary-toolbar .raised.linked .button,
+.primary-toolbar .button.raised.linked:hover,
+.primary-toolbar .raised.linked .button:hover,
+.primary-toolbar .button.raised.linked:first-child,
+.primary-toolbar .raised.linked .button:first-child,
+.primary-toolbar .button.raised.linked:first-child:hover,
+.primary-toolbar .raised.linked .button:first-child:hover,
+
+.inline-toolbar.toolbar .button,
+.inline-toolbar.toolbar .button:hover,
+.inline-toolbar.toolbar .button:first-child,
+.inline-toolbar.toolbar .button:hover:first-child,
+
+.inline-toolbar.toolbar GtkToolButton > .button,
+.inline-toolbar.toolbar GtkToolButton > .button:hover,
+.inline-toolbar.toolbar GtkToolButton:first-child > .button,
+.inline-toolbar.toolbar GtkToolButton:first-child > .button:hover {
+	background-image: linear-gradient(to top,
+                                      rgba(0, 0, 0, 0.13) 1px,
+                                      transparent 4px
+                                      ),
+                      linear-gradient(to bottom,
+                                      shade(@button_bg, 1.15) 1px,
+                                      shade(@button_bg, 1.035) 4px,
+                                      shade(@button_bg, 1.01) 8px,
+                                      @button_bg 50%,
+                                      shade(@button_bg, 1.02)
+                                      );
+}
+
+/*************************************
+* Linked Button Backgrounds - Active *
+**************************************/
+
+.linked .button:last-child:active,
+.linked .button:last-child:active:hover,
+
+.toolbar .button.raised.linked:last-child:active,
+.toolbar .raised.linked .button:last-child:active,
+.toolbar .button.raised.linked:last-child:active:hover,
+.toolbar .raised.linked .button:last-child:active:hover,
+
+.primary-toolbar .linked .button:last-child:active,
+.primary-toolbar .linked .button:last-child:active:hover,
+
+.primary-toolbar .raised .linked .button:last-child:active,
+.primary-toolbar .raised .linked .button:last-child:active:hover,
+
+.primary-toolbar .button.raised.linked:last-child:active,
+.primary-toolbar .raised.linked .button:last-child:active,
+.primary-toolbar .button.raised.linked:last-child:active:hover,
+.primary-toolbar .raised.linked .button:last-child:active:hover,
+
+.inline-toolbar.toolbar .button:last-child:active,
+.inline-toolbar.toolbar .button:last-child:active:hover,
+
+.inline-toolbar.toolbar GtkToolButton:last-child > .button:active,
+.inline-toolbar.toolbar GtkToolButton:last-child > .button:active:hover {
+    background-image: linear-gradient(to left,
+                                      alpha(white, 0.2) 2px,
+                                      alpha(white, 0.05) 3px,
+                                      transparent 3px
+                                      ),
+                      linear-gradient(to bottom,
+                                      alpha(black, 0.15) 1px,
+                                      transparent 3px
+                                      ),
+                      linear-gradient(to top,
+                                      shade(@button_bg, 1.01) 1px,
+                                      shade(@button_bg, 0.96) 3px,
+                                      shade(@button_bg, 0.94)
+                                      );
+}
+
+.linked .button:active,
+.linked .button:active:hover,
+.linked .button:first-child:active,
+.linked .button:first-child:active:hover,
+
+.toolbar .button.raised.linked:active,
+.toolbar .raised.linked .button:active,
+.toolbar .button.raised.linked:active:hover,
+.toolbar .raised.linked .button:active:hover,
+.toolbar .button.raised.linked:first-child:active,
+.toolbar .raised.linked .button:first-child:active,
+.toolbar .button.raised.linked:first-child:active:hover,
+.toolbar .raised.linked .button:first-child:active:hover,
+
+.primary-toolbar .linked .button:active,
+.primary-toolbar .linked .button:active:hover,
+.primary-toolbar .linked .button:first-child:active,
+.primary-toolbar .linked .button:first-child:active:hover,
+
+.primary-toolbar .raised .linked .button:active,
+.primary-toolbar .raised .linked .button:active:hover,
+.primary-toolbar .raised .linked .button:first-child:active,
+.primary-toolbar .raised .linked .button:first-child:active:hover,
+
+.primary-toolbar .button.raised.linked:active,
+.primary-toolbar .raised.linked .button:active,
+.primary-toolbar .button.raised.linked:active:hover,
+.primary-toolbar .raised.linked .button:active:hover,
+.primary-toolbar .button.raised.linked:first-child:active,
+.primary-toolbar .raised.linked .button:first-child:active,
+.primary-toolbar .button.raised.linked:first-child:active:hover,
+.primary-toolbar .raised.linked .button:first-child:active:hover,
+
+.inline-toolbar.toolbar .button:active,
+.inline-toolbar.toolbar .button:active:hover,
+.inline-toolbar.toolbar .button:first-child:active,
+.inline-toolbar.toolbar .button:first-child:active:hover,
+
+.inline-toolbar.toolbar GtkToolButton > .button:active,
+.inline-toolbar.toolbar GtkToolButton > .button:active:hover,
+.inline-toolbar.toolbar GtkToolButton:first-child > .button:active,
+.inline-toolbar.toolbar GtkToolButton:first-child > .button:active:hover {
+    background-image: linear-gradient(to bottom,
+                                      alpha(black, 0.15) 1px,
+                                      transparent 3px
+                                      ),
+                      linear-gradient(to top,
+                                      shade(@button_bg, 1.01) 1px,
+                                      shade(@button_bg, 0.96) 3px,
+                                      shade(@button_bg, 0.94)
+                                      );
+}
+
+/*******************************************
+ * Linked Button Backgrounds - Insensitive *
+ *******************************************/
+
+.linked .button:insensitive,
+.linked .button:insensitive:hover,
+.linked .button:first-child:insensitive,
+.linked .button:first-child:insensitive:hover,
+.linked .button:last-child:insensitive,
+.linked .button:last-child:insensitive:hover,
+
+.toolbar .button.raised.linked:insensitive,
+.toolbar .raised.linked .button:insensitive,
+.toolbar .button.raised.linked:insensitive:hover,
+.toolbar .raised.linked .button:insensitive:hover,
+.toolbar .button.raised.linked:first-child:insensitive,
+.toolbar .raised.linked .button:first-child:insensitive,
+.toolbar .button.raised.linked:first-child:insensitive:hover,
+.toolbar .raised.linked .button:first-child:insensitive:hover,
+.toolbar .button.raised.linked:last-child:insensitive,
+.toolbar .raised.linked .button:last-child:insensitive,
+.toolbar .button.raised.linked:last-child:insensitive:hover,
+.toolbar .raised.linked .button:last-child:insensitive:hover,
+
+.primary-toolbar .linked .button:insensitive,
+.primary-toolbar .linked .button:insensitive:hover,
+.primary-toolbar .linked .button:first-child:insensitive,
+.primary-toolbar .linked .button:first-child:insensitive:hover,
+.primary-toolbar .linked .button:last-child:insensitive,
+.primary-toolbar .linked .button:last-child:insensitive:hover,
+
+.primary-toolbar .raised .linked .button:insensitive,
+.primary-toolbar .raised .linked .button:insensitive:hover,
+.primary-toolbar .raised .linked .button:first-child:insensitive,
+.primary-toolbar .raised .linked .button:first-child:insensitive:hover,
+.primary-toolbar .raised .linked .button:last-child:insensitive,
+.primary-toolbar .raised .linked .button:last-child:insensitive:hover,
+
+.primary-toolbar .button.raised.linked:insensitive,
+.primary-toolbar .raised.linked .button:insensitive,
+.primary-toolbar .button.raised.linked:insensitive:hover,
+.primary-toolbar .raised.linked .button:insensitive:hover,
+.primary-toolbar .button.raised.linked:first-child:insensitive,
+.primary-toolbar .raised.linked .button:first-child:insensitive,
+.primary-toolbar .button.raised.linked:first-child:insensitive:hover,
+.primary-toolbar .raised.linked .button:first-child:insensitive:hover,
+.primary-toolbar .button.raised.linked:last-child:insensitive,
+.primary-toolbar .raised.linked .button:last-child:insensitive,
+.primary-toolbar .button.raised.linked:last-child:insensitive:hover,
+.primary-toolbar .raised.linked .button:last-child:insensitive:hover,
+
+.inline-toolbar.toolbar .button:insensitive,
+.inline-toolbar.toolbar .button:insensitive:hover,
+.inline-toolbar.toolbar .button:first-child:insensitive,
+.inline-toolbar.toolbar .button:first-child:insensitive:hover,
+.inline-toolbar.toolbar .button:last-child:insensitive,
+.inline-toolbar.toolbar .button:last-child:insensitive:hover,
+
+.inline-toolbar.toolbar GtkToolButton > .button:insensitive,
+.inline-toolbar.toolbar GtkToolButton > .button:insensitive:hover,
+.inline-toolbar.toolbar GtkToolButton:first-child > .button:insensitive,
+.inline-toolbar.toolbar GtkToolButton:first-child > .button:insensitive:hover,
+.inline-toolbar.toolbar GtkToolButton:last-child > .button:insensitive,
+.inline-toolbar.toolbar GtkToolButton:last-child > .button:insensitive:hover {
+	background-color: @insensitive_inner_box;
+    background-image: none;
+}
+
+/* and this is why scss exists :( */
