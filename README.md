@@ -20,6 +20,9 @@ Themes included to date :
 - Windows Vista
 ![thumbnail](https://cloud.githubusercontent.com/assets/15310985/15758485/d3b9a6ec-28d8-11e6-9229-7066d47538f3.png)
 
+- Windows Se7en
+![thumbnail](https://cloud.githubusercontent.com/assets/15310985/15807835/66096cc2-2b35-11e6-882d-04239f5d1e1a.png)
+
 Possible future themes : 
 - Windows 8 Cinnamon theme
 
