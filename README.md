@@ -5,7 +5,7 @@ http://b00merang.weebly.com/redmond-collection
 **You will find here most of our themes related to Windows but not important enough to get their own repo like the Windows 10 theme did.**
 
 Themes included to date : 
-- Windows 3.x (credit to )
+- Windows 3.x (credit to matthewmx86 ​and snovbx on GNOME LOOK.org)
 ![thumbnail](https://cloud.githubusercontent.com/assets/15310985/15758500/e45aed8a-28d8-11e6-933e-a52e7f24135e.png)
 
 - Windows 95/98/2000/ME
