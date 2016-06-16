@@ -33,7 +33,7 @@ style "default"
 	GtkScrollbar::has-secondary-backward-stepper = 0
 	GtkScrollbar::has-secondary-forward-stepper = 0
 	GtkScrollbar::min-slider-length = 80
-	GtkScrollbar::slider-width = 17
+	GtkScrollbar::slider-width = 15
 	GtkScrollbar::trough-border = 2
 
   GtkCheckButton::indicator_size		= 12
