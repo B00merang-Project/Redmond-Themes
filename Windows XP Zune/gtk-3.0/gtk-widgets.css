@@ -1622,7 +1622,7 @@ GtkLevelBar.vertical {
 	border-image-slice: 3 3 3 3;
 }
 
-.scrollbar.slider:active,
+.scrollbar.slider:active {
     background: url("assets/handle-horiz-active.png") no-repeat center center, 									linear-gradient(to bottom,
 		                        #4c4c4c,
 		                        #4c4c4c 70%,
@@ -1800,6 +1800,11 @@ GtkComboBox .separator {
 
 .sidebar .frame {
     border-width: 0;
+}
+
+/* nautilus sidebar hover in 3.18 */
+.sidebar .list-row:hover {
+    background-color: shade(@theme_selected_bg_color, 1.05);
 }
 
 /**************

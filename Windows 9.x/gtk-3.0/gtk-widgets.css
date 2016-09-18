@@ -1015,16 +1015,16 @@ GtkMenuButton .menu {
     font: initial;
 }
 
-.menu {
+/*.menu {
     margin: 4px;
     padding: 3px;
     border: 1px solid @menu_borders;
     border-radius: 0;
     background-color: @menu_bg;
-	border-bottom-color: black;
-	border-right-color: black;
-	box-shadow: inset -1px -1px gray, inset 1px 1px white;
-}
+    border-bottom-color: black;
+    border-right-color: black;
+    box-shadow: inset -1px -1px gray, inset 1px 1px white;
+}*/
 
 .menu.button,
 .menu.button:hover {

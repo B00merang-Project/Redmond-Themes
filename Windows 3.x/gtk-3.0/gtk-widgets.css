@@ -1008,7 +1008,7 @@ GtkMenuButton .menu {
 .context-menu {
     font: initial;
 }
-
+/*
 .menu {
     margin: 4px;
     padding: 3px;
@@ -1016,7 +1016,7 @@ GtkMenuButton .menu {
     border-radius: 0;
     background-color: @menu_bg;
 }
-
+*/
 .menu.button,
 .menu.button:hover {
     border: 1px solid @menu_borders;

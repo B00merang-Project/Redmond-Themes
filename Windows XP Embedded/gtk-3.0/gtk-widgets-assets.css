@@ -157,3 +157,117 @@
     background-image: url("assets/menuitem-radio-checked-insensitive.png");
 }
 
+/**************************
+ * check and radio (3.18) *
+ **************************/
+/* draw regular check and radio items using our assets */
+.check,
+.check row:selected,
+.check row:selected:focus {
+    -gtk-icon-source: url("assets/checkbox-unchecked.png");
+}
+
+.check:insensitive,
+.check row:selected:insensitive,
+.check row:selected:focus:insensitive {
+    -gtk-icon-source: url("assets/checkbox-unchecked-insensitive.png");
+}
+
+.check:hover,
+.check row:selected:hover,
+.check row:selected:focus:hover {
+    -gtk-icon-source: url("assets/checkbox-unchecked-over.png");
+}
+
+.check:checked,
+.check row:selected:checked,
+.check row:selected:focus:checked {
+    -gtk-icon-source: url("assets/checkbox-checked.png");
+}
+
+.check:checked:hover,
+.check row:selected:checked:hover,
+.check row:selected:focus:checked:hover {
+    -gtk-icon-source: url("assets/checkbox-checked-over.png");
+}
+
+.check:checked:insensitive,
+.check row:selected:checked:insensitive,
+.check row:selected:focus:checked:insensitive {
+    -gtk-icon-source: url("assets/checkbox-checked-insensitive.png");
+}
+
+.check:inconsistent,
+.check row:selected:inconsistent,
+.check row:selected:focus:inconsistent {
+    -gtk-icon-source: url("assets/checkbox-mixed.png");
+}
+
+.check:inconsistent:insensitive,
+.check row:selected:inconsistent:insensitive,
+.check row:selected:focus:inconsistent:insensitive {
+    -gtk-icon-source: url("assets/checkbox-mixed-insensitive.png");
+}
+
+
+.radio,
+.view.cell.radio {
+    -gtk-icon-source: url("assets/radio-unselected.png");
+}
+
+.radio:insensitive {
+    -gtk-icon-source: url("assets/radio-unselected-insensitive.png");
+}
+
+.radio:hover {
+    -gtk-icon-source: url("assets/radio-unselected-over.png");
+}
+
+.radio:checked {
+    -gtk-icon-source: url("assets/radio-selected.png");
+}
+
+.radio:checked:hover {
+    -gtk-icon-source: url("assets/radio-selected-over.png");
+}
+
+.radio:checked:insensitive {
+    -gtk-icon-source: url("assets/radio-selected-insensitive.png");
+}
+
+.radio:inconsistent {
+    -gtk-icon-source: url("assets/radio-mixed.png");
+}
+
+.radio:inconsistent:insensitive {
+    -gtk-icon-source: url("assets/radio-mixed-insensitive.png");
+}
+
+/* menuitem */
+
+.menuitem.check:checked {
+    -gtk-icon-source: url("assets/menuitem-checkbox-checked.png");
+}
+
+.menuitem.check:checked:insensitive {
+    -gtk-icon-source: url("assets/menuitem-checkbox-checked-insensitive.png");
+}
+
+.menuitem.check:inconsistent,
+.menuitem.radio:inconsistent {
+    -gtk-icon-source: url("assets/menuitem-checkbox-mixed.png");
+}
+
+.menuitem.check:inconsistent:insensitive,
+.menuitem.radio:inconsistent:insensitive {
+    -gtk-icon-source: url("assets/menuitem-checkbox-mixed-insensitive.png");
+}
+
+.menuitem.radio:checked {
+    -gtk-icon-source: url("assets/menuitem-radio-checked.png");
+}
+
+.menuitem.radio:checked:insensitive {
+    -gtk-icon-source: url("assets/menuitem-radio-checked-insensitive.png");
+}
+

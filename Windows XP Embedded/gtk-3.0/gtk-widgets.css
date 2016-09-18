@@ -545,7 +545,8 @@ GtkComboBox.combobox-entry .button:insensitive {
 }
 
 .list-row:hover {
-    background-color: shade(@theme_bg_color, 1.02);
+    background-color: shade(@theme_bg_color, 0.95);
+    color: @theme_fg_color;
 }
 
 .list-row:selected {
@@ -1622,7 +1623,7 @@ GtkLevelBar.vertical {
 	border-image-slice: 3 3 3 3;
 }
 
-.scrollbar.slider:active,
+.scrollbar.slider:active {
     background: url("assets/handle-horiz-active.png") no-repeat center center, 									linear-gradient(to bottom,
 		                        #4c4c4c,
 		                        #4c4c4c 70%,
@@ -1784,8 +1785,8 @@ GtkComboBox .separator {
 
 .sidebar row:prelight,
 .sidebar .view row:prelight {
-    border-color: shade(@selected_bg_color, 1.05);
-    background-color: shade(@selected_bg_color, 1.05);
+    border-color: shade(@theme_selected_bg_color, 1.05);
+    background-color: shade(@theme_selected_bg_color, 1.05);
     background-image: none;
     color: @sidebar_fg_color;
 }

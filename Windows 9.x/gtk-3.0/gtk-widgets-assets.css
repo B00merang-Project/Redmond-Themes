@@ -6,111 +6,139 @@
 .check row:selected,
 .check row:selected:focus {
     background-image: -gtk-scaled(url("Check-Radio/checkbox-unchecked.png"));
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/checkbox-unchecked.png"));
 }
 
 .check:active,
+.check:checked,
 .check row:selected:active,
 .check row:selected:focus:active {
     background-image: -gtk-scaled(url("Check-Radio/checkbox-checked.png"));
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/checkbox-checked.png"));
 }
 
 .check:active:insensitive,
+.check:checked:insensitive,
 .check row:selected:active:insensitive,
 .check row:selected:focus:active:insensitive {
     background-image: -gtk-scaled(url("Check-Radio/checkbox-checked-insensitive.png"));
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/checkbox-checked-insensitive.png"));
 }
 
 .check:insensitive,
 .check row:selected:insensitive,
 .check row:selected:focus:insensitive  {
     background-image: -gtk-scaled(url("Check-Radio/checkbox-unchecked-insensitive.png"));
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/checkbox-unchecked-insensitive.png"));
 }
 
 .check:inconsistent,
 .check row:selected:inconsistent,
 .check row:selected:focus:inconsistent {
     background-image: -gtk-scaled(url("Check-Radio/checkbox-mixed.png"));
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/checkbox-mixed.png"));
 }
 
 .check:inconsistent:insensitive,
 .check row:selected:inconsistent:insensitive,
 .check row:selected:focus:inconsistent:insensitive {
     background-image: -gtk-scaled(url("Check-Radio/checkbox-mixed-insensitive.png"));
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/checkbox-mixed-insensitive.png"));
 }
 
 .radio,
 .view.cell.radio {
     background-image: -gtk-scaled(url("Check-Radio/radio-unchecked.png"));
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/radio-unchecked.png"));
 }
 
-.radio:active {
+.radio:active,
+.radio:checked {
     background-image: -gtk-scaled(url("Check-Radio/radio-checked.png"));
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/radio-checked.png"));
 }
 
 .radio:insensitive {
     background-image: -gtk-scaled(url("Check-Radio/radio-unchecked-insensitive.png"));
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/radio-unchecked-insensitive.png"));
 }
 
-.radio:active:insensitive {
+.radio:active:insensitive,
+.radio:checked:insensitive {
     background-image: -gtk-scaled(url("Check-Radio/radio-checked-insensitive.png"));
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/radio-checked-insensitive.png"));
 }
 
 .radio:inconsistent {
     background-image: -gtk-scaled(url("Check-Radio/radio-mixed.png"));
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/radio-mixed.png"));
 }
 
 .radio:inconsistent:insensitive {
     background-image: -gtk-scaled(url("Check-Radio/radio-mixed-insensitive.png"));
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/radio-mixed-insensitive.png"));
 }
 
 /* Menu check-radio */
 
 .menuitem.check:active {
     background-image: -gtk-scaled(url("Check-Radio/Menu/menu-check-checked.png"));
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/Menu/menu-check-checked.png"));
 }
 
 .menuitem.check:active:hover {
     background-image: -gtk-scaled(url("Check-Radio/Menu/menu-check-checked-hover.png"));
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/Menu/menu-check-checked-hover.png"));
 }
 
 .menuitem.check:active:insensitive {
     background-image: -gtk-scaled(url("Check-Radio/Menu/menu-check-checked-insensitive.png"));
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/Menu/menu-check-checked-insensitive.png"));
 }
 
 .menuitem.check:inconsistent {
     background-image: -gtk-scaled(url("Check-Radio/Menu/menu-check-mixed.png"));
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/Menu/menu-check-mixed.png"));
 }
 
 .menuitem.check:inconsistent:insensitive {
     background-image: -gtk-scaled(url("Check-Radio/Menu/menu-check-mixed-insensitive.png"));
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/Menu/menu-check-mixed-insensitive.png"));
 }
 
 .menuitem.check:inconsistent:hover {
     background-image: -gtk-scaled(url("Check-Radio/Menu/menu-check-mixed-hover.png"));
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/Menu/menu-check-mixed-hover.png"));
 }
 
 .menuitem.radio:active {
     background-image: -gtk-scaled(url("Check-Radio/Menu/menu-radio-checked.png"));
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/Menu/menu-radio-checked.png"));
 }
 
 .menuitem.radio:active:hover {
     background-image: -gtk-scaled(url("Check-Radio/Menu/menu-radio-checked-hover.png"));
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/Menu/menu-radio-checked-hover.png"));
 }
 
 .menuitem.radio:active:insensitive {
     background-image: -gtk-scaled(url("Check-Radio/Menu/menu-radio-checked-insensitive.png"));
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/Menu/menu-radio-checked-insensitive.png"));
 }
 
 .menuitem.radio:inconsistent {
     background-image: -gtk-scaled(url("Check-Radio/Menu/menu-radio-mixed.png"));
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/Menu/menu-radio-mixed.png"));
 }
 
 .menuitem.radio:inconsistent:insensitive {
     background-image: -gtk-scaled(url("Check-Radio/Menu/menu-radio-mixed-insensitive.png"));
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/Menu/menu-radio-mixed-insensitive.png"));
 }
 
 .menuitem.radio:inconsistent:hover {
     background-image: -gtk-scaled(url("Check-Radio/Menu/menu-radio-mixed-hover.png"));
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/Menu/menu-radio-mixed-hover.png"));
 }
 
 
@@ -138,24 +166,24 @@
 }
 
 .scale.slider.vertical {
-	background-image: -gtk-scaled(url("Range/slider-vert.png"));
+    background-image: -gtk-scaled(url("Range/slider-vert.png"));
 }
 
 .scale.trough,
 .scale.trough:insensitive {
-    border: 5px solid transparent;
+    border: 2px solid transparent;
     border-radius: 0;
     border-image: url("Range/trough-horiz.png");
-	border-image-slice: 5 5 5 5;
+    border-image-slice: 2 2 2 2;
     border-image-repeat: stretch;
-	border-left-color: black;
+    border-left-color: black;
 }
 
 .scale.trough.vertical,
 .scale.trough.vertical:insensitive {
-	border: 5px solid transparent;
-	border-radius: 0;
+    border: 2px solid transparent;
+    border-radius: 0;
     border-image: url("Range/trough-vert.png");
-    border-image-slice: 5 5 5 5;
+    border-image-slice: 2 2 2 2;
     border-image-repeat: stretch;
 }

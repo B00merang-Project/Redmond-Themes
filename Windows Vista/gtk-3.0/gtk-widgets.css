@@ -777,7 +777,7 @@ GtkHeaderBar > GtkStack:insensitive {
 
 /********
  * menu *
- ********/
+ ********
 GtkTreeMenu.menu,
 .toolbar .primary-toolbar .menu,
 .toolbar .menubar.toolbar .menu,
@@ -785,7 +785,7 @@ GtkTreeMenu.menu,
 GtkMenuToolButton.menu,
 .primary-toolbar .button .menu,
 .menubar.toolbar .button .menu,
-.header-bar .button .menu,
+.header-bar .button .menu
 .menu {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (@transparent),
@@ -824,6 +824,11 @@ GtkComboBox .menu {
     box-shadow: inset -1px 0 shade (@bg_color, 1.18),
                 inset 1px 0 shade (@bg_color, 1.18),
                 inset 0 1px shade (@bg_color, 1.18);
+}
+*/
+
+.menu {
+    background-color: #f0f0f0;
 }
 
 .menu:selected {
