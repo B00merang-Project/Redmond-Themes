@@ -18,15 +18,15 @@ spinbutton.vertical button,
 spinbutton.vertical button:hover,
 switch slider,
 switch slider:active {
-	background-color: @theme_bg_color;
-	border-radius: 3px;
-	border-style: solid;
-	border-width: 1px;
-	box-shadow: inset 0 -2px shade(@theme_bg_color, 0.65),
-				inset -2px 0 shade(@theme_bg_color, 0.65),
-				inset 0 1px white,
-				inset 1px 0 white;
-	border-color: black;
+    background-color: @theme_bg_color;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: inset 0 -2px shade(@theme_bg_color, 0.65),
+                inset -2px 0 shade(@theme_bg_color, 0.65),
+                inset 0 1px white,
+                inset 1px 0 white;
+    border-color: gray;
 }
 
 button:active,
@@ -55,14 +55,14 @@ notebook tab button:active:hover,
 .floating-bar button:active:hover,
 #gtk-scalebutton-popup-window button:active,
 #gtk-scalebutton-popup-window button:active:hover {
-	border-radius: 3px;
-	border-style: solid;
-	border-width: 1px;
-	box-shadow: inset 0 2px shade(@theme_bg_color, 0.65),
-				inset 2px 0 shade(@theme_bg_color, 0.65),
-				inset 0 -1px white,
-				inset -1px 0 white;
-	border-color: black;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: inset 0 2px shade(@theme_bg_color, 0.65),
+                inset 2px 0 shade(@theme_bg_color, 0.65),
+                inset 0 -1px white,
+                inset -1px 0 white;
+    border-color: gray;
 }
 
 button:disabled,
@@ -102,8 +102,8 @@ notebook tab button:disabled:active,
 
     border: 1px solid @borders_color;
     border-radius: 0;
-    box-shadow: inset 0px 2px 3px -1px mix(black, @theme_bg_color, 0.6);
-	background-color: transparent;
+    box-shadow: inset 0px 2px 3px -1px mix(gray, @theme_bg_color, 0.6);
+    background-color: transparent;
     background-image: linear-gradient(to bottom, @theme_bg_color);
 }
 
@@ -122,21 +122,21 @@ headerbar.titlebar,
 .cs-header,
 .primary-toolbar toolbar,
 .primary-toolbartoolbar {
-	border-radius: 0;
-	border-style: solid;
-	border-width: 0;
-	box-shadow: inset 0 -2px shade(@theme_bg_color, 0.65),
-				inset -2px 0 shade(@theme_bg_color, 0.65),
-				inset 0 1px white,
-				inset 1px 0 white;
-	border-color: black;
-	background-color: @theme_bg_color;
-	background: linear-gradient(to bottom,
-	                            @theme_bg_color, 1.1) 1px,
-	                            @theme_bg_color 2px,
-	                            @theme_bg_color 3px,
-	                            shade(@theme_bg_color, 0.5)
-	                            );
+    border-radius: 0;
+    border-style: solid;
+    border-width: 0;
+    box-shadow: inset 0 -2px shade(@theme_bg_color, 0.65),
+                inset -2px 0 shade(@theme_bg_color, 0.65),
+                inset 0 1px white,
+                inset 1px 0 white;
+    border-color: gray;
+    background-color: @theme_bg_color;
+    background: linear-gradient(to bottom,
+                                @theme_bg_color, 1.1) 1px,
+                                @theme_bg_color 2px,
+                                @theme_bg_color 3px,
+                                shade(@theme_bg_color, 0.5)
+                                );
 }
 
 /**************************
@@ -154,28 +154,28 @@ GtkHandleBox.dock toolbar button:disabled:active {
 
 toolbar.primary-toolbar button:hover,
 GtkHandleBox.dock combobox button.combo:hover {
-	border-radius: 3px;
-	border-style: solid;
-	border-width: 1px;
-	box-shadow: inset 0 -2px shade(@theme_bg_color, 0.65),
-				inset -2px 0 shade(@theme_bg_color, 0.65),
-				inset 0 1px white,
-				inset 1px 0 white;
-	border-color: black;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: inset 0 -2px shade(@theme_bg_color, 0.65),
+                inset -2px 0 shade(@theme_bg_color, 0.65),
+                inset 0 1px white,
+                inset 1px 0 white;
+    border-color: gray;
 }
 
 toolbar.primary-toolbar button:active,
 toolbar.primary-toolbar button:active:hover,
 GtkHandleBox.dock combobox button.combo:checked,
 GtkHandleBox.dock combobox button.combo:checked:hover {
-	border-radius: 3px;
-	border-style: solid;
-	border-width: 1px;
-	box-shadow: inset 0 2px shade(@theme_bg_color, 0.65),
-				inset 2px 0 shade(@theme_bg_color, 0.65),
-				inset 0 -1px white,
-				inset -1px 0 white;
-	border-color: black;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: inset 0 2px shade(@theme_bg_color, 0.65),
+                inset 2px 0 shade(@theme_bg_color, 0.65),
+                inset 0 -1px white,
+                inset -1px 0 white;
+    border-color: gray;
 }
 
 /****************
@@ -186,7 +186,7 @@ scaleButtonbutton,
 notebook tab button,
 .floating-bar button,
 #gtk-scalebutton-popup-window button {
-	background: none;
+    background: none;
 }
 
 button.flat.link.text-button:hover,
@@ -247,8 +247,8 @@ spinbutton.verticalentry:disabled {
  ************/
 
 notebook tab {
-	background-clip: padding-box;
-	background-color: @theme_bg_color;
+    background-clip: padding-box;
+    background-color: @theme_bg_color;
 }
 
 notebook tab:active {
@@ -270,38 +270,38 @@ progressbar.vertical progress {
     min-width: 10px; }
 
 progressbar.vertical progress {
-	background-color: @theme_selected_bg_color;
+    background-color: @theme_selected_bg_color;
 }
 
 progressbar.vertical {
-	background-color: @theme_selected_bg_color;
+    background-color: @theme_selected_bg_color;
 }
 
 progressbar.vertical progress row,
 progressbar.vertical progress row {
-	background-color: @theme_bg_color;
+    background-color: @theme_bg_color;
 }
 
 progressbar.vertical progress row:selected,
 progressbar.vertical progress row:selected:focus {
-	background-color: @theme_bg_color;
+    background-color: @theme_bg_color;
 }
 
 trough,
 trough.vertical {
     background-color: @theme_base_color;
-	border: 1px solid black;
-	border-radius: 0;
-	box-shadow: none;
+    border: 1px solid gray;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 trough row {
-	background-color: white;
+    background-color: white;
 }
 
 trough row:selected,
 trough row:selected:focus {
-	background-color: alpha(@theme_selected_fg_color, 0.3);
+    background-color: alpha(@theme_selected_fg_color, 0.3);
 }
 
 /*************
@@ -314,7 +314,7 @@ scrollbar slider,
 scrollbar slider:hover,
 scrollbar slider,
 scrollbar slider:active,
-	background-color: #c0c0c0;
+    background-color: #c0c0c0;
 }
 /*******************************************
  * Linked Button Backgrounds - Nomal/Hover *
@@ -344,7 +344,7 @@ toolbar.inline-toolbar button:hover:last-child,
 
 .inline-toolbartoolbar toolbutton:last-child > button,
 .inline-toolbartoolbar toolbutton:last-child > button:hover {
-	background-image: linear-gradient(to left,
+    background-image: linear-gradient(to left,
                                       rgba(0, 0, 0, 0.045) 2px,
                                       rgba(0, 0, 0, 0.006) 3px,
                                       transparent 4px
@@ -404,7 +404,7 @@ toolbar.inline-toolbar button:hover:first-child,
 .inline-toolbartoolbar toolbutton > button:hover,
 .inline-toolbartoolbar toolbutton:first-child > button,
 .inline-toolbartoolbar toolbutton:first-child > button:hover {
-	background-image: linear-gradient(to top,
+    background-image: linear-gradient(to top,
                                       rgba(0, 0, 0, 0.13) 1px,
                                       transparent 4px
                                       ),
@@ -451,7 +451,7 @@ toolbar.inline-toolbar button:last-child:active:hover,
                                       transparent 3px
                                       ),
                       linear-gradient(to bottom,
-                                      alpha(black, 0.15) 1px,
+                                      alpha(gray, 0.15) 1px,
                                       transparent 3px
                                       ),
                       linear-gradient(to top,
@@ -504,7 +504,7 @@ toolbar.inline-toolbar button:first-child:active:hover,
 .inline-toolbartoolbar toolbutton:first-child > button:active,
 .inline-toolbartoolbar toolbutton:first-child > button:active:hover {
     background-image: linear-gradient(to bottom,
-                                      alpha(black, 0.15) 1px,
+                                      alpha(gray, 0.15) 1px,
                                       transparent 3px
                                       ),
                       linear-gradient(to top,
@@ -578,7 +578,7 @@ toolbar.inline-toolbar button:last-child:disabled:hover,
 .inline-toolbartoolbar toolbutton:first-child > button:disabled:hover,
 .inline-toolbartoolbar toolbutton:last-child > button:disabled,
 .inline-toolbartoolbar toolbutton:last-child > button:disabled:hover {
-	background-color: @insensitive_inner_box;
+    background-color: @insensitive_inner_box;
     background-image: none;
 }
 
