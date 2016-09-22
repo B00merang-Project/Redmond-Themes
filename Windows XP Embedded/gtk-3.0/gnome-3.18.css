@@ -181,7 +181,7 @@ GtkSidebarRow .sidebar-label:dir(rtl) {
      box-shadow: none; 
 }
 
-.progressbar,
+/* .progressbar,
 .progressbar row,
 .progressbar row:hover,
 .progressbar row:selected,
@@ -195,8 +195,7 @@ GtkSidebarRow .sidebar-label:dir(rtl) {
 .trough row:selected,
 .trough row:selected:focus {
     border-image: linear-gradient(to top, shade(@theme_bg_color, 1.08)) 4 4 4 4 / 4px 8px 4px 8px stretch;
-}
-
+} */
 /**************
  * over under *
  **************/

@@ -4,20 +4,20 @@
   # description: Windows Embedded theme*/
 
 /* default color scheme */
-@define-color bg_color #f4f4f4;
+@define-color bg_color #ebe9ed;
 @define-color fg_color #000;
 @define-color base_color #ffffff;
 @define-color text_color #4c4c4c;
 @define-color selected_bg_color #379aff;
 @define-color selected_fg_color #262626;
-@define-color tooltip_bg_color #f4f4f4;
+@define-color tooltip_bg_color #ebe9ed;
 @define-color tooltip_fg_color #000;
 @define-color sidebar_fg_color #fff;
 @define-color sidebar_bg_color #005290;
 @define-color button_bg_color #f7f7f7;
 
 /* dark color scheme */
-@define-color dark_bg_color #f4f4f4;
+@define-color dark_bg_color #ebe9ed;
 @define-color dark_fg_color #000;
 
 /* colormap actually used by the theme, to be overridden in other css files */
