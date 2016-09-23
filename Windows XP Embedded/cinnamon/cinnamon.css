@@ -24,31 +24,31 @@ StScrollView.vfade {
 }
 
 StScrollView StScrollBar {
-  	min-width: 17px;
-  	min-height: 17px;
+      min-width: 17px;
+      min-height: 17px;
 }
 
 StScrollBar {
-  	padding: 0px;
+      padding: 0px;
 }
 
 StScrollBar StBin#trough {
-	background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.2);
 }
 
 StScrollBar StButton#hhandle,
 StScrollBar StButton#vhandle,
 StScrollBar StButton#hhandle:hover,
 StScrollBar StButton#vhandle:hover {
-	border-image: url('outset-shadow.png') 3;
+    border-image: url('outset-shadow.png') 3;
 }
 
 .menu-applications-box StButton#vhandle {
-	background: url('handle-vert.png') no-repeat center center;
+    background: url('handle-vert.png') no-repeat center center;
 }
 
 .menu-applications-box StButton#vhandle:hover {
-	background: url('handle-vert.png') no-repeat center center;
+    background: url('handle-vert.png') no-repeat center center;
 }
 
 
@@ -1506,19 +1506,18 @@ border-radius: 1px;
 /* Main menu title */
 
 .menu-favorites-box {
-	color: #fff;
-	margin: auto;
-	padding: 0px;
-	background-color: transparent;
-	border-image: url('favs.png') 5 5 5 5;
-	border-radius: 0px;
-	width: 70%;
+    color: #fff;
+    margin: auto;
+    padding: 0px;
+    background-color: transparent;
+    border-radius: 0px;
+    width: 70%;
 }
 
 .menu-background {
-	border-image: url("menu-bg.png") 8 8 63 41;
-	box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
-	padding: 55px 1px 10px 1px;
+    border-image: url("menu-bg.png") 8 8 63 41;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    padding: 55px 1px 10px 1px;
 }
 
 .menu-favorites-button {
@@ -1527,13 +1526,13 @@ border-radius: 1px;
 }
 
 .menu-favorites-button:hover {
-	background-color: #335ea8;
+    background-color: #335ea8;
 }
 
 .menu-places-box {  
-  	margin: auto;
-  	padding: 8px;
-  	border: 0px solid #666;  
+      margin: auto;
+      padding: 8px;
+      border: 0px solid #666;  
 }
 
 .menu-places-button {
@@ -1552,36 +1551,36 @@ border-radius: 1px;
 }
 
 .menu-applications-inner-box {
-    padding: 5px;
-    background-color: #5373bf;
+    padding: 0 5px 5px 0;
+    background-color: transparent;
 }
 
 .menu-applications-box StScrollBar {
-	padding: 0px;
+    padding: 0px;
 }
 
 .menu-applications-box StScrollView {
-	border: 1px solid #305496;
-	border-image: none;
+    border: 0px solid #305496;
+    border-image: none;
     border-right-width: 0px;
 }
 
 
 .menu-applications-box StBin#trough {
-	background: none;
-	border-width: 0px;
-	box-shadow: none;
-	border-image: url('trough-scrollbar-vert.png') 1;
+    background: none;
+    border-width: 0px;
+    box-shadow: none;
+    border-image: url('trough-scrollbar-vert.png') 1;
 }
 
 .menu-applications-box StButton#vhandle {
-	border-image: url('slider-vert.png') 3;
-	background: url('handle-vert.png') no-repeat center center;
+    border-image: url('slider-vert.png') 3;
+    background: url('handle-vert.png') no-repeat center center;
 }
 
 .menu-applications-box StButton#vhandle:hover {
-	border-image: url('slider-vert-hover.png') 3;
-	background: url('handle-vert.png') no-repeat center center;
+    border-image: url('slider-vert-hover.png') 3;
+    background: url('handle-vert.png') no-repeat center center;
 }
 
 .menu-application-button {
@@ -1597,11 +1596,11 @@ border-radius: 1px;
 }
 
 .menu-application-button-label:ltr { 
-  	padding-left: 5px;
+      padding-left: 5px;
 }
 
 .menu-application-button-label:rtl { 
-  	padding-right: 5px;
+      padding-right: 5px;
 }
 
 .menu-category-button {
@@ -1617,7 +1616,7 @@ border-radius: 1px;
 .menu-category-button-selected {
     padding: 7px;
     color: white;
-	background-color: #335ea8;
+    background-color: #335ea8;
 }
 
 .menu-category-button-label:ltr { 
@@ -1632,7 +1631,7 @@ border-radius: 1px;
  * This appears on the bottom right hand corner of the menu*/
  
 .menu-selected-app-box {
-	padding-top: 16px;
+    padding-top: 16px;
     padding-right: 30px;
     padding-left: 28px;
     text-align: right;
@@ -1651,12 +1650,17 @@ border-radius: 1px;
     color: #000;
     font: 9pt;
     height: 18px;
-    width: 220px;
+    width: 250px;
     selected-color: white;
     caret-color: #000;
     background-color: white;
     caret-size: 1px;
     margin-bottom: 10px;
+}
+
+.menu-search-box {
+   padding-left: 20px;
+   padding-bottom: 10px;
 }
 
 .menu-search-entry-icon {
