@@ -12,7 +12,7 @@ Themes included to date :
 ![thumbnail](https://cloud.githubusercontent.com/assets/15310985/15758493/dce441c8-28d8-11e6-82c3-36f227b0eaf5.png)
 
 - Windows XP Embedded
-![thumbnail](https://cloud.githubusercontent.com/assets/15310985/15635888/b56f2142-25ba-11e6-9811-295015610a4f.png)
+![screenshot_2016-09-23_07-21-21](https://cloud.githubusercontent.com/assets/15310985/18786099/300539f4-816a-11e6-9fdc-82f188881452.png)
 
 - Windows XP Zune
 ![thumbnail](https://cloud.githubusercontent.com/assets/15310985/15635890/bdf3a298-25ba-11e6-80d8-ed5596104b33.png)
