@@ -110,9 +110,9 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .popup-menu {
-    background-color: #2d75ad;
     border: solid 1px black;
-    color: #fff;
+    border-image: url('popupmenu.png') 8 8 8 8;
+    color: #000;
     font-size: 9pt;
 }
 .popup-submenu-menu-item:open {
@@ -139,7 +139,7 @@ StScrollBar StButton#vhandle:hover {
 .popup-combo-menu {
     background-color: rgba(0,0,0,0.9);
     padding: 1em 0em;
-    color: #ffffff;
+    color: #000;
     font-size: 10.5pt;
     border: 1px solid #00A7FB;
     border-radius: 0px 0px 8px 0px;
@@ -153,6 +153,7 @@ StScrollBar StButton#vhandle:hover {
 .popup-menu-item {
     padding: .4em 1.75em;
     spacing: 1em;
+    border: 2px solid transparent;
 }
 .popup-menu-item:active {
     background-color: #00A7FB;
@@ -246,6 +247,14 @@ StScrollBar StButton#vhandle:hover {
     font-size: 12pt;
     font-style: italic;
     font-weight: bold;
+}
+
+#panelLeft .applet-box:first-child:hover {
+    border-image: url('menu-hover.png') 7 0 0 0;
+}
+
+#panelLeft .applet-box:first-child:active {
+    border-image: url('menu-active.png') 7 0 0 0;
 }
 
 #panelLeft:dnd {
@@ -816,24 +825,21 @@ border-radius: 0px;
 
 #notification {
  
-    border-radius: 0px;
+    border-radius: 6px;
     font-size: 8.5pt;
-    background-color: #181818;
-    border: 1px solid #444;
-      border-bottom: 0px;
-          border-left: 0px;
-          border-right: 0px;
+    background-color: #ffffe1;
+    border: 1px solid #000;
     padding: 6px 6px 6px 6px;
     spacing-rows: 10px;
     spacing-columns: 10px;
     margin-from-right-edge-of-screen: 19px;
     margin-from-top-edge-of-screen: 30px;
     width: 27em;
-    color: white;
+    color: black;
 }
 #notification.multi-line-notification {
     padding-bottom: 8px;
-    color: white;
+    color: black;
 }
 /* We use row-span = 2 for the image cell, which prevents its height preferences to be
     taken into account during allocation, so its height ends up being limited by the height
@@ -841,7 +847,7 @@ border-radius: 0px;
     height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 = 159 */
 .notification-with-image {
     min-height: 159px;
-    color: white;
+    color: black;
 }
 #notification-scrollview {
     max-height: 10em;
@@ -1701,7 +1707,11 @@ border-radius: 1px;
 
 
 .window-list-item-box:hover  {  
-    border-image: url('urgent.png');
+    border-image: url('hover.png');
+}
+
+.window-list-item-box:focus:hover  {  
+    border-image: url('active-hover.png');
 }
 
 .window-list-item-demands-attention {

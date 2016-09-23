@@ -2,7 +2,7 @@
 # derivative artwork from Maxime Doyen's Windows 10 GTK 2.0 theme
 # date: May 24, 2016
 
-gtk-color-scheme	= "base_color:#fff\nfg_color:#000000\ntooltip_fg_color:#000000\nselected_bg_color:#379aff\nselected_fg_color:#262626\ntext_color:#4c4c4c\nbg_color:#f4f4f4\ninsensitive_bg_color:#f2f2f2\ntooltip_bg_color:#ffffe2"
+gtk-color-scheme = "base_color:#fff\nfg_color:#000000\ntooltip_fg_color:#000000\nselected_bg_color:#379aff\nselected_fg_color:#262626\ntext_color:#4c4c4c\nbg_color:#ebe9ed\ninsensitive_bg_color:#f2f2f2\ntooltip_bg_color:#ffffe2"
 
 gtk-auto-mnemonics              = 1
 gtk-primary-button-warps-slider = 1
