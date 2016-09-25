@@ -90,7 +90,7 @@ GtkSidebarRow .sidebar-label:dir(rtl) {
 }*/
 
 .titlebar .titlebutton {
-    padding: 4px;
+    padding: 2px;
     border-style: solid;
     border-radius: 4px;
     border-color: #012f54;
@@ -181,7 +181,7 @@ GtkSidebarRow .sidebar-label:dir(rtl) {
      box-shadow: none; 
 }
 
-.progressbar,
+/* .progressbar,
 .progressbar row,
 .progressbar row:hover,
 .progressbar row:selected,
@@ -195,8 +195,7 @@ GtkSidebarRow .sidebar-label:dir(rtl) {
 .trough row:selected,
 .trough row:selected:focus {
     border-image: linear-gradient(to top, shade(@theme_bg_color, 1.08)) 4 4 4 4 / 4px 8px 4px 8px stretch;
-}
-
+} */
 /**************
  * over under *
  **************/
@@ -280,4 +279,8 @@ GtkSidebarRow .sidebar-label:dir(rtl) {
 
 GtkTreeView .entry {
 	padding: 0 6px;
+}
+
+GtkStatusbar .frame {
+    border-width: 0;
 }

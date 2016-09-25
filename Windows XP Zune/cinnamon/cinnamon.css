@@ -31,7 +31,7 @@ StScrollView.vfade
 
 StScrollView StScrollBar
 {
-  min-width: 8px;
+  min-width: 16px;
   min-height: 16px;
 }
 
@@ -119,9 +119,10 @@ StScrollBar StButton#vhandle:hover
 }
 
 .popup-menu {
-    background-color: #666666;
+    background-color: #fff;
     border: solid 1px black;
-    color: #fff;
+    border-image: url('popupmenu.png') 8 8 8 8;
+    color: #000;
     font-size: 9pt;
 }
 .popup-submenu-menu-item:open {
@@ -242,12 +243,19 @@ StScrollBar StButton#vhandle:hover
 }
 
 #panelLeft .applet-box:first-child {
-	font-style: italic;
-    text-shadow: 1px 1px 1px 0 black;
+    border-image: url('menu.png') 7 0 0 0;
+    border-right-width: 10px;
+    font-size: 12pt;
+    font-style: italic;
+    font-weight: bold;
 }
 
 #panelLeft .applet-box:first-child:hover {
-	background-color: transparent;
+    border-image: url('menu-hover.png') 7 0 0 0;
+}
+
+#panelLeft .applet-box:first-child:active {
+    border-image: url('menu-active.png') 7 0 0 0;
 }
 
 #panelLeft, #panelCenter {
@@ -827,136 +835,133 @@ border-radius: 0px;
 
 #notification {
  
-	border-radius: 0px;
-	font-size: 8.5pt;
-	background-color: #181818;
-	border: 1px solid #444;
-  	border-bottom: 0px;
-      	border-left: 0px;
-      	border-right: 0px;
-	padding: 6px 6px 6px 6px;
-	spacing-rows: 10px;
-	spacing-columns: 10px;
-	margin-from-right-edge-of-screen: 19px;
-	margin-from-top-edge-of-screen: 30px;
-	width: 27em;
-	color: white;
+    border-radius: 6px;
+    font-size: 8.5pt;
+    background-color: #ffffe1;
+    border: 1px solid #000;
+    padding: 6px 6px 6px 6px;
+    spacing-rows: 10px;
+    spacing-columns: 10px;
+    margin-from-right-edge-of-screen: 19px;
+    margin-from-top-edge-of-screen: 30px;
+    width: 27em;
+    color: black;
 }
 #notification.multi-line-notification {
-	padding-bottom: 8px;
-	color: white;
+    padding-bottom: 8px;
+    color: black;
 }
 /* We use row-span = 2 for the image cell, which prevents its height preferences to be
-	taken into account during allocation, so its height ends up being limited by the height
-	of the content in the other rows. To avoid showing a stretched image, we set the minimum
-	height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 = 159 */
+    taken into account during allocation, so its height ends up being limited by the height
+    of the content in the other rows. To avoid showing a stretched image, we set the minimum
+    height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 = 159 */
 .notification-with-image {
-	min-height: 159px;
-	color: white;
+    min-height: 159px;
+    color: black;
 }
 #notification-scrollview {
-	max-height: 10em;
+    max-height: 10em;
 }
 #notification-scrollview > .top-shadow, #notification-scrollview > .bottom-shadow {
-	height: 1em;
+    height: 1em;
 }
 #notification-scrollview:ltr > StScrollBar {
-	padding-left: 6px;
+    padding-left: 6px;
 }
 #notification-scrollview:rtl > StScrollBar {
-	padding-right: 6px;
+    padding-right: 6px;
 }
 #notification-body {
-	spacing: 5px;
+    spacing: 5px;
 }
 #notification-actions {
-	spacing: 10px;
+    spacing: 10px;
 }
 .notification-button {
-	border-radius: 18px;
-	font-size: 11pt;
-	padding: 4px 42px 5px;
+    border-radius: 18px;
+    font-size: 11pt;
+    padding: 4px 42px 5px;
 }
 .notification-button:focus {
-	padding: 3px 41px 4px;
+    padding: 3px 41px 4px;
 }
 .notification-icon-button {
-	border-radius: 5px;
-	padding: 5px;
+    border-radius: 5px;
+    padding: 5px;
 }
 .notification-icon-button:focus {
-	padding: 4px;
+    padding: 4px;
 }
 .notification-icon-button > StIcon {
-	icon-size: 36px;
+    icon-size: 36px;
 }
 .hotplug-transient-box {
-	spacing: 6px;
-	padding: 2px 72px 2px 12px;
+    spacing: 6px;
+    padding: 2px 72px 2px 12px;
 }
 .hotplug-notification-item {
-	padding: 2px 10px;
-	border-radius: 18px;
-	font-size: 10.5pt;
+    padding: 2px 10px;
+    border-radius: 18px;
+    font-size: 10.5pt;
 }
 .hotplug-notification-item:focus {
-	padding: 1px 71px 1px 11px;
+    padding: 1px 71px 1px 11px;
 }
 .hotplug-notification-item-icon {
-	icon-size: 24px;
-	padding: 2px 5px;
+    icon-size: 24px;
+    padding: 2px 5px;
 }
 .hotplug-resident-box {
-	spacing: 8px;
+    spacing: 8px;
 }
 .hotplug-resident-mount {
-	spacing: 8px;
-	border-radius: 4px;
-	color: #ccc;
+    spacing: 8px;
+    border-radius: 4px;
+    color: #ccc;
 }
 .hotplug-resident-mount:hover {
-	background-gradient-direction: horizontal;
-	background-gradient-start: rgba(255, 255, 255, 0.1);
-	background-gradient-end: rgba(255, 255, 255, 0);
-	color: #fff;
+    background-gradient-direction: horizontal;
+    background-gradient-start: rgba(255, 255, 255, 0.1);
+    background-gradient-end: rgba(255, 255, 255, 0);
+    color: #fff;
 }
 .hotplug-resident-mount-label {
-	color: inherit;
-	padding-left: 6px;
+    color: inherit;
+    padding-left: 6px;
 }
 .hotplug-resident-mount-icon {
-	icon-size: 24px;
-	padding-left: 6px;
+    icon-size: 24px;
+    padding-left: 6px;
 }
 .hotplug-resident-eject-icon {
-	icon-size: 16px;
+    icon-size: 16px;
 }
 .hotplug-resident-eject-button {
-	padding: 7px;
-	border-radius: 5px;
-	color: #ccc;
+    padding: 7px;
+    border-radius: 5px;
+    color: #ccc;
 }
 #notification StEntry {
-	padding: 4px;
-	border-radius: 4px;
-	color: #a8a8a8;
-	selected-color: black;
-	border: 1px solid rgba(245,245,245,0.2);
-	background-gradient-direction: vertical;
-	background-gradient-start: rgb(200,200,200);
-	background-gradient-end: white;
-	transition-duration: 300;
-	caret-color: #a8a8a8;
-	caret-size: 1px;
+    padding: 4px;
+    border-radius: 4px;
+    color: #a8a8a8;
+    selected-color: black;
+    border: 1px solid rgba(245,245,245,0.2);
+    background-gradient-direction: vertical;
+    background-gradient-start: rgb(200,200,200);
+    background-gradient-end: white;
+    transition-duration: 300;
+    caret-color: #a8a8a8;
+    caret-size: 1px;
 }
 #notification StEntry:focus {
-	border: 1px solid #8b8b8b;
-	color: #333333;
-	background-gradient-direction: vertical;
-	background-gradient-start: rgb(200,200,200);
-	background-gradient-end: white;
-	caret-color: #545454;
-	selection-background-color: #808080;
+    border: 1px solid #8b8b8b;
+    color: #333333;
+    background-gradient-direction: vertical;
+    background-gradient-start: rgb(200,200,200);
+    background-gradient-end: white;
+    caret-color: #545454;
+    selection-background-color: #808080;
 }
 
 /* ===================================================================
@@ -969,15 +974,16 @@ border-radius: 0px;
 }
 
 .switcher-list {
-	background-color: #171717;
-	background-gradient-direction: vertical;
-	background-gradient-start: #171717;
-    background-gradient-end: #404040;
-	border-radius: 4px;
-	padding: 20px;
-	border: solid 1px black;
-	box-shadow: 2px solid rgba(0,0,0,0.4) 2px 2px;
-	color: white;
+    background-color: #2d75ad;
+    background-gradient-direction: vertical;
+    background-gradient-start: #2d75ad;
+    background-gradient-end: #013b6b;
+    border-radius: 4px;
+    padding: 20px;
+    border: solid 1px black;
+    box-shadow: 2px solid rgba(0,0,0,0.4) 2px 2px;
+    color: black;
+    border-image: url('tab.png') 4 4 4 4;
 }
 
 .switcher-list-item-container {
@@ -985,10 +991,10 @@ border-radius: 0px;
 }
 
 .thumbnail-scroll-gradient-left {
-    background-color: #171717;
+    background-color: #2d75ad;
     background-gradient-direction: vertical;
-    background-gradient-start: #171717;
-    background-gradient-end: #404040;
+    background-gradient-start: #2d75ad;
+    background-gradient-end: #013b6b;
     border-radius: 24px;
     border-radius-topright: 0px;
     border-radius-bottomright: 0px;
@@ -996,11 +1002,11 @@ border-radius: 0px;
 }
 
 .thumbnail-scroll-gradient-right {
-    background-color: #171717;
+    background-color: #2d75ad;
     background-gradient-direction: vertical;
-    background-gradient-start: #171717;
-    background-gradient-end: #404040;
-    border: 1px solid  #399cee;	
+    background-gradient-start: #2d75ad;
+    background-gradient-end: #013b6b;
+    border: 1px solid  #399cee;    
     border-radius: 0px;
     width: 60px;
     border-bottom: 0px;
@@ -1010,20 +1016,19 @@ border-radius: 0px;
 
 .switcher-list .item-box {
     padding: 8px;
-    border: 1px solid rgba(0,0,0,0);
+    color: black;
+    border: 4px solid rgba(0,0,0,0);
     border-radius: 8px;
 }
 
 .switcher-list .item-box:outlined {
-        color: #fff;
-        background-color: #399cee;	
-        border-radius: 0px;
+    background-color: #399cee;    
+    border-radius: 0px;
 }
 
 .switcher-list .item-box:selected {
-        color: #fff;
-        background-color: #b35108;
-        border-radius: 8px;
+    border-radius: 0px;
+    border: 4px solid #379aff;
 }
 
 .switcher-list .thumbnail-box {
@@ -1046,8 +1051,8 @@ border-radius: 0px;
     background-gradient-end: rgba(57,156,238,0.8);
     background-gradient-start: rgba(0,0,0,0.3);
     background-gradient-direction: radial;
- box-shadow: outset 0px 0px 5px 5px #399cee;
- border-radius: 150px;
+    box-shadow: outset 0px 0px 5px 5px #399cee;
+    border-radius: 150px;
 }
 
 .ripple-box:rtl {
@@ -1056,8 +1061,8 @@ border-radius: 0px;
     background-gradient-end: rgba(57,156,238,0.8);
     background-gradient-start: rgba(0,0,0,0.3);
     background-gradient-direction: radial;
- box-shadow: outset 0px 0px 5px 5px #399cee;
- border-radius: 150px;
+    box-shadow: outset 0px 0px 5px 5px #399cee;
+    border-radius: 150px;
 }
 
 .switcher-arrow {
@@ -1125,12 +1130,12 @@ border-radius: 0px;
 
 .run-dialog-label {
     font-size: 9pt;
-    color: white;
+    color: black;
 }
 
 .run-dialog-error-label {
     font-size: 9pt;
-    color: white;
+    color: black;
 }
 
 .run-dialog-error-box {
@@ -1139,18 +1144,18 @@ border-radius: 0px;
 }
 
 .run-dialog-entry {
-	font-size: 10pt;
-	font-weight: normal;
-	background-color: white;
-	border: 1px solid black;
-	border-radius: 4px;
-	color: black;
-	selected-color: #399cee;
-	caret-color: black;
-	caret-size: 2px;
-	padding-top: 3px;
-	padding-left: 10px;
-	width: 18em;
+    font-size: 10pt;
+    font-weight: normal;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 0;
+    color: black;
+    selected-color: #399cee;
+    caret-color: black;
+    caret-size: 2px;
+    padding: 2px;
+    padding-left: 6px;
+    width: 18em;
 }
 
 .run-dialog-completion-box { 
@@ -1159,11 +1164,13 @@ border-radius: 0px;
 } 
 
 .run-dialog {
-    border-radius: 8px;	
+    border-radius: 8px;    
     padding-right: 21px;
     padding-left: 21px;
     padding-bottom: 15px;
     padding-top: 15px;
+    color: black;
+    border-image: url('tab.png') 4 4 4 4;
 }
 
 .lightbox {
@@ -1515,124 +1522,119 @@ border-radius: 1px;
 
 /* Main menu title */
 
-.menu-background {
-    border-radius: 4px 4px 0 0;
-    background-color: #2f2f2f;
-}
-
-.menu {
-    -arrow-rise: -1px;
-}
-
-.menu-favorites-box {  
+.menu-favorites-box {
+    color: #fff;
     margin: auto;
-    padding: 10px;  
-    border-radius: 0;  
-    background-color: #666666;
+    padding: 0px;
+    background-color: transparent;
+    border-radius: 0px;
+    border-image: url('favs.png') 5 5 5 5;
+    width: 70%;
 }
+
+.menu-background {
+    border-image: url("menu-bg.png") 8 8 63 41;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    padding: 55px 1px 10px 1px;
+}
+
 .menu-favorites-button {
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    border: 1px solid rgba(0,0,0,0);
-    border-radius: 0;
+    padding: 10px;
+    border-radius: 0px;
 }
 
 .menu-favorites-button:hover {
-    background-color: rgba(0,0,0,0.7);
-    border-radius: 4px;
+    background-color: #b35108;
 }
 
 .menu-places-box {  
-    margin: auto;
-    padding: 10px;
-    border: 0px solid #666;  
+      margin: auto;
+      padding: 8px;
+      border: 0px solid #666;  
 }
 
 .menu-places-button {
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;    
+    padding: 10px;
 }
 
 .menu-categories-box {
-    padding-top: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 10px;    
+    padding: 10px;
 }
 
 .menu-applications-box {
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 0px;    
+    padding: 10px 0px 0px 10px;
+    background-color: transparent;
+    border: none;
+/*    border-image: url('favs.png') 5 5 5 5;*/
+}
+
+.menu-applications-inner-box {
+    padding: 0 5px 5px 0;
+    background-color: transparent;
+}
+
+.menu-applications-box StScrollBar {
+    padding: 0px;
+}
+
+.menu-applications-box StScrollView {
+    border: 0px solid #1f1f1f;
+    border-image: none;
+    border-right-width: 0px;
+}
+
+
+.menu-applications-box StBin#trough {
+    background: none;
+    border-width: 0px;
+    box-shadow: none;
+    border-image: url('trough-scrollbar-vert.png') 1;
+}
+
+.menu-applications-box StButton#vhandle {
+    border-image: url('slider-vert.png') 3;
+    background: url('handle-vert.png') no-repeat center center;
+}
+
+.menu-applications-box StButton#vhandle:hover {
+    border-image: url('slider-vert-hover.png') 3;
+    background: url('handle-vert.png') no-repeat center center;
 }
 
 .menu-application-button {
-    padding-top: 7px;
-    padding-left: 7px;
-    padding-right: 7px;
-    padding-bottom: 7px; 
-    max-width: 10px;   
-}
-
-.menu-application-button:highlighted {
-    /* This style is used in menu application buttons for applications which were newly installed */
-    font-weight: bold;
-    background-image: url('urgent.png');
+    padding: 7px;
+    max-width: 10px;
+    color: white;
 }
 
 .menu-application-button-selected {
-    padding-top: 7px;
-    padding-left: 7px;
-    padding-right: 7px;
-    padding-bottom: 7px;
+    padding: 7px;
     color: white;
-    background-color: #b35108; 
-    background-size: fill;
-    border-radius: 0px; 
-}
-
-.menu-application-button-selected:highlighted {
-    /* This style is used in menu application buttons for applications which were newly installed */
-    font-weight: bold;
+    background-color: #b35108;
 }
 
 .menu-application-button-label:ltr { 
-  padding-left: 5px;
+      padding-left: 5px;
 }
 
 .menu-application-button-label:rtl { 
-  padding-right: 5px;
+      padding-right: 5px;
 }
 
 .menu-category-button {
-    padding-top: 7px;
-    padding-left: 7px;
-    padding-right: 7px;
-    padding-bottom: 7px;
+    padding: 7px;
+    color: white;
 }
 
 .menu-category-button-greyed {
-    padding-top: 7px;
-    padding-left: 7px;
-    padding-right: 7px;
-    padding-bottom: 7px; 
-    color: rgba(100,100,100,1);
-    font-style: italic;
+    padding: 7px;
+    color: #808080;
 }
 
 .menu-category-button-selected {
-    padding-top: 7px;
-    padding-left: 7px;
-    padding-right: 7px;
-    padding-bottom: 7px; 
+    padding: 7px;
     color: white;
-    background-color: #b35108; 
-    border-radius: 0px; 
+    background-color: #b35108;
 }
 
 .menu-category-button-label:ltr { 
@@ -1643,16 +1645,15 @@ border-radius: 1px;
     padding-right: 5px       
 }
 
-.menu-category-button-button:hover {    
-    border-radius: 8px;    
-}
-
 /* Name and description of the currently hovered item in the menu
  * This appears on the bottom right hand corner of the menu*/
+ 
 .menu-selected-app-box {
+    padding-top: 16px;
     padding-right: 30px;
     padding-left: 28px;
     text-align: right;
+    color: white;
 }
 
 .menu-selected-app-title {
@@ -1662,28 +1663,22 @@ border-radius: 1px;
 .menu-selected-app-description {
     max-width: 150px;
 }
-
-.menu-search-box {
-   padding-left: 30px;
-}
-
 #menu-search-entry, #menu-search-entry:hover, #menu-search-entry:focus {
     padding: 5px 6px;
     color: #000;
     font: 9pt;
     height: 18px;
-    width: 220px;
+    width: 250px;
     selected-color: white;
     caret-color: #000;
     background-color: white;
     caret-size: 1px;
+    margin-bottom: 10px;
 }
 
-#menu-search-entry:hover .search-entry-icon {
-    color: #FFF;
-}
-
-#menu-search-entry:focus .search-entry-icon {
+.menu-search-box {
+   padding-left: 20px;
+   padding-bottom: 1px;
 }
 
 .menu-search-entry-icon {
@@ -1693,7 +1688,6 @@ border-radius: 1px;
 
 /* Context menu (at the moment only for favorites) */
 .menu-context-menu {
-
 }
 
 /* ===================================================================
@@ -1719,13 +1713,17 @@ border-radius: 1px;
 
 .window-list-item-box:active,
 .window-list-item-box:checked,
-.window-list-item-box:focus	{ 
+.window-list-item-box:focus    { 
     border-image: url('active.png');
 }
 
 
 .window-list-item-box:hover  {  
-    border-image: url('urgent.png');
+    border-image: url('hover.png');
+}
+
+.window-list-item-box:focus:hover  {  
+    border-image: url('active-hover.png');
 }
 
 .window-list-item-demands-attention {
@@ -1939,8 +1937,8 @@ padding-bottom: 10px;
  
 }
 
-.applet-label {
-    font-weight: bold;
+.applet-label:not(:first-child) {
+    font-weight: normal;
 }
 
 .applet-label:hover,
@@ -1965,7 +1963,7 @@ padding-bottom: 10px;
 	font-size: 25pt;	
 	text-align: center;
 	background: #404040;
-	border: 2px solid #399cee;
+	border: 2px solid #1f1f1f;
 	border-radius: 4px;
 	padding: 0.5em 1em;
 }
@@ -2143,4 +2141,38 @@ The colour parameters are red, green, blue, and transparency or a name */
     padding-bottom: 20px;
     padding-top: 20px;
     text-align: center;    
+}
+
+/* ===================================================================
+ * CinnXPStarkMenu 
+ * (if CinnXPStarkMenu is used, change some stuff, else use default)
+ * ===================================================================*/
+.right-buttons-box {
+    background-color: #666666;
+    padding: 8px;
+}
+.starkmenu-background {
+    padding: 54px 1px 29px 1px;
+}
+.starkmenu-selected-app-box {
+    color: black; /* Information, which is shown, if you select apps*/
+}
+.starkmenu-favorites-box {  
+    background-color: #2f2f2f;
+    border: 0px solid #2f2f2f;
+}
+.starkmenu-applications-box {
+    padding: 0px 0px 0px 0px;
+}
+.starkmenu-applications-inner-box {
+    background-color: #666666;
+}
+.starkmenu-applications-box StScrollView {
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    background-color: #2f2f2f;
+    color: black;
+}
+.starkmenu-search-box {
+    padding-bottom: 5px;
 }

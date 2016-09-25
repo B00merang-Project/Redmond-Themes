@@ -90,7 +90,7 @@ GtkSidebarRow .sidebar-label:dir(rtl) {
 }*/
 
 .titlebar .titlebutton {
-    padding: 4px;
+    padding: 2px;
     border-style: solid;
     border-radius: 4px;
     border-color: #012f54;
@@ -279,4 +279,8 @@ GtkSidebarRow .sidebar-label:dir(rtl) {
 
 GtkTreeView .entry {
 	padding: 0 6px;
+}
+
+GtkStatusbar .frame {
+    border-width: 0;
 }
