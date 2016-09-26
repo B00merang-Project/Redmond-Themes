@@ -2074,7 +2074,7 @@ style "progressbar"
       function				= BOX
       detail				= "bar"
       file				= "ProgressBar/progressbar.png"
-      stretch				= TRUE
+      stretch				= FALSE
       border				= { 3, 3, 3, 3 }
       orientation			= HORIZONTAL
     }
@@ -2092,7 +2092,7 @@ style "progressbar"
       function				= BOX
       detail				= "bar"
       file				= "ProgressBar/progressbar_v.png"
-      stretch				= TRUE
+      stretch				= FALSE
       border				= { 3, 3, 3, 3 }
       orientation			= VERTICAL
     }

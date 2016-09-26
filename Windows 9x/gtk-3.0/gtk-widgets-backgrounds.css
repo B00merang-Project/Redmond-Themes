@@ -248,39 +248,27 @@ column-header.button:active:hover {
  * progressbar *
  ***************/
 
-.progressbar {
-	background-image: linear-gradient(to left,
-	                                  transparent,
-                                      transparent 37.5%,
-                                      @theme_bg_color 37.5%,
-                                      @theme_bg_color 50%,
-                                      transparent 50%,
-                                      transparent 87.5%,
-                                      @theme_bg_color 87.5%,
-                                      @theme_bg_color 100%),
-	                  linear-gradient(to bottom,
-                                      @theme_selected_bg_color,
-                                      @theme_selected_bg_color,
-                                      @theme_selected_bg_color);
-    background-size: 19px 19px, auto;
-	border: 2px solid transparent;
-}
+GtkProgressBar.trough {
+     border: 1px solid transparent;
+     border-radius: 0;
+     background-color: @theme_bg_color;
+     box-shadow: inset -1px -1px white, inset 1px 1px 0 1px #1f1f1f;
+     padding: 3px 4px; }
+GtkProgressBar.trough.vertical {
+     border: 1px solid transparent;
+     border-radius: 0;
+     background-color: @theme_bg_color;
+     box-shadow: inset -1px -1px white, inset 1px 1px 0 1px #1f1f1f;
+     padding: 4px 3px; }
 
+.progressbar {
+     background-image: linear-gradient(to right, transparent, transparent 37.5%, @theme_bg_color 37.5%, @theme_bg_color 50%, transparent 50%, transparent 87.5%, @theme_bg_color 87.5%, @theme_bg_color 100%), linear-gradient(to bottom, @theme_selected_bg_color);
+     background-size: 20px 20px, auto;
+     border: none;
+     border-radius: 0px;
+     box-shadow: none; }
 .progressbar.vertical {
-	border: 2px solid transparent;
-    background-image: linear-gradient(to top,
-	                                  transparent,
-                                      transparent 37.5%,
-                                      @theme_bg_color 37.5%,
-                                      @theme_bg_color 50%,
-                                      transparent 50%,
-                                      transparent 87.5%,
-                                      @theme_bg_color 87.5%,
-                                      @theme_bg_color 100%),
-	                  linear-gradient(to right,
-                                      @theme_selected_bg_color,
-                                      @theme_selected_bg_color,
-                                      @theme_selected_bg_color);
+     background-image: linear-gradient(to bottom, transparent, transparent 37.5%, @theme_bg_color 37.5%, @theme_bg_color 50%, transparent 50%, transparent 87.5%, @theme_bg_color 87.5%, @theme_bg_color 100%), linear-gradient(to right, @theme_selected_bg_color);
 }
 
 .progressbar row,

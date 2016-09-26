@@ -174,7 +174,7 @@
     border: 2px solid transparent;
     border-radius: 0;
     border-image: url("Range/trough-horiz.png");
-    border-image-slice: 2 2 2 2;
+    border-image-slice: 4 4 4 4;
     border-image-repeat: stretch;
     border-left-color: black;
 }
@@ -184,6 +184,6 @@
     border: 2px solid transparent;
     border-radius: 0;
     border-image: url("Range/trough-vert.png");
-    border-image-slice: 2 2 2 2;
+    border-image-slice: 4 4 4 4;
     border-image-repeat: stretch;
 }

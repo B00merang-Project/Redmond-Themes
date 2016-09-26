@@ -1,8 +1,9 @@
-﻿/* OS X El Capitan - Shell theme (spinoff from the Windows 10 SHELL theme)
+﻿/* 
+* Windows 9x Shell theme (spinoff from the Windows 10 SHELL theme)
 *
-*Author : Christian Medel (Elbullazul)
+* Author : Christian Medel (Elbullazul)
 *
-*More info : b00merang.weebly.com/os-x-el-capitan.html
+* More info : b00merang.weebly.com/redmond-collection.html
 *
 * Layout and code style adapted from the Paper theme & Flat Remix theme.
 *
@@ -132,25 +133,21 @@ StScrollBar {
 .check-box StBoxLayout {
 	spacing: .8em; }
 .check-box StBin {
-	width: 24px;
-	height: 22px;
-	background-image: url("assets/checkbox-off.svg"); }
-.check-box:focus StBin {
-	background-image: url("assets/checkbox-off-focused.svg"); }
+	width: 15px;
+	height: 15px;
+	background-image: url("assets/checkbox-off.png"); }
 .check-box:checked StBin {
-	background-image: url("assets/checkbox.svg"); }
-.check-box:focus:checked StBin {
-	background-image: url("assets/checkbox-focused.svg"); }
+	background-image: url("assets/checkbox.png"); }
 
 /* Switches */
 .toggle-switch {
-	width: 72px;
-	height: 21px;
+	width: 15px;
+	height: 15px;
 	background-size: contain; }
 	.toggle-switch-intl, .toggle-switch-us {
-		background-image: url("assets/off.png"); }
+		background-image: url("assets/checkbox-off.png"); }
 	.toggle-switch-intl:checked, .toggle-switch-us:checked {
-		background-image: url("assets/on.png"); }
+		background-image: url("assets/checkbox.png"); }
 
 /* links */
 .shell-link {
@@ -513,8 +510,8 @@ StScrollBar {
 	border: 0 solid rgba(25,25,25,0.7); }
 
 .switcher-list .item-box:selected {
-	border-radius: 4px;
-	background-color: rgba(255,255,255,0.4);
+	border-radius: 0;
+	background-color: #000082;
 	color: white; }
 
 .switcher-list .thumbnail-box {
@@ -573,9 +570,8 @@ StScrollBar {
 	background-color: rgba(25,25,25,0.7);
 	border-image: url('assets/dash.png') 4 4 4 4;
 	border: none;
-	border-radius: 6px;
+	border-radius: 0;
 	padding: 12px;
-	box-shadow: 0 5px 10px 0 gray;
 	border: none; }
 
 /* Tiled window previews */
@@ -596,11 +592,10 @@ StScrollBar {
 #panel {
 	font-weight: normal;
 	font-size: 90%;
-	color: white;
-	height: 24px;
+	color: black;
+	height: 28px;
 	background-color: rgba(255,255,255,0);
-	box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.5);
-	text-shadow: 1px 1px black;
+	border-image: url('assets/dash.png') 4 4 4 4;
 }
 	#panel.unlock-screen, #panel.login-screen, #panel.lock-screen {
 		background-color: transparent; }
@@ -622,28 +617,23 @@ StScrollBar {
 		-natural-hpadding: 12px;
 		-minimum-hpadding: 6px;
 		font-weight: normal;
-		color: white;
-		text-shadow: 1px 1px black;
+		color: black;
 		transition-duration: 100ms;
 }
 		#panel .panel-button .app-menu-icon {
-			-st-icon-style: symbolic;
+			-st-icon-style: regular;
 			margin-left: 4px;
-			height: 0;
-			width: 0;
 			margin-right: 4px; }
 		#panel .panel-button:hover,#panel .panel-button:overview:hover {
-			color: gray;
+			color: black;
 			text-shadow:none;
 			icon-shadow:none;	}
 		#panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked {
-			background-color: rgba(0,0,0,0.95);
+			border-image: url('assets/checked.png') 4 4 4 4;
+			background: #d3d0c7;
 			box-shadow: none;
 			background-image: none;
-			background-gradient-direction: vertical;
-			background-gradient-start: rgba(80,80,80,0.8);
-			background-gradient-end: rgba(100,100,100,1);
-			color: white;
+			color: black;
 			text-shadow:none;
 			icon-shadow:none; }
 			#panel .panel-button:active > .system-status-icon, #panel .panel-button:overview > .system-status-icon, #panel .panel-button:focus > .system-status-icon, #panel .panel-button:checked > .system-status-icon {
@@ -663,7 +653,7 @@ StScrollBar {
 
 #panelActivities * {
 	border:none;
-	background-image: url("assets/view-grid-symbolic.svg");
+	background-image: url("assets/start.png");
 	background-size: 20px 20px;
 	background-position: 0 0;
 	margin: 0px;
