@@ -1,8 +1,8 @@
-**Redmond Themes repository**
-
-http://b00merang.weebly.com/redmond-collection
+### Redmond Themes repository ###
 
 **You will find here most of our themes related to Windows but not important enough to get their own repo like the Windows 10 theme did.**
+
+*Recommended Icon theme: https://github.com/feren/Windows8Icons*
 
 Themes included to date : 
 - Windows 3.x (credit to matthewmx86 ​and snovbx on GNOME LOOK.org)
