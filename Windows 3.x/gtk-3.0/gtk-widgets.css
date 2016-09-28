@@ -1156,6 +1156,11 @@ GtkModelMenuItem GtkBox GtkImage {
 
 .notebook GtkTextView {
     background-color: @notebook_bg;
+    box-shadow: none;
+}
+
+.notebook .header {
+    background-color: @bg_color;
 }
 
 .notebook tab {
@@ -1191,6 +1196,11 @@ GtkModelMenuItem GtkBox GtkImage {
 	border-image-repeat: stretch;
 }
 
+.notebook tab:active,
+.notebook tab:checked, {
+    background-color: @bg_color;
+}
+
 .notebook tab.top {
     border-width: 8px 5px 0 5px;
     border-image: url("Notebook/tab-top.png");
@@ -1216,21 +1226,25 @@ GtkModelMenuItem GtkBox GtkImage {
 }
 
 .notebook tab.top:active {
+    background-color: @theme_bg_color;
     border-image: url("Notebook/tab-top-active.png");
     border-image-slice: 8 5 0 5;
 }
 
 .notebook tab.bottom:active {
+    background-color: @theme_bg_color;
     border-image: url("Notebook/tab-bottom-active.png");
     border-image-slice: 0 5 5 5;
 }
 
 .notebook tab.left:active {
+    background-color: @theme_bg_color;
     border-image: url("Notebook/tab-left-active.png");
     border-image-slice: 6 0 7 7;
 }
 
 .notebook tab.right:active {
+    background-color: @theme_bg_color;
     border-image: url("Notebook/tab-right-active.png");
     border-image-slice: 6 7 7 0;
 }

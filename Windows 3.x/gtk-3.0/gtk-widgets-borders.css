@@ -51,6 +51,8 @@ GtkScaleButton.button:active:hover,
 .notebook tab .button:active:hover,
 .floating-bar .button:active,
 .floating-bar .button:active:hover,
+.header-bar .button:active,
+.header-bar .button:checked,
 #gtk-scalebutton-popup-window .button:active,
 #gtk-scalebutton-popup-window .button:active:hover {
 border-style: solid;
@@ -101,6 +103,7 @@ GtkScaleButton.button:insensitive:active,
 	border-radius: 3px;
 }
 
+.button:focus,
 .button.default,
 .button.default:hover,
 .button.default:active {

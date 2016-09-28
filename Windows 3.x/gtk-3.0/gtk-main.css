@@ -47,7 +47,7 @@
 
 /* Notebooks */
 
-@define-color notebook_bg @theme_bg_color;
+@define-color notebook_bg @theme_base_color;
 @define-color notebook_bg_a @theme_bg_color;
 @define-color notebook_bg_b @theme_bg_color;
 @define-color notebook_borders_color #000;

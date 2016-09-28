@@ -53,6 +53,8 @@ GtkScaleButton.button:active:hover,
 .notebook tab .button:active:hover,
 .floating-bar .button:active,
 .floating-bar .button:active:hover,
+.header-bar .button:active,
+.header-bar .button:checked,
 #gtk-scalebutton-popup-window .button:active,
 #gtk-scalebutton-popup-window .button:active:hover {
 	border-style: solid;
@@ -106,7 +108,8 @@ GtkScaleButton.button:insensitive:active,
 
 .button.default,
 .button.default:hover,
-.button.default:active {
+.button.default:active,
+.button:focus {
     border: 1px solid @button_borders;
 	box-shadow: inset -1px -1px 1px 0 black, /* to add missing gradient */
 				inset 1px 0 white,
