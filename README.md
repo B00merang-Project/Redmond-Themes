@@ -1,8 +1,8 @@
-**Redmond Themes repository**
-
-http://b00merang.weebly.com/redmond-collection
+### Redmond Themes repository ###
 
 **You will find here most of our themes related to Windows but not important enough to get their own repo like the Windows 10 theme did.**
+
+*Recommended Icon theme: https://github.com/feren/Windows8Icons*
 
 Themes included to date : 
 - Windows 3.x (credit to matthewmx86 ​and snovbx on GNOME LOOK.org)
@@ -23,7 +23,11 @@ Themes included to date :
 - Windows Se7en
 ![thumbnail](https://cloud.githubusercontent.com/assets/15310985/15807835/66096cc2-2b35-11e6-882d-04239f5d1e1a.png)
 
-Possible future themes : 
-- Windows 8 Cinnamon theme
+- Windows 8 Cinnamon
+![thumbnail](http://b00merang.weebly.com/uploads/1/6/8/1/16813022/8608806_orig.png?294)
+
+**Possible themes coming...**
+- Windows XP Royale dark
+- Windows Classic (Windows 7 with old windows 9x-like appearance)
 
 *For a quick installation guide, visit http://b00merang.weebly.com/how-to-install-themes.html*
