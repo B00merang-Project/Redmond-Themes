@@ -1533,7 +1533,7 @@ border-radius: 1px;
 }
 
 .menu-background {
-    border-image: url("menu-bg.png") 8 8 63 41;
+    border-image: url("menu-bg.png") 8 8 56 41;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
     padding: 55px 1px 10px 1px;
 }
