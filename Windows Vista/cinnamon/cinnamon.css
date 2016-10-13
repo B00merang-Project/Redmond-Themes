@@ -362,8 +362,15 @@ StScrollBar StButton#hhandle:focus {
     outline: none;
     color: #326b65;
     font-size: 9pt;
-    height: 28px;
+    height: 30px;
     padding: 0px;
+}
+
+.panel-dummy {
+    background-color: rgba(50, 50, 50, 0.4);
+}
+.panel-dummy:entered {
+    background-color: rgba(255, 35, 35, 0.4);
 }
 
 #panelLeft .applet-box:first-child {
@@ -407,19 +414,18 @@ StScrollBar StButton#hhandle:focus {
 
 .panel-status-button,
 .panel-button {
--natural-hpadding: 5px;
--minimum-hpadding: 5px;
+-natural-hpadding: 3px;
+-minimum-hpadding: 3px;
     font-weight: bold;
     border: 1px solid transparent;
-    transition-duration: 150; 
 }
 
 .panel-status-button:hover,
 .panel-button:hover {
-    border-image: url('buttons/button.png') 3;
+    border-image: url('buttons/button.png') 0;
     border-radius: 0px;
     color: black;
-    box-shadow: inset 0px -1px 0px 0px rgba(37,154,202,1);
+    box-shadow: inset 0px 0px 0px 0px rgba(37,154,202,1);
     transition-duration: 100;
 }
 
@@ -437,6 +443,15 @@ StScrollBar StButton#hhandle:focus {
 
 #panelRight:dnd {
     background: #111;
+}
+
+.panel-corner {
+	-panel-corner-radius: 0px;
+	-panel-corner-background-color: black;
+	-panel-corner-inner-border-width: 2px;
+	-panel-corner-inner-border-color: transparent;
+	-panel-corner-outer-border-width: 1px;
+	-panel-corner-outer-border-color: #536272;
 }
 /* ===================================================================
  * Expo view
@@ -1626,10 +1641,10 @@ StScrollBar StButton#hhandle:focus {
  * Window list (windowList.js)
  * ===================================================================*/
 .window-list-box {
-    spacing: 2px;   
-    padding-top: 0;   
+	spacing: 1px;
+	padding-left: 10px;
+	padding-top: 1px;
 }
-
 .window-list-item-label {
     font-weight: normal;
     width: 15em;
