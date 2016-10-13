@@ -1,0 +1,166 @@
+/*******************
+ * check and radio *
+ *******************/
+
+check,
+check row:selected,
+check row:selected:focus {
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/checkbox-unchecked.png"));
+}
+
+check:checked,
+check row:selected:checked,
+check row:selected:focus:checked {
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/checkbox-checked.png"));
+}
+
+check:checked:disabled,
+check row:selected:checked:disabled,
+check row:selected:focus:checked:disabled {
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/checkbox-checked-insensitive.png"));
+}
+
+check:disabled,
+check row:selected:disabled,
+check row:selected:focus:disabled  {
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/checkbox-unchecked-insensitive.png"));
+}
+
+check:indeterminated,
+check row:selected:indeterminated,
+check row:selected:focus:indeterminated {
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/checkbox-mixed.png"));
+}
+
+check:indeterminated:disabled,
+check row:selected:indeterminated:disabled,
+check row:selected:focus:indeterminated:disabled {
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/checkbox-mixed-insensitive.png"));
+}
+
+radio,
+.view.cellradio {
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/radio-unchecked.png"));
+}
+
+radio:checked {
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/radio-checked.png"));
+}
+
+radio:disabled {
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/radio-unchecked-insensitive.png"));
+}
+
+radio:checked:disabled {
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/radio-checked-insensitive.png"));
+}
+
+radio:indeterminated {
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/radio-mixed.png"));
+}
+
+radio:indeterminated:disabled {
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/radio-mixed-insensitive.png"));
+}
+
+/* Menu check-radio */
+
+menuitem check:checked {
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/Menu/menu-check-checked.png"));
+}
+
+menuitem check:checked:hover {
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/Menu/menu-check-checked-hover.png"));
+}
+
+menuitem check:checked:disabled {
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/Menu/menu-check-checked-insensitive.png"));
+}
+
+menuitem check:indeterminated {
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/Menu/menu-check-mixed.png"));
+}
+
+menuitem check:indeterminated:disabled {
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/Menu/menu-check-mixed-insensitive.png"));
+}
+
+menuitem check:indeterminated:hover {
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/Menu/menu-check-mixed-hover.png"));
+}
+
+menuitem radio:checked {
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/Menu/menu-radio-checked.png"));
+}
+
+menuitem radio:checked:hover {
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/Menu/menu-radio-checked-hover.png"));
+}
+
+menuitem radio:checked:disabled {
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/Menu/menu-radio-checked-insensitive.png"));
+}
+
+menuitem radio:indeterminated {
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/Menu/menu-radio-mixed.png"));
+}
+
+menuitem radio:indeterminated:disabled {
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/Menu/menu-radio-mixed-insensitive.png"));
+}
+
+menuitem radio:indeterminated:hover {
+    -gtk-icon-source: -gtk-scaled(url("Check-Radio/Menu/menu-radio-mixed-hover.png"));
+}
+
+
+/******************
+ * pane separator *
+ ******************
+
+paned > separator {
+    -gtk-icon-source: -gtk-scaled(url("Handles/pane-separator-grip-vertical.png"), url("assets/pane-separator-grip-vertical@2.png"));
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+paned > separator.vertical {
+    -gtk-icon-source: -gtk-scaled(url("Handles/pane-separator-grip.png"), url("assets/pane-separator-grip@2.png"));
+}
+
+ ****************
+ * scale slider *
+ ****************/
+
+scale trough,
+scale trough:disabled {
+    border: 5px solid transparent;
+    border-radius: 0;
+    border-image: url("Range/trough-horiz.png");
+    border-image-slice: 5 5 5 5;
+    border-image-repeat: stretch;
+    border-left-color: black;
+}
+
+scale.vertical trough,
+scale.vertical trough:disabled {
+    border: 5px solid transparent;
+    border-radius: 0;
+    border-image: url("Range/trough-vert.png");
+    border-image-slice: 5 5 5 5;
+    border-image-repeat: stretch;
+}
+
+scale slider,
+scale slider.horizontal {
+    min-height: 22px;
+    min-width: 22px;
+    margin: -11px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("Range/slider-horiz.png");
+}
+
+scale.vertical slider {
+    background-image: url("Range/slider-vert.png");
+}

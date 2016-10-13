@@ -1,0 +1,68 @@
+/* Default Color Scheme */
+
+@define-color theme_bg_color #d3d0c7;
+@define-color theme_fg_color #000000;
+@define-color theme_base_color #ffffff;
+@define-color theme_text_color #000000;
+@define-color theme_selected_bg_color #000082;
+@define-color theme_selected_fg_color #ffffff;
+@define-color theme_tooltip_bg_color #FFFFBF;
+@define-color theme_tooltip_fg_color @theme_text_color;
+@define-color theme_tooltip_borders black;
+
+/* Misc Colors */
+
+@define-color insensitive_fg_color #a1a192;
+@define-color border shade(@theme_bg_color, 0.7);
+@define-color internal_element_color shade(@theme_fg_color, 0.7);
+@define-color internal_element_prelight shade(@theme_fg_color, 0.9);
+@define-color insensitive_borders_color #c9c7ba;
+@define-color insensitive_inner_box #f5f4ea;
+@define-color frame_color #000;
+@define-color backdrop_text_color #aca899;
+@define-color borders_color #000;
+@define-color separator_color shade(@theme_bg_color, 0.6);
+
+/* Buttons */
+
+@define-color button_bg @theme_bg_color;
+@define-color button_fg @theme_fg_color;
+@define-color button_borders #000;
+
+/* Arrow */
+
+@define-color arrow #000;
+@define-color arrow_insensitive #4c4c4c;
+
+/* Entry */
+
+@define-color entry_borders #999999;
+@define-color insensitive_entry_borders_color #333333;
+
+/* Menus */
+
+@define-color menu_borders @theme_bg_color;
+@define-color menu_bg @theme_bg_color;
+@define-color menu_fg @theme_fg_color;
+
+/* Notebooks */
+
+@define-color notebook_bg @theme_bg_color;
+@define-color notebook_bg_a @theme_bg_color;
+@define-color notebook_bg_b @theme_bg_color;
+@define-color notebook_borders_color #000;
+
+/* Views */
+
+@define-color sidebar_bg @theme_base_color;
+
+/* Nemo */
+@define-color nemo_searchbar_bg_color @theme_base_color;
+@define-color nemo_places_bg_color @theme_base_color;
+
+@import url("gtk-main-common.css");
+@import url("gtk-widgets.css");
+@import url("gtk-widgets-borders.css");
+@import url("gtk-widgets-backgrounds.css");
+@import url("gtk-widgets-assets.css");
+@import url("gnome-3.18.css");
