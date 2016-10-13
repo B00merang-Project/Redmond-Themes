@@ -1480,8 +1480,8 @@ StScrollBar StButton#hhandle:focus {
     -arrow-rise: -1px;
     border: 1px solid rgba(255,255,255,0.5);
     background-gradient-direction: vertical;
-    background-gradient-start: rgba(70,70,70,.95);
-    background-gradient-end: rgba(20,20,20,.95);
+    background-gradient-start: rgba(70,70,70,.85);
+    background-gradient-end: rgba(20,20,20,.85);
     box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.5);
     border-radius: 6px 6px 0px 0px;
     border-radius-bottomright: 0px;
@@ -1655,8 +1655,9 @@ StScrollBar StButton#hhandle:focus {
 
 .window-list-item-box {
 	background: transparent;
-	transition-duration: 200;	color: #FFF; max-width: 134px;
-
+	transition-duration: 200;
+	color: #FFF;
+    max-width: 134px;
 }
 
 .window-list-item-box {
