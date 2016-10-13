@@ -366,6 +366,18 @@ StScrollBar StButton#hhandle:focus {
     padding: 0px;
 }
 
+#panelLeft .applet-box:first-child {
+	background: url("buttons/vista/OBB1.png");
+	width: 50px; transition-duration: 300;
+	color: rgba(255,0,0,0) !important;
+}
+#panelLeft .applet-box:first-child:hover {
+	background: url("buttons/vista/OBB2.png");
+}
+#panelLeft .applet-box:first-child:active {
+	background: url("buttons/vista/OBB3.png");
+}
+
 #panelLeft, #panelCenter, #panelRight {
     spacing: 0px;
 }
@@ -1624,6 +1636,12 @@ StScrollBar StButton#hhandle:focus {
     padding-left: 0px;
     padding-right: 0px;
     min-width: 5px;
+}
+
+.window-list-item-box {
+	background: transparent;
+	transition-duration: 200;	color: #FFF; max-width: 134px;
+
 }
 
 .window-list-item-box {
