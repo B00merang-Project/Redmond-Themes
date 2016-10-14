@@ -1998,12 +1998,13 @@ GtkTextView {
 .toolbar {
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
-                                     from (shade (#5d7e91, 1.05)),
-                                     color-stop (0.4, shade (#82aac0, 1.00)),
-                                     color-stop (0.41, shade (#427f9f, 1.00)),
-                                     color-stop (0.89, shade (#054f73, 1.00)),
-                                     color-stop (0.98, shade (#4790a6, 1.00)),
-                                     to (shade (#5e8896, 1.05)));
+                                     from (shade (#82aebd, 1.00)),
+                                     color-stop (0.4, shade (#609aad, 1.00)),
+                                     color-stop (0.50, shade (#508ea2, 1.00)),
+                                     color-stop (0.51, shade (#1d6b77, 1.00)),
+                                     color-stop (0.89, shade (#33788b, 1.00)),
+                                     color-stop (0.98, shade (#508ea2, 1.00)),
+                                     to (shade (#609aad, 1.00)));
   
     padding: 5px;
     color: @fg_color;
