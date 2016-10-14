@@ -33,3 +33,4 @@ Themes included to date :
 - Windows Whistler Watercolor (2.0)
 
 *For a quick installation guide, visit http://b00merang.weebly.com/how-to-install-themes.html*
+**All resources belong to Microsoft Corporation. All rights are reserved to Microsoft. Windows is a trademark of Microsoft. Windows Vista is a trademark of Microsoft.**
