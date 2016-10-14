@@ -1,51 +1,53 @@
 <?xml version="1.0"?>
 <metacity_theme>
 	<info>
-		<name>Win2-7(Pixmap)</name>
-		<author>Christoph Brill &lt;egore911@egore911.de&gt; (metacity XML) Mod by juandejesuss</author>
-		<copyright>&#194; Christoph Brill, 2007</copyright>
-		<date>August 21, 2010</date>
-		<description>A Modification for Win2-7 gtk-themes.</description>
+		<name>Win2-7Basic</name>
+		<author>Juandejesuss</author>
+		<copyright>GPL</copyright>
+		<date>August 26, 2010</date>
+		<description>A theme for gtk-theme Win2-7Basic. setbutton_border bottom=0</description>
 	</info>
 
 	<!-- ::: GEOMETRY ::: -->
-	<frame_geometry name="normal" rounded_top_left="true" rounded_top_right="true" rounded_bottom_left="true" rounded_bottom_right="true">
+	<frame_geometry name="normal" rounded_top_left="true" rounded_top_right="true" rounded_bottom_left="false" rounded_bottom_right="false">
 		<distance name="left_width" value="6"/>
 		<distance name="right_width" value="6"/>
 		<distance name="bottom_height" value="6"/>
 		<distance name="left_titlebar_edge" value="6"/>
-		<distance name="right_titlebar_edge" value="9"/>
-		<distance name="button_width" value="25"/>
-		<distance name="button_height" value="23"/>
+		<distance name="right_titlebar_edge" value="7"/>
+		<distance name="button_width" value="32"/>
+		<distance name="button_height" value="18"/>
 		<distance name="title_vertical_pad" value="1"/>
-		<border name="title_border" left="0" right="0" top="1" bottom="0"/>
-		<border name="button_border" left="0" right="0" top="1" bottom="4"/>
+		<border name="title_border" left="0" right="0" top="5" bottom="0"/>
+		<border name="button_border" left="1" right="0" top="9" bottom="4"/>
 	</frame_geometry>
 
 	<frame_geometry name="maximized" parent="normal" rounded_top_left="false" rounded_top_right="false" rounded_bottom_left="false" rounded_bottom_right="false">
-		<distance name="left_width" value="1"/>
-		<distance name="right_width" value="1"/>
+		<distance name="left_width" value="0"/>
+		<distance name="right_width" value="0"/>
 		<distance name="bottom_height" value="0"/>
-                <distance name="left_titlebar_edge" value="2"/>
-                <distance name="right_titlebar_edge" value="4"/>
+                <distance name="left_titlebar_edge" value="1"/>
+                <distance name="right_titlebar_edge" value="1"/>
+                <border name="title_border" left="0" right="0" top="2" bottom="1"/>
+                <border name="button_border" left="1" right="0" top="3" bottom="1"/>
 	</frame_geometry>
 
 	<!-- define constants -->
 	<constant name="CaptionStart" value="0"/>
-	<constant name="TitlebarPad" value="25"/>
+	<constant name="TitlebarPad" value="6"/>
 
 	<!-- Buttons -->
 	<draw_ops name="button_menu_focused">
-		<icon alpha="0.9" x="(width-mini_icon_width)/2" y="5" width="mini_icon_width" height="mini_icon_height"/>
+		<icon alpha="0.9" x="(width-mini_icon_width)/2" y="2" width="mini_icon_width" height="mini_icon_height"/>
 	</draw_ops>
 	<draw_ops name="button_menu_unfocused">
-		<icon alpha="0.6" x="(width-mini_icon_width)/2" y="5" width="mini_icon_width" height="mini_icon_height"/>
+		<icon alpha="0.6" x="(width-mini_icon_width)/2" y="2" width="mini_icon_width" height="mini_icon_height"/>
 	</draw_ops>
 	<draw_ops name="button_menu_pressed">
-		<icon alpha="0.4" x="(width-mini_icon_width)/2" y="5" width="mini_icon_width" height="mini_icon_height"/>
+		<icon alpha="0.4" x="(width-mini_icon_width)/2" y="2" width="mini_icon_width" height="mini_icon_height"/>
 	</draw_ops>
 	<draw_ops name="button_menu_prelight">
-		<icon alpha="1.0" x="(width-mini_icon_width)/2" y="5" width="mini_icon_width" height="mini_icon_height"/>
+		<icon alpha="1.0" x="(width-mini_icon_width)/2" y="2" width="mini_icon_width" height="mini_icon_height"/>
 	</draw_ops>
 
 	<draw_ops name="button_minimize_focused">
@@ -101,11 +103,11 @@
 	</draw_ops>
 
 	<draw_ops name="title_focused">
-		<title color="#000" x="CaptionStart" y="((height - title_height) / 2) `max` 0"/>
+		<title color="#220905" x="0 `max` (width-title_width)/2" y="((height - title_height) / 2) `max` 0"/>
 	</draw_ops>
 
 	<draw_ops name="title_unfocused">
-		<title color="#424D53" x="CaptionStart" y="((height - title_height) / 2) `max` 0"/>
+		<title color="#95989b" x="0 `max` (width-title_width)/2" y="((height - title_height) / 2) `max` 0"/>
 	</draw_ops>
 
 	<draw_ops name="titlebar_max">

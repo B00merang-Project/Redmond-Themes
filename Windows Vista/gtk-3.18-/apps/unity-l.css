@@ -1,0 +1,125 @@
+/* Decorations */
+
+UnityDecoration {
+    -UnityDecoration-extents: 28px 4px 4px 4px;
+    -UnityDecoration-input-extents: 10px;
+
+    -UnityDecoration-shadow-offset-x: 1px;
+    -UnityDecoration-shadow-offset-y: 5px;
+    -UnityDecoration-active-shadow-color: rgba (0, 0, 0, 0.75);
+    -UnityDecoration-active-shadow-radius: 30px;
+    -UnityDecoration-inactive-shadow-color: rgba (0, 0, 0, 0.3);
+    -UnityDecoration-inactive-shadow-radius: 25px;
+
+    -UnityDecoration-glow-size: 10px;
+    -UnityDecoration-glow-color: rgb (221, 72, 20);
+
+    -UnityDecoration-title-indent: 10px;
+    -UnityDecoration-title-fade: 35px;
+    -UnityDecoration-title-alignment: 0.0;
+}
+
+UnityDecoration.top {
+    border: 1px solid rgba (0, 3, 5, 0.03); /* shade (@dark_bg_color, 1.04) - shade (@dark_bg_color, 1.5) */
+    border-bottom-width: 0;
+    border-radius: 3px 3px 0 0;
+    padding: 1px 6px 0 6px;
+
+    box-shadow: inset 0 0 transparent, inset 0 0 transparent,
+                inset 0 1px shade (@dark_bg_color, 1.6), inset 0 0 transparent;
+
+    background-color: transparent;
+    background-clip: border-box;
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (#98b4d0),
+                                     to (#b3cce5));
+
+    color: @dark_fg_color;
+    text-shadow: none;
+}
+
+UnityDecoration.top:backdrop {
+    border: 1px solid rgba (0, 3, 5, 0.01); /* @dark_bg_color - shade (#474642, 0.92) */;
+    border-bottom-width: 0;
+    background-color: #dbe7f4;
+    
+    color: #807d78;
+}
+
+UnityDecoration.left,
+UnityDecoration.right {
+    background-image: none;
+    border: 0px solid;
+    background-color: #b3cce5;
+   
+  
+}
+
+UnityDecoration.left:backdrop,
+UnityDecoration.right:backdrop {
+   
+}
+
+UnityDecoration.bottom {
+    background-image: none;
+    background-color: shade (@bg_color, 0.7);
+}
+
+/* Panel Style */
+
+UnityPanelWidget,
+.unity-panel {
+	 background-image: -gtk-gradient (linear, left top, left bottom,  
+                   from (#FEFEFF),  
+                    color-stop (0.353,#E5EAF5), 
+                    color-stop (0.412,#D4DBED), 
+                               to (#E1E6F6));   
+
+   border-width: 0;
+   border-bottom-width: 1px;
+   border-bottom-color: green;
+     color: black;
+}
+
+
+
+.unity-panel.menubar,
+.unity-panel .menubar {
+	color: #000000;
+}
+
+.unity-panel.menuitem,
+.unity-panel .menuitem {
+    border-width: 1px 1px 0 1px;
+    icon-shadow: 0 -1px shade (@dark_bg_color, 0.7);
+}
+
+
+.unity-panel.menubar.menuitem:hover,
+.unity-panel.menubar .menuitem *:hover {
+    border-radius: 4px 4px 0 0;
+    border-width: 1px;
+    border-bottom-width: 0px;
+    
+    background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade (#dbdde2, 1.05)),
+                                     color-stop (0.4, shade (#dfe4ee, 1.00)),
+                                     color-stop (0.41, shade (#d9dfed, 1.00)),
+                                     color-stop (0.42, shade (#d9dfed, 1.00)),
+                                     color-stop (0.43, shade (#dee4f4, 1.00)),
+                                     to (shade (#eaedfc, 1.05)));
+    border-color: #2e2e2c;
+
+}
+
+
+@keyframes playbackmenuitem_spinner {
+    to { -gtk-icon-transform: rotate(1turn); }
+}
+
+.menu IdoPlaybackMenuItem.menuitem:active {
+    -gtk-icon-source: -gtk-icontheme("process-working-symbolic");
+    animation: playbackmenuitem_spinner 1s infinite linear;
+    color: @selected_bg_color;
+}

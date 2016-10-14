@@ -1,0 +1,133 @@
+/* Fallback Mode Panel */
+PanelWidget:backdrop,
+PanelApplet:backdrop,
+PanelToplevel:backdrop,
+PanelWidget,
+PanelApplet,
+PanelToplevel {
+    border-image: none;
+
+    color: #000000;
+}
+
+PanelWidget,
+PanelApplet,
+PanelToplevel {
+    background-image: -gtk-gradient (linear, left top, left bottom,  
+                   from (#FEFEFF),  
+                    color-stop (0.353,#E5EAF5), 
+                    color-stop (0.412,#D4DBED), 
+                               to (#E1E6F6)); 
+	border-width: 0;
+        background-color: #ffffff;
+}
+
+PanelApplet {
+    border-width: 0;
+}
+
+PanelSeparator:backdrop,
+PanelSeparator {
+         border-width: 0;
+	 background-image: -gtk-gradient (linear, left top, left bottom,  
+                   from (#FEFEFF),  
+                    color-stop (0.353,#E5EAF5), 
+                    color-stop (0.412,#D4DBED), 
+                               to (#E1E6F6));
+         color: white;
+}
+
+.gnome-panel-menu-bar,
+PanelApplet > GtkMenuBar.menubar,
+PanelApplet > GtkMenuBar.menubar.menuitem,
+PanelMenuBar.menubar,
+PanelMenuBar.menubar.menuitem {
+    -PanelMenuBar-icon-visible: true;
+    background-image: -gtk-gradient (linear, left top, left bottom,  
+                   from (#FEFEFF),  
+                    color-stop (0.353,#E5EAF5), 
+                    color-stop (0.412,#D4DBED), 
+                               to (#E1E6F6)); 
+    
+}
+
+PanelWidget > .label:hover {
+color: #000000;
+}
+
+PanelAppletFrame {
+	background-color: #3c3d3f;
+        color: #000000;
+        background-image: -gtk-gradient (linear, left top, left bottom,  
+                   from (#FEFEFF),  
+                    color-stop (0.353,#E5EAF5), 
+                    color-stop (0.412,#D4DBED), 
+                               to (#E1E6F6));
+	border-width: 0;
+}
+
+PanelApplet .button:backdrop,
+PanelApplet .button {
+	-GtkButton-inner-border: 2;
+        color:#000000;
+	background-image: -gtk-gradient (linear, left top, left bottom,  
+                   from (#FEFEFF),  
+                    color-stop (0.353,#E5EAF5), 
+                    color-stop (0.412,#D4DBED), 
+                               to (#E1E6F6)); 
+     border-image: url("../assets/p3-l.png")  16 4 16 4 / 50% 4px 50% 4px stretch;
+    
+    border-color: alpha (shade (@dark_bg_color, 1.0), 0.6);
+    border-left-color: alpha (shade (@dark_bg_color, 1.5), 0.3);
+    border-radius: 0;
+    border-width: 0 1px 0 1px;
+
+    text-shadow: none;
+}
+
+
+PanelApplet .button:active:prelight,
+PanelApplet .button:active:backdrop,
+PanelApplet .button:active {
+	
+}
+
+PanelApplet .button:prelight:backdrop,
+PanelApplet .button:prelight {	
+}
+
+PanelApplet .button:checked {
+    border-image: url("../assets/p4-l.png") 16 4 16 4 / 50% 4px 50% 4px stretch;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+PanelApplet .button:checked:prelight {
+    border-image: url("../assets/p2-l.png") 16 4 16 4 / 50% 4px 50% 4px stretch;
+}
+
+PanelApplet .button:checked:prelight:active {
+    border-color: shade (@dark_bg_color, 0.8);
+}
+
+ClockBox {
+  color:#ffffff;
+        background-color: #ffffff;
+    text-shadow: 0 -1px shade (#ffffff, 0.6); 
+}
+
+WnckPager, WnckTasklist {
+    background-color: @dark_bg_color;
+}
+
+/* Zorin Hack */
+GtkPlug.background > GtkBox.vertical > GtkMenuBar {
+
+
+    background-color: black;
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (#463e39),
+                                     to (#1f1d1b));
+
+    color: white;
+}
