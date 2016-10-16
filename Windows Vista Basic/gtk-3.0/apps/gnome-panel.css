@@ -1,0 +1,162 @@
+/* Fallback Mode Panel */
+
+
+PanelWidget,
+PanelApplet,
+PanelToplevel {
+    background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade (#979998, 1.05)),
+                                     color-stop (0.5, shade (#3c3d3f, 1.00)),
+                                     color-stop (0.51, shade (#29292b, 1.00)),
+                                     color-stop (0.89, shade (#050608, 1.00)),
+                                     color-stop (0.9, shade (#030406, 1.00)),
+                                     to (shade (#030406, 1.05))); 
+	border-width: 0;
+	color: green;
+        background-color: #ffffff;
+}
+
+PanelApplet {
+    border-width: 0;
+}
+
+
+PanelSeparator {
+	border-width: 0;
+	background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade (#979998, 1.05)),
+                                     color-stop (0.5, shade (#3c3d3f, 1.00)),
+                                     color-stop (0.51, shade (#29292b, 1.00)),
+                                     color-stop (0.89, shade (#050608, 1.00)),
+                                     color-stop (0.9, shade (#030406, 1.00)),
+                                     to (shade (#030406, 1.05)));
+}
+
+.gnome-panel-menu-bar,
+PanelApplet > GtkMenuBar.menubar,
+PanelApplet > GtkMenuBar.menubar.menuitem,
+PanelMenuBar.menubar,
+PanelMenuBar.menubar.menuitem {
+	-PanelMenuBar-icon-visible: true;
+        color:#ffffff;
+	background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade (#979998, 1.05)),
+                                     color-stop (0.5, shade (#3c3d3f, 1.00)),
+                                     color-stop (0.51, shade (#29292b, 1.00)),
+                                     color-stop (0.89, shade (#050608, 1.00)),
+                                     color-stop (0.9, shade (#030406, 1.00)),
+                                     to (shade (#030406, 1.05)));
+	border-width: 0;
+        color:#ffffff;
+        background-color: #ffffff;
+}
+
+PanelAppletFrame {
+	background-color: #3c3d3f;
+        color:#ffffff;
+        background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade (#979998, 1.05)),
+                                     color-stop (0.5, shade (#3c3d3f, 1.00)),
+                                     color-stop (0.51, shade (#29292b, 1.00)),
+                                     color-stop (0.89, shade (#050608, 1.00)),
+                                     color-stop (0.9, shade (#030406, 1.00)),
+                                     to (shade (#030406, 1.05)));
+	border-width: 0;
+}
+
+
+PanelApplet .button {
+	-GtkButton-inner-border: 2;
+        color:#ffffff;
+	background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade (#8b8e85, 1.05)),
+                                     color-stop (0.5, shade (#444645, 1.00)),
+                                     color-stop (0.51, shade (#141614, 1.00)),
+                                     color-stop (0.89, shade (#0b0c0b, 1.00)),
+                                     color-stop (0.9, shade (#090a09, 1.00)),
+                                     to (shade (#2f3231, 1.05)));
+    border-image: none;
+    
+    border-color: alpha (shade (@dark_bg_color, 1.0), 0.6);
+    border-left-color: alpha (shade (@dark_bg_color, 1.5), 0.3);
+    border-radius: 0;
+    border-width: 0 1px 0 1px;
+
+    color: @dark_fg_color;
+    text-shadow: none;
+}
+
+
+PanelApplet .button:active:prelight,
+PanelApplet .button:active {
+	background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade (#8b8e85, 1.05)),
+                                     color-stop (0.14, shade (#3c3c3c, 1.00)),
+                                     color-stop (0.5, shade (#262626, 1.00)),
+                                     color-stop (0.51, shade (#1a1a1a, 1.00)),
+                                     color-stop (0.89, shade (#0b0c0b, 1.00)),
+                                     color-stop (0.9, shade (#090a09, 1.00)),
+                                     to (shade (#2f3231, 1.05)));
+	
+}
+
+
+PanelApplet .button:prelight {
+	background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade (#8b8e85, 1.05)),
+                                     color-stop (0.5, shade (#444645, 1.00)),
+                                     color-stop (0.51, shade (#141614, 1.00)),
+                                     color-stop (0.89, shade (#0b0c0b, 1.00)),
+                                     color-stop (0.9, shade (#090a09, 1.00)),
+                                     to (shade (#2f3231, 1.05)));	
+}
+
+ClockBox {
+  color:#ffffff;
+        background-color: #ffffff;
+    text-shadow: 0 -1px shade (#ffffff, 0.6); 
+}
+
+WnckPager, WnckTasklist {
+   color: #ffffff;
+        background-color: #ffffff;
+} 
+
+PanelApplet .button {
+    border-image: url("../assets/p3.png") 4 4 4 4 / 4px 4px 4px 4px stretch;
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+PanelApplet .button:prelight:active:backdrop,
+PanelApplet .button:active:backdrop,
+PanelApplet .button:prelight:active,
+PanelApplet .button:active {
+    border-image: url("../assets/p4.png") 4 4 4 4 / 4px 4px 4px 4px stretch;
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+PanelApplet .button:prelight {
+    border-image: url("../assets/p2.png") 16 4 16 4 / 50% 4px 50% 4px stretch;
+}
+
+/* Zorin Hack */
+GtkPlug.background > GtkBox.vertical > GtkMenuBar {
+
+
+    background-color: black;
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (#463e39),
+                                     to (#1f1d1b));
+
+    color: white;
+}
+
