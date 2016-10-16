@@ -60,6 +60,11 @@
 @define-color nemo_searchbar_bg_color @theme_base_color;
 @define-color nemo_places_bg_color @theme_base_color;
 
+/* Xfce */
+@define-color panel_bg_color @theme_bg_color;
+@define-color panel_fg_color @theme_fg_color;
+@define-color dark_shadow @theme_fg_color;
+
 @import url("gtk-main-common.css");
 @import url("gtk-widgets.css");
 @import url("gtk-widgets-borders.css");
