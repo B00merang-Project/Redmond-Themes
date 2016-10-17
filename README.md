@@ -9,10 +9,10 @@ Themes included to date :
 ![3.x](https://cloud.githubusercontent.com/assets/15310985/15758500/e45aed8a-28d8-11e6-933e-a52e7f24135e.png)
 
 - Windows 95/98/2000/ME
-![9x](https://cloud.githubusercontent.com/assets/15310985/15758493/dce441c8-28d8-11e6-82c3-36f227b0eaf5.png)
+![9x](http://b00merang.weebly.com/uploads/1/6/8/1/16813022/screenshot-2016-10-14-17-06-00_orig.png)
 
 - Windows XP Embedded
-![embedded](https://cloud.githubusercontent.com/assets/15310985/18786099/300539f4-816a-11e6-9fdc-82f188881452.png)
+![embedded](http://b00merang.weebly.com/uploads/1/6/8/1/16813022/screenshot-2016-09-25-16-13-22_2_orig.png)
 
 - Windows XP Royale Dark
 ![royale-dark](https://cloud.githubusercontent.com/assets/15310985/19190540/22312646-8c6c-11e6-99e5-2b0b88d9e90c.png)
@@ -21,7 +21,7 @@ Themes included to date :
 ![zune](http://b00merang.weebly.com/uploads/1/6/8/1/16813022/screenshot-2016-09-25-12-34-45_orig.png)
 
 - Windows Vista
-![vista-aero](http://b00merang.weebly.com/uploads/1/6/8/1/16813022/3567128_orig.png?310)
+![vista-aero](http://b00merang.weebly.com/uploads/1/6/8/1/16813022/screenshot-2016-10-13-17-07-53_orig.png)
 
 - Windows Se7en
 ![7](http://b00merang.weebly.com/uploads/1/6/8/1/16813022/screenshot-2016-09-26-11-44-04_orig.png)
@@ -30,7 +30,8 @@ Themes included to date :
 ![8.1](http://b00merang.weebly.com/uploads/1/6/8/1/16813022/8608806_orig.png?294)
 
 **Possible themes coming...**
-- Windows Whistler Watercolor (2.0)
+- [Windows Whistler Watercolor](https://github.com/B00merang-Project/Windows-Whistler-Watercolor)
 
 *For a quick installation guide, visit http://b00merang.weebly.com/how-to-install-themes.html*
-**All resources belong to Microsoft Corporation. All rights are reserved to Microsoft. Windows is a trademark of Microsoft. Windows Vista is a trademark of Microsoft.**
+
+**Microsoft® Windows™ is a registered trademark of Microsoft® Corporation. This name is used for referential use only, and does not aim to usurp copyrights from Microsoft. Microsoft Ⓒ 2016 All rights reserved. All resources belong to Microsoft Corporation**
