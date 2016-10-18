@@ -2512,6 +2512,7 @@ GtkStatusbar .frame {
 
     color: @selected_fg_color;
 }
+
 /*
 tryheader_blxend
 */
