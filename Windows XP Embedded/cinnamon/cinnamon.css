@@ -96,6 +96,34 @@ StScrollBar StButton#vhandle:hover {
 }
 
 /* ===================================================================
+ * User Applet
+ * ===================================================================*/
+
+.user-box {
+    padding: .4em 1.5em;
+    padding-bottom: .6em;
+    spacing: 10px;
+}
+
+.user-icon {
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: 0 solid transparent;
+    border-radius: 0;
+    padding: 0;
+    border-radius: 0;
+    padding: 0;
+}
+
+.user-label {
+    color: #000;
+    font-size: 10pt;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* ===================================================================
  * PopupMenu (popupMenu.js) 
  * ===================================================================*/
 
