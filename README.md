@@ -11,13 +11,13 @@ Here is where we push our latest development on our [Redmond Themes](http://b00m
 ![9x](http://b00merang.weebly.com/uploads/1/6/8/1/16813022/screenshot-2016-10-14-17-06-00_orig.png)
 
 ###Windows XP Embedded###
-![embedded](http://b00merang.weebly.com/uploads/1/6/8/1/16813022/screenshot-2016-09-25-16-13-22_2_orig.png)
+![embedded](http://b00merang.weebly.com/uploads/1/6/8/1/16813022/screenshot-2016-10-20-20-01-35_orig.png)
 
 ###Windows XP Royale Dark###
 ![royale-dark](https://cloud.githubusercontent.com/assets/15310985/19190540/22312646-8c6c-11e6-99e5-2b0b88d9e90c.png)
 
 ###Windows XP Zune###
-![zune](http://b00merang.weebly.com/uploads/1/6/8/1/16813022/screenshot-2016-09-25-12-34-45_orig.png)
+![zune](http://b00merang.weebly.com/uploads/1/6/8/1/16813022/screenshot-2016-10-20-20-01-53_orig.png)
 
 ###Windows Vista###
 ![vista-aero](http://b00merang.weebly.com/uploads/1/6/8/1/16813022/screenshot-2016-10-13-17-07-53_orig.png)
