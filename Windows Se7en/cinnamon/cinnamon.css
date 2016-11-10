@@ -361,6 +361,22 @@ StScrollBar StButton#hhandle:focus {
     padding: 0px;
 }
 
+/* start orb */
+#panelLeft .applet-box:first-child {
+    background: url("orbs/OBB1.png");
+    transition-duration: 300; 
+    width: 54px;
+    color: rgba(255,0,0,0);
+    padding: 0px;
+}
+#panelLeft .applet-box:first-child:hover {
+    transition-duration: 300;
+    background: url("orbs/OBB2.png");
+}
+#panelLeft .applet-box:first-child:active {
+    background: url("orbs/OBB3.png");
+}
+
 #panelLeft, #panelCenter, #panelRight {
     spacing: 0px;
 }

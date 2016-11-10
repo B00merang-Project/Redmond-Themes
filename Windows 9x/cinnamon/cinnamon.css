@@ -1541,8 +1541,6 @@ border-radius: 1px;
 	background-gradient-direction: vertical;
 	background-gradient-start: #D4CFC7;
 	background-gradient-end: #D4CFC7;
-	border-right: 1px solid white;
-	box-shadow: inset 1px 0 gray;
 }
 .menu-favorites-button {
 	padding: 10px;

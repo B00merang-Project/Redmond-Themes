@@ -121,12 +121,10 @@
                     y2="height" width="1"/>
                 <gradient type="horizontal" x="4" y="4" width="width-8" 
                     height="height-5">
-<!--                    <color value="#08216b"/>
+                    <color value="#08216b"/>
                     <color value="#526bad"/>
                     <color value="#94b5dc"/>
-                    <color value="#a5c6f7"/> -->
-					<color value="#000082"/>
-					<color value="#000082"/>
+                    <color value="#a5c6f7"/>
                 </gradient>     
             </draw_ops>
         </piece>
@@ -191,12 +189,10 @@
 		    <draw_ops>
 		        <gradient type="horizontal" x="0" y="0" width="width-0" 
 		            height="height-0">
-<!--		            <color value="#08216b"/>
+		            <color value="#08216b"/>
 		            <color value="#526bad"/>
 		            <color value="#94b5dc"/>
-		            <color value="#a5c6f7"/> -->
-					<color value="#000082"/>
-					<color value="#000082"/>
+		            <color value="#a5c6f7"/>
 		        </gradient>     
 		    </draw_ops>
 		</piece>
@@ -231,13 +227,11 @@
                     y2="height" width="1"/>
                 <gradient type="horizontal" x="4" y="4" width="width-8" 
                     height="height-5">
-<!--                    <color value="#848484"/>
+                    <color value="#848484"/>
                     <color value="#8c8c8c"/>
                     <color value="#a5a5a5"/>
                     <color value="#c6bdc6"/>
-                    <color value="#c6c6c6"/> -->
-                    <color value="#848484"/>
-                    <color value="#848484"/>
+                    <color value="#c6c6c6"/>
                 </gradient>     
             </draw_ops>
         </piece>
@@ -254,13 +248,11 @@
             <draw_ops>
                 <gradient type="horizontal" x="0" y="0" width="width-0" 
                     height="height-0">
-<!--                    <color value="#848484"/>
+                    <color value="#848484"/>
                     <color value="#8c8c8c"/>
                     <color value="#a5a5a5"/>
                     <color value="#c6bdc6"/>
-                    <color value="#c6c6c6"/> -->
-                    <color value="#848484"/>
-                    <color value="#848484"/>
+                    <color value="#c6c6c6"/>
                 </gradient>     
             </draw_ops>
         </piece>

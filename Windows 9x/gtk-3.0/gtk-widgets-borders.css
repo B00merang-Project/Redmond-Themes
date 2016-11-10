@@ -60,9 +60,9 @@ GtkScaleButton.button:active:hover,
 	border-style: solid;
 	border-width: 1px;
 	box-shadow: inset 2px 0 black,
-				inset 0 2px black,
-				inset -1px 0 white,
-				inset 0 -1px white;
+		    inset 0 2px black,
+		    inset -1px 0 white,
+		    inset 0 -1px white,
 	border-color: black;
 }
 

@@ -5,12 +5,12 @@ style "menubar"
 {
 #font_name = "Segoe UI Bold 9"
 #font_name = "Sans 8"
-  fg[NORMAL] = "#fff"
-  text[NORMAL] = "#fff"
-  fg[PRELIGHT] = "#fff"
-  fg[ACTIVE] = "#fff"
-#  fg[INSENSITIVE] = "#FFFFFF0"
-#  text[PRELIGHT] = "#FFFFFF0"
+  fg[NORMAL] = "#000"
+  text[NORMAL] = "#000"
+  fg[PRELIGHT] = "#000"
+  fg[ACTIVE] = "#000"
+#  fg[INSENSITIVE] = "#0000000"
+#  text[PRELIGHT] = "#0000000"
 
 xthickness			= 2
 ythickness			= 1
@@ -20,7 +20,7 @@ ythickness			= 1
 		{
 			function	= BOX
 			state = NORMAL
-			file		= "Menu-Menubar/menubar-blue.png"
+			file		= "Menu-Menubar/menubar.png"
 			border	= { 2, 2, 2, 2 }
 			stretch	= TRUE
     		}
@@ -29,7 +29,7 @@ ythickness			= 1
 		{
 			function	= BOX
 			state = ACTIVE
-			file		=  "Menu-Menubar/menubar-blue.png"
+			file		=  "Menu-Menubar/menubar.png"
 			border	= { 2, 2, 2, 2 }
 			stretch	= TRUE
     		}
@@ -38,7 +38,7 @@ ythickness			= 1
 		{
 			function	= BOX
 			state = INSENSITIVE
-			file		="Menu-Menubar/menubar-blue.png"
+			file		="Menu-Menubar/menubar.png"
 			border	= { 2, 2, 2, 2 }
 			stretch	= TRUE
     		}
@@ -48,7 +48,7 @@ ythickness			= 1
       function			= BOX
       recolorable		= TRUE
       state 			= PRELIGHT
-      file				= "Menu-Menubar/menubar-item.png"
+      file				= "Menu-Menubar/menuitem.png"
       border			= { 2, 2, 2, 2 }
       stretch			= TRUE
     }

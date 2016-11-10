@@ -19,14 +19,6 @@
 GtkSwitch.slider,
 GtkSwitch.slider:active {
 	background-color: @theme_bg_color;
-	border-radius: 3px;
-	border-style: solid;
-	border-width: 1px;
-	box-shadow: inset 0 -2px shade(@theme_bg_color, 0.65),
-				inset -2px 0 shade(@theme_bg_color, 0.65),
-				inset 0 1px white,
-				inset 1px 0 white;
-	border-color: black;
 }
 
 .button:active,
@@ -55,14 +47,7 @@ GtkScaleButton.button:active:hover,
 .floating-bar .button:active:hover,
 #gtk-scalebutton-popup-window .button:active,
 #gtk-scalebutton-popup-window .button:active:hover {
-	border-radius: 3px;
-	border-style: solid;
-	border-width: 1px;
-	box-shadow: inset 0 2px shade(@theme_bg_color, 0.65),
-				inset 2px 0 shade(@theme_bg_color, 0.65),
-				inset 0 -1px white,
-				inset -1px 0 white;
-	border-color: black;
+	background-color: @theme_bg_color;
 }
 
 .button:insensitive,

@@ -107,8 +107,12 @@ GtkScaleButton.button:insensitive:active,
 .button.default,
 .button.default:hover,
 .button.default:active {
-    border: 2px solid @button_borders;
     border-image: none;
+    box-shadow: inset -2px 0 shade(@theme_bg_color, 0.65),
+		inset 0 -2px shade(@theme_bg_color, 0.65),
+		inset 1px 0 white,
+		inset 0 1px white,
+                0 0 0 1px black;
 }
 
 /**************************

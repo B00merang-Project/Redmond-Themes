@@ -1891,6 +1891,8 @@ GtkTextView {
     background-color: #bbd1e8;
     border-color: shade (@dark_bg_color, 1.5);
     border-style: solid;
+    background-image: url('assets/titlebar.png');
+    background-size: 100% 100%;
     border-width: 1px 0 0 0;
     border-radius: 7px 7px 0 0;
 
@@ -1903,8 +1905,7 @@ GtkTextView {
 .window-frame {
     border-style: none;
     border-radius: 7px 7px 0 0;
-    box-shadow: 0 3px 7px 1px alpha(black, 0.7),
-                0 0 0 1px mix(shade(@titlebar_bg_color, 0.7), @titlebar_fg_color, 0.21);
+    box-shadow: 0 3px 7px 1px alpha(black, 0.7);
 
     /* this is used for the resize cursor area */
     margin: 5px;
@@ -1928,8 +1929,62 @@ GtkTextView {
 }
 
 .titlebar.header-bar .button.titlebutton:hover {
-    border-image-width: 12px;
+    border-image-width: 0;
 }
+
+.titlebar.header-bar .button.titlebutton {
+    padding: 0px;
+    border-radius: 3px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 1px solid #8c8c8c;
+    color: white;
+    icon-shadow: 0 0 2px black;
+    box-shadow: inset 0 0 0px 1px rgba(255,255,255,0.5);
+    background-image: linear-gradient(to bottom, alpha(#d4d4d6, 0.25) ,alpha(#bababf, 0.25) 49%, alpha(#66666d, 0.25) 50%, alpha(#66666d, 0.25));
+}
+
+.titlebar.header-bar .button.titlebutton:backdrop,
+.titlebar.header-bar .button.titlebutton.close:backdrop {
+    background-image: none;
+    color: alpha(white, 0.85);
+    icon-shadow: 0 0 2px #8c8c8c;
+}
+
+.titlebar.header-bar .button.titlebutton.close {
+    background-clip: padding-box;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-image: linear-gradient(to bottom, #e9a99c,#df9587 49%,#b8432c 50%, #d27e6f);
+}
+
+.titlebar.header-bar .button.titlebutton.close:hover {
+    background-image: linear-gradient(to bottom, #fcc8bf, #faa99b 50%, #d22302 51%, #e6934e);
+}
+
+.titlebar.header-bar .button.titlebutton.close:active {
+    background-image: linear-gradient(to top, #ec6e44, #e76b41);
+}
+
+.titlebar.header-bar .button.titlebutton:hover {
+    background-image: linear-gradient(to bottom, alpha(#a9d4f4, 0.65), alpha(#7cbfea, 0.65) 50%, alpha(#2e71a5, 0.65) 51%, alpha(#23c8e8, 0.65));
+}
+
+.titlebar.header-bar .button.titlebutton:active {
+    icon-shadow: none;
+    background-image: linear-gradient(to bottom, #89acd0 50%, #4973a1 51%);
+}
+
+.window-frame {
+    border-style: none;
+    border-radius: 7px;
+    box-shadow: 0 3px 7px 1px alpha(black, 0.7),
+                0 0 0 1px mix(shade(@titlebar_bg_color, 0.7), @titlebar_fg_color, 0.21);
+
+    /* this is used for the resize cursor area */
+    margin: 10px;
+}
+
 
 /***********
  * toolbar *
@@ -1965,18 +2020,20 @@ GtkTextView {
 GtkWindow > GtkVBox > .dock,
 GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar  {
     -GtkWidget-window-dragging: true;
-    background-image: none;
+    background: url('assets/titlebar-2b.png'), linear-gradient(to right, transparent, #cce8ff 2%);
+    background-color: #b6cde6;
+    background-size: 96.1% 100%;
+    background-position: 14px 0;
+    background-repeat: no-repeat;
     border-bottom-color: #b6bccc;
     border-top-color: #f4f7fc;
     border-style: solid;
-    border-width: 1px 0 1px 0;
+    border-width: 0 0 1px 0;
     border-radius: 0;
     color: @dark_fg_color;
     text-shadow: none;
     box-shadow: none;
 }
-
-
 
 .primary-toolbar :insensitive,
 .menubar.toolbar .toolbar :insensitive {

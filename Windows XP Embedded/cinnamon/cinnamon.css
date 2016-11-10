@@ -2195,3 +2195,8 @@ The colour parameters are red, green, blue, and transparency or a name */
 .starkmenu-search-box {
     padding-bottom: 5px;
 }
+
+.hover-user-icon {
+  border-radius: 4px;
+  border: 2px solid #f1f1f1;
+}
