@@ -164,7 +164,7 @@ StScrollBar StButton#hhandle:focus {
 .radiobutton StBin {
     width: 16px;
     height: 16px;
-    background-image: url("control-assets/radiobutton.svg");
+    background-image: url("control-assets/radiobutton.png");
 }
 
 .radiobutton:focus StBin {
@@ -277,10 +277,10 @@ StScrollBar StButton#hhandle:focus {
        border-right: 0px;
 }
 .popup-menu-item:active {
-    color: #fff;
-    border-image: url('buttons/button-focused.svg') 2 2 2 2 stretch;
+    color: #000;
+    border-image: url("background-assets/hover.svg") 4;
     border: 1px transparent;
-      border-bottom: 0px;
+    border-bottom: 0px;
     border-left: 0px;
     border-right: 0px;
 }
@@ -374,15 +374,15 @@ StScrollBar StButton#hhandle:focus {
 }
 
 #panelLeft .applet-box:first-child {
-	background: url("buttons/vista/OBB1.png");
+	background: url("orbs/OBB1.png");
 	transition-duration: 300; width: 50px;
 	color: rgba(255,0,0,0) !important;
 }
 #panelLeft .applet-box:first-child:hover {
-	transition-duration: 200; background: url("buttons/vista/OBB2.png");
+	transition-duration: 200; background: url("orbs/OBB2.png");
 }
 #panelLeft .applet-box:first-child:active {
-	background: url("buttons/vista/OBB3.png");
+	background: url("orbs/OBB3.png");
 }
 
 #panelLeft, #panelCenter, #panelRight {
@@ -460,7 +460,9 @@ StScrollBar StButton#hhandle:focus {
 .expo-background {
 /*    background: rgba(0, 0, 0, .1) url("expo-scale-assets/stripes.svg");*/
     /*background-repeat: repeat;*/
-    
+    background-image: url('expo.png');
+    background-position: center center;
+    background-size: cover;
 }
 
 .expo-workspace-thumbnail-frame {
@@ -966,12 +968,12 @@ StScrollBar StButton#hhandle:focus {
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button.svg") 7;
+    border-image: url("buttons/button.png") 7;
     padding: 6px;
     padding-right: 24px;
     padding-left: 24px;
-    color: #fff;
-    font-weight: bold;
+    color: #000;
+    font-weight: normal;
 }
 
 .modal-dialog-button:hover {
@@ -979,11 +981,11 @@ StScrollBar StButton#hhandle:focus {
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-hover.svg") 7;
+    border-image: url("buttons/button-hover.png") 7;
     padding: 6px;
     padding-right: 24px;
     padding-left: 24px;
-    color: #fff;
+    color: #000;
 }
 
 .modal-dialog-button:focus {
@@ -991,11 +993,11 @@ StScrollBar StButton#hhandle:focus {
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-focused.svg") 7;
+    border-image: url("buttons/button-focused.png") 7;
     padding: 6px;
     padding-right: 24px;
     padding-left: 24px;
-    color: #fff;
+    color: #000;
 }
 
 .modal-dialog-button:active,
@@ -1004,11 +1006,11 @@ StScrollBar StButton#hhandle:focus {
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-pressed.svg") 7;
+    border-image: url("buttons/button-pressed.png") 7;
     padding: 6px;
     padding-right: 24px;
     padding-left: 24px;
-    color: #fff;
+    color: #000;
 }
 
 .modal-dialog-button:focus:hover {
@@ -1016,11 +1018,11 @@ StScrollBar StButton#hhandle:focus {
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-focused-hover.svg") 7;
+    border-image: url("buttons/button-focused-hover.png") 7;
     padding: 6px;
     padding-right: 24px;
     padding-left: 24px;
-    color: #fff;
+    color: #000;
 }
 
 .modal-dialog-button:focus:active,
@@ -1029,11 +1031,11 @@ StScrollBar StButton#hhandle:focus {
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-focused-pressed.svg") 7;
+    border-image: url("buttons/button-focused-pressed.png") 7;
     padding: 6px;
     padding-right: 24px;
     padding-left: 24px;
-    color: #fff;
+    color: #000;
 }
 
 .modal-dialog-button:disabled {
@@ -1041,7 +1043,7 @@ StScrollBar StButton#hhandle:focus {
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-insensitive.svg") 7;
+    border-image: url("buttons/button-insensitive.png") 7;
     padding: 6px;
     padding-right: 24px;
     padding-left: 24px;
@@ -1055,11 +1057,11 @@ StScrollBar StButton#hhandle:focus {
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button.svg") 7;
+    border-image: url("buttons/button.png") 7;
     padding: 6px;
     padding-right: 24px;
     padding-left: 24px;
-    color: #fff;
+    color: #000;
     font-weight: bold;
     -st-natural-width: 80px;
 }
@@ -1069,11 +1071,11 @@ StScrollBar StButton#hhandle:focus {
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-hover.svg") 7;
+    border-image: url("buttons/button-hover.png") 7;
     padding: 6px;
     padding-right: 24px;
     padding-left: 24px;
-    color: #fff;
+    color: #000;
     -st-natural-width: 80px;
 }
 
@@ -1082,12 +1084,12 @@ StScrollBar StButton#hhandle:focus {
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-focused.svg") 7;
+    border-image: url("buttons/button-focused.png") 7;
     padding: 6px;
     padding-right: 24px;
     padding-left: 24px;
     min-width: 24px;
-    color: #fff;
+    color: #000;
     -st-natural-width: 80px;
 }
 
@@ -1097,11 +1099,11 @@ StScrollBar StButton#hhandle:focus {
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-pressed.svg") 7;
+    border-image: url("buttons/button-pressed.png") 7;
     padding: 6px;
     padding-right: 24px;
     padding-left: 24px;
-    color: #fff;
+    color: #000;
     -st-natural-width: 80px;
 }
 
@@ -1110,11 +1112,11 @@ StScrollBar StButton#hhandle:focus {
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-focused-hover.svg") 7;
+    border-image: url("buttons/button-focused-hover.png") 7;
     padding: 6px;
     padding-right: 24px;
     padding-left: 24px;
-    color: #fff;
+    color: #000;
     -st-natural-width: 80px;
 }
 
@@ -1124,11 +1126,11 @@ StScrollBar StButton#hhandle:focus {
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-focused-pressed.svg") 7;
+    border-image: url("buttons/button-focused-pressed.png") 7;
     padding: 6px;
     padding-right: 24px;
     padding-left: 24px;
-    color: #fff;
+    color: #000;
     -st-natural-width: 80px;
 }
 
@@ -1137,7 +1139,7 @@ StScrollBar StButton#hhandle:focus {
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-insensitive.svg") 7;
+    border-image: url("buttons/button-insensitive.png") 7;
     padding: 6px;
     padding-right: 24px;
     padding-left: 24px;
@@ -1152,9 +1154,9 @@ StScrollBar StButton#hhandle:focus {
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button.svg") 7;
+    border-image: url("buttons/button.png") 7;
     padding: 6px;
-    color: #fff;
+    color: #000;
 }
 
 .notification-icon-button:hover {
@@ -1162,9 +1164,9 @@ StScrollBar StButton#hhandle:focus {
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-hover.svg") 7;
+    border-image: url("buttons/button-hover.png") 7;
     padding: 6px;
-    color: #fff;
+    color: #000;
 }
 
 .notification-icon-button:focus {
@@ -1172,9 +1174,9 @@ StScrollBar StButton#hhandle:focus {
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-focused.svg") 7;
+    border-image: url("buttons/button-focused.png") 7;
     padding: 6px;
-    color: #fff;
+    color: #000;
 }
 
 .notification-icon-button:active,
@@ -1183,9 +1185,9 @@ StScrollBar StButton#hhandle:focus {
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-pressed.svg") 7;
+    border-image: url("buttons/button-pressed.png") 7;
     padding: 6px;
-    color: #fff;
+    color: #000;
 }
 
 .notification-icon-button:focus:hover {
@@ -1193,9 +1195,9 @@ StScrollBar StButton#hhandle:focus {
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-focused-hover.svg") 7;
-    padding: fff;
-    color: #fff;
+    border-image: url("buttons/button-focused-hover.png") 7;
+    padding: 000;
+    color: #000;
 }
 
 .notification-icon-button:focus:active,
@@ -1204,9 +1206,9 @@ StScrollBar StButton#hhandle:focus {
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-focused-pressed.svg") 7;
+    border-image: url("buttons/button-focused-pressed.png") 7;
     padding: 6px;
-    color: #fff;
+    color: #000;
 }
 
 .notification-icon-button:disabled {
@@ -1214,7 +1216,7 @@ StScrollBar StButton#hhandle:focus {
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-insensitive.svg") 7;
+    border-image: url("buttons/button-insensitive.png") 7;
     padding: 6px;
     color: rgba(0, 0, 0, .6);
 }
@@ -1229,7 +1231,7 @@ StScrollBar StButton#hhandle:focus {
 .modal-dialog {
     background-color: white;
     border: 1px solid black;
-    box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.6);
+    box-shadow: 0 0 6px 8px rgba(0,0,0,0.6);
     padding: 0;
     border-radius: 4px;
     padding: 0;
@@ -1435,7 +1437,7 @@ StScrollBar StButton#hhandle:focus {
 }
 
 .keyboard-key {
-    border-image: url("buttons/button.svg") 7;
+    border-image: url("buttons/button.png") 7;
     padding: 16px;
     color: #fff;
     font-size: 12pt;
@@ -1443,18 +1445,18 @@ StScrollBar StButton#hhandle:focus {
 }
 
 .keyboard-key:hover {
-    border-image: url("buttons/button-hover.svg") 7;
+    border-image: url("buttons/button-hover.png") 7;
     padding: 16px;
 }
 
 .keyboard-key:checked,
 .keyboard-key:active {
-    border-image: url("buttons/button-pressed.svg") 7;
+    border-image: url("buttons/button-pressed.png") 7;
     padding: 16px;
 }
 
 .keyboard-key:grayed {
-    border-image: url("buttons/button-insensitive.svg") 7;
+    border-image: url("buttons/button-insensitive.png") 7;
     padding: 16px;
     color: rgba(255, 255, 255, .3);
 }
@@ -1750,18 +1752,18 @@ StScrollBar StButton#hhandle:focus {
 }
 
 .sound-button {
-    border-image: url("buttons/button.svg") 7;  
+    border-image: url("buttons/button.png") 7;  
     width: 22px;
     height: 22px;
     padding: 4px;
 }
 
 .sound-button:hover {
-    border-image: url("buttons/button-hover.svg") 7;
+    border-image: url("buttons/button-hover.png") 7;
 }
 
 .sound-button:active {
-    border-image: url("buttons/button-pressed.svg") 7;
+    border-image: url("buttons/button-pressed.png") 7;
 }
 
 .sound-button StIcon {

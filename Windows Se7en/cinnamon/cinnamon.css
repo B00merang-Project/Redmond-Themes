@@ -272,8 +272,8 @@ StScrollBar StButton#hhandle:focus {
     border-right: 0px;
 }
 .popup-menu-item:active {
-    color: #fff;
-    border-image: url('buttons/button-focused.svg') 2 2 2 2 stretch;
+    color: #000;
+    border-image: url('background-assets/hover.svg') 2 2 2 2 stretch;
     border: 1px transparent;
     border-bottom: 0px;
     border-left: 0px;
@@ -535,9 +535,13 @@ background: #111;
 }
 
 .workspace-osd {
-    border-image: url("background-assets/popup.svg") 7;
+/*    border-image: url("background-assets/popup.svg") 7;*/
+    background-color: white;
     padding: 12px 17px;
-    color: #fff;
+    border: 1px solid #4c4c4c;
+    box-shadow: 0 0 8px 4px;
+    border-radius: 2px;
+    color: #000;
     font-weight: normal;
     font-size: 20pt;    
 }
@@ -932,12 +936,12 @@ background: #111;
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button.svg") 7;
+    border-image: url("buttons/button.png") 7;
     padding: 6px;
     padding-right: 24px;
     padding-left: 24px;
-    color: #fff;
-    font-weight: bold;
+    color: #000;
+    font-weight: normal;
 }
 
 .modal-dialog-button:hover {
@@ -945,11 +949,11 @@ background: #111;
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-hover.svg") 7;
+    border-image: url("buttons/button-hover.png") 7;
     padding: 6px;
     padding-right: 24px;
     padding-left: 24px;
-    color: #fff;
+    color: #000;
 }
 
 .modal-dialog-button:focus {
@@ -957,11 +961,11 @@ background: #111;
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-focused.svg") 7;
+    border-image: url("buttons/button-focused.png") 7;
     padding: 6px;
     padding-right: 24px;
     padding-left: 24px;
-    color: #fff;
+    color: #000;
 }
 
 .modal-dialog-button:active,
@@ -970,11 +974,11 @@ background: #111;
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-pressed.svg") 7;
+    border-image: url("buttons/button-pressed.png") 7;
     padding: 6px;
     padding-right: 24px;
     padding-left: 24px;
-    color: #fff;
+    color: #000;
 }
 
 .modal-dialog-button:focus:hover {
@@ -982,11 +986,11 @@ background: #111;
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-focused-hover.svg") 7;
+    border-image: url("buttons/button-focused-hover.png") 7;
     padding: 6px;
     padding-right: 24px;
     padding-left: 24px;
-    color: #fff;
+    color: #000;
 }
 
 .modal-dialog-button:focus:active,
@@ -995,11 +999,11 @@ background: #111;
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-focused-pressed.svg") 7;
+    border-image: url("buttons/button-focused-pressed.png") 7;
     padding: 6px;
     padding-right: 24px;
     padding-left: 24px;
-    color: #fff;
+    color: #000;
 }
 
 .modal-dialog-button:disabled {
@@ -1007,11 +1011,11 @@ background: #111;
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-insensitive.svg") 7;
+    border-image: url("buttons/button-insensitive.png") 7;
     padding: 6px;
     padding-right: 24px;
     padding-left: 24px;
-    color: rgba(255, 255, 255, .3);
+    color: rgba(0, 0, 0, .3);
 }
 
 /*---notification---*/
@@ -1021,12 +1025,12 @@ background: #111;
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button.svg") 7;
+    border-image: url("buttons/button.png") 7;
     padding: 6px;
     padding-right: 24px;
     padding-left: 24px;
-    color: #fff;
-    font-weight: bold;
+    color: #000;
+    font-weight: normal;
     -st-natural-width: 80px;
 }
 
@@ -1035,11 +1039,11 @@ background: #111;
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-hover.svg") 7;
+    border-image: url("buttons/button-hover.png") 7;
     padding: 6px;
     padding-right: 24px;
     padding-left: 24px;
-    color: #fff;
+    color: #000;
     -st-natural-width: 80px;
 }
 
@@ -1048,12 +1052,12 @@ background: #111;
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-focused.svg") 7;
+    border-image: url("buttons/button-focused.png") 7;
     padding: 6px;
     padding-right: 24px;
     padding-left: 24px;
     min-width: 24px;
-    color: #fff;
+    color: #000;
     -st-natural-width: 80px;
 }
 
@@ -1063,11 +1067,11 @@ background: #111;
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-pressed.svg") 7;
+    border-image: url("buttons/button-pressed.png") 7;
     padding: 6px;
     padding-right: 24px;
     padding-left: 24px;
-    color: #fff;
+    color: #000;
     -st-natural-width: 80px;
 }
 
@@ -1076,11 +1080,11 @@ background: #111;
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-focused-hover.svg") 7;
+    border-image: url("buttons/button-focused-hover.png") 7;
     padding: 6px;
     padding-right: 24px;
     padding-left: 24px;
-    color: #fff;
+    color: #000;
     -st-natural-width: 80px;
 }
 
@@ -1090,11 +1094,11 @@ background: #111;
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-focused-pressed.svg") 7;
+    border-image: url("buttons/button-focused-pressed.png") 7;
     padding: 6px;
     padding-right: 24px;
     padding-left: 24px;
-    color: #fff;
+    color: #000;
     -st-natural-width: 80px;
 }
 
@@ -1103,11 +1107,11 @@ background: #111;
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-insensitive.svg") 7;
+    border-image: url("buttons/button-insensitive.png") 7;
     padding: 6px;
     padding-right: 24px;
     padding-left: 24px;
-    color: rgba(255, 255, 255, .3);
+    color: rgba(0, 0, 0, .3);
     -st-natural-width: 80px;
 }
 
@@ -1118,9 +1122,9 @@ background: #111;
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button.svg") 7;
+    border-image: url("buttons/button.png") 7;
     padding: 6px;
-    color: #fff;
+    color: #000;
 }
 
 .notification-icon-button:hover {
@@ -1128,9 +1132,9 @@ background: #111;
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-hover.svg") 7;
+    border-image: url("buttons/button-hover.png") 7;
     padding: 6px;
-    color: #fff;
+    color: #000;
 }
 
 .notification-icon-button:focus {
@@ -1138,9 +1142,9 @@ background: #111;
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-focused.svg") 7;
+    border-image: url("buttons/button-focused.png") 7;
     padding: 6px;
-    color: #fff;
+    color: #000;
 }
 
 .notification-icon-button:active,
@@ -1149,9 +1153,9 @@ background: #111;
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-pressed.svg") 7;
+    border-image: url("buttons/button-pressed.png") 7;
     padding: 6px;
-    color: #fff;
+    color: #000;
 }
 
 .notification-icon-button:focus:hover {
@@ -1159,9 +1163,9 @@ background: #111;
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-focused-hover.svg") 7;
-    padding: fff;
-    color: #fff;
+    border-image: url("buttons/button-focused-hover.png") 7;
+    padding: 6px;
+    color: #000;
 }
 
 .notification-icon-button:focus:active,
@@ -1170,9 +1174,9 @@ background: #111;
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-focused-pressed.svg") 7;
+    border-image: url("buttons/button-focused-pressed.png") 7;
     padding: 6px;
-    color: #fff;
+    color: #000;
 }
 
 .notification-icon-button:disabled {
@@ -1180,7 +1184,7 @@ background: #111;
     background-gradient-direction: none;
     border: none;
     border-radius: 0;
-    border-image: url("buttons/button-insensitive.svg") 7;
+    border-image: url("buttons/button-insensitive.png") 7;
     padding: 6px;
     color: rgba(0, 0, 0, .6);
 }
@@ -1193,11 +1197,15 @@ background: #111;
  * ===================================================================*/
 
 .modal-dialog {
-    border-image: url("background-assets/popup.svg") 7;
+/*    border-image: url("background-assets/popup.svg") 7;*/
+    background-color: white;
+    border-width: 1px;
+    border-color: #4c4c4c;
     padding: 0;
+    box-shadow: 0 0 8px 5px rgba(0,0,0,0.7);
     border-radius: 0;
     padding: 0;
-    color: #fff;   
+    color: #000;   
 }
 
 .modal-dialog > * {
@@ -1208,7 +1216,7 @@ background: #111;
  
 .modal-dialog-button-box,
 .modal-dialog > .modal-dialog-button-box {
-    border-image: url("background-assets/buttonbox-bg.svg") 8;
+/*    border-image: url("background-assets/buttonbox-bg.svg") 8;*/
     spacing: 0;
     margin: 0;
     padding: 16px;
@@ -1240,12 +1248,12 @@ background: #111;
 }
 
 .run-dialog > * {
-    border-image: url("background-assets/popup.svg") 7;
+/*    border-image: url("background-assets/popup.svg") 7;*/
     padding: 10px;
 }
 
 .run-dialog-label {
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .run-dialog-error-box {
@@ -1394,7 +1402,7 @@ background: #111;
 }
 
 .keyboard-key {
-    border-image: url("buttons/button.svg") 7;
+    border-image: url("buttons/button.png") 7;
     padding: 16px;
     color: #fff;
     font-size: 12pt;
@@ -1402,18 +1410,18 @@ background: #111;
 }
 
 .keyboard-key:hover {
-    border-image: url("buttons/button-hover.svg") 7;
+    border-image: url("buttons/button-hover.png") 7;
     padding: 16px;
 }
 
 .keyboard-key:checked,
 .keyboard-key:active {
-    border-image: url("buttons/button-pressed.svg") 7;
+    border-image: url("buttons/button-pressed.png") 7;
     padding: 16px;
 }
 
 .keyboard-key:grayed {
-    border-image: url("buttons/button-insensitive.svg") 7;
+    border-image: url("buttons/button-insensitive.png") 7;
     padding: 16px;
     color: rgba(255, 255, 255, .3);
 }
@@ -1735,18 +1743,18 @@ background: #111;
 }
 
 .sound-button {
-    border-image: url("buttons/button.svg") 7;  
+    border-image: url("buttons/button.png") 7;  
     width: 22px;
     height: 22px;
     padding: 4px;
 }
 
 .sound-button:hover {
-    border-image: url("buttons/button-hover.svg") 7;
+    border-image: url("buttons/button-hover.png") 7;
 }
 
 .sound-button:active {
-    border-image: url("buttons/button-pressed.svg") 7;
+    border-image: url("buttons/button-pressed.png") 7;
 }
 
 .sound-button StIcon {

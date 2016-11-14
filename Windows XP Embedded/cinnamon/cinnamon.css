@@ -72,8 +72,8 @@ StScrollBar StButton#vhandle:hover {
 .notification-button, .notification-icon-button,
 .hotplug-notification-item, .hotplug-resident-eject-button,
 .modal-dialog-button {
-    color: white;
-    border-image: url('active.png') 10 12 10 12;
+    color: black;
+    border-image: url('buttons/button.png') 5;
     font-size: 8.5pt;
     font-weight: normal;    
     text-align: center;
@@ -82,17 +82,19 @@ StScrollBar StButton#vhandle:hover {
 .notification-button:hover,
 .notification-icon-button:hover, .hotplug-notification-item:hover,
 .hotplug-resident-eject-button:hover, .modal-dialog-button:hover {
+    border-image: url('buttons/button-hover.png') 5;
 }
 
 .notification-button:focus,
 .notification-icon-button:focus, .hotplug-notification-item:focus,
 .modal-dialog-button:focus {
-
+    border-image: url('buttons/button-focused.png') 5;
 }
 
 .notification-button:active, .notification-icon-button:active,
 .hotplug-notification-item:active, .hotplug-resident-eject-button:active,
 .modal-dialog-button:active, .modal-dialog-button:pressed {
+    border-image: url('buttons/button-pressed.png') 5;
 }
 
 /* ===================================================================
@@ -1120,7 +1122,7 @@ border-radius: 0px;
 .modal-dialog-button {
     border-radius: 4px;
     font-size: 10pt;
-    color: white;
+    color: black;
     margin-left: 10px;
     margin-right: 10px;
     padding: 4px 32px 5px;
@@ -1131,8 +1133,8 @@ border-radius: 0px;
 
 .modal-dialog-button:active,
 .modal-dialog-button:checked {
-    color: white;
-    border-image: url('urgent.png') 10 12 10 12;
+    color: black;
+    border-image: url('buttons/button-focused-pressed.png') 5;
 }
 
 .modal-dialog-button:disabled {
