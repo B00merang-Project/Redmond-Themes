@@ -171,7 +171,7 @@ StScrollBar StButton#vhandle:hover {
     padding: 1em 0em;
     color: #000;
     font-size: 10.5pt;
-    border: 1px solid #00A7FB;
+    border: 1px solid #1466c9;
     border-radius: 0px 0px 8px 0px;
 }
 /* The remaining popup-menu sizing is all done in ems, so that if you
@@ -186,7 +186,7 @@ StScrollBar StButton#vhandle:hover {
     border: 2px solid transparent;
 }
 .popup-menu-item:active {
-    background-color: #00A7FB;
+    background-color: #1466c9;
 }
 .popup-menu-item:insensitive {
     color: #9f9f9f;
@@ -211,7 +211,7 @@ StScrollBar StButton#vhandle:hover {
     -slider-height: 0.3em;
     -slider-background-color: #666666;
     -slider-border-color: #555555;
-    -slider-active-background-color: #00A7FB;
+    -slider-active-background-color: #1466c9;
     -slider-active-border-color: #DDDDDD;
     -slider-border-width: 1px;
     -slider-handle-radius: 0.5em;
@@ -1623,12 +1623,12 @@ border-radius: 1px;
 .menu-application-button {
     padding: 7px;
     max-width: 10px;
-    color: white;
+    color: black;
 }
 
 .menu-application-button-selected {
     padding: 7px;
-    color: white;
+    color: black;
     background-color: #335ea8;
 }
 
@@ -1642,7 +1642,7 @@ border-radius: 1px;
 
 .menu-category-button {
     padding: 7px;
-    color: white;
+    color: black;
 }
 
 .menu-category-button-greyed {
@@ -1672,7 +1672,7 @@ border-radius: 1px;
     padding-right: 30px;
     padding-left: 28px;
     text-align: right;
-    color: white;
+    color: black;
 }
 
 .menu-selected-app-title {
@@ -1713,8 +1713,8 @@ border-radius: 1px;
  * Window list (windowList.js)
  * ===================================================================*/
 .window-list-box {
-    spacing: 5px;   
-    padding-top: 3px;   
+    spacing: 1px;   
+    padding-top: 1px;   
 }
 
 .window-list-item-label {
@@ -2190,7 +2190,7 @@ The colour parameters are red, green, blue, and transparency or a name */
     border-right-width: 1px;
     border-bottom-width: 1px;
     background-color: #D3E5FA;
-    color: white;
+    color: black;
 }
 .starkmenu-search-box {
     padding-bottom: 5px;

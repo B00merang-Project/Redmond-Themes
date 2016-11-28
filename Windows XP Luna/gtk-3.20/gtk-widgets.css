@@ -19,9 +19,6 @@
     -GtkIMHtml-hyperlink-color: @link_color;
     -GtkMenu-horizontal-padding: 0;
     -GtkMenu-vertical-padding: 0;
-    -paned-handle-size: 4;
-    -progressbar-min-horizontal-bar-height: 12;
-    -progressbar-min-vertical-bar-width: 12;
     -GtkRange-slider-width: 14;
     -GtkRange-stepper-spacing: 0;
     -GtkRange-trough-border: 0;
@@ -33,15 +30,11 @@
     -GtkScrolledWindow-scrollbars-within-bevel: 1;
     -GtkStatusbar-shadow-type: none;
     -GtkTextView-error-underline-color: @error_color;
-    -toolbutton-icon-spacing: 6;
     -GtkToolItemGroup-expander-size: 8;
-    -treeview-expander-size: 8;
     -GtkWidget-focus-line-width: 1;
     -GtkWidget-focus-padding: 0;
     -GtkWidget-link-color: @link_color;
     -GtkWidget-visited-link-color: @link_color;
-    -window-resize-grip-height: 0;
-    -window-resize-grip-width: 0;
     -WnckTasklist-fade-overlay-rect: 0;
 
     background-clip: padding-box;
@@ -205,7 +198,7 @@ button {
     border-width: 1px;
     border-radius: 2px;
     border-style: solid;
-    border-color: shade(@theme_bg_color, 0.8);
+    border-color: shade(@theme_bg_color, 0.3);
     background-color: shade(@theme_bg_color, 1.08);
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0.045) 1px, rgba(0, 0, 0, 0.006) 2px, transparent 2px), linear-gradient(to top, rgba(0, 0, 0, 0.13), transparent 3px), linear-gradient(to bottom, white, #fcfcfa 3px, #f6f6f3 7px, #f4f4f0 50%, #f0f0ea);
     color: @theme_fg_color;
@@ -213,12 +206,12 @@ button {
 }
 
 button:hover {
-    border-color: shade(@theme_bg_color, 0.7);
+    border-color: shade(@theme_bg_color, 0.2);
     box-shadow: inset 0 0 1px 2px #ffc73c;
 }
 
 button:active {
-    border-color: shade(@theme_bg_color, 0.8);
+    border-color: shade(@theme_bg_color, 0.2);
     background-color: shade(@theme_bg_color, 0.95);
     background-image: linear-gradient(to bottom,
                                       shade(@button_bg_color, 0.6),
@@ -228,7 +221,7 @@ button:active {
 }
 
 button:active:hover {
-    border-color: shade(@theme_bg_color, 0.7);
+    border-color: shade(@theme_bg_color, 0.2);
 }
 
 button:focus,
@@ -236,7 +229,7 @@ button:hover:focus,
 button:active:focus,
 button:active:hover:focus {
     border-color: shade(#379aff, 1.2);
-    box-shadow: inset 0 0 1px 2px alpha(#379aff, 0.8);
+    box-shadow: inset 0 0 1px 2px alpha(#379aff, 0.2);
 }
 
 button:insensitive {
@@ -272,6 +265,33 @@ button.default:active {
 button.default:active:hover {
     border-color: shade(@theme_selected_bg_color, 0.7);
     background-color: shade(@theme_selected_bg_color, 0.97);
+}
+
+/* flat button */
+button.flat {
+    background-color: transparent;
+    background-image: none;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+button.flat:hover {
+    border-color: shade(@theme_bg_color, 0.2);
+    box-shadow: inset 0 0 1px 2px #ffc73c;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.045) 1px, rgba(0, 0, 0, 0.006) 2px, transparent 2px), linear-gradient(to top, rgba(0, 0, 0, 0.13), transparent 3px), linear-gradient(to bottom, white, #fcfcfa 3px, #f6f6f3 7px, #f4f4f0 50%, #f0f0ea);
+    box-shadow: inset 0 0 3px 0px rgba(0,0,0,0.15);
+}
+
+button.flat:active,
+button.flat:checked {
+    border-color: shade(@theme_bg_color, 0.2);
+    background-color: shade(@theme_bg_color, 0.95);
+    box-shadow: inset 0 0 3px 0px rgba(0,0,0,0.15);
+    background-image: linear-gradient(to bottom,
+                                      shade(@button_bg_color, 0.6),
+                                      shade(@button_bg_color, 0.7),
+                                      shade(@button_bg_color, 0.75)
+                                      );
 }
 
 /****************
@@ -944,10 +964,9 @@ headerbar .primary-toolbar menu,
 menu {
     padding: 4px;
     border-radius: 0;
-    border: 3px solid transparent;
+    border: 1px solid black;
     background-color: @menu_bg_color;
     color: @menu_fg_color;
-    border-image: url('assets/menu-bg.png') 3 3 3 3;
     box-shadow: none;
 }
 
@@ -1224,9 +1243,9 @@ notebook tab {
     box-shadow: none;
     border-radius: 0;
     background-image: linear-gradient(to bottom,
-                                      shade(@bg_color, 1.2),
+                                      shade(@bg_color, 1.05) 15%,
                                       @bg_color,
-                                      shade(@bg_color, 0.95)
+                                      @bg_color
                                       );
 }
 
@@ -1273,9 +1292,9 @@ notebook header.right tab {
     border-radius: 0 4px 4px 0;
     border-left-width: 0px;
     background-image: linear-gradient(to left,
-                                      shade(@bg_color, 1.2),
+                                      shade(@bg_color, 1.05) 15%,
                                       @bg_color,
-                                      shade(@bg_color, 0.95)
+                                      @bg_color
                                       );
     border-image-width: 1px 0;
 }
@@ -1293,10 +1312,11 @@ notebook header.bottom tab {
     border-radius: 0 0 4px 4px;
     border-top-width: 0px;
     background-image: linear-gradient(to top,
-                                      shade(@bg_color, 1.2),
+                                      shade(@bg_color, 1.05) 15%,
                                       @bg_color,
-                                      shade(@bg_color, 0.95)
+                                      @bg_color
                                       );
+
     border-image-width: 0 1px;
 }
 
@@ -1313,10 +1333,11 @@ notebook header.left tab {
     border-radius: 4px 0 0 4px;
     border-right-width: 0px;
     background-image: linear-gradient(to right,
-                                      shade(@bg_color, 1.2),
+                                      shade(@bg_color, 1.05) 15%,
                                       @bg_color,
-                                      shade(@bg_color, 0.95)
+                                      @bg_color
                                       );
+
     border-image-width: 1px 0;
 }
 
@@ -1876,16 +1897,18 @@ progressbar {
     box-shadow: inset 0.5px 0.5px 0px 1.5px #efefef, inset 1px 1px #bebebe;
     padding: 4px 3px; }
   progressbar progress {
-    background-image: linear-gradient(to right, transparent, transparent 37.5%, white 37.5%, white 50%, transparent 50%, transparent 87.5%, white 87.5%, white 100%), linear-gradient(to bottom, #7cc383 0%,
-                                                 #5dbe62 50%,
-                                                 #3bd047 51%,
-                                                 #15e81e 100%);
+    background-image: linear-gradient(to right, transparent, transparent 37.5%, white 37.5%, white 50%, transparent 50%, transparent 87.5%, white 87.5%, white 100%), linear-gradient(to bottom,
+					                  mix(@theme_selected_bg_color, #adefad, 0.95),
+					                  mix(@theme_selected_bg_color, #29d329, 0.95) 60%,
+					                  mix(@theme_selected_bg_color, #adefad, 0.95)
+                                      );
     background-size: 16px 16px, auto; }
   progressbar.vertical progress {
-    background-image: linear-gradient(to bottom, transparent, transparent 37.5%, white 37.5%, white 50%, transparent 50%, transparent 87.5%, white 87.5%, white 100%), linear-gradient(to bottom, #7cc383 0%,
-                                                 #5dbe62 50%,
-                                                 #3bd047 51%,
-                                                 #15e81e 100%);
+    background-image: linear-gradient(to bottom, transparent, transparent 37.5%, white 37.5%, white 50%, transparent 50%, transparent 87.5%, white 87.5%, white 100%), linear-gradient(to right,
+					                  mix(@theme_selected_bg_color, #adefad, 0.95),
+					                  mix(@theme_selected_bg_color, #29d329, 0.95) 60%,
+					                  mix(@theme_selected_bg_color, #adefad, 0.95)
+                                      );
     background-size: 16px 16px, auto; }
   progressbar.osd {
     min-width: 3px;
@@ -1914,48 +1937,46 @@ scrollbar {
     -GtkScrollbar-has-forward-stepper: true; }
   scrollbar.horizontal {
     background: linear-gradient(to top,
-                                      @bg_color,
-                                      shade(@bg_color, 0.98),
-                                      shade(@bg_color, 0.9)
+                                      shade(@bg_color, 1.1),
+                                      shade(@bg_color, 1.05)
                                       ); }
   scrollbar.horizontal slider {
     border: 3px solid transparent;
     border-image: url("Scrollbars/slider-horiz.png");
     border-image-slice: 3 3 3 3;
     border-image-repeat: stretch;
-    background: url("Scrollbars/handle-horiz.png") no-repeat center center, url("Scrollbars/slider-background-horiz.png"); }
+    background: url("Scrollbars/handle-horiz.png") no-repeat center center, linear-gradient(to top, #cadbf3); }
     scrollbar.horizontal slider:hover {
       border-image: url("Scrollbars/slider-horiz-prelight.png");
       border-image-slice: 3 3 3 3;
       border-image-repeat: stretch;
-      background: url("Scrollbars/handle-horiz-prelight.png") no-repeat center center, url("Scrollbars/slider-background-horiz-prelight.png"); }
+      background: url("Scrollbars/handle-horiz-prelight.png") no-repeat center center, linear-gradient(to top, #cadbf3); }
     scrollbar.horizontal slider:hover:active {
       border-image: url("Scrollbars/slider-horiz-active.png");
       border-image-slice: 3 3 3 3;
       border-image-repeat: stretch;
-      background: url("Scrollbars/handle-horiz-active.png") no-repeat center center, url("Scrollbars/slider-background-horiz-active.png"); }
+      background: url("Scrollbars/handle-horiz-active.png") no-repeat center center, linear-gradient(to top, #afc9ee); }
   scrollbar.vertical {
     background: linear-gradient(to left,
-                                      @bg_color,
-                                      shade(@bg_color, 0.98),
-                                      shade(@bg_color, 0.9)
+                                      shade(@bg_color, 1.1),
+                                      shade(@bg_color, 1.05)
                                       ); }
   scrollbar.vertical slider {
     border: 3px solid transparent;
     border-image: url("Scrollbars/slider-vert.png");
     border-image-slice: 3 3 3 3;
     border-image-repeat: stretch;
-    background: url("Scrollbars/handle-vert.png") no-repeat center center, url("Scrollbars/slider-background-vert.png"); }
+    background: url("Scrollbars/handle-vert.png") no-repeat center center, linear-gradient(to top, #cadbf3); }
     scrollbar.vertical slider:hover {
       border-image: url("Scrollbars/slider-vert-prelight.png");
       border-image-slice: 3 3 3 3;
       border-image-repeat: stretch;
-      background: url("Scrollbars/handle-vert-prelight.png") no-repeat center center, url("Scrollbars/slider-background-vert-prelight.png"); }
+      background: url("Scrollbars/handle-vert-prelight.png") no-repeat center center, linear-gradient(to top, #cadbf3); }
     scrollbar.vertical slider:hover:active {
       border-image: url("Scrollbars/slider-vert-active.png");
       border-image-slice: 3 3 3 3;
       border-image-repeat: stretch;
-      background: url("Scrollbars/handle-vert-active.png") no-repeat center center, url("Scrollbars/slider-background-vert-active.png"); }
+      background: url("Scrollbars/handle-vert-active.png") no-repeat center center, linear-gradient(to top, #afc9ee); }
   scrollbar.horizontal slider {
     min-width: 10px;
     min-height: 10px; }
@@ -1975,16 +1996,14 @@ scrollbar {
   scrollbar.overlay-indicator:not(.dragging):not(.hovering).vertical {
     border-right: 1px solid shade(@theme_bg_color); 
     background: linear-gradient(to left,
-                                      @bg_color,
-                                      shade(@bg_color, 0.98),
-                                      shade(@bg_color, 0.9)
+                                      shade(@bg_color, 1.1),
+                                      shade(@bg_color, 1.05)
                                       ); }
   scrollbar.overlay-indicator:not(.dragging):not(.hovering).horizontal {
     border-bottom: 1px solid shade(@theme_bg_color); 
-    background: linear-gradient(to top,
-                                      @bg_color,
-                                      shade(@bg_color, 0.98),
-                                      shade(@bg_color, 0.9)
+    background: linear-gradient(to left,
+                                      shade(@bg_color, 1.1),
+                                      shade(@bg_color, 1.05)
                                       ); }
     scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider.vertical {
       margin: 0;
@@ -1997,7 +2016,7 @@ scrollbar {
       border-image: url("Scrollbars/slider-vert.png");
       border-image-slice: 3 3 3 3;
       border-image-repeat: stretch;
-      background: url("Scrollbars/handle-vert.png") no-repeat center center, url("Scrollbars/slider-background-vert.png"); }
+      background: url("Scrollbars/handle-vert.png") no-repeat center center, linear-gradient(to top, #cadbf3); }
     scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider.horizontal {
       margin: 0;
       min-width: 16px;
@@ -2009,7 +2028,7 @@ scrollbar {
       border-image: url("Scrollbars/slider-horiz.png");
       border-image-slice: 3 3 3 3;
       border-image-repeat: stretch;
-      background: url("Scrollbars/handle-horiz.png") no-repeat center center, url("Scrollbars/slider-background-horiz.png"); }
+      background: url("Scrollbars/handle-horiz.png") no-repeat center center, linear-gradient(to top, #cadbf3); }
   scrollbar.overlay-indicator.dragging, scrollbar.overlay-indicator.hovering {
     opacity: 1; }
   scrollbar button:active, scrollbar button:hover, scrollbar button:disabled, scrollbar button {
@@ -2048,9 +2067,9 @@ scrollbar {
 /*************
  * separator *
  *************/
-.sidebar.viewseparator,
+.sidebar.view separator,
 .separator,
-.viewseparator,
+.view separator,
 .separator,
 separator,
 .separator {
@@ -2595,7 +2614,7 @@ GtkColorButtonbutton {
  * header-bar *
  **************/
 headerbar {
-    padding: 2px 4px;
+    padding: 4px 4px;
     border-width: 0;
     border-style: solid;
     border-color: shade(@titlebar_bg_color, 0.8);
@@ -2608,7 +2627,7 @@ headerbar button.text-button {
     padding: 4px;
 }
 
-headerbar buttonimage-button {
+headerbar button image-button {
     padding: 6px;
 }
 
@@ -2625,10 +2644,12 @@ headerbar .subtitle {
 }
 
 headerbar combobox,
-headerbar button {
+headerbar button,
+headerbar .linked button {
     border-color: shade(@titlebar_bg_color, 0.8);
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0.045) 1px, rgba(0, 0, 0, 0.006) 2px, transparent 2px), linear-gradient(to top, rgba(0, 0, 0, 0.13), transparent 3px), linear-gradient(to bottom, white, #fcfcfa 3px, #f6f6f3 7px, #f4f4f0 50%, #f0f0ea);
     color: @titlebar_fg_color;
+    padding: 6px;
 }
 
 headerbar button:hover {
@@ -2715,8 +2736,7 @@ toolbarmenubar {
  * primary-toolbar *
  *******************/
 .primary-toolbar,
-.primary-toolbar toolbar,
-.primary-toolbartoolbar {
+.primary-toolbar toolbar {
     -GtkWidget-window-dragging: true;
 
     padding: 4px;
@@ -2726,82 +2746,6 @@ toolbarmenubar {
     background-color: @toolbar_bg_color;
     background-image: linear-gradient(@toolbar_bg_color, shade(@toolbar_bg_color, 0.98));
     color: @toolbar_fg_color;
-}
-
-.primary-toolbar combobox,
-toolbar.primary-toolbar button {
-    padding: 4px 8px;
-    border-width: 1px;
-    border-color: transparent;
-    border-radius: 2px;
-    background-color: transparent;
-    background-image: none;
-    color: @toolbar_fg_color;
-}
-
-toolbar.primary-toolbar button.raised,
-.primary-toolbar .raisedbutton,
-toolbar button {
-    padding: 10px;
-    border-color: transparent;
-    background-color: transparent;
-    background-image: none;
-    box-shadow: none;
-    color: @toolbar_fg_color;
-}
-
-toolbar combobox {
-    border-color: shade(@toolbar_bg_color, 0.8);
-    background-color: shade(@toolbar_bg_color, 1.08);
-    background-image: none;
-    color: @toolbar_fg_color;
-}
-
-toolbar.primary-toolbar button:hover,
-combobox button.combo:hover {
-    border-color: shade(@theme_bg_color, 0.7);
-    box-shadow: inset 0 0 1px 2px #ffc73c;
-}
-
-toolbar.primary-toolbar button:active,
-combobox button.combo:checked {
-    border-color: shade(@toolbar_bg_color, 0.8);
-}
-
-toolbar.primary-toolbar button:checked {
-    border-color: shade(@toolbar_bg_color, 0.8);
-    background-color: gray;
-    background-image: none;
-}
-
-toolbar.primary-toolbar button:active:hover,
-combobox button.combo:checked:hover {
-    border-color: transparent;
-}
-
-toolbar.primary-toolbar button:focus,
-toolbar.primary-toolbar button:hover:focus,
-toolbar.primary-toolbar button:active:focus,
-toolbar.primary-toolbar button:active:hover:focus,
-toolbar button:focus,
-combobox button.combo:hover:focus,
-combobox button.combo:checked:focus,
-combobox button.combo:checked:hover:focus {
-    border-color: transparent;
-}
-
-toolbar.primary-toolbar button:disabled,
-toolbar button:disabled {
-    border-color: transparent;
-    background-color: transparent;
-    background-image: none;
-}
-
-toolbar.primary-toolbar button:active *:disabled,
-combobox button.combo:checked *:disabled {
-    border-color: transparent;
-    background-color: transparent;
-    background-image: none;
 }
 
 .primary-toolbar entry,
@@ -2817,7 +2761,7 @@ toolbar entry selection:focus {
 }
 
 /* inline-toolbar */
-.inline-toolbartoolbar {
+.inline-toolbar toolbar {
     -GtkToolbar-button-relief: normal;
 
     padding: 1px;
@@ -2829,7 +2773,7 @@ toolbar entry selection:focus {
     background-image: none;
 }
 
-.inline-toolbartoolbar:last-child {
+.inline-toolbar toolbar:last-child {
     border-width: 1px 1px 1px 1px;
     border-color: shade(@theme_bg_color, 0.8);
     border-radius: 0;
@@ -2870,14 +2814,14 @@ toolbar.inline-toolbar button:active:hover:focus {
 }
 
 toolbar.inline-toolbar button:disabled,
-.inline-toolbartoolbar toolbutton button:disabled {
+.inline-toolbar toolbar toolbutton button:disabled {
     border-color: shade(@theme_bg_color, 0.85);
     background-color: shade(@theme_bg_color, 0.9);
     background-image: none;
 }
 
 toolbar.inline-toolbar button:active *:disabled
-.inline-toolbartoolbar toolbutton button:active *:disabled {
+.inline-toolbar toolbar toolbutton button:active *:disabled {
     border-color: shade(@theme_bg_color, 0.75);
     background-color: shade(@theme_bg_color, 0.80);
     background-image: none;
@@ -2889,15 +2833,15 @@ toolbar.inline-toolbar button:active *:disabled
 /* set up shadows for visual separation */
 .linked button,
 toolbar.inline-toolbar button,
-.inline-toolbartoolbar toolbutton button,
-.inline-toolbartoolbar toolbutton > button {
+.inline-toolbar toolbar toolbutton button,
+.inline-toolbar toolbar toolbutton > button {
     box-shadow: inset -1px 0 shade(@theme_bg_color, 0.9);
 }
 
 .linked button:active,
 toolbar.inline-toolbar button:active,
-.inline-toolbartoolbar toolbutton button:active,
-.inline-toolbartoolbar toolbutton > button:active {
+.inline-toolbar toolbar toolbutton button:active,
+.inline-toolbar toolbar toolbutton > button:active {
     box-shadow: inset -1px 0 shade(@theme_bg_color, 0.9),
                 inset 1px 0 alpha(@dark_shadow, 0.07),
                 inset 0 1px alpha(@dark_shadow, 0.08),
@@ -2906,8 +2850,8 @@ toolbar.inline-toolbar button:active,
 
 .linked button:disabled,
 toolbar.inline-toolbar button:disabled,
-.inline-toolbartoolbar toolbutton button:disabled,
-.inline-toolbartoolbar toolbutton > button:disabled {
+.inline-toolbar toolbar toolbutton button:disabled,
+.inline-toolbar toolbar toolbutton > button:disabled {
     box-shadow: inset -1px 0 shade(@theme_bg_color, 0.85);
 }
 
@@ -2924,12 +2868,12 @@ toolbar.inline-toolbar button:disabled:last-child,
 toolbar.inline-toolbar button:disabled:only-child,
 toolbar.inline-toolbar button:active *:disabled:last-child,
 toolbar.inline-toolbar button:active *:disabled:only-child,
-.inline-toolbartoolbar toolbutton:last-child > button,
-.inline-toolbartoolbar toolbutton:only-child > button,
-.inline-toolbartoolbar toolbutton:last-child > button:disabled,
-.inline-toolbartoolbar toolbutton:only-child > button:disabled,
-.inline-toolbartoolbar toolbutton:last-child > button:active *:disabled,
-.inline-toolbartoolbar toolbutton:only-child > button:active *:disabled {
+.inline-toolbar toolbar toolbutton:last-child > button,
+.inline-toolbar toolbar toolbutton:only-child > button,
+.inline-toolbar toolbar toolbutton:last-child > button:disabled,
+.inline-toolbar toolbar toolbutton:only-child > button:disabled,
+.inline-toolbar toolbar toolbutton:last-child > button:active *:disabled,
+.inline-toolbar toolbar toolbutton:only-child > button:active *:disabled {
     box-shadow: none;
 }
 
@@ -2938,8 +2882,8 @@ toolbar.inline-toolbar button:active *:disabled:only-child,
 .linked button:active:only-child,
 toolbar.inline-toolbar button:active:last-child,
 toolbar.inline-toolbar button:active:only-child,
-.inline-toolbartoolbar toolbutton:last-child > button:active,
-.inline-toolbartoolbar toolbutton:only-child > button:active {
+.inline-toolbar toolbar toolbutton:last-child > button:active,
+.inline-toolbar toolbar toolbutton:only-child > button:active {
     box-shadow: inset 1px 0 alpha(@dark_shadow, 0.07),
                 inset 0 1px alpha(@dark_shadow, 0.08),
                 inset -1px 0 alpha(@dark_shadow, 0.07);
@@ -2954,9 +2898,9 @@ toolbar.inline-toolbar button:active:only-child,
 toolbar.inline-toolbar button,
 toolbar.inline-toolbar button:active,
 toolbar.inline-toolbar button:disabled,
-.inline-toolbartoolbar toolbutton button,
-.inline-toolbartoolbar toolbutton button:active,
-.inline-toolbartoolbar toolbutton button:disabled {
+.inline-toolbar toolbar toolbutton button,
+.inline-toolbar toolbar toolbutton button:active,
+.inline-toolbar toolbar toolbutton button:disabled {
     border-width: 1px;
     border-radius: 0;
     border-right-width: 0;
@@ -2972,9 +2916,9 @@ toolbar.inline-toolbar button:disabled,
 toolbar.inline-toolbar button:first-child,
 toolbar.inline-toolbar button:active:first-child,
 toolbar.inline-toolbar button:disabled:first-child,
-.inline-toolbartoolbar toolbutton:first-child button,
-.inline-toolbartoolbar toolbutton:first-child button:active,
-.inline-toolbartoolbar toolbutton:first-child button:disabled {
+.inline-toolbar toolbar toolbutton:first-child button,
+.inline-toolbar toolbar toolbutton:first-child button:active,
+.inline-toolbar toolbar toolbutton:first-child button:disabled {
     border-width: 1px;
     border-radius: 2px;
     border-right-width: 0;
@@ -2991,9 +2935,9 @@ toolbar.inline-toolbar button:disabled:first-child,
 toolbar.inline-toolbar button:last-child,
 toolbar.inline-toolbar button:active:last-child,
 toolbar.inline-toolbar button:disabled:last-child,
-.inline-toolbartoolbar toolbutton:last-child button,
-.inline-toolbartoolbar toolbutton:last-child button:active,
-.inline-toolbartoolbar toolbutton:last-child button:disabled {
+.inline-toolbar toolbar toolbutton:last-child button,
+.inline-toolbar toolbar toolbutton:last-child button:active,
+.inline-toolbar toolbar toolbutton:last-child button:disabled {
     border-width: 1px;
     border-radius: 2px;
     border-left-width: 0;
@@ -3010,23 +2954,23 @@ toolbar.inline-toolbar button:disabled:last-child,
 toolbar.inline-toolbar button:only-child,
 toolbar.inline-toolbar button:active:only-child,
 toolbar.inline-toolbar button:disabled:only-child,
-.inline-toolbartoolbar toolbutton:only-child button,
-.inline-toolbartoolbar toolbutton:only-child button:active,
-.inline-toolbartoolbar toolbutton:only-child button:disabled {
+.inline-toolbar toolbar toolbutton:only-child button,
+.inline-toolbar toolbar toolbutton:only-child button:active,
+.inline-toolbar toolbar toolbutton:only-child button:disabled {
     border-width: 1px;
     border-radius: 2px;
 }
 
 /* linked button shadows (vertical) */
 .linked.vertical button,
-.inline-toolbartoolbar.vertical button,
-.inline-toolbartoolbar.vertical toolbutton > button {
+.inline-toolbar toolbar.vertical button,
+.inline-toolbar toolbar.vertical toolbutton > button {
     box-shadow: inset 0 -1px shade(@theme_bg_color, 0.9);
 }
 
 .linked.vertical button:active,
-.inline-toolbartoolbar.vertical button:active,
-.inline-toolbartoolbar.vertical toolbutton > button:active {
+.inline-toolbar toolbar.vertical button:active,
+.inline-toolbar toolbar.vertical toolbutton > button:active {
     box-shadow: inset 0 -1px shade(@theme_bg_color, 0.9),
                 inset 1px 0 alpha(@dark_shadow, 0.07),
                 inset 0 1px alpha(@dark_shadow, 0.08),
@@ -3034,8 +2978,8 @@ toolbar.inline-toolbar button:disabled:only-child,
 }
 
 .linked.vertical button:disabled,
-.inline-toolbartoolbar.vertical button:disabled,
-.inline-toolbartoolbar.vertical toolbutton > button:disabled {
+.inline-toolbar toolbar.vertical button:disabled,
+.inline-toolbar toolbar.vertical toolbutton > button:disabled {
     box-shadow: inset 0 -1px shade(@theme_bg_color, 0.85);
 }
 
@@ -3046,28 +2990,28 @@ toolbar.inline-toolbar button:disabled:only-child,
 .linked.vertical button:disabled:only-child,
 .linked.vertical button:active *:disabled:last-child,
 .linked.vertical button:active *:disabled:only-child,
-.inline-toolbartoolbar.vertical button:last-child,
-.inline-toolbartoolbar.vertical button:only-child,
-.inline-toolbartoolbar.vertical button:disabled:last-child,
-.inline-toolbartoolbar.vertical button:disabled:only-child,
-.inline-toolbartoolbar.vertical button:active *:disabled:last-child,
-.inline-toolbartoolbar.vertical button:active *:disabled:only-child,
-.inline-toolbartoolbar.vertical toolbutton:last-child > button,
-.inline-toolbartoolbar.vertical toolbutton:only-child > button,
-.inline-toolbartoolbar.vertical toolbutton:last-child > button:disabled,
-.inline-toolbartoolbar.vertical toolbutton:only-child > button:disabled,
-.inline-toolbartoolbar.vertical toolbutton:last-child > button:active *:disabled,
-.inline-toolbartoolbar.vertical toolbutton:only-child > button:active *:disabled {
+.inline-toolbar toolbar.vertical button:last-child,
+.inline-toolbar toolbar.vertical button:only-child,
+.inline-toolbar toolbar.vertical button:disabled:last-child,
+.inline-toolbar toolbar.vertical button:disabled:only-child,
+.inline-toolbar toolbar.vertical button:active *:disabled:last-child,
+.inline-toolbar toolbar.vertical button:active *:disabled:only-child,
+.inline-toolbar toolbar.vertical toolbutton:last-child > button,
+.inline-toolbar toolbar.vertical toolbutton:only-child > button,
+.inline-toolbar toolbar.vertical toolbutton:last-child > button:disabled,
+.inline-toolbar toolbar.vertical toolbutton:only-child > button:disabled,
+.inline-toolbar toolbar.vertical toolbutton:last-child > button:active *:disabled,
+.inline-toolbar toolbar.vertical toolbutton:only-child > button:active *:disabled {
     box-shadow: none;
 }
 
 /* add back the inset shadow effect */
 .linked.vertical button:active:last-child,
 .linked.vertical button:active:only-child,
-.inline-toolbartoolbar.vertical button:active:last-child,
-.inline-toolbartoolbar.vertical button:active:only-child,
-.inline-toolbartoolbar.vertical toolbutton:last-child > button:active,
-.inline-toolbartoolbar.vertical toolbutton:only-child > button:active {
+.inline-toolbar toolbar.vertical button:active:last-child,
+.inline-toolbar toolbar.vertical button:active:only-child,
+.inline-toolbar toolbar.vertical toolbutton:last-child > button:active,
+.inline-toolbar toolbar.vertical toolbutton:only-child > button:active {
     box-shadow: inset 1px 0 alpha(@dark_shadow, 0.07),
                 inset 0 1px alpha(@dark_shadow, 0.08),
                 inset -1px 0 alpha(@dark_shadow, 0.07);
@@ -3616,7 +3560,7 @@ overlay.osd {
     background-image: none;
 }
 
-.osdtoolbar {
+.osd toolbar {
     -GtkToolbar-button-relief: normal;
 
     padding: 4px;
@@ -3629,7 +3573,7 @@ overlay.osd {
     color: @osd_fg;
 }
 
-.osdtoolbar button {
+.osd toolbar button {
     padding: 4px;
     border-width: 1px;
     border-style: solid;
@@ -3640,74 +3584,74 @@ overlay.osd {
     color: @osd_fg;
 }
 
-.osdcombobox button.combo:hover {
+.osd combobox button.combo:hover {
     border-color: shade(@osd_bg, 0.7);
     background-color: shade(@osd_bg, 1.10);
     background-image: none;
 }
 
-.osdcombobox button.combo:checked {
+.osd combobox button.combo:checked {
     border-color: shade(@osd_bg, 0.8);
     background-color: shade(@osd_bg, 0.95);
     background-image: none;
 }
 
-.osdcombobox button.combo:checked:hover {
+.osd combobox button.combo:checked:hover {
     border-color: shade(@osd_bg, 0.7);
 }
 
-.osdtoolbar button:focus,
-.osdcombobox button.combo:hover:focus,
-.osdcombobox button.combo:checked:focus,
-.osdcombobox button.combo:checked:hover:focus {
+.osd toolbar button:focus,
+.osd combobox button.combo:hover:focus,
+.osd combobox button.combo:checked:focus,
+.osd combobox button.combo:checked:hover:focus {
     border-color: shade(@osd_bg, 0.7);
 }
 
-.osdtoolbar button:disabled {
+.osd toolbar button:disabled {
     border-color: shade(@osd_bg, 0.85);
     background-color: shade(@osd_bg, 0.9);
     background-image: none;
 }
 
-.osdcombobox button.combo:checked *:disabled {
+.osd combobox button.combo:checked *:disabled {
     border-color: shade(@osd_bg, 0.75);
     background-color: shade(@osd_bg, 0.80);
     background-image: none;
 }
 
-.osdtoolbar button:first-child {
+.osd toolbar button:first-child {
     border-radius: 2px 0 0 2px;
     border-width: 1px 0 1px 1px;
     box-shadow: inset -1px 0 shade(@osd_bg, 0.9);
 }
 
-.osdtoolbar button:last-child {
+.osd toolbar button:last-child {
     box-shadow: none;
     border-radius: 0 2px 2px 0;
     border-width: 1px 1px 1px 0;
 }
 
-.osdtoolbar button:only-child,
-.osdtoolbar toolbutton button,
-.osdtoolbar toolbutton:only-child button,
-.osdtoolbar toolbutton:last-child button,
-.osdtoolbar toolbutton:first-child button {
+.osd toolbar button:only-child,
+.osd toolbar toolbutton button,
+.osd toolbar toolbutton:only-child button,
+.osd toolbar toolbutton:last-child button,
+.osd toolbar toolbutton:first-child button {
     border-width: 1px;
     border-radius: 2px;
     border-style: solid;
 }
 
-.osdtoolbar separator,
+.osd toolbar separator,
 .separator {
     color: shade(@osd_bg, 0.9);
 }
 
 /* used by gnome-settings-daemon's media-keys OSD */
-.osdtrough {
+.osd trough {
     background-color: shade(@osd_bg, 0.8);
 }
 
-.osdprogressbar.vertical progress {
+..osd progressbar.vertical progress {
     background-color: @osd_fg;
 }
 
@@ -3765,8 +3709,8 @@ progressbar .osd {
     padding: 0;
 }
 
-.osd progressbartrough,
-progressbar .osdtrough {
+.osd progressbar trough,
+progressbar .osd trough {
     padding: 0;
     border-style: none;
     border-radius: 0;
@@ -3774,8 +3718,8 @@ progressbar .osdtrough {
     background-color: transparent;
 }
 
-.osd progressbarprogressbar.vertical progress,
-progressbar .osdprogressbar.vertical progress {
+.osd progressbar.vertical progress,
+progressbar ..osd progressbar.vertical progress {
     border-style: none;
     border-radius: 0;
     background-color: @theme_selected_bg_color;
@@ -4029,7 +3973,7 @@ headerbar.titlebar {
     border-radius: 8px 8px 0 0;
     background-color: transparent;
     background-image: url('assets/titlebar-focused-middle.png');
-    background-size: 30px 38px;
+    background-size: 100% 100%;
     color: mix(@titlebar_fg_color, @titlebar_bg_color, 0.1);
     text-shadow: none;
 }
@@ -4037,7 +3981,7 @@ headerbar.titlebar {
 headerbar.titlebar:backdrop {
     background-color: transparent;
     background-image: url('assets/titlebar-unfocused-middle.png');
-    background-size: 30px 38px;
+    background-size: 100% 100%;
 }
 
 headerbar.titlebar.default-decoration {

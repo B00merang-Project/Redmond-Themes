@@ -4,7 +4,7 @@
   # description: Windows Embedded theme*/
 
 /* default color scheme */
-@define-color bg_color #ebe9ed;
+@define-color bg_color #ECE9D8;
 @define-color fg_color #000;
 @define-color base_color #ffffff;
 @define-color text_color #4c4c4c;
@@ -17,7 +17,7 @@
 @define-color button_bg_color #f7f7f7;
 
 /* dark color scheme */
-@define-color dark_bg_color #ebe9ed;
+@define-color dark_bg_color #ECE9D8;
 @define-color dark_fg_color #000;
 
 /* colormap actually used by the theme, to be overridden in other css files */
