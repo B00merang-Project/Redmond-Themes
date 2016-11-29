@@ -1,7 +1,7 @@
 gtk-color-scheme = "base_color:#fff"
 
 gtk-color-scheme = "fg_color:#000000"
-gtk-color-scheme = "bg_color:#ECE9D8"
+gtk-color-scheme = "bg_color:#e6e6ed"
 
 gtk-color-scheme = "selected_bg_color:#a6a3b4"
 gtk-color-scheme = "selected_fg_color:#fff"

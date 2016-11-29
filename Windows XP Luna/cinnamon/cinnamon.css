@@ -260,7 +260,7 @@ StScrollBar StButton#vhandle:hover {
     border-image: url('panel.png') 80 0 0 0;
     font-weight: normal;
     height: 30px;
-    outline: 1px rgba(0,0,0,1);
+    outline: 1px #1941a5;
 }
 
 #panelLeft, #panelCenter {

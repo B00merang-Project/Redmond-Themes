@@ -12,8 +12,8 @@
 @define-color selected_fg_color #262626;
 @define-color tooltip_bg_color #e9e9e9;
 @define-color tooltip_fg_color #000;
-@define-color sidebar_bg_color #D3E5FA;
-@define-color sidebar_fg_color #000;
+@define-color sidebar_bg_color #6c86dd;
+@define-color sidebar_fg_color #fff;
 @define-color button_bg_color #f7f7f7;
 
 /* dark color scheme */

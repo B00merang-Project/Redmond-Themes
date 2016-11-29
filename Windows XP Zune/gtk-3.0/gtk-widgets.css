@@ -276,6 +276,37 @@ GtkAssistant .sidebar {
     background-color: shade(@theme_selected_bg_color, 0.97);
 }
 
+/* flat button */
+.button.flat {
+    background-color: transparent;
+    background-image: none;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.button.flat:hover {
+    border-color: shade(@theme_bg_color, 0.7);
+    background-color: shade(@theme_bg_color, 1.08);
+    background: linear-gradient(to bottom, rgba(252,252,252,1) 0%,
+                                           rgba(235,235,235,1) 50%,
+                                           rgba(221,221,221,1) 51%,
+                                           rgba(174,174,174,1) 100%);
+    color: @theme_fg_color;
+    box-shadow: inset 0 0 3px 0px rgba(0,0,0,0.15);
+}
+
+.button.flat:active,
+.button.flat:checked {
+    border-color: shade(@theme_bg_color, 0.2);
+    background-color: shade(@theme_bg_color, 0.95);
+    box-shadow: inset 0 0 3px 0px rgba(0,0,0,0.15);
+    background-image: linear-gradient(to bottom,
+                                      shade(@button_bg_color, 0.6),
+                                      shade(@button_bg_color, 0.7),
+                                      shade(@button_bg_color, 0.75)
+                                      );
+}
+
 /****************
  * cell and row *
  ****************/
@@ -2515,83 +2546,11 @@ GtkColorButton.button {
 }
 
 .primary-toolbar GtkComboBox,
-.primary-toolbar .button {
-    padding: 4px 8px;
-    border-width: 1px;
-    border-color: transparent;
-    border-radius: 2px;
-    background-color: transparent;
-    background-image: none;
-    color: @toolbar_fg_color;
-}
-
+.primary-toolbar .button,
 .primary-toolbar .raised .button,
 .primary-toolbar .raised.button,
 .toolbar .button {
     padding: 10px;
-    box-shadow: none;
-    border-color: transparent;
-    background-color: transparent;
-    background-image: none;
-    color: @toolbar_fg_color;
-}
-
-.toolbar GtkComboBox {
-    border-color: shade(@toolbar_bg_color, 0.8);
-    background-color: shade(@toolbar_bg_color, 1.08);
-    background-image: none;
-    color: @toolbar_fg_color;
-}
-
-.primary-toolbar .button:hover,
-.toolbar .button:hover {
-    border-color: transparent;
-    background-color: transparent;
-    background-image: none;
-}
-
-.primary-toolbar .button:active,
-.toolbar .button:active {
-    border-color: shade(@toolbar_bg_color, 0.8);
-    background-color: gray;
-    color: white;
-    background-image: none;
-}
-
-.primary-toolbar .button:checked {
-    border-color: shade(@toolbar_bg_color, 0.8);
-    background-color: gray;
-    background-image: none;
-}
-
-.primary-toolbar .button:active:hover,
-.toolbar .button:active:hover {
-    border-color: transparent;
-}
-
-.primary-toolbar .button:focus,
-.primary-toolbar .button:hover:focus,
-.primary-toolbar .button:active:focus,
-.primary-toolbar .button:active:hover:focus,
-.toolbar .button:focus,
-.toolbar .button:hover:focus,
-.toolbar .button:active:focus,
-.toolbar .button:active:hover:focus {
-    border-color: transparent;
-}
-
-.primary-toolbar .button:insensitive,
-.toolbar .button:insensitive {
-    border-color: transparent;
-    background-color: transparent;
-    background-image: none;
-}
-
-.primary-toolbar .button:active *:insensitive,
-.toolbar .button:active *:insensitive {
-    border-color: transparent;
-    background-color: transparent;
-    background-image: none;
 }
 
 .primary-toolbar .entry,
@@ -3810,7 +3769,7 @@ GtkBubbleWindow .toolbar {
     border-radius: 8px 8px 0 0;
     background-color: transparent;
     background-image: url('assets/titlebar-focused-middle.png');
-    background-size: 30px 38px;
+    background-size: 100% 100%;
     color: mix(@titlebar_fg_color, @titlebar_bg_color, 0.1);
     text-shadow: none;
 }
@@ -3818,7 +3777,7 @@ GtkBubbleWindow .toolbar {
 .titlebar:backdrop {
     background-color: transparent;
     background-image: url('assets/titlebar-unfocused-middle.png');
-    background-size: 30px 38px;
+    background-size: 100% 100%;
 }
 
 .titlebar.default-decoration {
