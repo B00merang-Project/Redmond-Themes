@@ -4010,35 +4010,35 @@ headerbar.titlebar .title {
     font: bold;
 }
 
-headerbar button.titlebutton {
+headerbar button .titlebutton {
     padding: 2px;
     border-style: solid;
     border-radius: 4px;
     border-color: #ffffff;
-    background: linear-gradient(to bottom, #5f8cf7, #135de6);
-    box-shadow: inset 0 0 1px 0 #0f47c0;
+    background: linear-gradient(to bottom, #aab68f, #89955c);
+    box-shadow: inset 0 0 1px 0 #95a274;
     color: white;
     icon-shadow: none;
 }
 
-headerbar button.titlebutton:hover,
-headerbar button.titlebutton:hover:focus {
+.titlebar .titlebutton:hover,
+headerbar button .titlebutton:hover:focus {
     background: none;
     border-color: #ffffff;
     color: white;
 }
 
-headerbar button.titlebutton:active,
-headerbar button.titlebutton:active:hover {
+headerbar button .titlebutton:active,
+headerbar button .titlebutton:active:hover {
     background: none;
     border-color: #ffffff;
     color: white;
     box-shadow: none;
 }
 
-headerbar button.titlebutton:backdrop {
+headerbar button .titlebutton:backdrop {
     background-image: none;
-    background: linear-gradient(to bottom, #6788e8, #4a7ce5);
+    background: linear-gradient(to bottom, #dee8cd, #c1cba4);
     color: white;
     icon-shadow: none;
 }

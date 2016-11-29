@@ -3802,8 +3802,8 @@ GtkBubbleWindow .toolbar {
     border-style: solid;
     border-radius: 4px;
     border-color: #ffffff;
-    background: linear-gradient(to bottom, #5f8cf7, #135de6);
-    box-shadow: inset 0 0 1px 0 #0f47c0;
+    background: linear-gradient(to bottom, #aab68f, #89955c);
+    box-shadow: inset 0 0 1px 0 #95a274;
     color: white;
     icon-shadow: none;
 }
@@ -3825,7 +3825,7 @@ GtkBubbleWindow .toolbar {
 
 .titlebar .titlebutton:backdrop {
     background-image: none;
-    background: linear-gradient(to bottom, #6788e8, #4a7ce5);
+    background: linear-gradient(to bottom, #dee8cd, #c1cba4);
     color: white;
     icon-shadow: none;
 }

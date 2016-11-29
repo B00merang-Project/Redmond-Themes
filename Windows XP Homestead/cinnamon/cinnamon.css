@@ -59,7 +59,7 @@ StScrollBar StButton#vhandle:hover {
     background-gradient-end: rgba(57,156,238,0.9);
     background-gradient-start: rgba(57,156,238,0.9);
     background-gradient-direction: vertical;
-    color: #fff;
+    color: black;
     font-size: 8.5pt;
     font-weight: normal;    
     text-align: center;
@@ -253,14 +253,14 @@ StScrollBar StButton#vhandle:hover {
  * ===================================================================*/
 
 #panel {
-    color: #ffffff;
-    text-shadow: black 0px 1px 1px;
+    color: black;
+    text-shadow: white 0px 1px 1px;
     background-color: #013c6b;
     font-size: 9pt;
     border-image: url('panel.png') 80 0 0 0;
     font-weight: normal;
     height: 30px;
-    outline: 1px rgba(0,0,0,1);
+    outline: 1px #64744c;
 }
 
 #panelLeft, #panelCenter {
@@ -276,6 +276,8 @@ StScrollBar StButton#vhandle:hover {
     border-right-width: 10px;
     font-size: 12pt;
     font-style: italic;
+    color: white;
+    text-shadow: black 1px 1px;
     font-weight: bold;
 }
 
@@ -420,7 +422,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .window-caption {
-    background-color: black;
+    background-color: white;
     border-radius: 0px;
     color: white;
     spacing: 25px;
@@ -429,7 +431,7 @@ StScrollBar StButton#vhandle:hover {
 .window-caption#selected {
      background-color: #000;
       border-radius: 0px;
-    color: #fff;
+    color: black;
       spacing: 25px;
 }
 
@@ -545,7 +547,7 @@ StScrollBar StButton#vhandle:hover {
 
 .expo-workspace-thumbnail-frame {
   border: 1px, black;
-  background-color: black;
+  background-color: white;
 }
 
 .expo-workspace-thumbnail-frame#active {
@@ -643,7 +645,7 @@ border-radius: 0px;
     border-left: 0px;
     border-right: 0px;
     border-radius: 0px;
-    color: #fff;
+    color: black;
 }
 #LookingGlassDialog > #Toolbar {
     border: 2px solid #acbe84;
@@ -659,7 +661,7 @@ border-radius: 0px;
     padding: 2px;
 }
 #LookingGlassDialog .notebook-tab:hover {
-    color: #FFFFFF;
+    color: black;
 }
 #LookingGlassDialog .notebook-tab:selected {
     background-color: #acbe84;
@@ -687,13 +689,13 @@ border-radius: 0px;
     border-radius: 4px;
 }
 .lg-obj-inspector-button:hover {
-    border: 1px solid #ffffff;
+    border: 1px solid black;
 }
 .lg-dialog .cinnamon-link {
     color: #cccccc;
 }
 .lg-dialog .cinnamon-link:hover {
-    color: #ffffff;
+    color: black;
 }
 #LookingGlassDialog StBoxLayout#EvalBox {
     padding: 4px;
@@ -788,7 +790,7 @@ border-radius: 0px;
 .datemenu-date-label {
     padding: .4em 1.75em;
     font-size: 10.5pt;
-    color: #fff;
+    color: black;
 }
 
 .calendar-day-base {
@@ -800,24 +802,24 @@ border-radius: 0px;
 
 .calendar-day-base:hover {
     background-color: #acbe84;
-    color: #fff;
+    color: black;
 }
 
 .calendar-day-base:active {
 }
 
 .calendar-day-heading {
-    color: #fff;
+    color: black;
     padding-top: 1em;
 }
 
 .calendar-week-number {
-    color: #fff;
+    color: black;
 }
 
 /* Hack used in lieu of border-collapse - see calendar.js */
 .calendar-day {
-    color: #fff;
+    color: black;
     border-top-width: 0;
     border-left-width: 0;
 }
@@ -834,7 +836,7 @@ border-radius: 0px;
 }
 
 .calendar-today {
-    color: #ffffff;
+    color: black;
     font-weight: bold;
     background-color: rgba(57,156,238,1);
     border-radius: 2px;
@@ -857,7 +859,7 @@ border-radius: 0px;
  
     border-radius: 6px;
     font-size: 8.5pt;
-    background-color: #ffffe1;
+    background-color: blackfe1;
     border: 1px solid #000;
     padding: 6px 6px 6px 6px;
     spacing-rows: 10px;
@@ -943,7 +945,7 @@ border-radius: 0px;
     background-gradient-direction: horizontal;
     background-gradient-start: rgba(255, 255, 255, 0.1);
     background-gradient-end: rgba(255, 255, 255, 0);
-    color: #fff;
+    color: black;
 }
 .hotplug-resident-mount-label {
     color: inherit;
@@ -1108,7 +1110,7 @@ border-radius: 0px;
     border-radius: 2px;
     background-color: #2d75ad;
     border: 2px solid #013b6b;
-    color: #fff;
+    color: black;
     padding-right: 42px;
     padding-left: 42px;
     padding-bottom: 30px;
@@ -1208,7 +1210,7 @@ border-radius: 0px;
 .end-session-dialog-subject {
     font-size: 12pt;
     font-weight: bold;
-    color: #fff;
+    color: black;
     padding-top: 10px;
     padding-left: 17px;
     padding-bottom: 30px;
@@ -1413,7 +1415,7 @@ border-radius: 0px;
 
 .polkit-dialog-error-label {
     font-size: 10pt;
-    color: #ffff00;
+    color: blackf00;
     padding-bottom: 8px;
 }
 
@@ -1504,7 +1506,7 @@ border: 1px #76d2ec;
     border-left: 0px;
     border-right: 0px; 
 border-radius: 1px;
-    color: #fff;
+    color: black;
  
 }
 
@@ -1517,7 +1519,7 @@ border: 1px #76d2ec;
     border-left: 0px;
     border-right: 0px; 
 border-radius: 1px;
-    color: #fff;
+    color: black;
  
 }
 
@@ -1734,6 +1736,8 @@ border-radius: 1px;
 .window-list-item-box:checked,
 .window-list-item-box:focus    { 
     border-image: url('active.png') 5;
+    color: white;
+    text-shadow: black 1px 1px;
 }
 
 
@@ -1766,7 +1770,7 @@ border-radius: 1px;
     width: 26px;
     height: 20px;
     padding: 5px;
-    color: #fff;    
+    color: black;    
     background-color: #000;
 }
 
@@ -1833,7 +1837,7 @@ border-radius: 1px;
     padding: 2px;
     border-radius: 0px;
       background-color: rgba(255,255,255,0.0);
-      color: #fff;
+      color: black;
       transition-duration: 250;
 }
 
@@ -1978,7 +1982,7 @@ border-radius: 1px;
 /* When switching workspaces*/
 
 .workspace-osd {
-    color: #fff;
+    color: black;
     font-size: 25pt;    
     text-align: center;
     background-color: #acbe84;
@@ -2127,7 +2131,7 @@ The colour parameters are red, green, blue, and transparency or a name */
 }
 
 .numa-alert {
-      color: #fff;
+      color: black;
       border-top: 3px;
       border-bottom: 0px;
     background-gradient-direction: vertical;
@@ -2137,7 +2141,7 @@ The colour parameters are red, green, blue, and transparency or a name */
 }
 
 .numa-limit-exceeded {
-      color: #fff;
+      color: black;
       border-top: 3px;
       border-bottom: 0px;
     background-gradient-direction: vertical;
@@ -2154,7 +2158,7 @@ The colour parameters are red, green, blue, and transparency or a name */
     font-size: 18pt;
     border-radius: 24px;
     background-color: rgba(55,55,55,0.9);
-    color: #fff;
+    color: black;
     padding-right: 20px;
     padding-left: 20px;
     padding-bottom: 20px;
@@ -2177,8 +2181,8 @@ The colour parameters are red, green, blue, and transparency or a name */
     color: white; /* Information, which is shown, if you select apps*/
 }
 .starkmenu-favorites-box {  
-    background-color: #fff;
-    border: 0px solid #fff;
+    background-color: white;
+    border: 0px solid black;
 }
 .starkmenu-applications-box {
     padding: 0px 0px 0px 0px;
@@ -2189,7 +2193,7 @@ The colour parameters are red, green, blue, and transparency or a name */
 .starkmenu-applications-box StScrollView {
     border-right-width: 1px;
     border-bottom-width: 1px;
-    background-color: #fff;
+    background-color: white;
     color: black;
 }
 .starkmenu-search-box {

@@ -4104,33 +4104,33 @@ headerbar button.titlebutton {
     padding: 2px;
     border-style: solid;
     border-radius: 4px;
-    border-color: #012f54;
-    background-image: linear-gradient(to bottom, #246ba3, #014174);
-    box-shadow: inset 0 0 1px 0 #246ba3;
+    border-color: #4d73c3;
+    background: linear-gradient(to bottom, #84b4e6, #628bc7);
+    box-shadow: inset 0 0 1px 0 #9ec2ea;
     color: white;
     icon-shadow: none;
 }
 
 headerbar button.titlebutton:hover,
 headerbar button.titlebutton:hover:focus {
-    background-image: none;
-    background-color: transparent;
-    border-color: #012f54;
+    background: none;
+    border-color: #1c4988;
     color: white;
 }
 
 headerbar button.titlebutton:active,
 headerbar button.titlebutton:active:hover {
-    background-image: none;
-    border-color: #012f54;
+    background: none;
+    border-color: #285a96;
     color: white;
     box-shadow: none;
 }
 
 headerbar button.titlebutton:backdrop {
     background-image: none;
-    background-image: linear-gradient(to bottom, #014174, #246ba3);
+    background-color: transparent;
     color: white;
+    border-color: #285a96;
     icon-shadow: none;
 }
 
