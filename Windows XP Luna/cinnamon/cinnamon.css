@@ -2160,7 +2160,7 @@ The colour parameters are red, green, blue, and transparency or a name */
  * (if CinnXPStarkMenu is used, change some stuff, else use default)
  * ===================================================================*/
 .right-buttons-box {
-    background-color: #ffffff;
+    background-color: #D3E5FA;
     padding: 8px;
 }
 .starkmenu-background {
@@ -2170,8 +2170,8 @@ The colour parameters are red, green, blue, and transparency or a name */
     color: white; /* Information, which is shown, if you select apps*/
 }
 .starkmenu-favorites-box {  
-    background-color: #D3E5FA;
-    border: 0px solid #D3E5FA;
+    background-color: #ffffff;
+    border: 0px solid #ffffff;
 }
 .starkmenu-applications-box {
     padding: 0px 0px 0px 0px;
@@ -2180,8 +2180,6 @@ The colour parameters are red, green, blue, and transparency or a name */
     background-color: #D3E5FA;
 }
 .starkmenu-applications-box StScrollView {
-    border-right-width: 1px;
-    border-bottom-width: 1px;
     background-color: #ffffff;
     color: black;
 }

@@ -2185,8 +2185,6 @@ The colour parameters are red, green, blue, and transparency or a name */
     background-color: #f1f2e4;
 }
 .starkmenu-applications-box StScrollView {
-    border-right-width: 1px;
-    border-bottom-width: 1px;
     background-color: white;
     color: black;
 }
