@@ -15,12 +15,12 @@
   <distance name="right_width" value="5"/>
   <distance name="bottom_height" value="5"/>
   <distance name="left_titlebar_edge" value="1"/>
-  <distance name="right_titlebar_edge" value="5"/>
+  <distance name="right_titlebar_edge" value="7"/>
   <distance name="button_width" value="21"/>
   <distance name="button_height" value="21"/>
-  <distance name="title_vertical_pad" value="12"/>
+  <distance name="title_vertical_pad" value="15"/>
   <border name="title_border" left="0" right="0" top="0" bottom="0"/>
-  <border name="button_border" left="3" right="0" top="0" bottom="0"/>
+  <border name="button_border" left="2" right="0" top="3" bottom="0"/>
 </frame_geometry>
 
 <frame_geometry name="maximized" rounded_top_left="false" rounded_top_right="false" rounded_bottom_left="false" rounded_bottom_right="false" title_scale="medium">
@@ -31,9 +31,9 @@
   <distance name="right_titlebar_edge" value="0"/>
   <distance name="button_width" value="21"/>
   <distance name="button_height" value="21"/>
-  <distance name="title_vertical_pad" value="12"/>
+  <distance name="title_vertical_pad" value="15"/>
   <border name="title_border" left="0" right="0" top="0" bottom="0"/>
-  <border name="button_border" left="0" right="3" top="0" bottom="0"/>
+  <border name="button_border" left="0" right="2" top="3" bottom="0"/>
 </frame_geometry>
 
 <frame_geometry name="border" parent="normal" has_title="false">
@@ -59,19 +59,19 @@
 <draw_ops name="title">
   <image filename="titlebar-focused-left.png" x="0" y="0" width="object_width" height="height + 2"/>
   <image filename="titlebar-focused-middle.png" x="6" y="0" width="width - 6" height="height"/>
-  <image filename="titlebar-focused-right.png" x="width - object_width" y="0" width="object_width" height="height"/>
+  <image filename="titlebar-focused-right.png" x="width - object_width" y="0" width="object_width" height="height + 2"/>
 </draw_ops>
 
 <draw_ops name="title-shaded">
   <image filename="titlebar-focused-left.png" x="0" y="0" width="object_width" height="height + 2"/>
   <image filename="titlebar-focused-middle.png" x="6" y="0" width="width - 6" height="height"/>
-  <image filename="titlebar-focused-right.png" x="width - object_width" y="0" width="object_width" height="height"/>
+  <image filename="titlebar-focused-right.png" x="width - object_width" y="0" width="object_width" height="height + 2"/>
 </draw_ops>
 
 <draw_ops name="title-unfocused">
   <image filename="titlebar-unfocused-left.png" x="0" y="0" width="object_width" height="height + 2"/>
   <image filename="titlebar-unfocused-middle.png" x="6" y="0" width="width - 6" height="height"/>
-  <image filename="titlebar-unfocused-right.png" x="width - object_width" y="0" width="object_width" height="height"/>
+  <image filename="titlebar-unfocused-right.png" x="width - object_width" y="0" width="object_width" height="height + 2"/>
 </draw_ops>
 
 <draw_ops name="title-max">

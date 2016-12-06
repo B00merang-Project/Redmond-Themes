@@ -53,11 +53,11 @@ StScrollBar StButton#vhandle:hover {
 
 
 #Tooltip {
-    border: 1px solid rgba(57,156,238,1.0);
+    border: 1px solid black;
     border-radius: 0px;
     padding: 2px 12px;
-    background-gradient-end: rgba(57,156,238,0.9);
-    background-gradient-start: rgba(57,156,238,0.9);
+    background-gradient-end: #FFFFE2;
+    background-gradient-start: #FFFFE2;
     background-gradient-direction: vertical;
     color: black;
     font-size: 8.5pt;
@@ -130,13 +130,9 @@ StScrollBar StButton#vhandle:hover {
  * ===================================================================*/
 
 .popup-menu-boxpointer {
-    -arrow-background-color: transparent;
-    -arrow-border-color: transparent;
-    -boxpointer-gap: 0px;
     -arrow-border-radius: 16px;
-    -arrow-base: 16px;
-    -arrow-rise: -1px;
-    -arrow-border-width: 0px;
+    -boxpointer-gap: -1px;
+    -arrow-base: 40px;
 }
 
 .popup-menu {
@@ -171,7 +167,7 @@ StScrollBar StButton#vhandle:hover {
     padding: 1em 0em;
     color: #000;
     font-size: 10.5pt;
-    border: 1px solid #acbe84;
+    border: 1px solid #94b06f;
     border-radius: 0px 0px 8px 0px;
 }
 /* The remaining popup-menu sizing is all done in ems, so that if you
@@ -186,7 +182,8 @@ StScrollBar StButton#vhandle:hover {
     border: 2px solid transparent;
 }
 .popup-menu-item:active {
-    background-color: #acbe84;
+    background-color: #94b06f;
+    color: white;
 }
 .popup-menu-item:insensitive {
     color: #9f9f9f;
@@ -211,7 +208,7 @@ StScrollBar StButton#vhandle:hover {
     -slider-height: 0.3em;
     -slider-background-color: #666666;
     -slider-border-color: #555555;
-    -slider-active-background-color: #acbe84;
+    -slider-active-background-color: #94b06f;
     -slider-active-border-color: #DDDDDD;
     -slider-border-width: 1px;
     -slider-handle-radius: 0.5em;
@@ -254,13 +251,11 @@ StScrollBar StButton#vhandle:hover {
 
 #panel {
     color: black;
-    text-shadow: white 0px 1px 1px;
     background-color: #013c6b;
     font-size: 9pt;
     border-image: url('panel.png') 80 0 0 0;
     font-weight: normal;
     height: 30px;
-    outline: 1px #64744c;
 }
 
 #panelLeft, #panelCenter {
@@ -292,19 +287,19 @@ StScrollBar StButton#vhandle:hover {
 #panelLeft:dnd {
     background-gradient-direction: vertical;
     background-gradient-start: rgba(255,0,0,0.05);
-    background-gradient-end: rgba(255,0,0,0.4);      
+    background-gradient-end: rgba(255,0,0,0.4);    
 }
 
 #panelCenter:dnd {
     background-gradient-direction: vertical;
     background-gradient-start: rgba(0,255,0,0.05);
-    background-gradient-end: rgba(0,255,0,0.4);      
+    background-gradient-end: rgba(0,255,0,0.4);    
 }
 
 #panelRight:dnd {
     background-gradient-direction: vertical;
     background-gradient-start: rgba(0,0,255,0.05);
-    background-gradient-end: rgba(0,0,255,0.4);      
+    background-gradient-end: rgba(0,0,255,0.4);    
 }
 
 #panelLeft:ltr {
@@ -424,15 +419,18 @@ StScrollBar StButton#vhandle:hover {
 .window-caption {
     background-color: white;
     border-radius: 0px;
-    color: white;
+    color: black;
     spacing: 25px;
+    font-size: 9pt;
+    padding: 2px 8px;
+    -cinnamon-caption-spacing: 4px;
 }
 
 .window-caption#selected {
-     background-color: #000;
-      border-radius: 0px;
+    background-color: white;
+    border-radius: 0px;
     color: black;
-      spacing: 25px;
+    spacing: 25px;
 }
 
 .workspace-controls {
@@ -440,12 +438,8 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .workspace-thumbnails-background {
-      border: 1px #acbe84;
-      border-left: 0px;
-      border-right: 0px;
-      border-bottom: 0px;
-    border-radius:  0px;
-    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    background-color: white;
     padding: 8px;
 }
 
@@ -456,7 +450,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .workspace-thumbnails {
-      spacing: 14px;
+    spacing: 14px;
 }
 
 .workspace-add-button {
@@ -489,14 +483,6 @@ StScrollBar StButton#vhandle:hover {
     border: 1px solid #888;
 }
 
-.window-caption {
-    background-color: #000;
-    border-radius: 0px;
-    font-size: 9pt;
-    padding: 2px 8px;
-    -cinnamon-caption-spacing: 4px;
-}
-
 .window-close {
     background-image: url("close.png");
     height: 34px;
@@ -511,8 +497,8 @@ StScrollBar StButton#vhandle:hover {
 .window-close-area {
   background-image: url("trash-icon.png");
     background-color: rgba(0, 0, 0, 0.8);
-     border: 2px solid #acbe84;
-      border-bottom: 0px;
+    border: 2px solid #94b06f;
+    border-bottom: 0px;
     border-radius: 0px;
     height: 120px;
     width: 400px;
@@ -551,22 +537,22 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .expo-workspace-thumbnail-frame#active {
-  border: 1px, #acbe84;
-  background-color: #acbe84;
+  border: 1px, #94b06f;
+  background-color: #94b06f;
 } 
 
 /* ===================================================================
 * Desklets (desklet.js)
 * ===================================================================*/
-.desklet {      
+.desklet {    
 color: #eee;  
 }
 
 .desklet-with-borders {
 border: 1px solid #444;
     border-bottom: 0px;
-        border-left: 0px;
-        border-right: 0px;
+    border-left: 0px;
+    border-right: 0px;
     background-color: #232323;
     border-radius: 0px;
 color: #eee;  
@@ -575,8 +561,8 @@ color: #eee;
 .desklet-with-borders-and-header {
 border: 1px solid #444;
     border-bottom: 0px;
-        border-left: 0px;
-        border-right: 0px;
+    border-left: 0px;
+    border-right: 0px;
     background-color: #232323;
 color: #eee;   
     border-radius-bottomleft: 0px;
@@ -590,8 +576,8 @@ color: #eee;
  
 border: 1px solid #444;
     border-bottom: 0px;
-        border-left: 0px;
-        border-right: 0px;
+    border-left: 0px;
+    border-right: 0px;
     background-color: #232323;
     border-radius: 0px;
 color: #eee;  
@@ -610,8 +596,8 @@ color: #eee;
 padding: 6px;
 border: 1px solid #444;
     border-bottom: 0px;
-        border-left: 0px;
-        border-right: 0px;
+    border-left: 0px;
+    border-right: 0px;
     background-color: #232323;
     border-radius: 0px;
  
@@ -636,11 +622,11 @@ border-radius: 0px;
 
 #LookingGlassDialog {
   background-gradient-direction: vertical;
-        background-gradient-start:  #000000;
-        background-gradient-end: #2f343d;
+    background-gradient-start:  #000000;
+    background-gradient-end: #2f343d;
     spacing: 4px;
     padding: 4px;
-      border: 2px solid #acbe84;
+    border: 2px solid #94b06f;
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
@@ -648,7 +634,7 @@ border-radius: 0px;
     color: black;
 }
 #LookingGlassDialog > #Toolbar {
-    border: 2px solid #acbe84;
+    border: 2px solid #94b06f;
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
@@ -664,9 +650,9 @@ border-radius: 0px;
     color: black;
 }
 #LookingGlassDialog .notebook-tab:selected {
-    background-color: #acbe84;
+    background-color: #94b06f;
     border-radius: 0px;
-    color: #000;
+    color: #fff;
 }
 #LookingGlassDialog .lg-inspector-title {
     font-weight: bold;
@@ -801,8 +787,8 @@ border-radius: 0px;
 }
 
 .calendar-day-base:hover {
-    background-color: #acbe84;
-    color: black;
+    background-color: #94b06f;
+    color: white;
 }
 
 .calendar-day-base:active {
@@ -848,7 +834,7 @@ border-radius: 0px;
 
 .calendar-day-with-events {
     font-weight: bold;
-    color: #acbe84;
+    color: #94b06f;
 }
 
 /* ===================================================================
@@ -859,7 +845,7 @@ border-radius: 0px;
  
     border-radius: 6px;
     font-size: 8.5pt;
-    background-color: blackfe1;
+    background-color: black;
     border: 1px solid #000;
     padding: 6px 6px 6px 6px;
     spacing-rows: 10px;
@@ -1028,7 +1014,7 @@ border-radius: 0px;
     background-gradient-direction: vertical;
     background-gradient-start: #2d75ad;
     background-gradient-end: #013b6b;
-    border: 1px solid  #acbe84;    
+    border: 1px solid  #94b06f;    
     border-radius: 0px;
     width: 60px;
     border-bottom: 0px;
@@ -1044,7 +1030,7 @@ border-radius: 0px;
 }
 
 .switcher-list .item-box:outlined {
-    background-color: #acbe84;    
+    background-color: #94b06f;    
     border-radius: 0px;
 }
 
@@ -1073,7 +1059,7 @@ border-radius: 0px;
     background-gradient-end: rgba(57,156,238,0.8);
     background-gradient-start: rgba(0,0,0,0.3);
     background-gradient-direction: radial;
-    box-shadow: outset 0px 0px 5px 5px #acbe84;
+    box-shadow: outset 0px 0px 5px 5px #94b06f;
     border-radius: 150px;
 }
 
@@ -1083,7 +1069,7 @@ border-radius: 0px;
     background-gradient-end: rgba(57,156,238,0.8);
     background-gradient-start: rgba(0,0,0,0.3);
     background-gradient-direction: radial;
-    box-shadow: outset 0px 0px 5px 5px #acbe84;
+    box-shadow: outset 0px 0px 5px 5px #94b06f;
     border-radius: 150px;
 }
 
@@ -1173,7 +1159,7 @@ border-radius: 0px;
     border: 1px solid gray;
     border-radius: 0;
     color: black;
-    selected-color: #acbe84;
+    selected-color: #94b06f;
     caret-color: black;
     caret-size: 2px;
     padding: 2px;
@@ -1454,9 +1440,9 @@ border-radius: 0px;
 
 
 #keyboard {
-      background-gradient-direction: vertical;
-        background-gradient-start: #000;
-        background-gradient-end: #000;
+    background-gradient-direction: vertical;
+    background-gradient-start: #000;
+    background-gradient-end: #000;
  
 }
 
@@ -1499,27 +1485,27 @@ border-radius: 1px;
 .keyboard-key:checked,
 .keyboard-key:hover {
     background-gradient-direction: vertical;
-    background-gradient-start: #acbe84;
-    background-gradient-end: #acbe84;
+    background-gradient-start: #94b06f;
+    background-gradient-end: #94b06f;
 border: 1px #76d2ec;
   border-bottom: 0px;
     border-left: 0px;
     border-right: 0px; 
 border-radius: 1px;
-    color: black;
+    color: white;
  
 }
 
 .keyboard-key:active {
     background-gradient-direction: vertical;
-    background-gradient-start: #acbe84;
-    background-gradient-end: #acbe84;
+    background-gradient-start: #94b06f;
+    background-gradient-end: #94b06f;
 border: 1px #76d2ec;
   border-bottom: 0px;
     border-left: 0px;
     border-right: 0px; 
 border-radius: 1px;
-    color: black;
+    color: white;
  
 }
 
@@ -1529,7 +1515,7 @@ border-radius: 1px;
     -arrow-border-radius: 2px;
     -arrow-background-color: #1b1b1c;
     -arrow-border-width: 1px;
-    -arrow-border-color: #acbe84;
+    -arrow-border-color: #94b06f;
     -arrow-base: 10px;
     -arrow-rise: 5px;
     -boxpointer-gap: 5px;
@@ -1547,7 +1533,7 @@ border-radius: 1px;
 
 .menu-favorites-box {  
     margin: auto;
-    background-color: #acbe84;
+    background-color: #94b06f;
     border: 1px solid #94a16f;
     border-radius: 0px;
     padding: 0.5em;
@@ -1567,6 +1553,7 @@ border-radius: 1px;
 
 .menu-favorites-button:hover {
     background-color: #94b06f;
+    color: white;
 }
 
 .menu-places-box {  
@@ -1630,8 +1617,8 @@ border-radius: 1px;
 
 .menu-application-button-selected {
     padding: 7px;
-    color: black;
-    background-color: #cddbb8;
+    color: white;
+    background-color: #94b06f;
 }
 
 .menu-application-button-label:ltr { 
@@ -1655,15 +1642,15 @@ border-radius: 1px;
 .menu-category-button-selected {
     padding: 7px;
     color: white;
-    background-color: #cddbb8;
+    background-color: #94b06f;
 }
 
 .menu-category-button-label:ltr { 
-    padding-left: 5px     
+    padding-left: 5px    
 }
 
 .menu-category-button-label:rtl { 
-    padding-right: 5px     
+    padding-right: 5px    
 }
 
 /* Name and description of the currently hovered item in the menu
@@ -1715,8 +1702,8 @@ border-radius: 1px;
  * Window list (windowList.js)
  * ===================================================================*/
 .window-list-box {
-    spacing: 1px;   
-    padding-top: 1px;   
+    spacing: 3px;   
+    padding-top: 3px;   
 }
 
 .window-list-item-label {
@@ -1729,6 +1716,7 @@ border-radius: 1px;
     border-image: url('normal.png') 5;
     padding: 1px;
     margin: 5px;
+    text-shadow: none;
     transition-duration: 100;
 }
 
@@ -1737,7 +1725,7 @@ border-radius: 1px;
 .window-list-item-box:focus    { 
     border-image: url('active.png') 5;
     color: white;
-    text-shadow: black 1px 1px;
+/*    text-shadow: black 1px 1px; */
 }
 
 
@@ -1776,13 +1764,13 @@ border-radius: 1px;
 
 .sound-button:hover {
     background-color: #232527;
-    color: #acbe84;
+    color: #94b06f;
     transition-duration: 200;
 }
 
 .sound-button:active {
     background-color: rgba(57,156,238,.1);
-    color: #acbe84;
+    color: #94b06f;
     transition-duration: 200;
 }
 
@@ -1832,27 +1820,27 @@ border-radius: 1px;
 }
  
 .workspace-button {
-     width: 20px;
-       height: 10px;
+    width: 20px;
+    height: 10px;
     padding: 2px;
     border-radius: 0px;
-      background-color: rgba(255,255,255,0.0);
-      color: black;
-      transition-duration: 250;
+    background-color: rgba(255,255,255,0.0);
+    color: black;
+    transition-duration: 250;
 }
 
 .workspace-button:outlined {
     padding: 2px;
-     background-color: #000;
-      border-radius: 0px;
-    color: #acbe84;
+    background-color: #000;
+    border-radius: 0px;
+    color: #94b06f;
 }
 
 .workspace-button:hover {
     padding: 2px;
-     background-color: #000;
-      border-radius: 0px;
-    color: #acbe84;
+    background-color: #000;
+    border-radius: 0px;
+    color: #94b06f;
 }
 
 /* ===================================================================
@@ -1945,17 +1933,17 @@ border-radius: 1px;
 
 .applet-box {
     padding-left: 6px;
-      padding-right: 6px;
+    padding-right: 6px;
     transition-duration: 300;
 }
 .applet-box:hover {
-     background-color: rgba(25,25,25,0.2);
-    color:  white;
+    background-color: rgba(25,25,25,0.2);
+    color:  black;
     transition-duration: 100;
 }
 .applet-box:active {
-     background-color: rgba(25,25,25,0.4);
-    color:  white;
+    background-color: rgba(25,25,25,0.4);
+    color:  black;
     transition-duration: 100;
  
 }
@@ -1964,9 +1952,14 @@ border-radius: 1px;
     font-weight: normal;
 }
 
-.applet-label:hover,
-.applet-box:hover > .applet-label {
-    color: white;
+.applet-label:hover:not(:first-child),
+.applet-box:hover:not(:first-child) > .applet-label:not(:first-child) {
+    color: black;
+}
+
+.applet-label:hover:first-child,
+.applet-box:hover:first-child > .applet-label:first-child {
+    color: black;
 }
 
 .applet-icon {
@@ -1985,7 +1978,7 @@ border-radius: 1px;
     color: black;
     font-size: 25pt;    
     text-align: center;
-    background-color: #acbe84;
+    background-color: #94b06f;
     border: 1px solid #94a16f;
     border-radius: 4px;
     padding: 0.5em 1em;
@@ -2008,7 +2001,7 @@ border-radius: 1px;
     background-color: #f1f1f1;
     padding: 5px;
     padding-bottom: 7px;
-    border: 1px solid #acbe84;
+    border: 1px solid #94b06f;
     text-align: center;    
     height: 16px;
 }
@@ -2122,32 +2115,32 @@ The colour parameters are red, green, blue, and transparency or a name */
 
 .numa-not-connected {
     background-color: rgba(0,0,0,0.0);
-     border-radius: 10px;
+    border-radius: 10px;
 }
 
 .numa-connected {
     background-color: rgba(0,0,0,0);
-     border-radius: 10px;
+    border-radius: 10px;
 }
 
 .numa-alert {
-      color: black;
-      border-top: 3px;
-      border-bottom: 0px;
+    color: black;
+    border-top: 3px;
+    border-bottom: 0px;
     background-gradient-direction: vertical;
     background-gradient-end: rgba(57,156,238,0.1);
     background-gradient-start: rgba(57,156,238,0.1);
-      border-radius: 0px;
+    border-radius: 0px;
 }
 
 .numa-limit-exceeded {
-      color: black;
-      border-top: 3px;
-      border-bottom: 0px;
+    color: black;
+    border-top: 3px;
+    border-bottom: 0px;
     background-gradient-direction: vertical;
     background-gradient-end: rgba(57,156,238,0.1);
     background-gradient-start: rgba(57,156,238,0.1);
-         border-radius: 0px;
+    border-radius: 0px;
 }
 
 /* ===================================================================

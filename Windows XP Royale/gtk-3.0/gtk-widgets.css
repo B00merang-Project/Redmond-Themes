@@ -943,12 +943,11 @@ GtkComboBox .menu {
 .header-bar .menu,
 .header-bar .primary-toolbar .menu,
 .menu {
-    padding: 0;
+    padding: 2px;
     border-radius: 0;
-    border: 3px solid transparent;
+    border: 1px solid black;
     background-color: @menu_bg_color;
     color: @menu_fg_color;
-    border-image: url('assets/menu-bg.png') 3 3 3 3;
     box-shadow: none;
 }
 
@@ -1033,7 +1032,7 @@ GtkTreeMenu .menuitem {
     border-style: solid;
     border-color: transparent;
     border-radius: 0;
-    background-color: transparent;
+    background-color: @menu_bg_color;
     background-image: none;
     color: @menu_fg_color;
 }
@@ -1920,8 +1919,8 @@ GtkProgressBar {
 /* headerbar separator */
 .header-bar .separator,
 .header-bar .separator:insensitive {
-    border-color: shade(@theme_bg_color, 0.35);
-    color: shade(@theme_bg_color, 0.35);
+    border-color: shade(@theme_bg_color, 0.7);
+    color: shade(@theme_bg_color, 0.7);
 }
 
 .primary-toolbar .button .separator,

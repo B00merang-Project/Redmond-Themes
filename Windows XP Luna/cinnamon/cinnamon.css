@@ -24,12 +24,12 @@ StScrollView.vfade {
 }
 
 StScrollView StScrollBar {
-      min-width: 17px;
-      min-height: 17px;
+     min-width: 17px;
+     min-height: 17px;
 }
 
 StScrollBar {
-      padding: 0px;
+     padding: 0px;
 }
 
 StScrollBar StBin#trough {
@@ -53,13 +53,13 @@ StScrollBar StButton#vhandle:hover {
 
 
 #Tooltip {
-    border: 1px solid rgba(57,156,238,1.0);
+    border: 1px solid black;
     border-radius: 0px;
     padding: 2px 12px;
-    background-gradient-end: rgba(57,156,238,0.9);
-    background-gradient-start: rgba(57,156,238,0.9);
+    background-gradient-end: #FFFFE2;
+    background-gradient-start: #FFFFE2;
     background-gradient-direction: vertical;
-    color: #fff;
+    color: black;
     font-size: 8.5pt;
     font-weight: normal;    
     text-align: center;
@@ -130,13 +130,9 @@ StScrollBar StButton#vhandle:hover {
  * ===================================================================*/
 
 .popup-menu-boxpointer {
-    -arrow-background-color: transparent;
-    -arrow-border-color: transparent;
-    -boxpointer-gap: 0px;
     -arrow-border-radius: 16px;
-    -arrow-base: 16px;
-    -arrow-rise: -1px;
-    -arrow-border-width: 0px;
+    -boxpointer-gap: -1px;
+    -arrow-base: 40px;
 }
 
 .popup-menu {
@@ -254,13 +250,11 @@ StScrollBar StButton#vhandle:hover {
 
 #panel {
     color: #ffffff;
-    text-shadow: black 0px 1px 1px;
     background-color: #013c6b;
     font-size: 9pt;
     border-image: url('panel.png') 80 0 0 0;
     font-weight: normal;
     height: 30px;
-    outline: 1px #1941a5;
 }
 
 #panelLeft, #panelCenter {
@@ -274,6 +268,7 @@ StScrollBar StButton#vhandle:hover {
 #panelLeft .applet-box:first-child {
     border-image: url('menu.png') 7 0 0 0;
     border-right-width: 10px;
+    text-shadow: black 0px 1px 1px;
     font-size: 12pt;
     font-style: italic;
     font-weight: bold;
@@ -290,19 +285,19 @@ StScrollBar StButton#vhandle:hover {
 #panelLeft:dnd {
     background-gradient-direction: vertical;
     background-gradient-start: rgba(255,0,0,0.05);
-    background-gradient-end: rgba(255,0,0,0.4);        
+    background-gradient-end: rgba(255,0,0,0.4);    
 }
 
 #panelCenter:dnd {
     background-gradient-direction: vertical;
     background-gradient-start: rgba(0,255,0,0.05);
-    background-gradient-end: rgba(0,255,0,0.4);        
+    background-gradient-end: rgba(0,255,0,0.4);    
 }
 
 #panelRight:dnd {
     background-gradient-direction: vertical;
     background-gradient-start: rgba(0,0,255,0.05);
-    background-gradient-end: rgba(0,0,255,0.4);        
+    background-gradient-end: rgba(0,0,255,0.4);    
 }
 
 #panelLeft:ltr {
@@ -420,17 +415,20 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .window-caption {
-    background-color: black;
+    background-color: white;
     border-radius: 0px;
-    color: white;
+    color: black;
     spacing: 25px;
+    font-size: 9pt;
+    padding: 2px 8px;
+    -cinnamon-caption-spacing: 4px;
 }
 
 .window-caption#selected {
-       background-color: #000;
-        border-radius: 0px;
-    color: #fff;
-        spacing: 25px;
+    background-color: white;
+    border-radius: 0px;
+    color: black;
+    spacing: 25px;
 }
 
 .workspace-controls {
@@ -438,10 +436,10 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .workspace-thumbnails-background {
-        border: 1px #399cee;
-        border-left: 0px;
-        border-right: 0px;
-        border-bottom: 0px;
+    border: 1px #399cee;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
     border-radius:  0px;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 8px;
@@ -454,7 +452,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .workspace-thumbnails {
-        spacing: 14px;
+    spacing: 14px;
 }
 
 .workspace-add-button {
@@ -487,14 +485,6 @@ StScrollBar StButton#vhandle:hover {
     border: 1px solid #888;
 }
 
-.window-caption {
-    background-color: #000;
-    border-radius: 0px;
-    font-size: 9pt;
-    padding: 2px 8px;
-    -cinnamon-caption-spacing: 4px;
-}
-
 .window-close {
     background-image: url("close.png");
     height: 34px;
@@ -509,8 +499,8 @@ StScrollBar StButton#vhandle:hover {
 .window-close-area {
   background-image: url("trash-icon.png");
     background-color: rgba(0, 0, 0, 0.8);
-     border: 2px solid #399cee;
-        border-bottom: 0px;
+    border: 2px solid #399cee;
+    border-bottom: 0px;
     border-radius: 0px;
     height: 120px;
     width: 400px;
@@ -556,15 +546,15 @@ StScrollBar StButton#vhandle:hover {
 /* ===================================================================
 * Desklets (desklet.js)
 * ===================================================================*/
-.desklet {        
+.desklet {    
 color: #eee;  
 }
 
 .desklet-with-borders {
 border: 1px solid #444;
-      border-bottom: 0px;
-          border-left: 0px;
-          border-right: 0px;
+     border-bottom: 0px;
+      border-left: 0px;
+      border-right: 0px;
     background-color: #232323;
     border-radius: 0px;
 color: #eee;  
@@ -572,9 +562,9 @@ color: #eee;
 
 .desklet-with-borders-and-header {
 border: 1px solid #444;
-      border-bottom: 0px;
-          border-left: 0px;
-          border-right: 0px;
+     border-bottom: 0px;
+      border-left: 0px;
+      border-right: 0px;
     background-color: #232323;
 color: #eee;   
     border-radius-bottomleft: 0px;
@@ -587,9 +577,9 @@ color: #eee;
     font-size: 10.5pt;
  
 border: 1px solid #444;
-      border-bottom: 0px;
-          border-left: 0px;
-          border-right: 0px;
+     border-bottom: 0px;
+      border-left: 0px;
+      border-right: 0px;
     background-color: #232323;
     border-radius: 0px;
 color: #eee;  
@@ -607,9 +597,9 @@ color: #eee;
 .photoframe-box {
 padding: 6px;
 border: 1px solid #444;
-      border-bottom: 0px;
-          border-left: 0px;
-          border-right: 0px;
+     border-bottom: 0px;
+      border-left: 0px;
+      border-right: 0px;
     background-color: #232323;
     border-radius: 0px;
  
@@ -634,11 +624,11 @@ border-radius: 0px;
 
 #LookingGlassDialog {
   background-gradient-direction: vertical;
-          background-gradient-start:  #000000;
-          background-gradient-end: #2f343d;
+      background-gradient-start:  #000000;
+      background-gradient-end: #2f343d;
     spacing: 4px;
     padding: 4px;
-        border: 2px solid #399cee;
+    border: 2px solid #399cee;
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
@@ -1452,9 +1442,9 @@ border-radius: 0px;
 
 
 #keyboard {
-        background-gradient-direction: vertical;
-          background-gradient-start: #000;
-          background-gradient-end: #000;
+    background-gradient-direction: vertical;
+      background-gradient-start: #000;
+      background-gradient-end: #000;
  
 }
 
@@ -1480,7 +1470,7 @@ border: 1px #717171;
 border-bottom: 0px;
 border-left: 0px;
 border-right: 0px;
-      color: #eaeaea;
+     color: #eaeaea;
 }
 
 .keyboard-key:grayed {
@@ -1501,8 +1491,8 @@ border-radius: 1px;
     background-gradient-end: #399cee;
 border: 1px #76d2ec;
   border-bottom: 0px;
-      border-left: 0px;
-      border-right: 0px; 
+     border-left: 0px;
+     border-right: 0px; 
 border-radius: 1px;
     color: #fff;
  
@@ -1514,8 +1504,8 @@ border-radius: 1px;
     background-gradient-end: #399cee;
 border: 1px #76d2ec;
   border-bottom: 0px;
-      border-left: 0px;
-      border-right: 0px; 
+     border-left: 0px;
+     border-right: 0px; 
 border-radius: 1px;
     color: #fff;
  
@@ -1633,11 +1623,11 @@ border-radius: 1px;
 }
 
 .menu-application-button-label:ltr { 
-      padding-left: 5px;
+     padding-left: 5px;
 }
 
 .menu-application-button-label:rtl { 
-      padding-right: 5px;
+     padding-right: 5px;
 }
 
 .menu-category-button {
@@ -1657,11 +1647,11 @@ border-radius: 1px;
 }
 
 .menu-category-button-label:ltr { 
-    padding-left: 5px       
+    padding-left: 5px    
 }
 
 .menu-category-button-label:rtl { 
-    padding-right: 5px       
+    padding-right: 5px    
 }
 
 /* Name and description of the currently hovered item in the menu
@@ -1828,26 +1818,26 @@ border-radius: 1px;
 }
  
 .workspace-button {
-       width: 20px;
-         height: 10px;
-      padding: 2px;
+    width: 20px;
+     height: 10px;
+     padding: 2px;
     border-radius: 0px;
-        background-color: rgba(255,255,255,0.0);
-        color: #fff;
-        transition-duration: 250;
+    background-color: rgba(255,255,255,0.0);
+    color: #fff;
+    transition-duration: 250;
 }
 
 .workspace-button:outlined {
-      padding: 2px;
-       background-color: #000;
-        border-radius: 0px;
+     padding: 2px;
+    background-color: #000;
+    border-radius: 0px;
     color: #399cee;
 }
 
 .workspace-button:hover {
-      padding: 2px;
-       background-color: #000;
-        border-radius: 0px;
+     padding: 2px;
+    background-color: #000;
+    border-radius: 0px;
     color: #399cee;
 }
 
@@ -1941,16 +1931,16 @@ border-radius: 1px;
 
 .applet-box {
     padding-left: 6px;
-        padding-right: 6px;
+    padding-right: 6px;
     transition-duration: 300;
 }
 .applet-box:hover {
-       background-color: rgba(25,25,25,0.2);
+    background-color: rgba(25,25,25,0.2);
     color:  white;
     transition-duration: 100;
 }
 .applet-box:active {
-       background-color: rgba(25,25,25,0.4);
+    background-color: rgba(25,25,25,0.4);
     color:  white;
     transition-duration: 100;
  
@@ -2118,32 +2108,32 @@ The colour parameters are red, green, blue, and transparency or a name */
 
 .numa-not-connected {
     background-color: rgba(0,0,0,0.0);
-     border-radius: 10px;
+    border-radius: 10px;
 }
 
 .numa-connected {
     background-color: rgba(0,0,0,0);
-     border-radius: 10px;
+    border-radius: 10px;
 }
 
 .numa-alert {
-        color: #fff;
-        border-top: 3px;
-        border-bottom: 0px;
+    color: #fff;
+    border-top: 3px;
+    border-bottom: 0px;
     background-gradient-direction: vertical;
     background-gradient-end: rgba(57,156,238,0.1);
     background-gradient-start: rgba(57,156,238,0.1);
-        border-radius: 0px;
+    border-radius: 0px;
 }
 
 .numa-limit-exceeded {
-        color: #fff;
-        border-top: 3px;
-        border-bottom: 0px;
+    color: #fff;
+    border-top: 3px;
+    border-bottom: 0px;
     background-gradient-direction: vertical;
     background-gradient-end: rgba(57,156,238,0.1);
     background-gradient-start: rgba(57,156,238,0.1);
-           border-radius: 0px;
+       border-radius: 0px;
 }
 
 /* ===================================================================
@@ -2184,12 +2174,12 @@ The colour parameters are red, green, blue, and transparency or a name */
     padding: 0px 0px 0px 0px;
 }
 .starkmenu-applications-inner-box {
-    background-color: #ffffff;
+    background-color: #D3E5FA;
 }
 .starkmenu-applications-box StScrollView {
     border-right-width: 1px;
     border-bottom-width: 1px;
-    background-color: #D3E5FA;
+    background-color: #ffffff;
     color: black;
 }
 .starkmenu-search-box {

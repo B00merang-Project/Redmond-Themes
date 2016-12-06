@@ -1073,7 +1073,7 @@ menu menuitem {
     border-style: solid;
     border-color: transparent;
     border-radius: 0;
-    background-color: transparent;
+    background-color: @menu_bg_color;
     background-image: none;
     color: @menu_fg_color;
 }
@@ -2137,11 +2137,11 @@ headerbar.titlebar separator,
 
 /* headerbar separator */
 headerbar separator,
-.separator,
-headerbar separator,
-.separator:disabled {
-    border-color: shade(@theme_bg_color, 0.35);
-    color: shade(@theme_bg_color, 0.35);
+headerbar.separator,
+headerbar separator:disabled,
+headerbar.separator:disabled {
+    border-color: shade(@theme_bg_color, 0.7);
+    color: shade(@theme_bg_color, 0.7);
 }
 
 toolbar.primary-toolbar button separator,

@@ -1086,7 +1086,7 @@ EggListBox:selected {
  * menu *
  ********/
 
-GtkTreeMenu.menu {
+GtkTreeMenu.menu, {
     border: 1px solid @menu_borders;
     border-radius: 0;
     background-color: @menu_bg;
@@ -1107,6 +1107,7 @@ GtkMenuButton .menu {
     margin: 4px;
     border: 1px solid @menu_borders;
     border-radius: 0;
+    padding: 4px;
     background-color: @menu_bg;
     border-bottom-color: black;
     border-right-color: black;
@@ -1171,6 +1172,10 @@ GtkMenuButton .menu {
  * menuitem *
  ************/
 
+.menuitem {
+    background-color: @theme_bg_color;
+}
+
 GtkTreeMenu .menuitem,
 .menu .menuitem {
     -GtkMenuItem-arrow-scaling: 0.5;
@@ -1203,7 +1208,6 @@ GtkTreeMenu .menuitem,
 }
 
 .menu .menuitem:insensitive {
-    background-color: transparent;
     background-image: none;
 }
 

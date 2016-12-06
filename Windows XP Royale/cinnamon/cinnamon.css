@@ -130,13 +130,9 @@ StScrollBar StButton#vhandle:hover {
  * ===================================================================*/
 
 .popup-menu-boxpointer {
-    -arrow-background-color: transparent;
-    -arrow-border-color: transparent;
-    -boxpointer-gap: 0px;
     -arrow-border-radius: 16px;
-    -arrow-base: 16px;
-    -arrow-rise: -1px;
-    -arrow-border-width: 0px;
+    -boxpointer-gap: -1px;
+    -arrow-base: 40px;
 }
 
 .popup-menu {
@@ -260,7 +256,6 @@ StScrollBar StButton#vhandle:hover {
     border-image: url('panel.png') 80 0 0 0;
     font-weight: normal;
     height: 30px;
-    outline: 1px #2a4dab;
 }
 
 #panelLeft, #panelCenter {

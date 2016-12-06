@@ -1100,6 +1100,7 @@ GtkMenuButton .menu {
     margin: 4px;
     border: 1px solid @menu_borders;
     border-radius: 0;
+    padding: 2px;
     background-color: @menu_bg;
 }
 .menu.button,
@@ -1160,6 +1161,10 @@ GtkMenuButton .menu {
  * menuitem *
  ************/
 
+.menuitem {
+    background-color: @menu_bg;
+}
+
 GtkTreeMenu .menuitem,
 .menu .menuitem {
     -GtkMenuItem-arrow-scaling: 0.5;
@@ -1192,7 +1197,6 @@ GtkTreeMenu .menuitem,
 }
 
 .menu .menuitem:insensitive {
-    background-color: transparent;
     background-image: none;
 }
 
