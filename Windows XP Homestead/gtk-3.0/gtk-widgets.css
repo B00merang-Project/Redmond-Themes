@@ -252,12 +252,12 @@ GtkAssistant .sidebar {
     background-image: none;
 }
 
-/* default button */
+/* default button 
 .button.default {
     border-color: shade(@theme_selected_bg_color, 0.8);
     background-color: shade(@theme_selected_bg_color, 1.08);
     box-shadow: inset 0 0 2px 1px #ffc73c;
-    color: @theme_selected_fg_color;
+    color: @theme_fg_color;
 }
 
 .button.default:hover {

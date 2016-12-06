@@ -136,7 +136,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .popup-menu {
-    border: solid 1px black;
+    border: solid 4px black;
     border-image: url('popupmenu.png') 8 8 8 8;
     color: #000;
     font-size: 9pt;
@@ -174,7 +174,7 @@ StScrollBar StButton#vhandle:hover {
  * override .popup-menu.font-size, everything else will scale with it.
  */
 .popup-menu-content {
-    padding: 1em 0em;
+    padding: 1em 0;
 }
 .popup-menu-item {
     padding: .4em 1.75em;
@@ -183,6 +183,7 @@ StScrollBar StButton#vhandle:hover {
 }
 .popup-menu-item:active {
     background-color: #1466c9;
+    color: white;
 }
 .popup-menu-item:insensitive {
     color: #9f9f9f;
@@ -553,8 +554,8 @@ color: #eee;
 .desklet-with-borders {
 border: 1px solid #444;
      border-bottom: 0px;
-      border-left: 0px;
-      border-right: 0px;
+    border-left: 0px;
+    border-right: 0px;
     background-color: #232323;
     border-radius: 0px;
 color: #eee;  
@@ -563,8 +564,8 @@ color: #eee;
 .desklet-with-borders-and-header {
 border: 1px solid #444;
      border-bottom: 0px;
-      border-left: 0px;
-      border-right: 0px;
+    border-left: 0px;
+    border-right: 0px;
     background-color: #232323;
 color: #eee;   
     border-radius-bottomleft: 0px;
@@ -578,8 +579,8 @@ color: #eee;
  
 border: 1px solid #444;
      border-bottom: 0px;
-      border-left: 0px;
-      border-right: 0px;
+    border-left: 0px;
+    border-right: 0px;
     background-color: #232323;
     border-radius: 0px;
 color: #eee;  
@@ -598,8 +599,8 @@ color: #eee;
 padding: 6px;
 border: 1px solid #444;
      border-bottom: 0px;
-      border-left: 0px;
-      border-right: 0px;
+    border-left: 0px;
+    border-right: 0px;
     background-color: #232323;
     border-radius: 0px;
  
@@ -624,8 +625,8 @@ border-radius: 0px;
 
 #LookingGlassDialog {
   background-gradient-direction: vertical;
-      background-gradient-start:  #000000;
-      background-gradient-end: #2f343d;
+    background-gradient-start:  #000000;
+    background-gradient-end: #2f343d;
     spacing: 4px;
     padding: 4px;
     border: 2px solid #399cee;
@@ -1443,8 +1444,8 @@ border-radius: 0px;
 
 #keyboard {
     background-gradient-direction: vertical;
-      background-gradient-start: #000;
-      background-gradient-end: #000;
+    background-gradient-start: #000;
+    background-gradient-end: #000;
  
 }
 
@@ -1534,18 +1535,19 @@ border-radius: 1px;
 /* Main menu title */
 
 .menu-favorites-box {  
-  	margin: auto;
-	background-color: #D3E5FA;
+    margin: auto;
+    background-color: #D3E5FA;
     border: 1px solid #95bdee;
     border-radius: 0px;
     padding: 0.5em;
-	color: black;
+    color: black;
 }
 
 .menu-background {
-	border-image: url("menu-bg.png") 12 12 67 42;
-	box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
-	padding: 55px 1px 0px 1px;
+    border: solid 1px transparent;
+    border-image: url("menu-bg.png") 12 12 67 42;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    padding: 55px 1px 0px 1px;
 }
 
 .menu-favorites-button {
@@ -1554,13 +1556,14 @@ border-radius: 1px;
 }
 
 .menu-favorites-button:hover {
-	background-color: #316ac5;
+    background-color: #316ac5;
+    color: white;
 }
 
 .menu-places-box {  
-  	margin: auto;
-  	padding: 8px;
-  	border: 0px solid #666;  
+    margin: auto;
+    padding: 8px;
+    border: 0px solid #666;  
 }
 
 .menu-places-button {
@@ -1583,7 +1586,7 @@ border-radius: 1px;
 }
 
 .menu-applications-box StScrollBar {
-	padding: 0px;
+    padding: 0px;
 }
 
 .menu-applications-box StScrollView {
@@ -2133,7 +2136,7 @@ The colour parameters are red, green, blue, and transparency or a name */
     background-gradient-direction: vertical;
     background-gradient-end: rgba(57,156,238,0.1);
     background-gradient-start: rgba(57,156,238,0.1);
-       border-radius: 0px;
+     border-radius: 0px;
 }
 
 /* ===================================================================

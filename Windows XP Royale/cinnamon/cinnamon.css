@@ -136,7 +136,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .popup-menu {
-    border: solid 1px black;
+    border: solid 4px black;
     border-image: url('popupmenu.png') 8 8 8 8;
     color: #000;
     font-size: 9pt;
@@ -174,7 +174,7 @@ StScrollBar StButton#vhandle:hover {
  * override .popup-menu.font-size, everything else will scale with it.
  */
 .popup-menu-content {
-    padding: 1em 0em;
+    padding: 1em 0;
 }
 .popup-menu-item {
     padding: .4em 1.75em;
@@ -183,6 +183,7 @@ StScrollBar StButton#vhandle:hover {
 }
 .popup-menu-item:active {
     background-color: #315aab;
+    color: white;
 }
 .popup-menu-item:insensitive {
     color: #9f9f9f;
@@ -1551,6 +1552,7 @@ border-radius: 1px;
 }
 
 .menu-background {
+    border: solid 1px transparent;
     border-image: url("menu-bg.png") 8 8 63 41;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
     padding: 55px 1px 10px 1px;
