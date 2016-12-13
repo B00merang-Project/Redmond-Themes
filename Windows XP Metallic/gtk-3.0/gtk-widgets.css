@@ -207,7 +207,7 @@ GtkAssistant .sidebar {
     border-style: solid;
     border-color: shade(@theme_bg_color, 0.5);
     background-color: shade(@theme_bg_color, 1.08);
-    background-image: linear-gradient(to bottom, #faffff, #f6f5fa 25%, #f6f5fa 45%, #e4dee8 55%, #d7d5e2 75%); 
+    background-image: linear-gradient(to bottom, #fff, #f1f4fb 25%, #e8eaf6 50%, #d9dbe8 75%, #cccbd9 95%); 
     color: @theme_fg_color;
     box-shadow: inset 0 0 3px 0px rgba(0,0,0,0.15);
 }
@@ -286,7 +286,7 @@ GtkAssistant .sidebar {
 .button.flat:hover {
     border-color: shade(@theme_bg_color, 0.2);
     box-shadow: inset 0 0 1px 2px #ffc73c;
-    background-image: linear-gradient(to bottom, #faffff, #f6f5fa 25%, #f6f5fa 45%, #e4dee8 55%, #d7d5e2 75%); 
+    background-image: linear-gradient(to bottom, #fff, #f1f4fb 25%, #e8eaf6 50%, #d9dbe8 75%, #cccbd9 95%); 
     box-shadow: inset 0 0 3px 0px rgba(0,0,0,0.15);
 }
 
@@ -2288,7 +2288,7 @@ GtkSwitch.slider {
     padding: 0;
     border-radius: 2px;
     border: 1px solid shade(@theme_bg_color, 0.7);
-    background-image: linear-gradient(to bottom, #faffff, #f6f5fa 25%, #f6f5fa 45%, #e4dee8 55%, #d7d5e2 75%); 
+    background-image: linear-gradient(to bottom, #fff, #f1f4fb 25%, #e8eaf6 50%, #d9dbe8 75%, #cccbd9 95%); 
 }
 
 /************
@@ -2437,7 +2437,7 @@ GtkColorButton.button {
 .header-bar GtkComboBox,
 .header-bar .button {
     border-color: shade(@titlebar_bg_color, 0.8);
-    background-image: linear-gradient(to bottom, #faffff, #f6f5fa 25%, #f6f5fa 45%, #e4dee8 55%, #d7d5e2 75%); 
+    background-image: linear-gradient(to bottom, #fff, #f1f4fb 25%, #e8eaf6 50%, #d9dbe8 75%, #cccbd9 95%); 
     color: @titlebar_fg_color;
 }
 
