@@ -287,14 +287,12 @@ StScrollBar StButton#vhandle:hover {
  * ===================================================================*/
 
 #panel {
-    background-color: rgba(178,211,245,0.65);
-    box-shadow: none;
-    border-image: url('panel.png') 80 0 0 0;
-    outline: 1px rgba(100,100,100,0.5);
-    color: #fff;
+    color: white;
+    background-color: #013c6b;
     font-size: 9pt;
-    height: 40px;
-    padding: 0px;
+    border-image: url('panel.png') 80 0 0 0;
+    font-weight: normal;
+    height: 30px;
 }
 
 #panelLeft, #panelCenter {
@@ -305,17 +303,15 @@ StScrollBar StButton#vhandle:hover {
 }
 
 #panelLeft .applet-box:first-child {
-    background: url("orbs/OBB1.png");
-    background-position: center center;
-    transition-duration: 300;
-    width: 40px;
-    color: rgba(255,0,0,0) !important;
+	background: url("orbs/OBB1.png");
+	transition-duration: 300; width: 50px;
+	color: rgba(255,0,0,0) !important;
 }
 #panelLeft .applet-box:first-child:hover {
-    transition-duration: 200; background: url("orbs/OBB2.png");
+	transition-duration: 200; background: url("orbs/OBB2.png");
 }
 #panelLeft .applet-box:first-child:active {
-    background: url("orbs/OBB3.png");
+	background: url("orbs/OBB3.png");
 }
 
 #panelLeft:dnd {
@@ -1026,11 +1022,10 @@ border-radius: 0px;
 .switcher-list {
     border-radius: 4px;
     padding: 20px;
-    border: solid 1px #242e37;
-    box-shadow: solid 0 0 12px 6px rgba(0,0,0,0.8);
+    border: solid 1px black;
+    box-shadow: 2px solid rgba(0,0,0,0.4) 2px 2px;
     color: black;
-/*    border-image: url('tab.png') 18; */
-    background-color: rgba(212,240,254,0.8);
+    border-image: url('tab.png') 18;
 }
 
 .switcher-list-item-container {
@@ -1038,10 +1033,10 @@ border-radius: 0px;
 }
 
 .thumbnail-scroll-gradient-left {
-    background-color: #fff;
+    background-color: #2d75ad;
     background-gradient-direction: vertical;
-    background-gradient-start: #fff;
-    background-gradient-end: #fff;
+    background-gradient-start: #2d75ad;
+    background-gradient-end: #013b6b;
     border-radius: 24px;
     border-radius-topright: 0px;
     border-radius-bottomright: 0px;
@@ -1049,10 +1044,10 @@ border-radius: 0px;
 }
 
 .thumbnail-scroll-gradient-right {
-    background-color: #fff;
+    background-color: #2d75ad;
     background-gradient-direction: vertical;
-    background-gradient-start: #fff;
-    background-gradient-end: #fff;
+    background-gradient-start: #2d75ad;
+    background-gradient-end: #013b6b;
     border: 1px solid  #2975E9;    
     border-radius: 0px;
     width: 60px;
@@ -1132,11 +1127,10 @@ border-radius: 0px;
  * ===================================================================*/
 
 .modal-dialog {
-    font-size: 9.5pt;
+    font-size: 10pt;
     border-radius: 2px;
-    background-color: #fff;
-/*    border: 2px solid #013b6b; */
-    border-image: url('menu-assets/background.png') 8;
+    background-color: #2d75ad;
+    border: 2px solid #013b6b;
     color: black;
     padding-right: 42px;
     padding-left: 42px;
@@ -1146,7 +1140,6 @@ border-radius: 0px;
 
 .modal-dialog-button-box {
     spacing: 21px;
-    padding-top: 30px;
 }
 
 .modal-dialog-button {
@@ -1226,11 +1219,6 @@ border-radius: 0px;
 
 .lightbox {
     background-color: rgba(0, 0, 0, 0.0);
-}
-
-.run-dialog > .modal-dialog-button-box {
-    spacing: 21px;
-    padding-top: 0;
 }
 
 /* ===================================================================
@@ -1584,14 +1572,17 @@ border-radius: 1px;
     -arrow-border-radius: 16px;
     -arrow-base: 0px;
     -arrow-rise: -1px;
+    border-image: none;
     background-color: transparent;
-    border: inset 1px solid rgba(255,255,255,0.5);
-    border-image: url('menu-assets/menu-bg.png') 8;
-    box-shadow: 16px -5px 20px 10px rgba(0,0,0,0.4);
+    border: 1px solid rgba(255,255,255,0.5);
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(70,70,70,1);
+    background-gradient-end: rgba(20,20,20,1);
+    box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.5);
     border-radius: 6px 6px 0px 0px;
     border-radius-bottomright: 0px;
     border-radius-bottomleft: 0px;
-    padding-bottom: 0px;
+    padding: 0 10px 0 0;
 }
 
 .menu-favorites-box {  
@@ -1599,7 +1590,7 @@ border-radius: 1px;
     background-color: #fff;
     border: 1px solid #94a16f;
     border-radius: 3px;
-    padding: 2px;
+    padding: 0.5em;
     color: black;
 }
 
@@ -1758,10 +1749,10 @@ border-radius: 1px;
  * Window list (windowList.js)
  * ===================================================================*/
 .window-list-box {
-    spacing: 3px;
-    padding: 0;
+	spacing: 1px;
+	padding-left: 10px;
+	padding-top: 1px;
 }
-
 .window-list-item-label {
     font-weight: normal;
     width: 15em;
@@ -1771,46 +1762,87 @@ border-radius: 1px;
 }
 
 .window-list-item-box {
-    background: transparent;
-    transition-duration: 200;
-    color: #FFF;
+	background: transparent;
+	transition-duration: 200;
+	color: #FFF;
     max-width: 134px;
 }
 
-/* normal */
 .window-list-item-box {
     font-weight: normal;
     font-size: 9pt;
     border-image: url("panel-assets/item-normal.png") 4;
 }
 
-/* hover 
-- for some reason Cinnamon now considers this as a panel launcher, thus,
-  use the '.panel-launcher:hover' class to change border image */
-.window-list-item-box:hover  {
-    border-image: url("panel-assets/item-hover.png") 4;
+
+.window-list-item-box:hover  {     
+    /*box-shadow: inset 0px 0px 0px 1px rgba(120,120,120,0.5);  */
+        border-image:url("panel-assets/item-active.png") 4;
+
 }
 
-/* active window */
-.window-list-item-box:active,
-.window-list-item-box:checked,
-.window-list-item-box:focus  {
-    border-image: url("panel-assets/item-active.png") 4;
-}
-
-/* active hover */
-.window-list-item-box:checked:hover,
-.window-list-item-box:focus:hover,
-.window-list-item-box:active:hover  {     
-    border-image: url("panel-assets/item-active-hover.png") 4;
-}
-
-/* urgent */
 .window-list-item-demands-attention {
     border-image: url("panel-assets/item-attention.png") 4;
 }
 
-/* urgent hover */
+.window-list-item-box:active:hover {
+    border-image: url("panel-assets/item-active-hover.png") 4;
+}
+
+/* 
+.window-list-box {
+    spacing: 3px;
+    padding: 0;
+}
+
+.window-list-item-label {
+    width: 15em;
+    min-width: 5px;
+}
+
+.window-list-item-box {
+    color: #fff;
+    font-weight: bold;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.window-list-item-box:hover,*/
+.window-list-item-box:active,
+.window-list-item-box:checked,
+.window-list-item-box:focus,
+.window-list-item-box:checked:hover,
+.window-list-item-box:focus:hover,
+/*.window-list-item-box:active:hover,
+.window-list-item-demands-attention,*/
+.window-list-item-demands-attention:hover {
+}
+
+/*--------- overrides ----------*/
+
+.window-list-item-box:hover  {   
+    border-image: url("panel-assets/item-hover.png") 4;
+}
+
+.window-list-item-box:active,
+.window-list-item-box:checked,
+.window-list-item-box:focus  {
+    border-image: url("panel-assets/item-active.png") 4;
+    
+    color: #fff;
+}
+
+.window-list-item-box:checked:hover,
+.window-list-item-box:focus:hover,
+.window-list-item-box:active:hover  {     
+    border-image: url("panel-assets/item-active-hover.png") 4;
+    color: #fff;
+}
+
+.window-list-item-demands-attention {
+    border-image: url("panel-assets/item-attention.png") 4;
+}
+
 .window-list-item-demands-attention:hover {
     border-image: url("panel-assets/item-attention-hover.png") 4;
 }
@@ -1928,12 +1960,10 @@ border-radius: 1px;
 .panel-launcher {
     margin: 1px;
     padding: 3px;
-    border: 1px solid transparent;
 }
 
 .panel-launcher:hover {
-/*    background-color: rgba(0,0,0,0.5); */
-    border-image:url("panel-assets/item-hover.png") 4;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .panel-launcher-add-dialog-content-box {

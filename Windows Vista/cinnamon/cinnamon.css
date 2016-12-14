@@ -24,8 +24,8 @@ StScrollView.vfade {
 }
 
 StScrollView StScrollBar {
-    min-width: 17px;
-    min-height: 17px;
+    min-width: 15px;
+    min-height: 15px;
 }
 
 StScrollBar {
@@ -230,9 +230,10 @@ StScrollBar StButton#vhandle:hover {
     spacing: 1em;
 }
 .popup-separator-menu-item {
-    -gradient-height: 1px;
-    -gradient-start: rgba(0,0,0,0);
-    -gradient-end: rgba(255,255,255,0.2);
+    background-color: rgba(20,20,20,0.3);
+    box-shadow: 0 1px rgba(220,220,220,0.6);
+    border-radius: 0; 
+    -margin-horizontal: 14px;
     height: 1px;
 }
 .popup-alternating-menu-item:alternate {
@@ -1021,10 +1022,11 @@ border-radius: 0px;
 .switcher-list {
     border-radius: 4px;
     padding: 20px;
-    border: solid 1px black;
-    box-shadow: 2px solid rgba(0,0,0,0.4) 2px 2px;
+    box-shadow: solid 0 0 12px 6px rgba(0,0,0,0.8);
     color: black;
-    border-image: url('tab.png') 18;
+/*    border-image: url('tab.png') 18; */
+    background-color: rgba(212,240,254,0.8);
+    color: black;
 }
 
 .switcher-list-item-container {
@@ -1032,10 +1034,10 @@ border-radius: 0px;
 }
 
 .thumbnail-scroll-gradient-left {
-    background-color: #2d75ad;
+    background-color: #fff;
     background-gradient-direction: vertical;
-    background-gradient-start: #2d75ad;
-    background-gradient-end: #013b6b;
+    background-gradient-start: #fff;
+    background-gradient-end: #fff;
     border-radius: 24px;
     border-radius-topright: 0px;
     border-radius-bottomright: 0px;
@@ -1043,10 +1045,10 @@ border-radius: 0px;
 }
 
 .thumbnail-scroll-gradient-right {
-    background-color: #2d75ad;
+    background-color: #fff;
     background-gradient-direction: vertical;
-    background-gradient-start: #2d75ad;
-    background-gradient-end: #013b6b;
+    background-gradient-start: #fff;
+    background-gradient-end: #fff;
     border: 1px solid  #2975E9;    
     border-radius: 0px;
     width: 60px;
@@ -1126,10 +1128,11 @@ border-radius: 0px;
  * ===================================================================*/
 
 .modal-dialog {
-    font-size: 10pt;
+    font-size: 9.5pt;
     border-radius: 2px;
-    background-color: #2d75ad;
-    border: 2px solid #013b6b;
+    background-color: #fff;
+/*    border: 2px solid #013b6b; */
+    border-image: url('menu-assets/background.png') 8;
     color: black;
     padding-right: 42px;
     padding-left: 42px;
@@ -1139,6 +1142,7 @@ border-radius: 0px;
 
 .modal-dialog-button-box {
     spacing: 21px;
+    padding-top: 30px;
 }
 
 .modal-dialog-button {
@@ -1218,6 +1222,11 @@ border-radius: 0px;
 
 .lightbox {
     background-color: rgba(0, 0, 0, 0.0);
+}
+
+.run-dialog > .modal-dialog-button-box {
+    spacing: 21px;
+    padding-top: 0;
 }
 
 /* ===================================================================
