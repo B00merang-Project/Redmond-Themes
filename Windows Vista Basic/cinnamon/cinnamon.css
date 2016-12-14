@@ -2365,39 +2365,36 @@ The colour parameters are red, green, blue, and transparency or a name */
 }
 
 /* shutdown button */
-
-.starkmenu-quit-button {
+.starkmenu-quit-horizontal-button {
     padding-bottom: 4px;
     padding-left: 10px;
-    border-image: url('menu-assets/shutdown.png') 8;
+    border-image: url('buttons/shutdown.png') 8;
 }
 
-.starkmenu-quit-button-selected {
+.starkmenu-quit-horizontal-button-selected {
     padding-bottom: 4px;
     padding-left: 10px;
-    border-image: url('menu-assets/shutdown-hover.png') 8;
+    border-image: url('buttons/shutdown-hover.png') 8;
 }
 
 /* logout button */
-
-.starkmenu-logout-button {
+.starkmenu-logout-horizontal-button {
     padding-bottom: 4px;
-    border-image: url('menu-assets/logout.png') 8;
+    border-image: url('buttons/logout.png') 8;
 }
 
-.starkmenu-logout-button-selected {
+.starkmenu-logout-horizontal-button-selected {
     padding-bottom: 4px;
-    border-image: url('menu-assets/logout-hover.png') 8;
+    border-image: url('buttons/logout-hover.png') 8;
 }
 
 /* lockscreen button */
-
-.starkmenu-lockscreen-button {
+.starkmenu-lockscreen-horizontal-button {
     padding-bottom: 4px;
-    border-image: url('menu-assets/lock.png') 8;
+    border-image: url('buttons/lock.png') 8;
 }
 
-.starkmenu-lockscreen-button-selected {
+.starkmenu-lockscreen-horizontal-button-selected {
     padding-bottom: 4px;
-    border-image: url('menu-assets/lock-hover.png') 4;
+    border-image: url('buttons/lock-hover.png') 4;
 }
