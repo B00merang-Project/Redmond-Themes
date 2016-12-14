@@ -290,7 +290,7 @@ StScrollBar StButton#vhandle:hover {
     background-color: rgba(178,211,245,0.65);
     box-shadow: none;
     border-image: url('panel.png') 80 0 0 0;
-    outline: 1px rgba(100,100,100,0.5);
+    outline: 1px #015eb1;
     color: #fff;
     font-size: 9pt;
     height: 40px;
@@ -1216,12 +1216,10 @@ border-radius: 0px;
 
 .run-dialog {
     border-radius: 8px;    
-    padding-right: 21px;
-    padding-left: 21px;
-    padding-bottom: 15px;
+    padding: 20px;
     padding-top: 15px;
     color: black;
-    border-image: url('tab.png') 4 4 4 4;
+    border-image: url('tab.png') 16;
 }
 
 .lightbox {

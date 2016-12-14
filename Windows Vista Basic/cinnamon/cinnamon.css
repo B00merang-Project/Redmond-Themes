@@ -1208,12 +1208,10 @@ border-radius: 0px;
 
 .run-dialog {
     border-radius: 8px;    
-    padding-right: 21px;
-    padding-left: 21px;
-    padding-bottom: 15px;
+    padding: 20px;
     padding-top: 15px;
     color: black;
-    border-image: url('tab.png') 4 4 4 4;
+    border-image: url('tab.png') 16;
 }
 
 .lightbox {
