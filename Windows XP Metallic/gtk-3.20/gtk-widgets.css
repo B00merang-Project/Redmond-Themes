@@ -1230,7 +1230,7 @@ notebook > header.frame {
 }
 
 notebook > stack:not(:only-child) {
-  backgroun-color: @theme_bg_color;
+  background-color: @theme_bg_color;
   border: 1px solid shade(@theme_bg_color, 0.7);
   box-shadow: none; }
 

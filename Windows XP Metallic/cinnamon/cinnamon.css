@@ -135,7 +135,9 @@ StScrollBar StButton#vhandle:hover {
     -arrow-base: 40px;
 }
 
-.popup-menu {
+/* Cinnamon 3.2 fix */
+.popup-menu,
+.menu {
     border: solid 4px black;
     border-image: url('popupmenu.png') 8 8 8 8;
     color: #000;
@@ -145,6 +147,7 @@ StScrollBar StButton#vhandle:hover {
     background-color: #4c4c4c;
 }
 .popup-sub-menu {
+    background-color: transparent;
 }
 .popup-sub-menu .popup-menu-item:ltr {
     padding-right: 0em;
@@ -266,7 +269,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 #panelLeft .applet-box:first-child {
-    border-image: url('menu.png') 7 0 0 0;
+    border-image: url('menu-box.png') 7 0 0 0;
     border-right-width: 10px;
     font-size: 12pt;
     font-style: italic;

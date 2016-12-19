@@ -131,18 +131,20 @@ StScrollBar StButton#vhandle:hover {
 
 .popup-menu-boxpointer {
     -arrow-border-radius: 16px;
-    -boxpointer-gap: -1px;
+    -boxpointer-gap: 5px;
     -arrow-base: 40px;
     border-image: url('menu-assets/background.png') 8;
 }
 
-.popup-menu {
+/* Cinnamon 3.2 fix */
+.popup-menu,
+.menu {
     font-size: 9.5pt;
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
-    min-width: 250px;
+    min-width: 150px;
     min-height: 80px;
     border: rgba(0,0,0,.8);
     border-radius: 6px 6px 6px 6px;
@@ -158,10 +160,11 @@ StScrollBar StButton#vhandle:hover {
     background-color: #2975E9;
     color: white;
 }
+.popup-sub-menu {
+    background-color: transparent;
+}
 .popup-submenu-menu-item:open:hover {
     color: black;
-}
-.popup-sub-menu {
 }
 .popup-sub-menu .popup-menu-item:ltr {
     padding-right: 0em;
@@ -1587,8 +1590,6 @@ border-radius: 1px;
     border-image: url('menu-assets/menu-bg.png') 8;
     box-shadow: 16px -5px 20px 10px rgba(0,0,0,0.4);
     border-radius: 6px 6px 0px 0px;
-    border-radius-bottomright: 0px;
-    border-radius-bottomleft: 0px;
     padding-bottom: 0px;
 }
 
