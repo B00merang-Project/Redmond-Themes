@@ -2405,3 +2405,42 @@ The colour parameters are red, green, blue, and transparency or a name */
     padding-bottom: 4px;
     border-image: url('buttons/lock-hover.png') 4;
 }
+
+/******************
+ * Legacy support *
+ ******************/
+
+/* shutdown button */
+.starkmenu-quit-button {
+    padding-bottom: 4px;
+    padding-left: 10px;
+    border-image: url('buttons/shutdown.png') 8;
+}
+
+.starkmenu-quit-button-selected {
+    padding-bottom: 4px;
+    padding-left: 10px;
+    border-image: url('buttons/shutdown-hover.png') 8;
+}
+
+/* logout button */
+.starkmenu-logout-button {
+    padding-bottom: 4px;
+    border-image: url('buttons/logout.png') 8;
+}
+
+.starkmenu-logout-button-selected {
+    padding-bottom: 4px;
+    border-image: url('buttons/logout-hover.png') 8;
+}
+
+/* lockscreen button */
+.starkmenu-lockscreen-button {
+    padding-bottom: 4px;
+    border-image: url('buttons/lock.png') 8;
+}
+
+.starkmenu-lockscreen-button-selected {
+    padding-bottom: 4px;
+    border-image: url('buttons/lock-hover.png') 4;
+}
