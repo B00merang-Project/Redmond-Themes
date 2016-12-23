@@ -508,8 +508,8 @@ StScrollBar StButton#vhandle:hover {
 
 .workspace-close-button {
     background-image: url("close.svg");
-    height: 34px;
-    width: 34px;
+    height: 16px;
+    width: 16px;
     -cinnamon-close-overlap: 20px;
 }
 
@@ -525,8 +525,8 @@ StScrollBar StButton#vhandle:hover {
 
 .window-close {
     background-image: url("close.svg");
-    height: 34px;
-    width: 34px;
+    height: 16px;
+    width: 16px;
     -cinnamon-close-overlap: 20px;
 }
 
@@ -535,7 +535,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .window-close-area {
-  background-image: url("trash-icon.png");
+    background-image: url("trash-icon.png");
     background-color: rgba(0, 0, 0, 0.8);
     border: 2px solid #2975E9;
     border-bottom: 0px;
