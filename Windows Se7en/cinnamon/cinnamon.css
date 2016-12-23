@@ -316,9 +316,18 @@ StScrollBar StButton#vhandle:hover {
 }
 #panelLeft .applet-box:first-child:hover {
     transition-duration: 200; background: url("orbs/OBB2.png");
+    border-image: none;
 }
 #panelLeft .applet-box:first-child:active {
     background: url("orbs/OBB3.png");
+    border-image: none;
+}
+
+#panelRight {
+    border-image: url('show-desktop.png') 0 15 0 0;
+    border-image-repeat: no-repeat;
+    transition-duration: 300;
+    border: 0 solid transparent;
 }
 
 #panelLeft:dnd {
@@ -2009,17 +2018,25 @@ border-radius: 1px;
     padding-left: 6px;
     padding-right: 6px;
     transition-duration: 300;
+    padding-top: 1px;
 }
 .applet-box:hover {
-    background-color: rgba(25,25,25,0.2);
+    background-color: rgba(25,25,25,0);
+    border-image: url('panel-assets/tray-hover.png') 16;
     color:  white;
     transition-duration: 100;
 }
 .applet-box:active {
-    background-color: rgba(25,25,25,0.4);
+    background-color: rgba(25,25,25,0);
+    border-image: url('panel-assets/tray-pressed.png') 16;
     color:  white;
     transition-duration: 100;
- 
+}
+
+/* Cinnamon 3.2+ Only Feature */
+.applet-box:checked,
+.applet-box:hover {
+    border-image: url('panel-assets/tray-pressed.png') 6;
 }
 
 .applet-label:not(:first-child) {
