@@ -1695,9 +1695,8 @@ border-radius: 1px;
 
 .menu-category-button-selected {
     padding: 7px;
-    color: black;
 /*    background-color: #2975E9;*/
-    border-image: url('menu-assets/hover.png') 5;
+    border-image: url('menu-assets/hover2.png') 9;
 }
 
 .menu-category-button-label:ltr { 
