@@ -2,6 +2,11 @@
 
 Here is where we push our latest development on our [Redmond Themes](http://b00merang.weebly.com/redmond-collection.html). This project aims to provide the complete Windows experience for easy use on Linux and GNOME-compatible OSes
 
+Credits: 
+- [gmc85](https://www.gnome-look.org/member/334314/) for base of Metal & Homestead themes
+- [Petrucci4prez](https://github.com/petrucci4prez/) for base of Luna theme & lots of XP assets (scrollbars, sliders, gtk2 themes, etc.)
+
+
 ##[Recommended Icon themes](http://b00merang.weebly.com/icon-themes.html)
 
 ###Windows 3.x (credit to matthewmx86 ​and snovbx on GNOME LOOK.org)###
