@@ -1689,6 +1689,7 @@ border-radius: 1px;
     background-color: white;
     caret-size: 1px;
     margin-bottom: 10px;
+    border: 1px solid gray;
 }
 
 .menu-search-box {
