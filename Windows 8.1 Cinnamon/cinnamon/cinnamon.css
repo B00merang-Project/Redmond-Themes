@@ -1103,8 +1103,8 @@ StScrollBar StButton#hhandle {
  * Menu (menu.js)
  * ===================================================================*/
 /* Main menu title */
+.starkmenu-background,
 .menu-background {
-    background-image: url('popup-logo.png');
     background-color: rgba(107,173,247,0.8);
     color: black;
     border: 1px solid #f1f1f1;
@@ -1699,7 +1699,6 @@ StScrollBar StButton#hhandle {
     border-radius: 20px 60px 20px 60px;
     box-shadow: inset 0px 3px 5px 0px rgba(0,0,0,0.6);
     background-color: #1e376f;
-    background-image: url('popup-logo.png');
     border-top: 2px;
     border-bottom: 2px;
     color: black;

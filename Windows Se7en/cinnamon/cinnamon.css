@@ -2325,6 +2325,17 @@ The colour parameters are red, green, blue, and transparency or a name */
     color: white;
 }
 .starkmenu-background {
+    color: #fff;
+    -boxpointer-gap: -1px;
+    -arrow-border-radius: 16px;
+    -arrow-base: 0px;
+    -arrow-rise: -1px;
+    background-color: transparent;
+    border: inset 1px solid rgba(255,255,255,0.5);
+    border-image: url('menu-assets/menu-bg.png') 8;
+    box-shadow: 16px -5px 20px 10px rgba(0,0,0,0.4);
+    border-radius: 6px 6px 0px 0px;
+    padding-bottom: 0px;
 }
 .starkmenu-selected-app-box {
 }

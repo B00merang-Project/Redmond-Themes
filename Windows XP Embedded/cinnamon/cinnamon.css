@@ -20,7 +20,7 @@ stage {
 }
 
 StScrollView.vfade {
-  -st-vfade-offset: 68px;
+  -st-vfade-offset: 0px;
 }
 
 StScrollView StScrollBar {
@@ -2177,6 +2177,9 @@ The colour parameters are red, green, blue, and transparency or a name */
     padding: 8px;
 }
 .starkmenu-background {
+    border: solid 1px transparent;
+    border-image: url("menu-bg.png") 8 8 56 41;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
     padding: 54px 1px 29px 1px;
 }
 .starkmenu-selected-app-box {
