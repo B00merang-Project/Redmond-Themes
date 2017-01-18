@@ -6,7 +6,6 @@ Credits:
 - [gmc85](https://www.gnome-look.org/member/334314/) for base of Metal & Homestead themes
 - [Petrucci4prez](https://github.com/petrucci4prez/) for base of Luna theme & lots of XP assets (scrollbars, sliders, gtk2 themes, etc.)
 
-
 ##[Recommended Icon themes](http://b00merang.weebly.com/icon-themes.html)
 
 ###Windows 3.x (credit to matthewmx86 ​and snovbx on GNOME LOOK.org)###
@@ -14,18 +13,6 @@ Credits:
 
 ###Windows 95/98/2000/ME###
 ![9x](http://b00merang.weebly.com/uploads/1/6/8/1/16813022/screenshot-2016-10-14-17-06-00_orig.png)
-
-###Windows XP Luna###
-![windows-xp-luna](http://b00merang.weebly.com/uploads/1/6/8/1/16813022/virtualbox-ubuntu-28-11-2016-12-12-24_orig.png)
-
-###Windows XP Embedded###
-![embedded](http://b00merang.weebly.com/uploads/1/6/8/1/16813022/screenshot-2016-10-20-20-01-35_orig.png)
-
-###Windows XP Royale Dark###
-![royale-dark](https://cloud.githubusercontent.com/assets/15310985/19190540/22312646-8c6c-11e6-99e5-2b0b88d9e90c.png)
-
-###Windows XP Zune###
-![zune](http://b00merang.weebly.com/uploads/1/6/8/1/16813022/screenshot-2016-10-20-20-01-53_orig.png)
 
 ###Windows Vista###
 ![vista-aero](http://b00merang.weebly.com/uploads/1/6/8/1/16813022/screenshot-2016-10-13-17-07-53_orig.png)
