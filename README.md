@@ -19,6 +19,6 @@ Here is where we push our latest development on our [Redmond Themes](http://b00m
 ###Windows 8.1 Cinnamon###
 ![8.1](http://b00merang.weebly.com/uploads/1/6/8/1/16813022/8608806_orig.png?294)
 
-> For a quick installation guide, visit http://b00merang.weebly.com/how-to-install-themes.html
+> For a quick installation guide, visit http://b00merang.weebly.com/easy-installation-guide.html
 
 **Microsoft® Windows™ is a registered trademark of Microsoft® Corporation. This name is used for referential use only, and does not aim to usurp copyrights from Microsoft. Microsoft Ⓒ 2016 All rights reserved. All resources belong to Microsoft Corporation**
