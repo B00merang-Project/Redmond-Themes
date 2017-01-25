@@ -8,6 +8,8 @@ Here is where we push our latest development on our [Redmond Themes](http://b00m
 ### - [Windows 10 theme](https://github.com/B00merang-Project/Windows-10)###
 ### - [Windows Icon themes](http://b00merang.weebly.com/icon-themes.html)###
 
+***
+
 **Windows 3.x** (credit to matthewmx86 ​and snovbx on GNOME LOOK.org)###
 ![3.x](https://cloud.githubusercontent.com/assets/15310985/15758500/e45aed8a-28d8-11e6-933e-a52e7f24135e.png)
 
