@@ -220,6 +220,15 @@ StScrollBar StButton#hhandle {
     box-shadow: 0 0 4px 1px rgba(0,0,0,0.8);
 }
 
+.menu StEntry,
+.popup-menu StEntry {
+    padding: 4px;
+    color: black;
+    border-image: url('entry.png') 2;
+    caret-color: black;
+    caret-size: 2px;
+}
+
 .popup-sub-menu .popup-menu-item:ltr {
     padding-right: 0em;
 }
@@ -717,13 +726,13 @@ StScrollBar StButton#hhandle {
     padding: 4px;
     color: black;
     border-image: url('entry.png') 2;
-    caret-color: white;
+    caret-color: black;
     caret-size: 2px;
 }
 #notification StEntry:focus {
     color: black;
     border-image: url('entry.png') 2;
-    caret-color: white;
+    caret-color: black;
     caret-size: 2px;
 }
 /* ===================================================================
@@ -737,6 +746,7 @@ StScrollBar StButton#hhandle {
     padding: 20px;
     font-size: 9pt;
     color: black;
+    box-shadow: 0 0 4px 1px rgba(0,0,0,0.8);
 }
 .switcher-list-item-container {
     spacing: 8px;
@@ -827,6 +837,7 @@ StScrollBar StButton#hhandle {
     spacing: 5px;
 }
 .run-dialog-entry {
+    padding: 6px 8px;
     border-image: url("entry.png") 2;
     font-size: 10.5pt;
     font-weight: normal;
@@ -843,6 +854,7 @@ StScrollBar StButton#hhandle {
     padding-left: 21px;
     padding-bottom: 15px;
     padding-top: 15px;
+    box-shadow: 0 0 4px 1px rgba(0,0,0,0.8);
 }
 .lightbox {
     background-color: rgba(0,0,0,0.5);
@@ -1247,7 +1259,7 @@ StScrollBar StButton#hhandle {
     padding: 5px;
     color: black;
     border-image: url('entry.png') 2;
-    caret-color: white;
+    caret-color: black;
     caret-size: 2px;
     width: 250px;
     height: 15px;
@@ -1449,7 +1461,7 @@ StScrollBar StButton#hhandle {
 .panel-launcher-add-dialog-entry {
     padding: 5px;
     color: black;
-    caret-color: white;
+    caret-color: black;
     caret-size: 2px;
     width: 250px;
 }
@@ -1523,7 +1535,7 @@ StScrollBar StButton#hhandle {
     padding: 6px;
     color: black;
     font-weight: normal;
-    caret-color: white;
+    caret-color: black;
     caret-size: 2px;
     width: 250px;
     height: 15px;
@@ -1937,3 +1949,9 @@ StScrollBar StButton#hhandle {
     padding: 2px;
 }
 /*====================================================================*/
+
+/* stark menu user icon */
+.hover-user-icon {
+  border-radius: 4px;
+  border: 2px solid transparent;
+}
