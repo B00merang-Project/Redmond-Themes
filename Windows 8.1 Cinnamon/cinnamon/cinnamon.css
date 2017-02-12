@@ -343,6 +343,25 @@ StScrollBar StButton#hhandle {
 #panelRight {
     spacing: 0px;
 }
+
+/* ORB hack */
+#panelLeft .applet-box:first-child {
+	background-image: url("orb/menu.png");
+	transition-duration: 300;
+    background-size: cover;
+    width: 50px;
+	color: rgba(255,0,0,0) !important;
+}
+#panelLeft .applet-box:first-child:hover {
+	transition-duration: 200;
+	background-image: url("orb/menu-hover.png");
+    background-color: #1f1f1f;
+}
+#panelLeft .applet-box:first-child:active {
+	background-image: url("orb/menu.png");
+    background-color: rgba(0,0,0,0.4);
+}
+
 #panelLeft:dnd {
     background-color: rgba(255,0,0,0.6);
 }

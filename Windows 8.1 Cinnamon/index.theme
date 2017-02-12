@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Windows8
+Comment=Windows 8 modern ui gtk theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Windows8
+MetacityTheme=Windows8
+IconTheme=ubuntu-mono-dark
+CursorTheme=DMZ-White
+ButtonLayout=:minimize,maximize,close
+
