@@ -308,6 +308,11 @@ StScrollBar StButton#vhandle:hover {
 #panelRight {
 }
 
+/* show desktop applet, disable hover */
+#panelRight .applet-box:last-child:hover {
+    border-image: none;
+}
+
 #panelLeft .applet-box:first-child {
     background: url("orbs/OBB1.png");
     background-position: center center;
@@ -840,7 +845,7 @@ border-radius: 0px;
 
 .calendar-day-base:hover {
 /*    background-color: #2975E9; */
-    border-image: url('menu-assets/hover.png) 5;
+    border-image: url('menu-assets/hover.png') 5;
     color: black;
 }
 
@@ -1766,7 +1771,7 @@ border-radius: 1px;
  * Window list (windowList.js)
  * ===================================================================*/
 .window-list-box {
-    spacing: 3px;
+    spacing: 1px;
     padding: 0;
 }
 
@@ -1796,7 +1801,8 @@ border-radius: 1px;
 - for some reason Cinnamon now considers this as a panel launcher, thus,
   use the '.panel-launcher:hover' class to change border image */
 .window-list-item-box:hover  {
-    border-image: url("panel-assets/item-hover.png") 4;
+/*    border-image: url("panel-assets/item-hover.png") 4; */
+    border-image:url("panel-assets/tray-hover.png") 4;
 }
 
 /* active window */
@@ -1941,7 +1947,7 @@ border-radius: 1px;
 
 .panel-launcher:hover {
 /*    background-color: rgba(0,0,0,0.5); */
-    border-image:url("panel-assets/item-hover.png") 4;
+    border-image:url("panel-assets/tray-hover.png") 4;
 }
 
 .panel-launcher-add-dialog-content-box {
