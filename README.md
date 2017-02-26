@@ -18,6 +18,7 @@ Here is where we push our latest development on our [Redmond Themes](http://b00m
 
 **Windows Vista**
 ![vista-aero](http://b00merang.weebly.com/uploads/1/6/8/1/16813022/screenshot-2016-10-13-17-07-53_orig.png)
+**You will need Transparent Panels (Extension available in Cinnamon Spices) for the Aero theme to get the correct panel look, and you'll also need to set it to be theme-controlled**
 
 **Windows Se7en**
 ![7](http://b00merang.weebly.com/uploads/1/6/8/1/16813022/screenshot-2016-09-26-11-44-04_orig.png)
