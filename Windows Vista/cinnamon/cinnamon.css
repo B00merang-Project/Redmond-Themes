@@ -194,6 +194,7 @@ StScrollBar StButton#vhandle:hover {
  * override .popup-menu.font-size, everything else will scale with it.
  */
 
+.menu StEntry,
 .popup-menu StEntry {
     border: 1px solid #767676;
     border-radius: 3px;
@@ -290,6 +291,16 @@ StScrollBar StButton#vhandle:hover {
  * ===================================================================*/
 
 #panel {
+    color: white;
+    background-color: #000;
+    font-size: 9pt;
+    border-image: url('panel-opaque.png') 80 0 0 0;
+    font-weight: normal;
+    height: 30px;
+}
+
+.panel-transparent,
+#panel.panel-transparent {
     color: white;
     background-color: #013c6b;
     font-size: 9pt;
@@ -2349,6 +2360,23 @@ The colour parameters are red, green, blue, and transparency or a name */
     color: white;
 }
 .starkmenu-background {
+    color: #fff;
+    -boxpointer-gap: -1px;
+    -arrow-border-radius: 16px;
+    -arrow-base: 0px;
+    -arrow-rise: -1px;
+    border-image: none;
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,0.5);
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(70,70,70,.85);
+    background-gradient-end: rgba(20,20,20,.85);
+    box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.5);
+    border-radius: 6px 6px 0px 0px;
+    border-radius-bottomright: 0px;
+    border-radius-bottomleft: 0px;
+    padding: 0 10px 0 0;
+
 }
 .starkmenu-selected-app-box {
 }
