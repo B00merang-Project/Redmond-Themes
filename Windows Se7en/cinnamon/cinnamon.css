@@ -40,16 +40,16 @@ StScrollBar StButton#hhandle,
 StScrollBar StButton#vhandle,
 StScrollBar StButton#hhandle:hover,
 StScrollBar StButton#vhandle:hover {
-    border-image: url('outset-shadow.png') 3;
+/*    border-image: url('outset-shadow.png') 3;*/
 }
 
-.menu-applications-box StButton#vhandle {
+/* .menu-applications-box StButton#vhandle {
     background: url('handle-vert.png') no-repeat center center;
 }
 
 .menu-applications-box StButton#vhandle:hover {
     background: url('handle-vert.png') no-repeat center center;
-}
+}*/
 
 
 #Tooltip {
@@ -129,6 +129,7 @@ StScrollBar StButton#vhandle:hover {
  * PopupMenu (popupMenu.js) 
  * ===================================================================*/
 
+.menu,
 .popup-menu-boxpointer {
     -arrow-border-radius: 16px;
     -boxpointer-gap: 5px;
@@ -194,6 +195,7 @@ StScrollBar StButton#vhandle:hover {
  * override .popup-menu.font-size, everything else will scale with it.
  */
 
+.menu StEntry,
 .popup-menu StEntry {
     border: 1px solid #767676;
     border-radius: 3px;
@@ -308,6 +310,11 @@ StScrollBar StButton#vhandle:hover {
 }
 
 #panelRight {
+}
+
+/* show desktop applet, disable hover */
+#panelRight .applet-box:last-child:hover {
+    border-image: none;
 }
 
 #panelLeft .applet-box:first-child {
@@ -836,7 +843,7 @@ border-radius: 0px;
 
 .calendar-day-base:hover {
 /*    background-color: #2975E9; */
-    border-image: url('menu-assets/hover.png) 5;
+    border-image: url('menu-assets/hover.png') 5;
     color: black;
 }
 
@@ -1587,7 +1594,7 @@ border-radius: 1px;
  * ===================================================================*/
 
 /* Main menu title */
-
+.starkmenu-background,
 .menu-background {
     color: #fff;
     -boxpointer-gap: -1px;
@@ -1766,7 +1773,7 @@ border-radius: 1px;
  * Window list (windowList.js)
  * ===================================================================*/
 .window-list-box {
-    spacing: 3px;
+    spacing: 1px;
     padding: 0;
 }
 
@@ -1796,7 +1803,8 @@ border-radius: 1px;
 - for some reason Cinnamon now considers this as a panel launcher, thus,
   use the '.panel-launcher:hover' class to change border image */
 .window-list-item-box:hover  {
-    border-image: url("panel-assets/item-hover.png") 4;
+/*    border-image: url("panel-assets/item-hover.png") 4; */
+    border-image:url("panel-assets/tray-hover.png") 4;
 }
 
 /* active window */
@@ -1941,7 +1949,7 @@ border-radius: 1px;
 
 .panel-launcher:hover {
 /*    background-color: rgba(0,0,0,0.5); */
-    border-image:url("panel-assets/item-hover.png") 4;
+    border-image:url("panel-assets/tray-hover.png") 4;
 }
 
 .panel-launcher-add-dialog-content-box {
@@ -2326,6 +2334,17 @@ The colour parameters are red, green, blue, and transparency or a name */
     color: white;
 }
 .starkmenu-background {
+    color: #fff;
+    -boxpointer-gap: -1px;
+    -arrow-border-radius: 16px;
+    -arrow-base: 0px;
+    -arrow-rise: -1px;
+    background-color: transparent;
+    border: inset 1px solid rgba(255,255,255,0.5);
+    border-image: url('menu-assets/menu-bg.png') 8;
+    box-shadow: 16px -5px 20px 10px rgba(0,0,0,0.4);
+    border-radius: 6px 6px 0px 0px;
+    padding-bottom: 0px;
 }
 .starkmenu-selected-app-box {
 }
