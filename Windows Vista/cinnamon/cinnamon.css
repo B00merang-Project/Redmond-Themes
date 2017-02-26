@@ -292,6 +292,16 @@ StScrollBar StButton#vhandle:hover {
 
 #panel {
     color: white;
+    background-color: #000;
+    font-size: 9pt;
+    border-image: url('panel-opaque.png') 80 0 0 0;
+    font-weight: normal;
+    height: 30px;
+}
+
+.panel-transparent,
+#panel.panel-transparent {
+    color: white;
     background-color: #013c6b;
     font-size: 9pt;
     border-image: url('panel.png') 80 0 0 0;

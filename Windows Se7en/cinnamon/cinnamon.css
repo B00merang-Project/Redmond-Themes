@@ -292,14 +292,17 @@ StScrollBar StButton#vhandle:hover {
  * ===================================================================*/
 
 #panel {
-    background-color: rgba(178,211,245,0.65);
+    background-color: rgba(0,0,0,0);
     box-shadow: none;
     border-image: url('panel.png') 80 0 0 0;
-    outline: 1px #015eb1;
+    outline: 1px rgba(0,0,0,0.5);
     color: #fff;
     font-size: 9pt;
-    height: 40px;
-    padding: 0px;
+    height: 39px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-top: 1px;
 }
 
 #panelLeft, #panelCenter {
@@ -316,6 +319,7 @@ StScrollBar StButton#vhandle:hover {
 
 #panelLeft .applet-box:first-child {
     background: url("orbs/OBB1.png");
+    border-image: none;
     background-position: center center;
     transition-duration: 300;
     width: 40px;
@@ -328,13 +332,6 @@ StScrollBar StButton#vhandle:hover {
 #panelLeft .applet-box:first-child:active {
     background: url("orbs/OBB3.png");
     border-image: none;
-}
-
-#panelRight {
-    border-image: url('show-desktop.png') 0 15 0 0;
-    border-image-repeat: no-repeat;
-    transition-duration: 300;
-    border: 0 solid transparent;
 }
 
 #panelLeft:dnd {
@@ -524,8 +521,8 @@ StScrollBar StButton#vhandle:hover {
 
 .workspace-close-button {
     background-image: url("close.svg");
-    height: 16px;
-    width: 16px;
+    height: 34px;
+    width: 34px;
     -cinnamon-close-overlap: 20px;
 }
 
@@ -541,8 +538,8 @@ StScrollBar StButton#vhandle:hover {
 
 .window-close {
     background-image: url("close.svg");
-    height: 16px;
-    width: 16px;
+    height: 34px;
+    width: 34px;
     -cinnamon-close-overlap: 20px;
 }
 
@@ -551,7 +548,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .window-close-area {
-    background-image: url("trash-icon.png");
+  background-image: url("trash-icon.png");
     background-color: rgba(0, 0, 0, 0.8);
     border: 2px solid #2975E9;
     border-bottom: 0px;
@@ -1045,11 +1042,13 @@ border-radius: 0px;
 .switcher-list {
     border-radius: 4px;
     padding: 20px;
-    border: solid 1px #242e37;
-    box-shadow: solid 0 0 12px 6px rgba(0,0,0,0.8);
-    color: black;
+    border: solid 1px rgba(252.9,252.9,252.9,0.50);
+    box-shadow: solid 0 0 12px 6px rgba(0,0,0,0.77);
+    color: white;
 /*    border-image: url('tab.png') 18; */
-    background-color: rgba(212,240,254,0.8);
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(0,0,0,0.50);
+    background-gradient-end: rgba(0,0,0,0.18);
 }
 
 .switcher-list-item-container {
@@ -1082,7 +1081,7 @@ border-radius: 0px;
 
 .switcher-list .item-box {
     padding: 8px;
-    color: black;
+    color: white;
     border: 4px solid rgba(0,0,0,0);
     border-radius: 8px;
 }
@@ -1093,9 +1092,10 @@ border-radius: 0px;
 }
 
 .switcher-list .item-box:selected {
-    border-radius: 0px;
+    border-radius: 3px;
 /*    border: 4px solid #379aff; */
-    border-image: url('menu-assets/hover.png') 5;
+    border: solid 1px rgba(181,198,218,0.80);
+    background-color: rgba(181,198,218,0.55);
 }
 
 .switcher-list .thumbnail-box {
@@ -1711,8 +1711,9 @@ border-radius: 1px;
 
 .menu-category-button-selected {
     padding: 7px;
+    color: black;
 /*    background-color: #2975E9;*/
-    border-image: url('menu-assets/hover2.png') 9;
+    border-image: url('menu-assets/hover.png') 5;
 }
 
 .menu-category-button-label:ltr { 
@@ -2359,7 +2360,7 @@ The colour parameters are red, green, blue, and transparency or a name */
 }
 .hover-user-icon {
     border-radius: 4px;
-    border: 6px solid transparent;
+    border: 7px solid transparent;
     border-image: url('menu-assets/box.png') 6 6 6 6;
 }
 .hover-icon {
