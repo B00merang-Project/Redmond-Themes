@@ -20,8 +20,8 @@
 .desklet-with-borders-and-header,
 .desklet-header,
 .photoframe-box,
-#notification,
-.switcher-list, /* "Window List With App Grouping" */
+/*#notification,*/
+/*.switcher-list, "Window List With App Grouping" */
 .modal-dialog,
 .menu-background, /* Main menu */
 .workspace-osd,
@@ -49,7 +49,7 @@
 .desklet-with-borders-and-header,
 .desklet-header,
 .photoframe-box,
-.switcher-list, /* "Window List With App Grouping" */
+/*.switcher-list, "Window List With App Grouping" */
 .modal-dialog,
 /*.menu-background,  Main menu */
 .tile-preview,
@@ -681,17 +681,18 @@ StScrollBar StButton#hhandle {
  * Notifications
  * ===================================================================*/
 #notification {
+    background-color: #032456;
     font-size: 8.5pt;
     padding: 8px 8px 8px 8px;
     spacing-rows: 10px;
     spacing-columns: 10px;
     margin-from-right-edge-of-screen: 0px;
     width: 34em;
-    color: black;
+    color: white;
 }
 #notification.multi-line-notification {
     padding-bottom: 8px;
-    color: black;
+    color: white;
 }
 /* We use row-span = 2 for the image cell, which prevents its height preferences to be
     taken into account during allocation, so its height ends up being limited by the height
@@ -699,7 +700,7 @@ StScrollBar StButton#hhandle {
     height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 = 159 */
 .notification-with-image {
     min-height: 159px;
-    color: black;
+    color: white;
 }
 #notification-scrollview {
     max-height: 10em;
@@ -745,7 +746,8 @@ StScrollBar StButton#hhandle {
 .switcher-list { /* Window List With App Grouping */
     padding: 20px;
     font-size: 9pt;
-    color: black;
+    background-color: #032456;
+    color: transparent;
     box-shadow: 0 0 4px 1px rgba(0,0,0,0.8);
 }
 .switcher-list-item-container {
@@ -770,18 +772,21 @@ StScrollBar StButton#hhandle {
     width: 60px;
 }
 .switcher-list .item-box {
+    border: 3px solid transparent;
     padding: 8px;
 }
 .switcher-list .item-box:outlined {}
 .switcher-list .item-box:selected { /* "selected" for "Window List With App Grouping" */
-    background-color: #3399ff;
+/*    background-color: #3399ff;*/
+    border-color: white;
+    color: white;
 }
 .switcher-list .thumbnail-box {
     padding: 2px;
     spacing: 4px;
 }
 .switcher-list .thumbnail {
-    width:    256px;
+    width: 256px;
 }
 .switcher-list .separator {
     width: 1px;

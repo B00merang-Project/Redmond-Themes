@@ -8,7 +8,7 @@
     -GtkButton-interior-focus: true;
     -GtkButtonBox-child-min-height: 24;
     -GtkButtonBox-child-internal-pad-y: 1;
-    -GtkCheckButton-indicator-size: 16;
+    -GtkCheckButton-indicator-size: 14;
     -GtkCheckMenuItem-indicator-size: 14;
     -GtkExpander-expander-size: 8;
     -GtkHTML-link-color: @link_color;
@@ -187,7 +187,7 @@ assistant .sidebar {
 /**********
  * button *
  **********/
-.button {
+button {
     -GtkWidget-focus-padding: 1;
     -GtkWidget-focus-line-width: 0;
 
@@ -201,106 +201,66 @@ assistant .sidebar {
     color: @theme_fg_color;
 }
 
-.button.default,
-.button:hover:focus,
-.button:hover {
+button.default,
+button:hover:focus,
+button:hover {
     border-color: shade(@theme_selected_bg_color, 0.7);
     background-color: shade(@theme_bg_color, 1.0);
     background-image: linear-gradient(to bottom, alpha(@theme_selected_bg_color, 0.3), alpha(@theme_selected_bg_color, 0.6));
 }
 
-.button:active,
-.button:checked {
+button:active,
+button:checked {
     border-color: shade(@theme_selected_bg_color, 0.8);
     background-color: shade(@theme_bg_color, 0.8);
     background-image: linear-gradient(to bottom, alpha(@theme_selected_bg_color, 0.5), alpha(@theme_selected_bg_color, 0.96));
 }
 
-.button:active:hover {
+button:active:hover {
     border-color: shade(@theme_selected_bg_color, 0.7);
 }
 
-.button:focus,
-.button:active:focus,
-.button:active:hover:focus {
+button:focus,
+button:active:focus,
+button:active:hover:focus {
     border-color: shade(@theme_selected_bg_color, 0.7);
     background-image: linear-gradient(to bottom, alpha(@theme_selected_bg_color, 0.3), alpha(@theme_selected_bg_color, 0.6));
 }
 
-.button:insensitive {
+button:insensitive {
     border-color: shade(@theme_bg_color, 0.85);
     background-color: shade(@theme_bg_color, 0.9);
     background-image: none;
 }
 
-.button:active *:insensitive {
+button:active *:insensitive {
     border-color: shade(@theme_bg_color, 0.75);
     background-color: shade(@theme_bg_color, 0.80);
     background-image: none;
 }
 
 /* default button 
-.button.default {
+button.default {
     box-shadow: inset 0 0 0 1px shade(@theme_selected_bg_color, 0.6);
     border-color: shade(@theme_selected_bg_color, 0.6);
     background-color: shade(@theme_bg_color, 1.0);
     color: @theme_fg_color;
 }
 
-.button.default:hover {
+button.default:hover {
     border-color: shade(@theme_selected_bg_color, 0.6);
     background-color: shade(@theme_selected_bg_color, 1.02);
 }
 
-.button.default:active {
+button.default:active {
     border-color: shade(@theme_selected_bg_color, 0.6);
     background-color: shade(@theme_selected_bg_color, 0.95);
 }
 
-.button.default:active:hover {
+button.default:active:hover {
     border-color: shade(@theme_selected_bg_color, 0.6);
     background-color: shade(@theme_selected_bg_color, 0.97);
 } */
-
-
-/*********
- * entry *
- *********/
-.entry {
-    padding: 4px 3px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: shade(@bg_color, 0.6);
-    border-radius: 0px;
-    background-color: @theme_base_color;
-    background-image: none;
-    color: @theme_text_color;
-}
-
-.entry:active,
-.entry:focus {
-    border-color: shade(@selected_bg_color, 0.6);
-}
-
-.entry:selected,
-.entry:selected:focus {
-    background-color: @theme_selected_bg_color;
-    color: @theme_selected_fg_color;
-}
-
-.entry:insensitive {
-    background-color: shade(@theme_bg_color, 0.95);
-    background-image: none;
-    color: mix(@theme_text_color, @theme_base_color, 0.5);
-}
-
-.entry.progressbar {
-    border-width: 0;
-    border-radius: 0px;
-    background-color: @bg_color;
-    background-image: none;
-    color: @theme_fg_color;
-}
 
 /****************
  * cell and row *
@@ -474,33 +434,43 @@ calendar.highlight {
 }
 
 
-/******************
- * combobox entry *
- ******************/
-.primary-toolbar GtkComboBox.combobox-entry .entry,
-.primary-toolbar GtkComboBox.combobox-entry .entry:active,
-.primary-toolbar GtkComboBox.combobox-entry .entry:focus,
-.primary-toolbar GtkComboBox.combobox-entry .entry:insensitive,
-GtkComboBox.combobox-entry .entry,
-GtkComboBox.combobox-entry .entry:active,
-GtkComboBox.combobox-entry .entry:focus,
-GtkComboBox.combobox-entry .entry:insensitive {
-    border-width: 1px 0 1px 1px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+/*********
+ * entry *
+ *********/
+entry {
+    padding: 4px 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: shade(@bg_color, 0.6);
+    border-radius: 0px;
+    background-color: @theme_base_color;
+    background-image: none;
+    color: @theme_text_color;
 }
 
-.primary-toolbar GtkComboBox.combobox-entry .button,
-.primary-toolbar GtkComboBox.combobox-entry .button:hover,
-.primary-toolbar GtkComboBox.combobox-entry .button:active,
-.primary-toolbar GtkComboBox.combobox-entry .button:insensitive,
-GtkComboBox.combobox-entry .button,
-GtkComboBox.combobox-entry .button:hover,
-GtkComboBox.combobox-entry .button:active,
-GtkComboBox.combobox-entry .button:insensitive {
-    border-width: 1px 1px 1px 1px;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
+entry:active,
+entry:focus {
+    border-color: shade(@selected_bg_color, 0.6);
+}
+
+entry:selected,
+entry:selected:focus {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+}
+
+entry:disabled {
+    background-color: shade(@theme_bg_color, 0.95);
+    background-image: none;
+    color: mix(@theme_text_color, @theme_base_color, 0.5);
+}
+
+entry progressbar {
+    border-width: 0;
+    border-radius: 0px;
+    background-color: @bg_color;
+    background-image: none;
+    color: @theme_fg_color;
 }
 
 
@@ -911,71 +881,34 @@ combobox arrow {
 combobox:drop(active) {
   box-shadow: none; }
 
-/********
- * menu *
- ********/
-GtkTreeMenu.menu,
-GtkMenuToolButton.menu,
-GtkComboBox .menu {
-    background-color: @menu_bg_color;
+
+/******************
+ * combobox entry *
+ ******************/
+.primary-toolbar combobox.combobox-entry entry,
+.primary-toolbar combobox.combobox-entry entry:active,
+.primary-toolbar combobox.combobox-entry entry selection:focus,
+.primary-toolbar combobox.combobox-entry entry:disabled,
+combobox.combobox-entry entry,
+combobox.combobox-entry entry:active,
+combobox.combobox-entry entry selection:focus,
+combobox.combobox-entry entry:disabled {
+    border-width: 1px 0 1px 1px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
-.primary-toolbar .menu,
-.primary-toolbar .button .menu,
-.toolbar .menu,
-.toolbar .primary-toolbar .menu,
-.header-bar .menu,
-.header-bar .primary-toolbar .menu {
-    padding: 0;
-    border-radius: 0;
-    border-style: none;
-    background-color: @menu_bg_color;
-    color: @menu_fg_color;
-}
-
-.menu {
-    padding: 0;
-    border-radius: 0;
-    border: 1px solid shade(@menu_bg_color, 0.8);
-    background-color: @menu_bg_color;
-    color: @menu_fg_color;
-}
-
-/* Hover-effect on play-button in ubuntu soundmenu */
-.menu:selected {
-    background-color: @selected_bg_color;
-}
-
-.menu.button:hover,
-.menu.button:active,
-.menu.button:active *:insensitive,
-.menu.button:insensitive,
-.menu.button {
-    border-width: 0;
-    background-color: @menu_bg_color;
-    background-image: none;
-}
-
-.context-menu {
-    font: initial;
-}
-
-/* ubuntu software center menu */
-#toolbar-popup {
-    background-color: @menu_bg_color;
-    color: @menu_fg_color;
-}
-
-/***********
- * menubar *
- ***********/
-.menubar {
-    -GtkWidget-window-dragging: true;
-
-    border-style: none;
-    background-color: @menubar_bg_color;
-    background-image: none;
-    color: @menubar_fg_color;
+.primary-toolbar combobox entry button,
+.primary-toolbar combobox toolbar.primary-toolbar button:hover,
+.primary-toolbar combobox entry button:active,
+.primary-toolbar combobox toolbar combobox button.combo:disabled,
+combobox entry button,
+combobox toolbar.primary-toolbar button:hover,
+combobox entry button:active,
+combobox toolbar combobox button.combo:disabled {
+    border-width: 1px 1px 1px 1px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
 }
 
 
@@ -1175,146 +1108,71 @@ popover.background:backdrop {
     box-shadow: none; 
 }
 
+/********
+ * menu *
+ ********/
+GtkTreeMenu menu,
+GtkMenuToolButton menu,
+GtkComboBox  menu {
+    background-color: @menu_bg_color;
+}
 
-/************
- * notebook *
- ************/
-.notebook {
-    background-color: @theme_base_color;
-    background-image: none;
+.primary-toolbar menu,
+.primary-toolbar button menu,
+toolbar menu,
+toolbar .primary-toolbar menu,
+headerbar  menu,
+headerbar .primary-toolbar menu {
+    padding: 0;
     border-radius: 0;
+    border-style: none;
+    background-color: @menu_bg_color;
+    color: @menu_fg_color;
+}
+
+menu {
     padding: 0;
-    background-clip: border-box;
-    border-color: shade (@bg_color, 0.82);
-    border-width: 1px;
-    border-style: solid;
+    border-radius: 0;
+    border: 1px solid shade(@menu_bg_color, 0.8);
+    background-color: @menu_bg_color;
+    color: @menu_fg_color;
 }
 
-.notebook.frame {
-    border-width: 1px;
+/* Hover-effect on play-button in ubuntu soundmenu */
+menu:selected {
+    background-color: @selected_bg_color;
 }
 
-.notebook.header {
+menu button:hover,
+menu button:active,
+menu button:active *:disabled,
+menu button:disabled,
+menu button {
     border-width: 0;
-    background-color: @theme_bg_color;
-}
-
-.notebook.header.frame {
-    border-color: @theme_bg_color;
-    box-shadow: none;
-}
-
-.notebook tab {
-    background-color: @theme_bg_color;
-    background-image: linear-gradient(to bottom, @theme_bg_color, shade(@theme_bg_color, 0.90));
-    border-style: solid;
-    border-color: shade(@bg_color, 0.8);
-    border-width: 1px;
-    border-radius: 0px;
-    box-shadow: none;
-}
-
-.notebook tab:hover {
-    background-color: alpha(@theme_selected_bg_color, 0.3);
-}
-
-.notebook tab:active {
-    border-color: shade (@theme_bg_color, 0.82);
-    border-style: solid;
-    border-width: 1px;
-    background-color: @theme_base_color;
+    background-color: @menu_bg_color;
     background-image: none;
-    color: @fg_color;
 }
 
-.notebook tab GtkLabel {
-    /*padding: 1px;*/
-    padding: 4px 8px 4px 8px;
+.context-menu {
+    font: initial;
 }
 
-.notebook tab {
-    color: shade (@bg_color, 0.48);
+/* ubuntu software center menu */
+#toolbar-popup {
+    background-color: @menu_bg_color;
+    color: @menu_fg_color;
 }
 
-.notebook tab.top:active {
-    padding: 3px 7px 1px 7px;
-    border-radius: 2px 2px 0 0;
-    box-shadow: inset 0 1px @theme_base_color,
-                inset 1px 0 @theme_base_color,
-                inset -1px 0 @theme_base_color;
-}
+/***********
+ * menubar *
+ ***********/
+menubar {
+    -GtkWidget-window-dragging: true;
 
-.notebook tab.top {
-    padding: 2px 5px 0 5px;
-}
-
-.notebook tab.right:active {
-    padding: 4px 6px 4px 1px;
-    border-radius: 0 2px 2px 0;
+    border-style: none;
+    background-color: @menubar_bg_color;
     background-image: none;
-    box-shadow: inset 0 1px @theme_base_color,
-                inset 0 -1px @theme_base_color,
-                inset -1px 0 @theme_base_color;
-}
-
-.notebook tab.right {
-    padding: 3px 4px 3px 0;
-    border-image-width: 1px 0;
-}
-
-.notebook tab.bottom:active {
-    padding: 1px 7px 4px 7px;
-    border-radius: 0 0 2px 2px;
-    background-image: none;
-    box-shadow: inset 0 -1px @theme_base_color,
-                inset 1px 0 @theme_base_color,
-                inset -1px 0 @theme_base_color;
-}
-
-.notebook tab.bottom {
-    padding: 0 5px 3px 5px;
-    border-image-width: 0 1px;
-}
-
-.notebook tab.left:active {
-    padding: 4px 1px 4px 6px;
-    border-radius: 2px 0 0 2px;
-    background-image: none;
-    box-shadow: inset 0 1px @theme_base_color,
-                inset 0 -1px @theme_base_color,
-                inset 1px 0 @theme_base_color;
-}
-
-.notebook tab.left {
-    padding: 3px 0 3px 4px;
-    border-image-width: 1px 0;
-}
-
-.notebook tab .button {
-    padding: 0;
-}
-
-.notebook GtkDrawingArea {
-        background-color: @theme_base_color;
-}
-
-.notebook.frame {
-    border-width: 1px;
-}
-
-/* close button styling */
-.notebook tab .button,
-.notebook tab .button:active,
-.notebook tab .button:hover {
-    padding: 1px;
-    border-width: 0px;
-    border-radius: 2px;
-    border-style: solid;
-    border-color: transparent;
-    background-image: none;
-    background-color: transparent;
-    box-shadow: none;
-    color: mix(@theme_text_color, @theme_base_color, 0.5);
+    color: @menubar_fg_color;
 }
 
 
@@ -1326,272 +1184,146 @@ paned > separator {
     color: transparent;
 }
 
-/*************************
- * progressbar and scale *
- *************************/
-GtkProgressBar {
-    padding: 0;
-    border-width: 1px;
-    border-radius: 0px;
-}
 
-.progressbar,
-.progressbar row,
-.progressbar row:hover,
-.progressbar row:selected,
-.progressbar row:selected:focus {
+/************
+ * notebook *
+ ************/
+notebook {
+    background-color: @theme_base_color;
     background-image: none;
-    background-color: @progressbar_color; 
-    box-shadow:none;
-    border: 1px solid transparent;
-    border-image: linear-gradient(to top, @progressbar_color) 8 8 8 8 / 8px 8px 8px 8px stretch;
-}
- 
-.trough,
-.trough row,
-.trough row:hover,
-.trough row:selected,
-.trough row:selected:focus {
-    border-width: 1px;
-    border-style: solid;
-    border-color: shade(@theme_bg_color, 0.7);
-    background-color: shade(@theme_bg_color, 0.85);
-    background-image: linear-gradient(shade(@theme_bg_color, 0.85));}
-
-/* level bars as used for password quality or remaining power */
-GtkLevelBar {
-    -GtkLevelBar-min-block-width: 34;
-    -GtkLevelBar-min-block-height: 2;
-}
-
-GtkLevelBar.vertical {
-    -GtkLevelBar-min-block-width: 2;
-    -GtkLevelBar-min-block-height: 34;
-}
-
-.level-bar.trough {
-    padding: 1px;
-    border-radius: 0px;
-}
-
-.level-bar.fill-block {
-    border-width: 1px;
-    border-style: solid;
-    border-color: shade(@theme_selected_bg_color, 0.9);
-    background-color: @theme_selected_bg_color;
-}
-
-.level-bar.indicator-continuous.fill-block {
-    padding: 1px;
-    border-radius: 0px;
-}
-
-.level-bar.indicator-discrete.fill-block.horizontal {
-    margin: 0 1px;
-}
-
-.level-bar.indicator-discrete.fill-block.vertical {
-    margin: 1px 0;
-}
-
-/* discrete indicator border rounding,
-   uncomment when :nth-child will be working
-   on the widget
-
-.level-bar.indicator-discrete.fill-block.horizontal:first-child {
-    border-radius: 2px 0 0 2px;
-}
-
-.level-bar.indicator-discrete.fill-block.horizontal:last-child {
-    border-radius: 0 2px 2px 0;
-}
-
-.level-bar.indicator-discrete.fill-block.vertical:first-child {
-    border-radius: 2px 2px 0 0;
-}
-
-.level-bar.indicator-discrete.fill-block.vertical:last-child {
-    border-radius: 0 0 2px 2px;
-}
-*/
-
-.level-bar.fill-block.level-high {
-    border-color: shade(@success_color, 0.85);
-    background-image: linear-gradient(to bottom,
-                                      shade(@success_color, 1.2),
-                                      @success_color 75%,
-                                      shade(@success_color, 0.95)
-                                      );
-}
-
-.level-bar.fill-block.level-low {
-    border-color: shade(@warning_color, 0.80);
-    background-image: linear-gradient(to bottom,
-                                      shade(@warning_color, 1.3),
-                                      @warning_color 75%,
-                                      shade(@warning_color, 0.9)
-                                      );
-}
-
-.level-bar.fill-block.empty-fill-block {
-    border-color: alpha(@theme_fg_color, 0.1);
-    background-color: transparent;
-    background-image: none;
-}
-
-.scale {
-    -GtkRange-slider-width: 19;
-    -GtkScale-slider-length: 11;
-    -GtkRange-trough-border: 0;
-
-    padding: 0;
-    border-width: 1px;
-    border-radius: 0px;
-}
-
-.scale.slider {
-    border-radius: 0px;
-    background-image: url('assets/slider-horiz.png');
-}
-
-.scale.slider:insensitive {
-    border-radius: 0px;
-    background-image: url('assets/slider-horiz-insensitive.png');
-}
-
-/* vertical sliders */
-.scale.slider.vertical {
-    border-radius: 0px;
-    background-image: url('assets/slider-vert.png');
-}
-
-.scale.slider.vertical:insensitive {
-    border-radius: 0px;
-    background-image: url('assets/slider-vert-insensitive.png');
-}
-
-.scale.slider.fine-tune:active,
-.scale.slider.fine-tune:active:hover,
-.scale.slider.fine-tune.horizontal:active,
-.scale.slider.fine-tune.horizontal:active:hover {
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.scale.mark {
-    border-color: shade(@theme_bg_color, 0.8);
-}
-
-.scale.trough {
-    margin: 9px 0;
-    border-color: shade(@theme_bg_color, 0.8);
-    border-radius: 0px;
-    background-color: shade(@theme_bg_color, 1.08);
-    background-image: none;
-    border-image: none;
-}
-
-.scale.trough.vertical {
-    margin: 0 9px;
-}
-
-.menuitem .scale.highlight.left,
-.scale.highlight.left {
-    border-color: @theme_selected_bg_color;
-    background-color: @theme_selected_bg_color;
-    background-image: none;
-}
-
-.menuitem .scale.highlight.left:hover {
-    border-color: shade(@theme_selected_bg_color, 0.8);
-    background-color: shade(@theme_selected_bg_color, 0.8);
-}
-
-.scale.highlight.bottom {
-    border-color: @theme_selected_bg_color;
-    background-color: @theme_selected_bg_color;
-    background-image: none;
-}
-
-.scale.trough:insensitive,
-.scale.highlight.left:insensitive {
-    border-color: shade(@theme_bg_color, 0.85);
-    background-color: shade(@theme_bg_color, 0.9);
-    background-image: none;
-}
-
-/*************
- * scrollbar *
- *************/
-.scrollbar {
-    border-width: 1px;
-    border-style: solid;
-    padding: 0;
-}
-
-.scrollbars-junction,
-.scrollbar.trough {
-    border-width: 0;
     border-radius: 0;
-    background-color: shade(@theme_bg_color, 0.9);
-    background-image: none;
-    border-image: none;
+    padding: 0;
+    background-clip: border-box;
+    border-color: shade (@bg_color, 0.82);
+    border-width: 1px;
+    border-style: solid;
 }
 
-.scrollbar.button,
-.scrollbar.button:active,
-.scrollbar.button:active:hover {
+notebook.frame {
+    border-width: 1px;
+}
+
+notebook > header {
     border-width: 0;
-    border-radius: 0;
+    background-color: @theme_bg_color;
+}
+
+notebook > header.frame {
+    border-color: @theme_bg_color;
     box-shadow: none;
-    background-color: transparent;
+}
+
+notebook tab {
+    background-color: @theme_bg_color;
+    background-image: linear-gradient(to bottom, @theme_bg_color, shade(@theme_bg_color, 0.90));
+    border-style: solid;
+    border-color: shade(@bg_color, 0.8);
+    border-width: 1px;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+notebook tab:hover {
+    background-color: alpha(@theme_selected_bg_color, 0.3);
+}
+
+notebook tab:active {
+    border-color: shade (@theme_bg_color, 0.82);
+    border-style: solid;
+    border-width: 1px;
+    background-color: @theme_base_color;
     background-image: none;
-    color: shade(@theme_bg_color, 0.4);
+    color: @fg_color;
 }
 
-.scrollbar.slider {
-    border-width: 0;
+notebook tab GtkLabel {
+    /*padding: 1px;*/
+    padding: 4px 8px 4px 8px;
+}
+
+notebook tab {
+    color: shade (@bg_color, 0.48);
+}
+
+notebook tab.top:active {
+    padding: 3px 7px 1px 7px;
+    border-radius: 2px 2px 0 0;
+    box-shadow: inset 0 1px @theme_base_color,
+                inset 1px 0 @theme_base_color,
+                inset -1px 0 @theme_base_color;
+}
+
+notebook tab.top {
+    padding: 2px 5px 0 5px;
+}
+
+notebook tab.right:active {
+    padding: 4px 6px 4px 1px;
+    border-radius: 0 2px 2px 0;
+    background-image: none;
+    box-shadow: inset 0 1px @theme_base_color,
+                inset 0 -1px @theme_base_color,
+                inset -1px 0 @theme_base_color;
+}
+
+notebook tab.right {
+    padding: 3px 4px 3px 0;
+    border-image-width: 1px 0;
+}
+
+notebook tab.bottom:active {
+    padding: 1px 7px 4px 7px;
+    border-radius: 0 0 2px 2px;
+    background-image: none;
+    box-shadow: inset 0 -1px @theme_base_color,
+                inset 1px 0 @theme_base_color,
+                inset -1px 0 @theme_base_color;
+}
+
+notebook tab.bottom {
+    padding: 0 5px 3px 5px;
+    border-image-width: 0 1px;
+}
+
+notebook tab.left:active {
+    padding: 4px 1px 4px 6px;
+    border-radius: 2px 0 0 2px;
+    background-image: none;
+    box-shadow: inset 0 1px @theme_base_color,
+                inset 0 -1px @theme_base_color,
+                inset 1px 0 @theme_base_color;
+}
+
+notebook tab.left {
+    padding: 3px 0 3px 4px;
+    border-image-width: 1px 0;
+}
+
+notebook tab button {
+    padding: 0;
+}
+
+notebook GtkDrawingArea {
+        background-color: @theme_base_color;
+}
+
+notebook.frame {
+    border-width: 1px;
+}
+
+/* close button styling */
+notebook tab button,
+notebook tab button:active,
+notebook tab button:hover {
+    padding: 1px;
+    border-width: 0px;
+    border-radius: 2px;
+    border-style: solid;
     border-color: transparent;
-    border-radius: 0;
-    background-color: mix(@theme_bg_color, @theme_fg_color, 0.32);
-}
-
-.scrollbar.slider:hover,
-.scrollbar.slider.vertical:hover {
-    border-color: transparent;
-    background-color: mix(@theme_bg_color, @theme_fg_color, 0.5);
-}
-
-.scrollbar.slider:active,
-.scrollbar.slider.vertical:active {
-    border-color: transparent;
-    background-color: shade(@theme_bg_color, 0.5);
-}
-
-.scrollbar.slider.fine-tune:prelight:active {
-      border-width: 2px;
-      border-color: transparent;
-}
-
-/* overlay scrollbar */
-OsThumb {
-    color: shade(@theme_bg_color, 0.7);
-}
-
-OsThumb:selected,
-OsScrollbar:selected {
-    background-color: @theme_selected_bg_color;
-}
-
-OsThumb:active,
-OsScrollbar:active {
-    background-color: @theme_selected_bg_color;
-}
-
-OsThumb:insensitive,
-OsScrollbar:insensitive {
-    background-color: shade(@theme_bg_color, 0.9);
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+    color: mix(@theme_text_color, @theme_base_color, 0.5);
 }
 
 
@@ -1652,46 +1384,348 @@ headerbar.titlebar separator,
 }
 
 
-/* headerbar separator */
-.header-bar GtkSeparatorToolItem,
-.header-bar .separator,
-.header-bar .separator:insensitive,
-.titlebar GtkSeparatorToolItem,
-.titlebar .separator,
-.titlebar .separator:insensitive {
-    -GtkWidget-window-dragging: true;
-
-    border-color: shade(@theme_bg_color, 0.95);
-    color: shade(@theme_bg_color, 0.95);
+/*************************
+ * progressbar and scale *
+ *************************/
+progressbar {
+    padding: 0;
+    border-width: 1px;
+    border-radius: 0px;
+    min-width: 15px;
+    min-height: 15px;
 }
 
-.primary-toolbar .button .separator,
-.primary-toolbar .button.separator,
-.toolbar .button .separator,
-.toolbar .button.separator {
-    border-color: shade(@theme_bg_color, 0.95);
+progressbar progress {
+    background-image: linear-gradient(to right, @progressbar_color, @progressbar_color); }
+ 
+trough {
+    background-color: shade(@theme_bg_color, 0.85);
+    border: 1px solid shade(@theme_bg_color, 0.5);
+    border-radius: 0;
+    box-shadow: none;
 }
 
-.header-bar .button .separator,
-.header-bar .button.separator,
-.titlebar .button .separator,
-.titlebar .button.separator {
-    border-color: shade(@theme_bg_color, 0.95);
+/* level bars as used for password quality or remaining power */
+GtkLevelBar {
+    -GtkLevelBar-min-block-width: 34;
+    -GtkLevelBar-min-block-height: 2;
 }
 
-.primary-toolbar .button .separator:insensitive,
-.primary-toolbar .button.separator:insensitive,
-.toolbar .button .separator:insensitive,
-.toolbar .button.separator:insensitive {
+GtkLevelBar.vertical {
+    -GtkLevelBar-min-block-width: 2;
+    -GtkLevelBar-min-block-height: 34;
+}
+
+levelbar trough {
+    padding: 1px;
+    border-radius: 0px;
+}
+
+levelbar block {
+    border-width: 1px;
+    border-style: solid;
+    border-color: shade(@theme_selected_bg_color, 0.9);
+    background-color: @theme_selected_bg_color;
+}
+
+levelbar.indicator-continuous.fill-block {
+    padding: 1px;
+    border-radius: 0px;
+}
+
+levelbar.indicator-discrete.fill-block.horizontal {
+    margin: 0 1px;
+}
+
+levelbar.indicator-discrete.fill-block.vertical {
+    margin: 1px 0;
+}
+
+/* discrete indicator border rounding,
+   uncomment when :nth-child will be working
+   on the widget
+
+levelbar.indicator-discrete.fill-block.horizontal:first-child {
+    border-radius: 2px 0 0 2px;
+}
+
+levelbar.indicator-discrete.fill-block.horizontal:last-child {
+    border-radius: 0 2px 2px 0;
+}
+
+levelbar.indicator-discrete.fill-block.vertical:first-child {
+    border-radius: 2px 2px 0 0;
+}
+
+levelbar.indicator-discrete.fill-block.vertical:last-child {
+    border-radius: 0 0 2px 2px;
+}
+*/
+
+levelbar block.level-high {
+    border-color: shade(@success_color, 0.85);
+    background-image: linear-gradient(to bottom,
+                                      shade(@success_color, 1.2),
+                                      @success_color 75%,
+                                      shade(@success_color, 0.95)
+                                      );
+}
+
+levelbar block.level-low {
+    border-color: shade(@warning_color, 0.80);
+    background-image: linear-gradient(to bottom,
+                                      shade(@warning_color, 1.3),
+                                      @warning_color 75%,
+                                      shade(@warning_color, 0.9)
+                                      );
+}
+
+levelbar block.empty-fill-block {
+    border-color: alpha(@theme_fg_color, 0.1);
+    background-color: transparent;
+    background-image: none;
+}
+
+.scale {
+    -GtkRange-slider-width: 21;
+    -scale-slider-length: 15;
+    -GtkRange-trough-border: 0;
+
+    padding: 0;
+    border-width: 1px;
+    border-radius: 0px;
+}
+
+scale slider {
+    border-radius: 0px;
+    min-height: 21px;
+    min-width: 15px;
+    margin: -9px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url('assets/slider-horiz.png');
+}
+
+scale.vertical slider {
+    min-height: 15px;
+    min-width: 21px;
+}
+
+scale slider:disabled {
+    border-radius: 0px;
+    background-image: url('assets/slider-horiz-insensitive.png');
+}
+
+/* vertical sliders */
+scale.vertical slider {
+    border-radius: 0px;
+    background-image: url('assets/slider-vert.png');
+}
+
+scale.vertical slider:disabled {
+    border-radius: 0px;
+    background-image: url('assets/slider-vert-insensitive.png');
+}
+
+scale slider.fine-tune:active,
+scale slider.fine-tune:active:hover,
+scale slider.fine-tune.horizontal:active,
+scale slider.fine-tune.horizontal:active:hover {
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+scale.mark {
+    border-color: shade(@theme_bg_color, 0.8);
+}
+
+scale trough {
+    margin: 9px 6px;
+    border-color: shade(@theme_bg_color, 0.8);
+    border-radius: 0px;
+    background-color: shade(@theme_bg_color, 1.08);
+    background-image: none;
+    border-image: none;
+}
+
+scale trough.vertical {
+    margin: 6px 9px;
+}
+
+menuitem .scale highlight.left,
+.scale highlight.left {
+    border-color: @theme_selected_bg_color;
+    background-color: @theme_selected_bg_color;
+    background-image: none;
+}
+
+menuitem .scale highlight.left:hover {
+    border-color: shade(@theme_selected_bg_color, 0.8);
+    background-color: shade(@theme_selected_bg_color, 0.8);
+}
+
+.scale highlight.bottom {
+    border-color: @theme_selected_bg_color;
+    background-color: @theme_selected_bg_color;
+    background-image: none;
+}
+
+.scale trough:disabled,
+.scale highlight.left:disabled {
     border-color: shade(@theme_bg_color, 0.85);
+    background-color: shade(@theme_bg_color, 0.9);
+    background-image: none;
 }
 
-.header-bar .button .separator:insensitive,
-.header-bar .button.separator:insensitive,
-.titlebar .button .separator:insensitive,
-.titlebar .button.separator:insensitive {
-    border-color: shade(@theme_bg_color, 0.85);
-}
+/**************
+ * Scrollbars *
+ **************/
+scrollbar {
+  background-color: shade(@theme_bg_color, 0.9);
+  transition: 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+  * {
+    -GtkScrollbar-has-backward-stepper: true;
+    -GtkScrollbar-has-forward-stepper: true; }
+  scrollbar.top {
+    border-bottom: 1px solid @borders; }
+  scrollbar.bottom {
+    border-top: 1px solid @borders; }
+  scrollbar.left {
+    border-right: 1px solid @borders; }
+  scrollbar.right {
+    border-left: 1px solid @borders; }
+  scrollbar:backdrop {
+    background-color: shade(@theme_bg_color, 0.9);
+    border-color: shade(@borders, 0.95);
+    transition: 200ms ease-out; }
+  scrollbar slider {
+    min-width: 14px;
+    min-height: 14px;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    background-clip: padding-box;
+    background-color: shade(@theme_bg_color, 0.8); }
+    scrollbar slider:hover {
+      background-color: shade(@theme_bg_color, 0.85); }
+    scrollbar slider:hover:active {
+      background-color: shade(@theme_bg_color, 0.75); }
+    scrollbar slider:backdrop {
+      background-color: shade(@theme_bg_color, 0.8); }
+    scrollbar slider:disabled {
+      background-color: transparent; }
+  scrollbar.fine-tune slider {
+    min-width: 12px;
+    min-height: 12px; }
+  scrollbar.fine-tune.horizontal slider {
+    border-width: 1px 1px; }
+  scrollbar.fine-tune.vertical slider {
+    border-width: 1px 1px; }
+  scrollbar.overlay-indicator:not(.dragging):not(.hovering) {
+    border: solid 1px 0 0 0 shade(@theme_bg_color, 0.8);
+    opacity: 1;
+    margin: 0;
+    background-color: shade(@theme_bg_color, 0.9); }
+    scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider {
+      margin: 0;
+      min-width: 12px;
+      min-height: 12px;
+      background-color: shade(@theme_bg_color, 0.8);
+      border: 1px solid shade(@theme_bg_color, 0.8); }
+    scrollbar.overlay-indicator:not(.dragging):not(.hovering) button {
+      min-width: 12px;
+      min-height: 12px;
+      background-color: transparent;
+      background-clip: padding-box;
+      border-radius: 0;
+      border: none /*1px solid shade(@theme_bg_color, 0.8)*/;
+      -gtk-icon-source: none; }
+    scrollbar.overlay-indicator:not(.dragging):not(.hovering).horizontal slider {
+      margin: 0 2px;
+      min-width: 40px; }
+    scrollbar.overlay-indicator:not(.dragging):not(.hovering).horizontal button {
+      margin: 1px 2px;
+      min-width: 5px; }
+    scrollbar.overlay-indicator:not(.dragging):not(.hovering).vertical slider {
+      margin: 2px 0;
+      min-height: 40px; }
+    scrollbar.overlay-indicator:not(.dragging):not(.hovering).vertical button {
+      margin: 2px 1px;
+      min-height: 5px; }
+  scrollbar.overlay-indicator.dragging, scrollbar.overlay-indicator.hovering {
+    opacity: 1; }
+  scrollbar.horizontal slider {
+    min-width: 40px; }
+  scrollbar.vertical slider {
+    min-height: 40px; }
+  scrollbar button {
+    padding: 0;
+    min-width: 12px;
+    min-height: 12px;
+    border-style: none;
+    border-radius: 0;
+    transition-property: min-height, min-width, color;
+    border-color: transparent;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: inset 0 1px transparent;
+    text-shadow: none;
+    -gtk-icon-shadow: none;
+    color: #787c7d; }
+    scrollbar button:hover {
+      border-color: transparent;
+      background-color: transparent;
+      background-image: none;
+      box-shadow: inset 0 1px transparent;
+      text-shadow: none;
+      -gtk-icon-shadow: none;
+      color: #535859; }
+    scrollbar button:active, scrollbar button:checked {
+      border-color: transparent;
+      background-color: transparent;
+      background-image: none;
+      box-shadow: inset 0 1px transparent;
+      text-shadow: none;
+      -gtk-icon-shadow: none;
+      color: @borders; }
+    scrollbar button:disabled {
+      border-color: transparent;
+      background-color: transparent;
+      background-image: none;
+      box-shadow: inset 0 1px transparent;
+      text-shadow: none;
+      -gtk-icon-shadow: none;
+      color: rgba(120, 124, 125, 0.2); }
+    scrollbar button:backdrop {
+      border-color: transparent;
+      background-color: transparent;
+      background-image: none;
+      box-shadow: inset 0 1px transparent;
+      text-shadow: none;
+      -gtk-icon-shadow: none;
+      color: #c3c4c4; }
+      scrollbar button:backdrop:disabled {
+        border-color: transparent;
+        background-color: transparent;
+        background-image: none;
+        box-shadow: inset 0 1px transparent;
+        text-shadow: none;
+        -gtk-icon-shadow: none;
+        color: rgba(195, 196, 196, 0.2); }
+  scrollbar.vertical button.down {
+    -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
+  scrollbar.vertical button.up {
+    -gtk-icon-source: -gtk-icontheme("pan-up-symbolic"); }
+  scrollbar.horizontal button.down {
+    -gtk-icon-source: -gtk-icontheme("pan-right-symbolic"); }
+  scrollbar.horizontal button.up {
+    -gtk-icon-source: -gtk-icontheme("pan-left-symbolic"); }
+
+treeview ~ scrollbar.vertical {
+  border-top: 1px solid @borders;
+  margin-top: -1px; }
+
 
 menuitem separator,
 .separator {
@@ -1788,18 +1822,66 @@ placessidebar row {
     -gtk-outline-radius: 100%; }
 
 
-/**************
- * spinbutton *
- **************/
-.spinbutton .button {
-    color: mix(@theme_text_color, @theme_base_color, 0.4);
-    padding: 2px 4px;
-    border-width: 0;
-    border-radius: 0;
-    border-style: none;
-    background-color: transparent;
-    background-image: none;
-    box-shadow: inset 1px 0 shade(@theme_base_color, 0.9);
+/* headerbar separator */
+headerbar .separator,
+headerbar .separator:insensitive {
+    border-color: shade(@theme_bg_color, 0.35);
+    color: shade(@theme_bg_color, 0.35);
+}
+
+headerbar GtkSeparatorToolItem,
+headerbar separator,
+headerbar .separator,
+headerbar separator:disabled,
+headerbar .separator:disabled {
+    -GtkWidget-window-dragging: true;
+
+    border-color: shade(@theme_bg_color, 0.95);
+    color: shade(@theme_bg_color, 0.95);
+}
+
+toolbar.primary-toolbar button separator,
+.separator,
+toolbar.primary-toolbar button separator,
+.separator,
+toolbar button separator,
+.separator,
+toolbar button separator,
+.separator {
+    border-color: shade(@theme_bg_color, 0.95);
+}
+
+headerbar button separator,
+.separator,
+headerbar button separator,
+.separator,
+headerbar.titlebar button separator,
+.separator,
+headerbar.titlebar button separator,
+.separator {
+    border-color: shade(@theme_bg_color, 0.95);
+}
+
+toolbar.primary-toolbar button separator,
+.separator:disabled,
+toolbar.primary-toolbar button separator,
+.separator:disabled,
+toolbar button separator,
+.separator:disabled,
+toolbar button separator,
+.separator:disabled {
+    border-color: shade(@theme_bg_color, 0.85);
+}
+
+headerbar button separator,
+.separator:disabled,
+headerbar button separator,
+.separator:disabled,
+headerbar.titlebar button separator,
+.separator:disabled,
+headerbar.titlebar button separator,
+.separator:disabled {
+    border-color: shade(@theme_bg_color, 0.85);
 }
 
 
@@ -1973,48 +2055,18 @@ GtkStatusbar {
 }
 
 
-/**********
- * switch *
- **********/
-GtkSwitch {
-    padding: 0;
-    border-radius: 0px;
-    font: bold condensed;
-}
-
-GtkSwitch.slider {
-    border-width: 1px;
-    border-style: solid;
-    border-color: shade(@theme_bg_color, 0.8);
-    background-color: shade(@theme_bg_color, 1.08);
+/**************
+ * spinbutton *
+ **************/
+spinbutton {
+    color: mix(@theme_text_color, @theme_base_color, 0.4);
+    padding: 2px 4px;
+    border-width: 0;
+    border-radius: 0;
+    border-style: none;
+    background-color: transparent;
     background-image: none;
-}
-
-GtkSwitch.slider:insensitive {
-    border-color: shade(@theme_bg_color, 0.85);
-    background-color: shade(@theme_bg_color, 0.9);
-    background-image: none;
-}
-
-GtkSwitch.trough {
-    border-color: shade(@theme_bg_color, 0.8);
-    background-color: shade(@theme_bg_color, 0.95);
-    background-image: none;
-    color: @theme_fg_color;
-}
-
-GtkSwitch.trough:active {
-    border-color: shade(@theme_selected_bg_color, 0.9);
-    background-color: @theme_selected_bg_color;
-    background-image: none;
-    color: @theme_selected_fg_color;
-}
-
-GtkSwitch.trough:insensitive {
-    border-color: shade(@theme_bg_color, 0.85);
-    background-color: shade(@theme_bg_color, 0.9);
-    background-image: none;
-    color: mix(@theme_fg_color, @theme_bg_color, 0.5);
+    box-shadow: inset 1px 0 shade(@theme_base_color, 0.9);
 }
 
 
@@ -2156,288 +2208,49 @@ GtkColorButtonbutton {
     padding: 2px;
 }
 
-/**************
- * header-bar *
- **************/
-.header-bar {
-    padding: 4px;
-    border-width: 0 0 1px 0;
-    border-style: solid;
-    border-color: shade(@theme_bg_color, 0.8);
-    background-color: @theme_bg_color;
-    background-image: none;
-    color: @theme_fg_color;
-}
 
-.header-bar .button.text-button {
-    padding: 4px;
-}
-
-.header-bar .button.image-button {
-    padding: 6px;
-}
-
-.header-bar .title {
-    font: bold;
-    padding: 0 12px;
-}
-
-.header-bar .subtitle {
-    font: smaller;
-    padding: 0 12px;
-}
-
-.header-bar GtkComboBox,
-.header-bar .button {
-    border-color: shade(@theme_bg_color, 0.8);
-    background-color: shade(@theme_bg_color, 1.08);
-    background-image: linear-gradient(to bottom, @theme_bg_color, shade(@theme_bg_color, 0.90));
-    color: @theme_fg_color;
-}
-
-.header-bar .button:hover {
-    border-color: shade(@theme_selected_bg_color, 0.7);
-    background-color: shade(@theme_bg_color, 1.10);
-    background-image: linear-gradient(to bottom, alpha(@theme_selected_bg_color, 0.3), alpha(@theme_selected_bg_color, 0.6));
-}
-
-.header-bar .button:active,
-.header-bar .button:checked {
-    border-color: shade(@theme_selected_bg_color, 0.8);
-    background-color: shade(@theme_bg_color, 0.95);
-    background-image: linear-gradient(to bottom, alpha(@theme_selected_bg_color, 0.3), alpha(@theme_selected_bg_color, 0.6));
-}
-
-.header-bar .button:active:hover {
-    border-color: shade(@theme_bg_color, 0.7);
-}
-
-.header-bar .button:focus,
-.header-bar .button:hover:focus,
-.header-bar .button:active:focus,
-.header-bar .button:active:hover:focus {
-    border-color: shade(@theme_bg_color, 0.7);
-}
-
-.header-bar .button:insensitive {
-    border-color: shade(@theme_bg_color, 0.85);
-    background-color: shade(@theme_bg_color, 0.9);
-    background-image: none;
-}
-
-.header-bar .button:active *:insensitive {
-    border-color: shade(@theme_bg_color, 0.75);
-    background-color: shade(@theme_bg_color, 0.80);
-    background-image: none;
-}
-
-.header-bar .entry {
-    border-width: 1px;
-    border-color: shade(@bg_color, 0.6);
-}
-
-.header-bar .entry:active,
-.header-bar .entry:focus {
-    border-width: 1px;
-    border-color: shade(@selected_bg_color, 0.6);
-}
-
-/***********
- * toolbar *
- ***********/
-.toolbar {
-    padding: 4px;
-    border-style: none;
-    background-color: @toolbar_bg_color;
-    background-image: none;
-    color: @toolbar_fg_color;
-}
-
-.toolbar .button {
-    padding: 2px;
-}
-
-.toolbar .button.text-button {
-    padding: 2px 4px;
-}
-
-.toolbar .button.image-button {
-    padding: 4px 3px 3px 4px;
-}
-
-.toolbar:insensitive {
-    background-color: shade(@toolbar_bg_color, 0.9);
-    color: mix(@toolbar_fg_color, @toolbar_bg_color, 0.5);
-}
-
-/* menubar toolbars */
-.toolbar.menubar {
-    -GtkToolbar-button-relief: normal;
-}
-
-/*******************
- * primary-toolbar *
- *******************/
-.primary-toolbar,
-.primary-toolbar .toolbar,
-.primary-toolbar.toolbar {
-    -GtkWidget-window-dragging: true;
-
-    padding: 4px;
-    border-width: 0;
-    border-style: solid;
-    border-color: shade(@toolbar_bg_color, 0.8);
-    background-color: @toolbar_bg_color;
-    background-image: none;
-    color: @toolbar_fg_color;
-}
-
-.primary-toolbar GtkComboBox,
-.primary-toolbar .button {
-    padding: 2px;
-    border-width: 1px;
-    border-color: shade(@theme_bg_color, 0.9);
+/**********
+ * switch *
+ **********/
+switch {
+    padding: 0;
     border-radius: 0px;
-    background-color: transparent;
-    background-image: linear-gradient(to bottom, @theme_bg_color, shade(@theme_bg_color, 0.90));
-    color: @toolbar_fg_color;
+    font: bold condensed;
 }
 
-.primary-toolbar .raised .button,
-.primary-toolbar .raised.button,
-.toolbar GtkComboBox,
-.toolbar .button {
-    padding: 10px;
-    border-color: shade(@theme_bg_color, 0.9);
-    background-color: shade(@toolbar_bg_color, 1.08);
-    background-image: linear-gradient(to bottom, @theme_bg_color, shade(@theme_bg_color, 0.90));
-    color: @toolbar_fg_color;
-}
-
-.primary-toolbar .button:hover,
-.toolbar .button:hover {
-    border-color: shade(@theme_selected_bg_color, 0.9);
-    background-color: shade(@toolbar_bg_color, 1.10);
-    background-image: linear-gradient(to bottom, alpha(@theme_selected_bg_color, 0.3), alpha(@theme_selected_bg_color, 0.6));
-}
-
-.primary-toolbar .button:checked,
-.primary-toolbar .button:active,
-.toolbar .button:active {
-    border-color: shade(@theme_selected_bg_color, 0.8);
-    background-color: shade(@theme_selected_bg_color, 0.95);
-    background-image: linear-gradient(to bottom, alpha(@theme_selected_bg_color, 0.3), alpha(@theme_selected_bg_color, 0.6));
-}
-
-.primary-toolbar .button:active:hover,
-.toolbar .button:active:hover {
-    border-color: shade(@theme_selected_bg_color, 0.75);
-}
-
-.primary-toolbar .button:focus,
-.primary-toolbar .button:hover:focus,
-.primary-toolbar .button:active:focus,
-.primary-toolbar .button:active:hover:focus,
-.toolbar .button:focus,
-.toolbar .button:hover:focus,
-.toolbar .button:active:focus,
-.toolbar .button:active:hover:focus {
-    border-color: transparent;
-}
-
-.primary-toolbar .button:insensitive,
-.toolbar .button:insensitive {
-    border-color: transparent;
-    background-color: @toolbar_bg_color;
-    background-image: none;
-}
-
-.primary-toolbar .button:active *:insensitive,
-.toolbar .button:active *:insensitive {
-    border-color: transparent;
-    background-color: shade(@toolbar_bg_color, 0.80);
-    background-image: none;
-}
-
-.primary-toolbar .entry,
-.toolbar .entry {
-    border-width: 1px;
-    border-color: shade(@bg_color, 0.6);
-}
-
-.primary-toolbar .entry:active,
-.primary-toolbar .entry:focus,
-.toolbar .entry:active,
-.toolbar .entry:focus {
-    border-width: 1px;
-    border-color: shade(@selected_bg_color, 0.6);
-}
-
-/* inline-toolbar */
-.inline-toolbar.toolbar {
-    -GtkToolbar-button-relief: normal;
-
-    padding: 1px;
+switch slider {
     border-width: 1px;
     border-style: solid;
     border-color: shade(@theme_bg_color, 0.8);
-    border-radius: 0;
-    background-color: @theme_bg_color;
-    background-image: none;
-}
-
-.inline-toolbar.toolbar:last-child {
-    border-width: 1px;
-    border-color: shade(@theme_bg_color, 0.8);
-    border-radius: 0;
-}
-
-.inline-toolbar.toolbar .button {
-    padding: 1px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: shade(@theme_bg_color, 0.8);
-    border-radius: 0;
     background-color: shade(@theme_bg_color, 1.08);
     background-image: none;
-    color: @theme_fg_color;
 }
 
-.inline-toolbar.toolbar .button:hover {
-    border-color: shade(@theme_bg_color, 0.7);
-    background-color: shade(@theme_bg_color, 1.10);
-    background-image: none;
-}
-
-.inline-toolbar.toolbar .button:active {
-    border-color: shade(@theme_bg_color, 0.8);
-    background-color: shade(@theme_bg_color, 0.95);
-    background-image: none;
-}
-
-.inline-toolbar.toolbar .button:active:hover {
-    border-color: shade(@theme_bg_color, 0.7);
-}
-
-.inline-toolbar.toolbar .button:focus,
-.inline-toolbar.toolbar .button:hover:focus,
-.inline-toolbar.toolbar .button:active:focus,
-.inline-toolbar.toolbar .button:active:hover:focus {
-    border-color: shade(@theme_bg_color, 0.7);
-}
-
-.inline-toolbar.toolbar .button:insensitive,
-.inline-toolbar.toolbar GtkToolButton .button:insensitive {
+switch slider:disabled {
     border-color: shade(@theme_bg_color, 0.85);
     background-color: shade(@theme_bg_color, 0.9);
     background-image: none;
 }
 
-.inline-toolbar.toolbar .button:active *:insensitive
-.inline-toolbar.toolbar GtkToolButton .button:active *:insensitive {
-    border-color: shade(@theme_bg_color, 0.75);
-    background-color: shade(@theme_bg_color, 0.80);
+switch trough {
+    border-color: shade(@theme_bg_color, 0.8);
+    background-color: shade(@theme_bg_color, 0.95);
     background-image: none;
+    color: @theme_fg_color;
+}
+
+switch trough:active {
+    border-color: shade(@theme_selected_bg_color, 0.9);
+    background-color: @theme_selected_bg_color;
+    background-image: none;
+    color: @theme_selected_fg_color;
+}
+
+switch trough:disabled {
+    border-color: shade(@theme_bg_color, 0.85);
+    background-color: shade(@theme_bg_color, 0.9);
+    background-image: none;
+    color: mix(@theme_fg_color, @theme_bg_color, 0.5);
 }
 
 
@@ -2445,76 +2258,76 @@ GtkColorButtonbutton {
  * linked buttons *
  *****************/
 /* set up shadows for visual separation */
-.linked .button,
-.inline-toolbar.toolbar .button,
-.inline-toolbar.toolbar GtkToolButton .button,
-.inline-toolbar.toolbar GtkToolButton > .button {
+.linked button,
+toolbar.inline-toolbar button,
+.inline-toolbar toolbar toolbutton button,
+.inline-toolbar toolbar toolbutton > button {
     box-shadow: inset -1px 0 shade(@theme_bg_color, 0.9);
 }
 
-.linked .button:active,
-.inline-toolbar.toolbar .button:active,
-.inline-toolbar.toolbar GtkToolButton .button:active,
-.inline-toolbar.toolbar GtkToolButton > .button:active {
+.linked button:active,
+toolbar.inline-toolbar button:active,
+.inline-toolbar toolbar toolbutton button:active,
+.inline-toolbar toolbar toolbutton > button:active {
     box-shadow: inset -1px 0 shade(@theme_bg_color, 0.9),
                 inset 1px 0 alpha(@dark_shadow, 0.07),
                 inset 0 1px alpha(@dark_shadow, 0.08),
                 inset 0 -1px alpha(@dark_shadow, 0.05);
 }
 
-.linked .button:insensitive,
-.inline-toolbar.toolbar .button:insensitive,
-.inline-toolbar.toolbar GtkToolButton .button:insensitive,
-.inline-toolbar.toolbar GtkToolButton > .button:insensitive {
+.linked button:disabled,
+toolbar.inline-toolbar button:disabled,
+.inline-toolbar toolbar toolbutton button:disabled,
+.inline-toolbar toolbar toolbutton > button:disabled {
     box-shadow: inset -1px 0 shade(@theme_bg_color, 0.85);
 }
 
 /* remove box shadow from last-child and only-child */
-.linked .button:last-child,
-.linked .button:only-child,
-.linked .button:insensitive:last-child,
-.linked .button:insensitive:only-child,
-.linked .button:active *:insensitive:last-child,
-.linked .button:active *:insensitive:only-child,
-.inline-toolbar.toolbar .button:last-child,
-.inline-toolbar.toolbar .button:only-child,
-.inline-toolbar.toolbar .button:insensitive:last-child,
-.inline-toolbar.toolbar .button:insensitive:only-child,
-.inline-toolbar.toolbar .button:active *:insensitive:last-child,
-.inline-toolbar.toolbar .button:active *:insensitive:only-child,
-.inline-toolbar.toolbar GtkToolButton:last-child > .button,
-.inline-toolbar.toolbar GtkToolButton:only-child > .button,
-.inline-toolbar.toolbar GtkToolButton:last-child > .button:insensitive,
-.inline-toolbar.toolbar GtkToolButton:only-child > .button:insensitive,
-.inline-toolbar.toolbar GtkToolButton:last-child > .button:active *:insensitive,
-.inline-toolbar.toolbar GtkToolButton:only-child > .button:active *:insensitive {
+.linked button:last-child,
+.linked button:only-child,
+.linked button:disabled:last-child,
+.linked button:disabled:only-child,
+.linked button:active *:disabled:last-child,
+.linked button:active *:disabled:only-child,
+toolbar.inline-toolbar button:last-child,
+toolbar.inline-toolbar button:only-child,
+toolbar.inline-toolbar button:disabled:last-child,
+toolbar.inline-toolbar button:disabled:only-child,
+toolbar.inline-toolbar button:active *:disabled:last-child,
+toolbar.inline-toolbar button:active *:disabled:only-child,
+.inline-toolbar toolbar toolbutton:last-child > button,
+.inline-toolbar toolbar toolbutton:only-child > button,
+.inline-toolbar toolbar toolbutton:last-child > button:disabled,
+.inline-toolbar toolbar toolbutton:only-child > button:disabled,
+.inline-toolbar toolbar toolbutton:last-child > button:active *:disabled,
+.inline-toolbar toolbar toolbutton:only-child > button:active *:disabled {
     box-shadow: none;
 }
 
 /* add back the inset shadow effect */
-.linked .button:active:last-child,
-.linked .button:active:only-child,
-.inline-toolbar.toolbar .button:active:last-child,
-.inline-toolbar.toolbar .button:active:only-child,
-.inline-toolbar.toolbar GtkToolButton:last-child > .button:active,
-.inline-toolbar.toolbar GtkToolButton:only-child > .button:active {
+.linked button:active:last-child,
+.linked button:active:only-child,
+toolbar.inline-toolbar button:active:last-child,
+toolbar.inline-toolbar button:active:only-child,
+.inline-toolbar toolbar toolbutton:last-child > button:active,
+.inline-toolbar toolbar toolbutton:only-child > button:active {
     box-shadow: inset 1px 0 alpha(@dark_shadow, 0.07),
                 inset 0 1px alpha(@dark_shadow, 0.08),
                 inset -1px 0 alpha(@dark_shadow, 0.07);
 }
 
 /* middle button */
-.linked .entry,
-.linked .button,
-.linked .button:active,
-.linked .button:active:hover,
-.linked .button:insensitive,
-.inline-toolbar.toolbar .button,
-.inline-toolbar.toolbar .button:active,
-.inline-toolbar.toolbar .button:insensitive,
-.inline-toolbar.toolbar GtkToolButton .button,
-.inline-toolbar.toolbar GtkToolButton .button:active,
-.inline-toolbar.toolbar GtkToolButton .button:insensitive {
+.linked entry,
+.linked button,
+.linked button:active,
+.linked button:active:hover,
+.linked button:disabled,
+toolbar.inline-toolbar button,
+toolbar.inline-toolbar button:active,
+toolbar.inline-toolbar button:disabled,
+.inline-toolbar toolbar toolbutton button,
+.inline-toolbar toolbar toolbutton button:active,
+.inline-toolbar toolbar toolbutton button:disabled {
     border-width: 1px;
     border-radius: 0;
     border-right-width: 0;
@@ -2522,17 +2335,17 @@ GtkColorButtonbutton {
 }
 
 /*leftmost button */
-.linked .entry:first-child,
-.linked .button:first-child,
-.linked .button:active:first-child,
-.linked .button:active:hover:first-child,
-.linked .button:insensitive:first-child,
-.inline-toolbar.toolbar .button:first-child,
-.inline-toolbar.toolbar .button:active:first-child,
-.inline-toolbar.toolbar .button:insensitive:first-child,
-.inline-toolbar.toolbar GtkToolButton:first-child .button,
-.inline-toolbar.toolbar GtkToolButton:first-child .button:active,
-.inline-toolbar.toolbar GtkToolButton:first-child .button:insensitive {
+.linked entry:first-child,
+.linked button:first-child,
+.linked button:active:first-child,
+.linked button:active:hover:first-child,
+.linked button:disabled:first-child,
+toolbar.inline-toolbar button:first-child,
+toolbar.inline-toolbar button:active:first-child,
+toolbar.inline-toolbar button:disabled:first-child,
+.inline-toolbar toolbar toolbutton:first-child button,
+.inline-toolbar toolbar toolbutton:first-child button:active,
+.inline-toolbar toolbar toolbutton:first-child button:disabled {
     border-width: 1px;
     border-radius: 0px;
     border-right-width: 0;
@@ -2541,17 +2354,17 @@ GtkColorButtonbutton {
 }
 
 /* rightmost button */
-.linked .entry:last-child,
-.linked .button:last-child,
-.linked .button:active:last-child,
-.linked .button:active:hover:last-child,
-.linked .button:insensitive:last-child,
-.inline-toolbar.toolbar .button:last-child,
-.inline-toolbar.toolbar .button:active:last-child,
-.inline-toolbar.toolbar .button:insensitive:last-child,
-.inline-toolbar.toolbar GtkToolButton:last-child .button,
-.inline-toolbar.toolbar GtkToolButton:last-child .button:active,
-.inline-toolbar.toolbar GtkToolButton:last-child .button:insensitive {
+.linked entry:last-child,
+.linked button:last-child,
+.linked button:active:last-child,
+.linked button:active:hover:last-child,
+.linked button:disabled:last-child,
+toolbar.inline-toolbar button:last-child,
+toolbar.inline-toolbar button:active:last-child,
+toolbar.inline-toolbar button:disabled:last-child,
+.inline-toolbar toolbar toolbutton:last-child button,
+.inline-toolbar toolbar toolbutton:last-child button:active,
+.inline-toolbar toolbar toolbutton:last-child button:disabled {
     border-width: 1px;
     border-radius: 0px;
     border-left-width: 0;
@@ -2560,83 +2373,83 @@ GtkColorButtonbutton {
 }
 
 /* linked single button */
-.linked .entry:only-child,
-.linked .button:only-child,
-.linked .button:active:only-child,
-.linked .button:active:hover:only-child,
-.linked .button:insensitive:only-child,
-.inline-toolbar.toolbar .button:only-child,
-.inline-toolbar.toolbar .button:active:only-child,
-.inline-toolbar.toolbar .button:insensitive:only-child,
-.inline-toolbar.toolbar GtkToolButton:only-child .button,
-.inline-toolbar.toolbar GtkToolButton:only-child .button:active,
-.inline-toolbar.toolbar GtkToolButton:only-child .button:insensitive {
+.linked entry:only-child,
+.linked button:only-child,
+.linked button:active:only-child,
+.linked button:active:hover:only-child,
+.linked button:disabled:only-child,
+toolbar.inline-toolbar button:only-child,
+toolbar.inline-toolbar button:active:only-child,
+toolbar.inline-toolbar button:disabled:only-child,
+.inline-toolbar toolbar toolbutton:only-child button,
+.inline-toolbar toolbar toolbutton:only-child button:active,
+.inline-toolbar toolbar toolbutton:only-child button:disabled {
     border-width: 1px;
     border-radius: 0px;
 }
 
 /* linked button shadows (vertical) */
-.linked.vertical .button,
-.inline-toolbar.toolbar.vertical .button,
-.inline-toolbar.toolbar.vertical GtkToolButton > .button {
+.linked.vertical button,
+.inline-toolbar toolbar.vertical button,
+.inline-toolbar toolbar.vertical toolbutton > button {
     box-shadow: inset 0 -1px shade(@theme_bg_color, 0.9);
 }
 
-.linked.vertical .button:active,
-.inline-toolbar.toolbar.vertical .button:active,
-.inline-toolbar.toolbar.vertical GtkToolButton > .button:active {
+.linked.vertical button:active,
+.inline-toolbar toolbar.vertical button:active,
+.inline-toolbar toolbar.vertical toolbutton > button:active {
     box-shadow: inset 0 -1px shade(@theme_bg_color, 0.9),
                 inset 1px 0 alpha(@dark_shadow, 0.07),
                 inset 0 1px alpha(@dark_shadow, 0.08),
                 inset -1px 0 alpha(@dark_shadow, 0.07);
 }
 
-.linked.vertical .button:insensitive,
-.inline-toolbar.toolbar.vertical .button:insensitive,
-.inline-toolbar.toolbar.vertical GtkToolButton > .button:insensitive {
+.linked.vertical button:disabled,
+.inline-toolbar toolbar.vertical button:disabled,
+.inline-toolbar toolbar.vertical toolbutton > button:disabled {
     box-shadow: inset 0 -1px shade(@theme_bg_color, 0.85);
 }
 
 /* remove box shadow from last-child and only-child */
-.linked.vertical .button:last-child,
-.linked.vertical .button:only-child,
-.linked.vertical .button:insensitive:last-child,
-.linked.vertical .button:insensitive:only-child,
-.linked.vertical .button:active *:insensitive:last-child,
-.linked.vertical .button:active *:insensitive:only-child,
-.inline-toolbar.toolbar.vertical .button:last-child,
-.inline-toolbar.toolbar.vertical .button:only-child,
-.inline-toolbar.toolbar.vertical .button:insensitive:last-child,
-.inline-toolbar.toolbar.vertical .button:insensitive:only-child,
-.inline-toolbar.toolbar.vertical .button:active *:insensitive:last-child,
-.inline-toolbar.toolbar.vertical .button:active *:insensitive:only-child,
-.inline-toolbar.toolbar.vertical GtkToolButton:last-child > .button,
-.inline-toolbar.toolbar.vertical GtkToolButton:only-child > .button,
-.inline-toolbar.toolbar.vertical GtkToolButton:last-child > .button:insensitive,
-.inline-toolbar.toolbar.vertical GtkToolButton:only-child > .button:insensitive,
-.inline-toolbar.toolbar.vertical GtkToolButton:last-child > .button:active *:insensitive,
-.inline-toolbar.toolbar.vertical GtkToolButton:only-child > .button:active *:insensitive {
+.linked.vertical button:last-child,
+.linked.vertical button:only-child,
+.linked.vertical button:disabled:last-child,
+.linked.vertical button:disabled:only-child,
+.linked.vertical button:active *:disabled:last-child,
+.linked.vertical button:active *:disabled:only-child,
+.inline-toolbar toolbar.vertical button:last-child,
+.inline-toolbar toolbar.vertical button:only-child,
+.inline-toolbar toolbar.vertical button:disabled:last-child,
+.inline-toolbar toolbar.vertical button:disabled:only-child,
+.inline-toolbar toolbar.vertical button:active *:disabled:last-child,
+.inline-toolbar toolbar.vertical button:active *:disabled:only-child,
+.inline-toolbar toolbar.vertical toolbutton:last-child > button,
+.inline-toolbar toolbar.vertical toolbutton:only-child > button,
+.inline-toolbar toolbar.vertical toolbutton:last-child > button:disabled,
+.inline-toolbar toolbar.vertical toolbutton:only-child > button:disabled,
+.inline-toolbar toolbar.vertical toolbutton:last-child > button:active *:disabled,
+.inline-toolbar toolbar.vertical toolbutton:only-child > button:active *:disabled {
     box-shadow: none;
 }
 
 /* add back the inset shadow effect */
-.linked.vertical .button:active:last-child,
-.linked.vertical .button:active:only-child,
-.inline-toolbar.toolbar.vertical .button:active:last-child,
-.inline-toolbar.toolbar.vertical .button:active:only-child,
-.inline-toolbar.toolbar.vertical GtkToolButton:last-child > .button:active,
-.inline-toolbar.toolbar.vertical GtkToolButton:only-child > .button:active {
+.linked.vertical button:active:last-child,
+.linked.vertical button:active:only-child,
+.inline-toolbar toolbar.vertical button:active:last-child,
+.inline-toolbar toolbar.vertical button:active:only-child,
+.inline-toolbar toolbar.vertical toolbutton:last-child > button:active,
+.inline-toolbar toolbar.vertical toolbutton:only-child > button:active {
     box-shadow: inset 1px 0 alpha(@dark_shadow, 0.07),
                 inset 0 1px alpha(@dark_shadow, 0.08),
                 inset -1px 0 alpha(@dark_shadow, 0.07);
 }
 
 /* middle button (vertical) */
-.linked.vertical .entry,
-.linked.vertical .button,
-.linked.vertical .button:active,
-.linked.vertical .button:active:hover,
-.linked.vertical .button:insensitive {
+.linked.vertical entry,
+.linked.vertical button,
+.linked.vertical button:active,
+.linked.vertical button:active:hover,
+.linked.vertical button:disabled {
     border-width: 1px;
     border-radius: 0;
     border-top-width: 0;
@@ -2644,11 +2457,11 @@ GtkColorButtonbutton {
 }
 
 /* top button (vertical) */
-.linked.vertical .entry:first-child,
-.linked.vertical .button:first-child,
-.linked.vertical .button:active:first-child,
-.linked.vertical .button:active:hover:first-child,
-.linked.vertical .button:insensitive:first-child {
+.linked.vertical entry:first-child,
+.linked.vertical button:first-child,
+.linked.vertical button:active:first-child,
+.linked.vertical button:active:hover:first-child,
+.linked.vertical button:disabled:first-child {
     border-width: 1px;
     border-radius: 0px;
     border-bottom-width: 0;
@@ -2657,11 +2470,11 @@ GtkColorButtonbutton {
 }
 
 /* bottom button (vertical) */
-.linked.vertical .entry:last-child,
-.linked.vertical .button:last-child,
-.linked.vertical .button:active:last-child,
-.linked.vertical .button:active:hover:last-child,
-.linked.vertical .button:insensitive:last-child {
+.linked.vertical entry:last-child,
+.linked.vertical button:last-child,
+.linked.vertical button:active:last-child,
+.linked.vertical button:active:hover:last-child,
+.linked.vertical button:disabled:last-child {
     border-width: 1px;
     border-radius: 0px;
     border-top-width: 0;
@@ -2670,246 +2483,109 @@ GtkColorButtonbutton {
 }
 
 /* linked single button (vertical) */
-.linked.vertical .entry:only-child,
-.linked.vertical .button:only-child,
-.linked.vertical .button:active:only-child,
-.linked.vertical .button:active:hover:only-child,
-.linked.vertical .button:insensitive:only-child {
+.linked.vertical entry:only-child,
+.linked.vertical button:only-child,
+.linked.vertical button:active:only-child,
+.linked.vertical button:active:hover:only-child,
+.linked.vertical button:disabled:only-child {
     border-width: 1px;
     border-radius: 0px;
 }
 
-/* linked toolbar buttons */
-.primary-toolbar .button.raised.linked,
-.primary-toolbar .raised.linked .button,
-.toolbar .button.raised.linked,
-.toolbar .raised.linked .button,
-.toolbar .linked .button {
-    box-shadow: inset 0 0 shade(@toolbar_bg_color, 0.9);
+/* linked toolbar buttons - NEMO & nautilus toolbar buttons*/
+toolbar.primary-toolbar button.raised.linked,
+toolbar.primary-toolbar .raised.linked button,
+toolbar button.raised.linked,
+toolbar .raised.linked button,
+toolbar .linked button {
+    box-shadow: inset 0 0 shade(@dark_bg_color, 0.9);
 }
 
-.primary-toolbar .button.raised.linked:active,
-.primary-toolbar .raised.linked .button:active,
-.toolbar .button.raised.linked:active,
-.toolbar .raised.linked .button:active,
-.toolbar .linked .button:active {
-    box-shadow: inset 0 0 shade(@toolbar_bg_color, 0.9),
+toolbar.primary-toolbar button.raised.linked:active,
+.primary-toolbar .raised.linked button:active,
+toolbar button.raised.linked:active,
+toolbar .raised.linked button:active,
+toolbar .linked button:active {
+    box-shadow: inset 0 0 shade(@dark_bg_color, 0.9),
                 inset 0 0 alpha(@dark_shadow, 0.07),
                 inset 0 0 alpha(@dark_shadow, 0.08),
                 inset 0 0 alpha(@dark_shadow, 0.05);
 }
 
-.primary-toolbar .button.raised.linked:insensitive,
-.primary-toolbar .raised.linked .button:insensitive,
-.toolbar .button.raised.linked:insensitive,
-.toolbar .raised.linked .button:insensitive,
-.toolbar .linked .button:insensitive {
-    box-shadow: inset 0 0 shade(@toolbar_bg_color, 0.85);
+toolbar.primary-toolbar button.raised.linked:disabled,
+toolbar.primary-toolbar .raised.linked button:disabled,
+toolbar button.raised.linked:disabled,
+toolbar .raised.linked button:disabled,
+toolbar .linked button:disabled {
+    box-shadow: inset 0 0 shade(@dark_bg_color, 0.85);
 }
 
 /* remove box shadow from last-child and only-child */
-.primary-toolbar .button.raised.linked:last-child,
-.primary-toolbar .button.raised.linked:only-child,
-.primary-toolbar .button:insensitive.raised.linked:last-child,
-.primary-toolbar .button:insensitive.raised.linked:only-child,
-.primary-toolbar .button:active *:insensitive.raised.linked:last-child,
-.primary-toolbar .button:active *:insensitive.raised.linked:only-child,
-.primary-toolbar .raised.linked .button:last-child,
-.primary-toolbar .raised.linked .button:only-child,
-.primary-toolbar .raised.linked .button:insensitive:last-child,
-.primary-toolbar .raised.linked .button:insensitive:only-child,
-.primary-toolbar .raised.linked .button:active *:insensitive:last-child,
-.primary-toolbar .raised.linked .button:active *:insensitive:only-child,
-.toolbar .button.raised.linked:last-child,
-.toolbar .button.raised.linked:only-child,
-.toolbar .button:insensitive.raised.linked:last-child,
-.toolbar .button:insensitive.raised.linked:only-child,
-.toolbar .button:active *:insensitive.raised.linked:last-child,
-.toolbar .button:active *:insensitive.raised.linked:only-child,
-.toolbar .raised.linked .button:last-child,
-.toolbar .raised.linked .button:only-child,
-.toolbar .raised.linked .button:insensitive:last-child,
-.toolbar .raised.linked .button:insensitive:only-child,
-.toolbar .raised.linked .button:active *:insensitive:last-child,
-.toolbar .raised.linked .button:active *:insensitive:only-child,
-.toolbar .linked .button:last-child,
-.toolbar .linked .button:only-child,
-.toolbar .linked .button:insensitive:last-child,
-.toolbar .linked .button:insensitive:only-child,
-.toolbar .linked .button:active *:insensitive:last-child,
-.toolbar .linked .button:active *:insensitive:only-child {
+toolbar.primary-toolbar button.raised.linked:last-child,
+toolbar.primary-toolbar button.raised.linked:only-child,
+toolbar.primary-toolbar button:disabled.raised.linked:last-child,
+toolbar.primary-toolbar button:disabled.raised.linked:only-child,
+toolbar.primary-toolbar button:active *:disabled.raised.linked:last-child,
+toolbar.primary-toolbar button:active *:disabled.raised.linked:only-child,
+toolbar.primary-toolbar .raised.linked button:last-child,
+.primary-toolbar .raised.linked button:only-child,
+toolbar.primary-toolbar .raised.linked button:disabled:last-child,
+.primary-toolbar .raised.linked button:disabled:only-child,
+.primary-toolbar .raised.linked button:active *:disabled:last-child,
+.primary-toolbar .raised.linked button:active *:disabled:only-child,
+toolbar button.raised.linked:last-child,
+toolbar button.raised.linked:only-child,
+toolbar button:disabled.raised.linked:last-child,
+toolbar button:disabled.raised.linked:only-child,
+combobox button.combo:checked *:disabled.raised.linked:last-child,
+combobox button.combo:checked *:disabled.raised.linked:only-child,
+toolbar .raised.linked button:last-child,
+toolbar .raised.linked button:only-child,
+toolbar .raised.linked button:disabled:last-child,
+toolbar .raised.linked button:disabled:only-child,
+toolbar .raised.linked button:active *:disabled:last-child,
+toolbar .raised.linked button:active *:disabled:only-child,
+toolbar .linked button:last-child,
+toolbar .linked button:only-child,
+toolbar .linked button:disabled:last-child,
+toolbar .linked button:disabled:only-child,
+toolbar .linked button:active *:disabled:last-child,
+toolbar .linked button:active *:disabled:only-child {
     box-shadow: none;
 }
 
 /* add back the inset shadow effect */
-.primary-toolbar .button:active.raised.linked:last-child,
-.primary-toolbar .button:active.raised.linked:only-child,
-.primary-toolbar .raised.linked .button:active:last-child,
-.primary-toolbar .raised.linked .button:active:only-child,
-.toolbar .button:active.raised.linked:last-child,
-.toolbar .button:active.raised.linked:only-child,
-.toolbar .raised.linked .button:active:last-child,
-.toolbar .raised.linked .button:active:only-child,
-.toolbar .linked .button:active:last-child,
-.toolbar .linked .button:active:only-child {
-    box-shadow: inset 0 0 alpha(@dark_shadow, 0.07),
-                inset 0 0 alpha(@dark_shadow, 0.08),
-                inset 0 0 alpha(@dark_shadow, 0.07);
-}
-
-/* middle button */
-.primary-toolbar .button.raised.linked,
-.primary-toolbar .button.raised.linked:active,
-.primary-toolbar .button.raised.linked:insensitive,
-.primary-toolbar .raised.linked .button,
-.primary-toolbar .raised.linked .button:active,
-.primary-toolbar .raised.linked .button:insensitive,
-.toolbar .button.raised.linked,
-.toolbar .button.raised.linked:active,
-.toolbar .button.raised.linked:insensitive,
-.toolbar .raised.linked .button,
-.toolbar .raised.linked .button:active,
-.toolbar .raised.linked .button:insensitive,
-.toolbar .linked .button,
-.toolbar .linked .button:active,
-.toolbar .linked .button:insensitive {
-    border-width: 1px;
-    border-radius: 0;
-    border-right-width: 0;
-    border-left-width: 0;
-}
-
-/* leftmost button */
-.primary-toolbar .button.raised.linked:first-child,
-.primary-toolbar .button.raised.linked:active:first-child,
-.primary-toolbar .button.raised.linked:insensitive:first-child,
-.primary-toolbar .raised.linked .button:first-child,
-.primary-toolbar .raised.linked .button:active:first-child,
-.primary-toolbar .raised.linked .button:insensitive:first-child,
-.toolbar .button.raised.linked:first-child,
-.toolbar .button.raised.linked:active:first-child,
-.toolbar .button.raised.linked:insensitive:first-child,
-.toolbar .raised.linked .button:first-child,
-.toolbar .raised.linked .button:active:first-child,
-.toolbar .raised.linked .button:insensitive:first-child,
-.toolbar .linked .button:first-child,
-.toolbar .linked .button:active:first-child {
-    border-width: 1px;
-    border-radius: 0px;
-    border-right-width: 0;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-}
-
-/* rightmost button */
-.primary-toolbar .button.raised.linked:last-child,
-.primary-toolbar .button.raised.linked:active:last-child,
-.primary-toolbar .button.raised.linked:insensitive:last-child,
-.primary-toolbar .raised.linked .button:last-child,
-.primary-toolbar .raised.linked .button:active:last-child,
-.primary-toolbar .raised.linked .button:insensitive:last-child,
-.toolbar .button.raised.linked:last-child,
-.toolbar .button.raised.linked:active:last-child,
-.toolbar .button.raised.linked:insensitive:last-child,
-.toolbar .raised.linked .button:last-child,
-.toolbar .raised.linked .button:active:last-child,
-.toolbar .raised.linked .button:insensitive:last-child,
-.toolbar .linked .button:last-child,
-.toolbar .linked .button:active:last-child,
-.toolbar .linked .button:insensitive:last-child {
-    border-width: 1px;
-    border-radius: 0px;
-    border-left-width: 0;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-}
-
-/* linked single button */
-.primary-toolbar .button.raised.linked:only-child,
-.primary-toolbar .button.raised.linked:active:only-child,
-.primary-toolbar .button.raised.linked:insensitive:only-child,
-.primary-toolbar .raised.linked .button:only-child,
-.primary-toolbar .raised.linked .button:active:only-child,
-.primary-toolbar .raised.linked .button:insensitive:only-child,
-.toolbar .button.raised.linked:only-child,
-.toolbar .button.raised.linked:active:only-child,
-.toolbar .button.raised.linked:insensitive:only-child,
-.toolbar .raised.linked .button:only-child,
-.toolbar .raised.linked .button:active:only-child,
-.toolbar .raised.linked .button:insensitive:only-child,
-.toolbar .linked .button:only-child,
-.toolbar .linked .button:active:only-child,
-.toolbar .linked .button:insensitive:only-child {
-    border-width: 1px;
-    border-radius: 0px;
-}
-
-/* linked titlebar buttons */
-.header-bar .button.raised.linked,
-.header-bar .raised.linked .button,
-.header-bar .linked .button {
-    box-shadow: inset -1px 0 shade(@theme_bg_color, 0.9);
-}
-
-.header-bar .button.raised.linked:active,
-.header-bar .raised.linked .button:active,
-.header-bar .linked .button:active {
-    box-shadow: inset -1px 0 shade(@theme_bg_color, 0.9),
-                inset 1px 0 alpha(@dark_shadow, 0.07),
-                inset 0 1px alpha(@dark_shadow, 0.08),
-                inset 0 -1px alpha(@dark_shadow, 0.05);
-}
-
-.header-bar .button.raised.linked:insensitive,
-.header-bar .raised.linked .button:insensitive,
-.header-bar .linked .button:insensitive {
-    box-shadow: inset -1px 0 shade(@theme_bg_color, 0.85);
-}
-
-/* remove box shadow from last-child and only-child */
-.header-bar .button.raised.linked:last-child,
-.header-bar .button.raised.linked:only-child,
-.header-bar .button:insensitive.raised.linked:last-child,
-.header-bar .button:insensitive.raised.linked:only-child,
-.header-bar .button:active *:insensitive.raised.linked:last-child,
-.header-bar .button:active *:insensitive.raised.linked:only-child,
-.header-bar .raised.linked .button:last-child,
-.header-bar .raised.linked .button:only-child,
-.header-bar .raised.linked .button:insensitive:last-child,
-.header-bar .raised.linked .button:insensitive:only-child,
-.header-bar .raised.linked .button:active *:insensitive:last-child,
-.header-bar .raised.linked .button:active *:insensitive:only-child,
-.header-bar .linked .button:last-child,
-.header-bar .linked .button:only-child,
-.header-bar .linked .button:insensitive:last-child,
-.header-bar .linked .button:insensitive:only-child,
-.header-bar .linked .button:active *:insensitive:last-child,
-.header-bar .linked .button:active *:insensitive:only-child {
-    box-shadow: none;
-}
-
-/* add back the inset shadow effect */
-.header-bar .button:active.raised.linked:last-child,
-.header-bar .button:active.raised.linked:only-child,
-.header-bar .raised.linked .button:active:last-child,
-.header-bar .raised.linked .button:active:only-child,
-.header-bar .linked .button:active:last-child,
-.header-bar .linked .button:active:only-child {
+toolbar.primary-toolbar button:active.raised.linked:last-child,
+toolbar.primary-toolbar button:active.raised.linked:only-child,
+.primary-toolbar .raised.linked button:active:last-child,
+.primary-toolbar .raised.linked button:active:only-child,
+combobox button.combo:checked.raised.linked:last-child,
+combobox button.combo:checked.raised.linked:only-child,
+toolbar .raised.linked button:active:last-child,
+toolbar .raised.linked button:active:only-child,
+toolbar .linked button:active:last-child,
+toolbar .linked button:active:only-child {
     box-shadow: inset 1px 0 alpha(@dark_shadow, 0.07),
                 inset 0 1px alpha(@dark_shadow, 0.08),
                 inset -1px 0 alpha(@dark_shadow, 0.07);
 }
 
 /* middle button */
-.header-bar .button.raised.linked,
-.header-bar .button.raised.linked:active,
-.header-bar .button.raised.linked:insensitive,
-.header-bar .raised.linked .button,
-.header-bar .raised.linked .button:active,
-.header-bar .raised.linked .button:insensitive,
-.header-bar .linked .button,
-.header-bar .linked .button:active,
-.header-bar .linked .button:insensitive {
+toolbar.primary-toolbar button.raised.linked,
+toolbar.primary-toolbar button.raised.linked:active,
+toolbar.primary-toolbar button.raised.linked:disabled,
+toolbar.primary-toolbar .raised.linked button,
+.primary-toolbar .raised.linked button:active,
+toolbar.primary-toolbar .raised.linked button:disabled,
+toolbar button.raised.linked,
+toolbar button.raised.linked:active,
+toolbar button.raised.linked:disabled,
+toolbar .raised.linked button,
+toolbar .raised.linked button:active,
+toolbar .raised.linked button:disabled,
+toolbar .linked button,
+toolbar .linked button:active,
+toolbar .linked button:disabled {
     border-width: 1px;
     border-radius: 0;
     border-right-width: 0;
@@ -2917,15 +2593,20 @@ GtkColorButtonbutton {
 }
 
 /* leftmost button */
-.header-bar .button.raised.linked:first-child,
-.header-bar .button.raised.linked:active:first-child,
-.header-bar .button.raised.linked:insensitive:first-child,
-.header-bar .raised.linked .button:first-child,
-.header-bar .raised.linked .button:active:first-child,
-.header-bar .raised.linked .button:insensitive:first-child,
-.header-bar .linked .button:first-child,
-.header-bar .linked .button:active:first-child,
-.header-bar .linked .button:insensitive:first-child {
+toolbar.primary-toolbar button.raised.linked:first-child,
+toolbar.primary-toolbar button.raised.linked:active:first-child,
+toolbar.primary-toolbar button.raised.linked:disabled:first-child,
+toolbar.primary-toolbar .raised.linked button:first-child,
+.primary-toolbar .raised.linked button:active:first-child,
+toolbar.primary-toolbar .raised.linked button:disabled:first-child,
+toolbar button.raised.linked:first-child,
+toolbar button.raised.linked:active:first-child,
+toolbar button.raised.linked:disabled:first-child,
+toolbar .raised.linked button:first-child,
+toolbar .raised.linked button:active:first-child,
+toolbar .raised.linked button:disabled:first-child,
+toolbar .linked button:first-child,
+toolbar .linked button:active:first-child {
     border-width: 1px;
     border-radius: 0px;
     border-right-width: 0;
@@ -2934,15 +2615,21 @@ GtkColorButtonbutton {
 }
 
 /* rightmost button */
-.header-bar .button.raised.linked:last-child,
-.header-bar .button.raised.linked:active:last-child,
-.header-bar .button.raised.linked:insensitive:last-child,
-.header-bar .raised.linked .button:last-child,
-.header-bar .raised.linked .button:active:last-child,
-.header-bar .raised.linked .button:insensitive:last-child,
-.header-bar .linked .button:last-child,
-.header-bar .linked .button:active:last-child,
-.header-bar .linked .button:insensitive:last-child {
+toolbar.primary-toolbar button.raised.linked:last-child,
+toolbar.primary-toolbar button.raised.linked:active:last-child,
+toolbar.primary-toolbar button.raised.linked:disabled:last-child,
+toolbar.primary-toolbar .raised.linked button:last-child,
+.primary-toolbar .raised.linked button:active:last-child,
+toolbar.primary-toolbar .raised.linked button:disabled:last-child,
+toolbar button.raised.linked:last-child,
+toolbar button.raised.linked:active:last-child,
+toolbar button.raised.linked:disabled:last-child,
+toolbar .raised.linked button:last-child,
+toolbar .raised.linked button:active:last-child,
+toolbar .raised.linked button:disabled:last-child,
+toolbar .linked button:last-child,
+toolbar .linked button:active:last-child,
+toolbar .linked button:disabled:last-child {
     border-width: 1px;
     border-radius: 0px;
     border-left-width: 0;
@@ -2951,38 +2638,144 @@ GtkColorButtonbutton {
 }
 
 /* linked single button */
-.header-bar .button.raised.linked:only-child,
-.header-bar .button.raised.linked:active:only-child,
-.header-bar .button.raised.linked:insensitive:only-child,
-.header-bar .raised.linked .button:only-child,
-.header-bar .raised.linked .button:active:only-child,
-.header-bar .raised.linked .button:insensitive:only-child,
-.header-bar .linked .button:only-child,
-.header-bar .linked .button:active:only-child,
-.header-bar .linked .button:insensitive:only-child {
+toolbar.primary-toolbar button.raised.linked:only-child,
+toolbar.primary-toolbar button.raised.linked:active:only-child,
+toolbar.primary-toolbar button.raised.linked:disabled:only-child,
+.primary-toolbar .raised.linked button:only-child,
+.primary-toolbar .raised.linked button:active:only-child,
+.primary-toolbar .raised.linked button:disabled:only-child,
+toolbar button.raised.linked:only-child,
+toolbar button.raised.linked:active:only-child,
+toolbar button.raised.linked:disabled:only-child,
+toolbar .raised.linked button:only-child,
+toolbar .raised.linked button:active:only-child,
+toolbar .raised.linked button:disabled:only-child,
+toolbar .linked button:only-child,
+toolbar .linked button:active:only-child,
+toolbar .linked button:disabled:only-child {
     border-width: 1px;
     border-radius: 0px;
 }
 
-/* remove annoying bug of always rounding wrong child! (thanks Arc theme) */
-.linked:not(.vertical):not(.path-bar) > .button:active + .entry,
-.linked:not(.vertical):not(.path-bar) > .button:checked + .entry {
-  border-left-color: #5294e2; }
+/* linked titlebar buttons */
+headerbar button.raised.linked,
+headerbar .raised.linked button,
+headerbar .linked button {
+    box-shadow: inset -1px 0 shade(@dark_bg_color, 0.9);
+}
 
-.linked:not(.vertical):not(.path-bar) > .button + .button {
-  border-left-style: none; }
+headerbar button.raised.linked:active,
+headerbar .raised.linked button:active,
+headerbar .linked button:active {
+    box-shadow: inset -1px 0 shade(@dark_bg_color, 0.9),
+                inset 1px 0 alpha(@dark_shadow, 0.07),
+                inset 0 1px alpha(@dark_shadow, 0.08),
+                inset 0 -1px alpha(@dark_shadow, 0.05);
+}
 
-.linked:not(.vertical):not(.path-bar) > .button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover:not(:only-child),
-.linked:not(.vertical):not(.path-bar) > .button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover + .button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action) {
-  box-shadow: inset 1px 0 #cfd6e6; }
+headerbar button.raised.linked:disabled,
+headerbar .raised.linked button:disabled,
+headerbar .linked button:disabled {
+    box-shadow: inset -1px 0 shade(@dark_bg_color, 0.85);
+}
 
-.linked:not(.vertical):not(.path-bar) > .button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):first-child:hover,
-.linked:not(.vertical):not(.path-bar) > .button:active + .button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover,
-.linked:not(.vertical):not(.path-bar) > .button:checked + .button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover,
-.linked:not(.vertical):not(.path-bar) > .button.suggested-action + .button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover,
-.linked:not(.vertical):not(.path-bar) > .button.destructive-action + .button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover,
-.linked:not(.vertical):not(.path-bar) > .entry + .button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover:not(:only-child) {
-  box-shadow: none; }
+/* remove box shadow from last-child and only-child */
+headerbar button.raised.linked:last-child,
+headerbar button.raised.linked:only-child,
+headerbar button:disabled.raised.linked:last-child,
+headerbar button:disabled.raised.linked:only-child,
+headerbar button:active *:disabled.raised.linked:last-child,
+headerbar button:active *:disabled.raised.linked:only-child,
+headerbar .raised.linked button:last-child,
+headerbar .raised.linked button:only-child,
+headerbar .raised.linked button:disabled:last-child,
+headerbar .raised.linked button:disabled:only-child,
+headerbar .raised.linked button:active *:disabled:last-child,
+headerbar .raised.linked button:active *:disabled:only-child,
+headerbar .linked button:last-child,
+headerbar .linked button:only-child,
+headerbar .linked button:disabled:last-child,
+headerbar .linked button:disabled:only-child,
+headerbar .linked button:active *:disabled:last-child,
+headerbar .linked button:active *:disabled:only-child {
+    box-shadow: none;
+}
+
+/* add back the inset shadow effect */
+headerbar button:active.raised.linked:last-child,
+headerbar button:active.raised.linked:only-child,
+headerbar .raised.linked button:active:last-child,
+headerbar .raised.linked button:active:only-child,
+headerbar .linked button:active:last-child,
+headerbar .linked button:active:only-child {
+    box-shadow: inset 1px 0 alpha(@dark_shadow, 0.07),
+                inset 0 1px alpha(@dark_shadow, 0.08),
+                inset -1px 0 alpha(@dark_shadow, 0.07);
+}
+
+/* middle button */
+headerbar button.raised.linked,
+headerbar button.raised.linked:active,
+headerbar button.raised.linked:disabled,
+headerbar .raised.linked button,
+headerbar .raised.linked button:active,
+headerbar .raised.linked button:disabled,
+headerbar .linked button,
+headerbar .linked button:active,
+headerbar .linked button:disabled {
+    border-width: 1px;
+    border-radius: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+}
+
+/* leftmost button */
+headerbar button.raised.linked:first-child,
+headerbar button.raised.linked:active:first-child,
+headerbar button.raised.linked:disabled:first-child,
+headerbar .raised.linked button:first-child,
+headerbar .raised.linked button:active:first-child,
+headerbar .raised.linked button:disabled:first-child,
+headerbar .linked button:first-child,
+headerbar .linked button:active:first-child,
+headerbar .linked button:disabled:first-child {
+    border-width: 1px;
+    border-radius: 0px;
+    border-right-width: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+/* rightmost button */
+headerbar button.raised.linked:last-child,
+headerbar button.raised.linked:active:last-child,
+headerbar button.raised.linked:disabled:last-child,
+headerbar .raised.linked button:last-child,
+headerbar .raised.linked button:active:last-child,
+headerbar .raised.linked button:disabled:last-child,
+headerbar .linked button:last-child,
+headerbar .linked button:active:last-child,
+headerbar .linked button:disabled:last-child {
+    border-width: 1px;
+    border-radius: 0px;
+    border-left-width: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+/* linked single button */
+headerbar button.raised.linked:only-child,
+headerbar button.raised.linked:active:only-child,
+headerbar button.raised.linked:disabled:only-child,
+headerbar .raised.linked button:only-child,
+headerbar .raised.linked button:active:only-child,
+headerbar .raised.linked button:disabled:only-child,
+headerbar .linked button:only-child,
+headerbar .linked button:active:only-child,
+headerbar .linked button:disabled:only-child {
+    border-width: 1px;
+    border-radius: 0px;
+}
 
 
 /***********
@@ -3601,7 +3394,7 @@ GtkBubbleWindow toolbar {
 /*******
  * CSD *
  *******/
-.titlebar {
+headerbar.titlebar {
     border-radius: 0;
     background-color: @titlebar_bg_color;
     background-position: right;
@@ -3610,35 +3403,35 @@ GtkBubbleWindow toolbar {
     color: @titlebar_fg_color;
 }
 
-.titlebar:backdrop {
+headerbar.titlebar:backdrop {
     background-image: none;
     color: mix(@titlebar_fg_color, @titlebar_bg_color, 0.4);
     text-shadow: none;
 }
 
-.titlebar.default-decoration {
+headerbar.titlebar.default-decoration {
     border: none;
     box-shadow: none;
 }
 
-.tiled .titlebar {
+.tiled headerbar.titlebar {
     border-radius: 0;
 }
 
-.maximized .titlebar {
+.maximized headerbar.titlebar {
     border-radius: 0;
 }
 
-.titlebar.default-decoration {
+headerbar.titlebar.default-decoration {
     border: none;
     box-shadow: none;
 }
 
-.titlebar .title {
+headerbar.titlebar .title {
     font: bold;
 }
 
-.titlebar .titlebutton {
+headerbar.titlebar .titlebutton {
     padding: 1px;
     border: none;
     box-shadow: none;
@@ -3647,24 +3440,13 @@ GtkBubbleWindow toolbar {
     icon-shadow: none;
 }
 
-.titlebar .titlebutton:hover {
-    background-image: none;
-    background-color: shade(@titlebar_bg_color, 0.9);
-}
-
-.titlebar .titlebutton:active,
-.titlebar .titlebutton:checked, {
-    background: none;
-    background-color: shade(@titlebar_bg_color, 0.8);
-}
-
-.titlebar .titlebutton:backdrop {
+headerbar.titlebar .titlebutton:backdrop {
     background-image: none;
     color: mix(@titlebar_fg_color, @titlebar_bg_color, 0.4);
     icon-shadow: none;
 }
 
-.window-frame {
+decoration {
     border-style: none;
     border-radius: 0;
     box-shadow: 0 3px 7px 1px alpha(black, 0.7);
@@ -3673,12 +3455,43 @@ GtkBubbleWindow toolbar {
     margin: 10px;
 }
 
-.window-frame.tiled {
+.tiled decoration {
     border-radius: 0;
 }
 
-.window-frame:backdrop {
+decoration:backdrop {
     box-shadow: 0 6px 6px 1px alpha(black, 0.5);
+}
+
+/* Server-side decoration (SSD) */
+.ssd decoration {
+    border-radius: 0 0 0 0;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18); 
+}
+
+.ssd decoration,
+.ssd decoration:backdrop {
+    background-color: @titlebar_bg_color;
+}
+
+/* Client-side Decorations (CSD)*/
+decoration.csdtooltip,
+tooltip {
+    border-radius: 0;
+    box-shadow: none; 
+}
+
+messagedialog.csd decoration {
+    border-radius: 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.13); 
+}
+
+.solid-csd decoration {
+     border: solid 1px shade(@bg_color, 0.8);
+     border-radius: 0;
+     margin: 2px;
+     background-color: @titlebar_bg_color;
+     box-shadow: none; 
 }
 
 /**************
