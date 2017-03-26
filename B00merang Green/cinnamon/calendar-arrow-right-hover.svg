@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="7"
+   height="12"
+   id="svg2"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="calendar-arrow-right-hover.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     id="namedview6"
+     showgrid="true"
+     inkscape:zoom="32"
+     inkscape:cx="-4.5534816"
+     inkscape:cy="3.9911165"
+     inkscape:window-x="0"
+     inkscape:window-y="28"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2982"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs4">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3792">
+      <rect
+         style="fill:#1c1c1c;fill-opacity:1;stroke:#aaaaaa;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect3794"
+         width="10"
+         height="10"
+         x="-7.5809155"
+         y="-3.3382785"
+         transform="matrix(1.4142136e-8,-1,1,-1.4142136e-8,0,0)" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3796">
+      <rect
+         style="fill:#1c1c1c;fill-opacity:1;stroke:#aaaaaa;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect3798"
+         width="10"
+         height="10"
+         x="-7.5809155"
+         y="-3.3382785"
+         transform="scale(-1,-1)" />
+    </clipPath>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <rect
+     style="fill:#aaaaaa;fill-opacity:1;stroke:#222222;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     id="rect4575-3"
+     width="2.0203049"
+     height="12.12183"
+     x="-2.4243655"
+     y="-11.717769"
+     transform="matrix(-0.70710677,0.70710679,-0.70710677,-0.70710679,0.28945059,4)"
+     clip-path="url(#clipPath3796)" />
+  <rect
+     style="fill:#aaaaaa;fill-opacity:1;stroke:#222222;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     id="rect4575-3-0"
+     width="2.0203049"
+     height="12.12183"
+     x="4.6467013"
+     y="-7.4751287"
+     transform="matrix(0.70710677,0.70710679,-0.70710677,0.70710679,0.28945029,4.0000004)"
+     clip-path="url(#clipPath3792)" />
+</svg>
