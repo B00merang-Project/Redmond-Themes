@@ -1,12 +1,12 @@
-#Redmond Themes repository
+# Redmond Themes repository
 
 Here is where we push our latest development on our [Redmond Themes](http://b00merang.weebly.com/redmond-collection.html). This project aims to provide the complete Windows experience for easy use on Linux and GNOME-compatible OSes
 
-##Also available:
-### - [Windows Whistler theme](https://github.com/B00merang-Project/Windows-Whistler-Watercolor)###
-### - [Windows XP themes](https://github.com/elbullazul/winxp-themes)###
-### - [Windows 10 theme](https://github.com/B00merang-Project/Windows-10)###
-### - [Windows Icon themes](http://b00merang.weebly.com/icon-themes.html)###
+## Also available:
+### - [Windows Whistler theme](https://github.com/B00merang-Project/Windows-Whistler-Watercolor)
+### - [Windows XP themes](https://github.com/elbullazul/winxp-themes)
+### - [Windows 10 theme](https://github.com/B00merang-Project/Windows-10)
+### - [Windows Icon themes](http://b00merang.weebly.com/icon-themes.html)
 
 ***
 
