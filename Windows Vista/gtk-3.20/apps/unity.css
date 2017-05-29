@@ -23,8 +23,6 @@ UnityDecoration .top {
     border-radius: 6px 6px 0 0;
     padding: 1px 8px 0 8px;
     background-color: @titlebar_bg_color;
-    background-image: url('../assets/titlebar-focused-middle.png');
-	background-size: 100% 100%;
     color: #fff;
     text-shadow: none;
 }
@@ -33,7 +31,6 @@ UnityDecoration .top:backdrop {
     border: 0 solid @titlebar_bg_color;
     border-bottom-width: 0;
     background-color: @theme_unfocused_bg_color;
-    background-image: url('../assets/titlebar-unfocused-middle.png');
     color: mix(#fff, @titlebar_bg_color, 0.7);
 }
 
@@ -60,7 +57,6 @@ UnityPanelWidget,
     border-style: solid;
     border-color: @panel_bg_color;
     background-color: @panel_bg_color;
-    background-image: url('../assets/titlebar-focused-middle.png');
     color: @panel_fg_color;
 }
 
