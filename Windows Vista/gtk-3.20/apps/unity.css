@@ -99,3 +99,4 @@ UnityDecoration .menuitem *:hover,
     -gtk-icon-source: -gtk-icontheme("process-working-symbolic");
     animation: playbackmenuitem_spinner 1s infinite linear;
     color: @selected_bg_color;
+}
