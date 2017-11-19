@@ -36,12 +36,12 @@ StScrollBar StBin#trough {
     background-color: rgba(0,0,0,0.2);
 }
 
-StScrollBar StButton#hhandle,
+/*StScrollBar StButton#hhandle,
 StScrollBar StButton#vhandle,
 StScrollBar StButton#hhandle:hover,
 StScrollBar StButton#vhandle:hover {
-/*    border-image: url('outset-shadow.png') 3;*/
-}
+    border-image: url('outset-shadow.png') 3;
+}*/
 
 /* .menu-applications-box StButton#vhandle {
     background: url('handle-vert.png') no-repeat center center;
