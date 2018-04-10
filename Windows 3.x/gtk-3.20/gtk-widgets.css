@@ -649,6 +649,13 @@ entry {
     color: @theme_text_color;
 }
 
+entry entry {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+}
+
 entry,
 combobox.combobox-entry entry {
     padding: 5px 6px;
@@ -855,11 +862,18 @@ GsmFailWhaleDialog button:active {
 /*********
  * frame *
  *********/
-
-frame {
-    padding: 0;
-    border: 1px solid @frame_color;
+frame > border {
+    border-width: 1px;
+    border-style: solid;
+    border-color: shade(@theme_bg_color, 0.85);
     border-radius: 0;
+    box-shadow: none;
+}
+
+frame.flat > border,
+frame > border.flat,
+statusbar frame > border {
+    border: none;
 }
 
 GtkScrolledWindowframe {
@@ -1132,11 +1146,26 @@ rubberband {
 /********
  * menu *
  ********/
-
+menu,
 treemenu menu {
     border: 1px solid @menu_borders;
     border-radius: 0;
     background-color: @menu_bg;
+    margin: 4px;    /* avoid minify of menu */
+}
+
+menu > arrow.top,
+.menu > arrow.top {
+    margin-top: -3px;
+    border-bottom: 1px solid shade(@theme_bg_color, 0.9);
+    -gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
+}
+
+menu > arrow.bottom,
+.menu > arrow.bottom {
+    margin-bottom: -3px;
+    border-top: 1px solid shade(@theme_bg_color, 0.9);
+    -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
 }
 
 GtkMenuButton menu {
@@ -1303,6 +1332,9 @@ notebook {
     -GtkNotebook-tab-curvature: 0;
     -GtkWidget-focus-line-width: 1;
     -GtkWidget-focus-padding: 0;
+}
+
+notebook > stack:not(:only-child) {
     padding: 0;
     background-color: @notebook_bg;
     background-image: none;
@@ -1405,6 +1437,62 @@ notebook header.right tab:checked {
     border-image-slice: 6 7 7 0;
 }
 
+notebook > header.top > tabs > arrow.up,
+notebook > header.bottom > tabs > arrow.up {
+    -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
+}
+
+notebook > header.top > tabs > arrow.up:last-child,
+notebook > header.bottom > tabs > arrow.up:last-child {
+    margin-left: 2px;
+}
+
+notebook > header.top > tabs > arrow.down,
+notebook > header.bottom > tabs > arrow.down {
+    -gtk-icon-source: -gtk-icontheme("pan-start-symbolic");
+}
+
+notebook > header.top > tabs > arrow.down:first-child,
+notebook > header.bottom > tabs > arrow.down:first-child {
+    margin-right: 2px;
+}
+
+notebook > header.left > tabs > arrow.up,
+notebook > header.right > tabs > arrow.up {
+    -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+}
+
+notebook > header.left > tabs > arrow.up:last-child,
+notebook > header.right > tabs > arrow.up:last-child {
+    margin-top: 2px;
+}
+
+notebook > header.left > tabs > arrow.down,
+notebook > header.right > tabs > arrow.down {
+    -gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
+}
+
+notebook > header.left > tabs > arrow.down:first-child,
+notebook > header.right > tabs > arrow.down:first-child {
+    margin-bottom: 2px;
+}
+
+notebook > header > tabs > arrow {
+    color: @theme_fg_color;
+}
+
+notebook > header > tabs > arrow:hover {
+    color: shade(@theme_fg_color, 1.2);
+}
+
+notebook > header > tabs > arrow:active {
+    color: shade(@theme_fg_color, 0.8);
+}
+
+notebook > header > tabs > arrow:disabled {
+    color: shade(@theme_bg_color, 0.6);
+}
+
 /******
 * osd *
 *******/
@@ -1446,6 +1534,7 @@ osd progressbar.vertical progress {
 paned > separator {
     background-color: @theme_bg_color;
     color: @theme_fg_color;
+    border-style: none;
 }
 
 grip {
@@ -1614,7 +1703,7 @@ scrollbar button:disabled {
     border: 0 solid transparent;
     box-shadow: none;
     background-position: center center;
-    background-size: stretch;
+    background-size: 20px 20px;
     background-repeat: no-repeat;
     min-width: 10px;
     min-height: 10px;
@@ -1952,6 +2041,7 @@ switchtrough:disabled:active {
 
 switch slider {
     padding: 0;
+    border-radius: 3px;
 }
 
 /*******************
