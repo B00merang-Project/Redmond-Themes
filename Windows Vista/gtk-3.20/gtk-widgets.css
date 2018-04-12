@@ -2446,14 +2446,6 @@ toolbar button {
     padding: 2px;
 }
 
-toolbar button.text-button {
-    padding: 2px 4px;
-}
-
-toolbar button.image-button {
-    padding: 4px 3px 3px 4px;
-}
-
 toolbar:disabled {
     background-color: shade(@toolbar_bg_color, 0.9);
     color: mix(@toolbar_fg_color, @toolbar_bg_color, 0.5);
@@ -3902,10 +3894,12 @@ decoration:backdrop {
     transition: 200ms ease-out;
 }
 
-.tiled decoration,
-.maximized decoration,
-.fullscreen decoration,
-.ssd decoration.maximized {
+.maximized headerbar,
+.maximized headerbar:backdrop,
+.tiled .titlebar:not(headerbar),
+.tiled .titlebar:backdrop:not(headerbar),
+.maximized .titlebar:not(headerbar),
+.maximized .titlebar:backdrop:not(headerbar) {
     border-radius: 0;
 }
 

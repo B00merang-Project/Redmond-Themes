@@ -1,34 +1,11 @@
-
 * {
-    -GtkArrow-arrow-scaling: 0.5;
-    -GtkButton-child-displacement-x: 0;
-    -GtkButton-child-displacement-y: 0;
-    -GtkButton-default-border: 0;
-    -GtkButton-image-spacing: 0;
-    -GtkButton-inner-border: 1;
-    -GtkButton-interior-focus: true;
-    -GtkButtonBox-child-min-height: 24;
-    -GtkButtonBox-child-internal-pad-y: 1;
-
-    -GtkCheckButton-indicator-size: 14;
-    -GtkCheckMenuItem-indicator-size: 14;
-
-    -GtkExpander-expander-size: 8;
-    -GtkHTML-link-color: @link_color;
-    -GtkIMHtml-hyperlink-color: @link_color;
-    -GtkMenu-horizontal-padding: 0;
-    -GtkRange-stepper-spacing: 0;
-    -GtkRange-trough-border: 0;
-    -GtkRange-trough-under-steppers: 1;
     -GtkScrollbar-has-backward-stepper: true;
     -GtkScrollbar-has-forward-stepper: true;
-    -GtkScrollbar-min-slider-length: 80;
-    -GtkScrolledWindow-scrollbar-spacing: 0;
-    -GtkScrolledWindow-scrollbars-within-bevel: 1;
-    -GtkStatusbar-shadow-type: none;
-    -GtkTextView-error-underline-color: @error_color;
-    -GtkToolItemGroup-expander-size: 8;
-    -WnckTasklist-fade-overlay-rect: 0;
+    -GtkScrolledwindow-scrollbar-spacing: 0;
+    -GtkScrolledwindow-scrollbars-within-bevel: 1;
+    -textview-error-underline-color: @error_color;
+    -GtkToolbutton-icon-spacing: 6;
+    -GtkTreeview-expander-size: 8;
 
     background-clip: padding-box;
 
@@ -2296,14 +2273,6 @@ toolbar {
 
 toolbar button {
     padding: 2px;
-}
-
-toolbar button.text-button {
-    padding: 2px 4px;
-}
-
-toolbar button.image-button {
-    padding: 4px 3px 3px 4px;
 }
 
 toolbar:disabled {
