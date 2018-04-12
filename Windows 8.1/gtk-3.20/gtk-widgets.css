@@ -162,9 +162,6 @@ assistant .sidebar {
  * button *
  **********/
 button {
-    -GtkWidget-focus-padding: 1;
-    -GtkWidget-focus-line-width: 0;
-
     padding: 3px 6px;
     border-width: 1px;
     border-radius: 0px;
@@ -201,13 +198,13 @@ button:active:hover:focus {
     background-image: linear-gradient(to bottom, alpha(@theme_selected_bg_color, 0.3), alpha(@theme_selected_bg_color, 0.6));
 }
 
-button:insensitive {
+button:disabled {
     border-color: shade(@theme_bg_color, 0.85);
     background-color: shade(@theme_bg_color, 0.9);
     background-image: none;
 }
 
-button:active *:insensitive {
+button:active *:disabled {
     border-color: shade(@theme_bg_color, 0.75);
     background-color: shade(@theme_bg_color, 0.80);
     background-image: none;
@@ -932,9 +929,6 @@ image:disabled {
 }
 
 .floating-bar button {
-    -GtkButton-image-spacing: 0;
-    -GtkButton-inner-border: 0;
-
     border-style: none;
     background-color: transparent;
     background-image: none;
@@ -1054,7 +1048,7 @@ menubar {
 
     border-style: none;
     background-color: @menubar_bg_color;
-    background-image: none;
+    background-image: linear-gradient(to left, @theme_base_color, @theme_bg_color);
     color: @menubar_fg_color;
 }
 
@@ -1095,7 +1089,6 @@ treemenu menuitem {
 
 menu menuitem,
 menu > menuitem {
-    -GtkMenuItem-arrow-scaling: 0.5;
     padding: 3px 3px;
     border-width: 0;
     border-style: solid;
@@ -1293,7 +1286,7 @@ notebook {
     padding: 0;
     background-clip: border-box;
     border-color: shade (@bg_color, 0.82);
-    border-width: 1px;
+    border-width: 0;
     border-style: solid;
 }
 
@@ -1308,6 +1301,12 @@ notebook > header {
 
 notebook > header > frame {
     border-color: @theme_bg_color;
+    box-shadow: none;
+}
+
+notebook > stack:not(:only-child) {
+    background-color: @theme_bg_color;
+    border: 1px solid shade(@theme_bg_color, 0.8);
     box-shadow: none;
 }
 
@@ -1693,7 +1692,7 @@ scrollbar.vertical slider:active {
     background-color: shade(@theme_bg_color, 0.5);
 }
 
-scrollbar slider.fine-tune:prelight:active {
+scrollbar slider.fine-tune:hover:active {
     border-width: 2px;
     border-color: transparent;
 }
@@ -2182,7 +2181,6 @@ headerbar {
     border-width: 0 0 1px 0;
     border-style: solid;
     border-color: shade(@theme_bg_color, 0.8);
-    background-color: @theme_bg_color;
     background-image: none;
     color: @theme_fg_color;
 }
@@ -2996,8 +2994,6 @@ tooltip * {
  * treeview *
  ************/
 treeview {
-    -treeview-vertical-separator: 0;
-    -GtkWidget-focus-line-width: 1;
 }
 
 treeview.dnd {
@@ -3593,7 +3589,7 @@ GtkBubbleWindow toolbar {
  *******/
 .titlebar {
     border-radius: 0;
-    background-color: @titlebar_bg_color;
+    background-color: #6badf7;
     background-image: none;
     color: @titlebar_fg_color;
 }
@@ -3601,38 +3597,59 @@ GtkBubbleWindow toolbar {
 .titlebar:backdrop {
     color: mix(@titlebar_fg_color, @titlebar_bg_color, 0.4);
     text-shadow: none;
+    background-color: shade(@theme_bg_color, 0.9);
 }
 
 .titlebar .title {
     font-weight: bold;
 }
 
-.titlebar .titlebutton {
+.titlebar .titlebutton:not(separator) {
     padding: 1px;
     border: none;
     box-shadow: none;
     background: none;
     color: @titlebar_fg_color;
-    icon-shadow: none;
+    -gtk-icon-shadow: none;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.titlebar .titlebutton image {
+    color: @titlebar_fg_color;
+}
+
+.titlebar .titlebutton.close {
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: #c84f51;
+}
+
+.titlebar .titlebutton.close:backdrop {
+    background-color: shade(@theme_bg_color, 0.6);
+}
+
+.titlebar .titlebutton.close image {
+    color: white;
 }
 
 .titlebar .titlebutton:backdrop {
-    background-image: none;
     color: mix(@titlebar_fg_color, @titlebar_bg_color, 0.4);
-    icon-shadow: none;
+    -gtk-icon-shadow: none;
 }
 
 /* alternative titlebar */
 .csd .titlebar:not(headerbar),
 .csd .default-decoration.titlebar {
     border-radius: 0;
-    background-image: image(@titlebar_bg_color);
+    background-color: #6badf7;
     color: @titlebar_fg_color;
 }
 
 .csd .titlebar:not(headerbar):backdrop,
 .csd .default-decoration.titlebar:backdrop {
     color: shade(@titlebar_fg_color, 1.15);
+    background-color: shade(@theme_bg_color, 0.9);
 }
 
 /* CSD alternative decoration */
@@ -3641,6 +3658,7 @@ headerbar.default-decoration,
 .csd .titlebar:not(headerbar),
 .csd headerbar.default-decoration,
 .csd .default-decoration.titlebar {
+    border-radius: 0;
     min-height: 32px;
     border: none;
 }
@@ -3700,13 +3718,15 @@ messagedialog.csd decoration {
 /* non-transparent CSD */
 .solid-csd decoration {
     margin: 0;
+    border-radius: 0;
     padding: 4px;
-    background-color: @bg_color;
+    background-color: #6badf7;
     border: solid 1px shade(@bg_color, 0.8);
     box-shadow: inset 0 0 0 3px @dark_shadow, inset 0 1px rgba(20, 20, 20, 0.8);
 }
 
 .solid-csd decoration:backdrop {
+    background-color: shade(@theme_bg_color, 0.9);
     box-shadow: inset 0 0 0 3px @dark_shadow, inset 0 1px rgba(20, 20, 20, 0.8);
 }
 
