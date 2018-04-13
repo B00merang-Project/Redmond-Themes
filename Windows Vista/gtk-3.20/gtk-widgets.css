@@ -236,7 +236,8 @@ button.flat:backdrop {
     color: @theme_selected_fg_color;
 }
 
-row { padding: 4px;
+row {
+    padding: 4px;
 }
 
 row:selected,
@@ -1426,8 +1427,6 @@ notebook > frame {
 notebook tab button,
 notebook tab button:checked,
 notebook tab button:hover {
-    padding: 1px;
-    border-width: 0px;
     border-radius: 2px;
     border-style: solid;
     border-color: transparent;
@@ -2149,6 +2148,7 @@ statusbar frame {
  **********/
 switch {
     padding: 0;
+    margin: 4px;
     border-radius: 0px;
     border-color: shade(@theme_bg_color, 0.8);
     background-color: shade(@theme_bg_color, 0.95);

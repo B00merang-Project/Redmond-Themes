@@ -2012,6 +2012,7 @@ statusbar frame {
  **********/
 switch {
     padding: 0;
+    margin: 4px;
     border-radius: 0px;
     border-color: shade(@theme_bg_color, 0.8);
     background-color: shade(@theme_bg_color, 0.95);
