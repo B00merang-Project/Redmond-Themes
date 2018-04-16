@@ -1,0 +1,190 @@
+########################################################################
+# Notebook
+########################################################################
+
+style "notebook"
+{
+#        GtkWidget::focus-line-width=0
+#        Gtk*::shadow-type = GTK_SHADOW_NONE
+        bg[NORMAL] = "#000"
+
+	engine "pixmap" 
+	{
+### Notebook ###
+		image 
+		{
+			function = BOX
+			file = "notebook/notebook.png"
+			border = {3, 3, 3, 3}
+			stretch	= TRUE
+      	}
+		
+### Tab TOP ###
+
+## Normal
+		image 
+		{
+			function = EXTENSION
+			state = ACTIVE
+			file = "notebook/tab-top.png"
+			border = {8, 8, 8, 8}
+			stretch	= TRUE
+			gap_side = BOTTOM
+		}
+
+## Active
+		image 
+		{
+			function = EXTENSION
+			file = "notebook/tab-top-active.png"
+			border = {8, 8, 8, 8}
+			stretch = TRUE
+			gap_side = BOTTOM
+		}
+		
+		
+### Tab BOTTOM ###
+
+## Normal
+		image 
+		{
+			function = EXTENSION
+			state = ACTIVE
+            file = "notebook/tab-bottom.png"
+			border = {8, 8, 8, 8}
+			stretch	= TRUE
+			gap_side = TOP
+		}
+
+## Active		
+		image 
+		{
+			function = EXTENSION
+			file = "notebook/tab-bottom-active.png"
+			border = {8, 8, 8, 8}
+			stretch	= TRUE
+			gap_side = TOP
+		}
+
+### Tab LEFT ###
+		
+## Normal
+		image 
+		{
+			function = EXTENSION
+			state = ACTIVE
+			file = "notebook/tab-left.png"
+			border = {8,8,8,8}
+			stretch	= TRUE
+			gap_side = RIGHT
+		}
+		
+## Active
+		image 
+		{
+			function = EXTENSION
+			file = "notebook/tab-left-active.png"
+			border = {8, 8, 8, 8}
+			stretch = TRUE
+			gap_side = RIGHT
+		}
+
+### Tab RIGHT ###
+    	
+## Normal
+    	image 
+		{
+			function = EXTENSION
+			state = ACTIVE
+			file = "notebook/tab-right.png"
+			border = {8, 8, 8, 8}
+			stretch	= TRUE
+			gap_side = LEFT
+		}
+		
+## Active
+		image 
+		{
+			function = EXTENSION
+			file = "notebook/tab-right-active.png"
+			border = {8, 8, 8, 8}
+			stretch	= TRUE
+			gap_side = LEFT
+		}
+
+### Gap TOP ###
+		image 
+		{
+			function = BOX_GAP
+			file = "notebook/notebook.png" 
+			border = {8, 8, 8, 8}
+			stretch	= TRUE
+			gap_file = "notebook/top-gap.png"
+			gap_border = {8, 8, 0, 0}
+			gap_start_file = "null.png"
+			gap_start_border = {0, 0, 0, 0}
+			gap_end_file = "null.png"
+			gap_end_border = {0, 0, 0, 0}
+			gap_side = TOP
+		}
+
+### Gap BOTTOM ###
+		image 
+		{
+			function = BOX_GAP
+			file = "notebook/notebook.png"
+			border = {8, 8, 8, 8}
+			stretch	= TRUE
+			gap_file = "notebook/bottom-gap.png"
+			gap_border = {8, 8, 0, 0}
+			gap_start_file = "null.png"
+			gap_start_border = {0, 0, 0, 0}
+			gap_end_file = "null.png"
+			gap_end_border = {0, 0, 0, 0}
+			gap_side = BOTTOM
+      	}
+
+### Gap LEFT ###    
+		image 
+		{
+			function = BOX_GAP
+			file = "notebook/notebook.png"
+			border = {8, 8, 8, 8}
+			stretch	= TRUE
+			gap_file = "notebook/left-gap.png"
+			gap_border = {0, 0, 8, 8}
+			gap_start_file = "null.png"
+			gap_start_border = {0, 0, 0, 0}
+			gap_end_file = "null.png"
+			gap_end_border = {0, 0, 0, 0}
+			gap_side = LEFT
+      	}
+    
+### Gap RIGHT ###
+		image 
+		{
+			function = BOX_GAP
+			file = "notebook/notebook.png" 
+			border = {8, 8, 8, 8}
+			stretch	= TRUE
+			gap_file = "notebook/right-gap.png"
+			gap_border = {0, 0, 8, 8}
+			gap_start_file = "null.png"
+			gap_start_border = {0, 0, 0, 0}
+			gap_end_file = "null.png"
+			gap_end_border = {0, 0, 0, 0}
+			gap_side = RIGHT
+		}
+
+### Focus ###
+		image 
+		{
+			function = FOCUS
+                        file = "null.png"
+			border = {1, 1, 1, 1}
+			stretch = TRUE
+		}
+	}
+}
+
+class "GtkNotebook*" style "notebook"

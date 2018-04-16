@@ -1,0 +1,25 @@
+########################################################################
+# Button
+########################################################################
+
+style "toolbar"
+{
+	engine "pixmap" 
+    {
+		image 
+		{
+			function = BOX
+			state = NORMAL
+			file = "toolbar/button.png"
+			border = {4, 4, 4, 4}
+			stretch = TRUE
+		}
+    }
+}
+
+class           "GtkToolbar"            style "toolbar" 
+class           "*Toolbar"              style "toolbar"
+widget_class    "*Nautilus*ToolBar*"    style "toolbar"
+widget_class    "*BonoboDockItem"       style "toolbar"
+widget_class    "*Toolbar"              style "toolbar"
+widget "MozillaGtkWidget*Tool*" style "toolbar"

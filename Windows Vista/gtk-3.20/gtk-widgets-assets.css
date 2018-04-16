@@ -26,15 +26,15 @@ check row:selected:focus:active:disabled, check row:selected:focus:checked:disab
 }
 
 
-check:indeterminated,
-check row:selected:indeterminated,
-check row:selected:focus:indeterminated {
+check:indeterminate,
+check row:selected:indeterminate,
+check row:selected:focus:indeterminate {
     -gtk-icon-source: url("assets/checkbox-mixed.png");
 }
 
-check:indeterminated:disabled,
-check row:selected:indeterminated:disabled,
-check row:selected:focus:indeterminated:disabled {
+check:indeterminate:disabled,
+check row:selected:indeterminate:disabled,
+check row:selected:focus:indeterminate:disabled {
     -gtk-icon-source: url("assets/checkbox-mixed-insensitive.png");
 }
 
@@ -62,15 +62,15 @@ radio row:selected:focus:active:disabled, radio row:selected:focus:checked:disab
     -gtk-icon-source: url("assets/radio-selected-insensitive.png");
 }
 
-radio:indeterminated,
-radio row:selected:indeterminated,
-radio row:selected:focus:indeterminated {
+radio:indeterminate,
+radio row:selected:indeterminate,
+radio row:selected:focus:indeterminate {
     -gtk-icon-source: url("assets/radio-mixed.png");
 }
 
-radio:indeterminated:disabled,
-radio row:selected:indeterminated:disabled,
-radio row:selected:focus:indeterminated:disabled {
+radio:indeterminate:disabled,
+radio row:selected:indeterminate:disabled,
+radio row:selected:focus:indeterminate:disabled {
     -gtk-icon-source: url("assets/radio-mixed-insensitive.png");
 }
 
@@ -86,7 +86,7 @@ menuitem check {
 menuitem check:active, menuitem check:checked {
 	-gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked.png"));
 }
-menuitem check:indeterminated {
+menuitem check:indeterminate {
 	-gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed.png"));
 }
 
@@ -105,7 +105,7 @@ menuitem radio {
 menuitem radio:active, menuitem radio:checked {
 	-gtk-icon-source: -gtk-scaled(url("assets/radio-selected.png"));
 }
-menuitem radio:indeterminated {
+menuitem radio:indeterminate {
 	-gtk-icon-source: -gtk-scaled(url("assets/radio-mixed.png"));
 }
 menuitem radio:hover {

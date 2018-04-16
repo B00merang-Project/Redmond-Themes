@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Windows 95
+Comment=Windows 95 for Linux Desktops
+Version=v1.0
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Windows 95
+MetacityTheme=Windows 95
+ButtonLayout=:minimize,maximize,close
