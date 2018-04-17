@@ -243,9 +243,7 @@ row {
 row:selected,
 row:selected:hover,
 row:selected:focus {
-    border-width: 1px 0;
-    border-style: solid;
-    border-color: shade(@theme_selected_bg_color, 0.9);
+    border: none;
     background-color: @theme_selected_bg_color;
     background-image: none;
     color: @theme_selected_fg_color;
@@ -584,6 +582,10 @@ frame.flat > border,
 frame > border.flat,
 statusbar frame > border {
     border: none;
+}
+
+.frame {
+	background: none;
 }
 
 /*******************
@@ -1302,7 +1304,7 @@ notebook > header > frame {
 }
 
 notebook > stack:not(:only-child) {
-    background-color: @theme_bg_color;
+    background-color: @theme_base_color;
     border: 1px solid #858585;
     box-shadow: none;
 }
@@ -1361,12 +1363,15 @@ notebook header.top tab:checked {
     border-radius: 2px 2px 0 0;
     box-shadow: inset 0 1px @theme_base_color,
                 inset 1px 0 @theme_base_color,
-                inset -1px 0 @theme_base_color;
+                inset -1px 0 @theme_base_color,
+                0 1px @theme_base_color;
+    margin-top: 0;
 }
 
 notebook header.top tab {
     padding: 2px 5px 0 5px;
     border-bottom-width: 0;
+    margin-top: 2px;
 }
 
 notebook header.right tab:checked {
@@ -1375,12 +1380,14 @@ notebook header.right tab:checked {
     background-image: none;
     box-shadow: inset 0 1px @theme_base_color,
                 inset 0 -1px @theme_base_color,
-                inset -1px 0 @theme_base_color;
+                inset -1px 0 @theme_base_color,
+                -1px 0 @theme_base_color;
+    margin-right: 0;
 }
 
 notebook header.right tab {
     padding: 3px 4px 3px 0;
-    border-image-width: 1px 0;
+    margin-right: 2px;
     border-left-width: 0;
 }
 
@@ -1390,12 +1397,14 @@ notebook header.bottom tab:checked {
     background-image: none;
     box-shadow: inset 0 -1px @theme_base_color,
                 inset 1px 0 @theme_base_color,
-                inset -1px 0 @theme_base_color;
+                inset -1px 0 @theme_base_color,
+                0 -1px @theme_base_color;
+    margin-bottom: 0;
 }
 
 notebook header.bottom tab {
     padding: 0 5px 3px 5px;
-    border-image-width: 0 1px;
+    margin-top: 2px;
     border-top-width: 0;
 }
 
@@ -1405,12 +1414,14 @@ notebook header.left tab:checked {
     background-image: none;
     box-shadow: inset 0 1px @theme_base_color,
                 inset 0 -1px @theme_base_color,
-                inset 1px 0 @theme_base_color;
+                inset 1px 0 @theme_base_color,
+                1px 0 @theme_base_color;
+    margin-left: 0;
 }
 
 notebook header.left tab {
     padding: 3px 0 3px 4px;
-    border-image-width: 1px 0;
+    margin-left: 2px;
     border-right-width: 0;
 }
 
@@ -2152,7 +2163,7 @@ statusbar frame {
 switch {
     padding: 0;
     margin: 4px;
-    border-radius: 0px;
+    border-radius: 3px;
     border-color: shade(@theme_bg_color, 0.8);
     background-color: shade(@theme_bg_color, 0.95);
     background-image: none;
@@ -3167,17 +3178,28 @@ headerbar .linked button:disabled:only-child {
  * tooltip *
  ***********/
 tooltip {
-    border-width: 1px;
-    border-style: solid;
-    border-color: shade(@theme_tooltip_bg_color, 0.8);
     border-radius: 4px;
+    box-shadow: none;
+}
+
+tooltip.background {
+    border: 1px solid shade(@tooltip_bg_color, 0.8);
     background-color: @tooltip_bg_color;
-    background-image: none;
-    color: @tooltip_fg_color;
+    background-clip: padding-box;
+}
+
+tooltip.background label {
+    padding: 1px;
+}
+
+tooltip decoration {
+    border-radius: 4px;
+    background-color: transparent;
 }
 
 tooltip * {
     background-color: transparent;
+    color: @tooltip_fg_color;
 }
 
 /************

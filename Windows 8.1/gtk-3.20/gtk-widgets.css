@@ -591,6 +591,10 @@ statusbar frame > border {
     border: none;
 }
 
+.frame {
+	background: none;
+}
+
 /*******************
  * scrolled window *
  *******************/
@@ -1287,7 +1291,7 @@ notebook {
     border-radius: 0;
     padding: 0;
     background-clip: border-box;
-    border-color: shade (@bg_color, 0.82);
+    border-color: shade(@bg_color, 0.82);
     border-width: 0;
     border-style: solid;
 }
@@ -1307,7 +1311,7 @@ notebook > header > frame {
 }
 
 notebook > stack:not(:only-child) {
-    background-color: @theme_bg_color;
+    background-color: @theme_base_color;
     border: 1px solid shade(@theme_bg_color, 0.8);
     box-shadow: none;
 }
@@ -1327,7 +1331,7 @@ notebook tab:hover {
 }
 
 notebook tab:checked {
-    border-color: shade (@theme_bg_color, 0.82);
+    border-color: shade(@theme_bg_color, 0.82);
     border-style: solid;
     border-width: 1px;
     background-color: @theme_base_color;
@@ -1341,43 +1345,55 @@ notebook tab label {
 }
 
 notebook tab {
-    color: shade (@bg_color, 0.48);
+    color: shade(@bg_color, 0.48);
 }
 
 notebook header.top tab:checked {
     padding: 3px 7px 1px 7px;
+    margin-top: 0;
+    box-shadow: 0 1px @theme_base_color;
 }
 
 notebook header.top tab {
     padding: 2px 5px 0 5px;
     border-bottom-width: 0;
+    margin-top: 2px;
 }
 
 notebook header.right tab:checked {
     padding: 4px 6px 4px 1px;
+    margin-right: 0;
+    box-shadow: 1px 0 @theme_base_color;
 }
 
 notebook header.right tab {
     padding: 3px 4px 3px 0;
     border-left-width: 0;
+    margin-right: 2px;
 }
 
 notebook header.bottom tab:checked {
     padding: 1px 7px 4px 7px;
+    margin-bottom: 0;
+    box-shadow: 0 -1px @theme_base_color;
 }
 
 notebook header.bottom tab {
     padding: 0 5px 3px 5px;
     border-top-width: 0;
+    margin-bottom: 2px;
 }
 
 notebook header.left tab:checked {
     padding: 4px 1px 4px 6px;
+    margin-left: 0;
+    box-shadow: -1px 0 @theme_base_color;
 }
 
 notebook header.left tab {
     padding: 3px 0 3px 4px;
     border-right-width: 0;
+    margin-left: 2px;
 }
 
 notebook tab button {
@@ -2980,17 +2996,27 @@ headerbar .linked button:disabled:only-child {
  * tooltip *
  ***********/
 tooltip {
-    border-width: 1px;
-    border-style: solid;
-    border-color: shade(@theme_tooltip_bg_color, 0.8);
-    border-radius: 0px;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+tooltip.background {
+    border: 1px solid shade(@tooltip_bg_color, 0.8);
     background-color: @tooltip_bg_color;
-    background-image: none;
-    color: @tooltip_fg_color;
+    background-clip: padding-box;
+}
+
+tooltip.background label {
+    padding: 1px;
+}
+
+tooltip decoration {
+    background-color: transparent;
 }
 
 tooltip * {
     background-color: transparent;
+    color: @tooltip_fg_color;
 }
 
 /************
