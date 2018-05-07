@@ -1757,11 +1757,13 @@ scrollbar.vertical button.up {
 }
 
 scrollbar.horizontal button.down {
-    -gtk-icon-source: -gtk-icontheme("pan-right-symbolic");
+/*    -gtk-icon-source: -gtk-icontheme("pan-right-symbolic");*/
+    -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
 }
 
 scrollbar.horizontal button.up {
-    -gtk-icon-source: -gtk-icontheme("pan-left-symbolic");
+/*    -gtk-icon-source: -gtk-icontheme("pan-left-symbolic");*/
+    -gtk-icon-source: -gtk-icontheme("pan-start-symbolic");
 }
 
 treeview ~ scrollbar.vertical {
@@ -2057,7 +2059,6 @@ statusbar frame {
     border: none;
 }
 
-
 /**********
  * switch *
  **********/
@@ -2255,50 +2256,6 @@ headerbar .subtitle {
     padding: 0 12px;
 }
 
-headerbar combobox,
-headerbar button {
-    border-color: shade(@theme_bg_color, 0.8);
-    background-color: shade(@theme_bg_color, 1.08);
-    background-image: linear-gradient(to bottom, @theme_bg_color, shade(@theme_bg_color, 0.90));
-    color: @theme_fg_color;
-}
-
-headerbar button:hover {
-    border-color: shade(@theme_selected_bg_color, 0.7);
-    background-color: shade(@theme_bg_color, 1.10);
-    background-image: linear-gradient(to bottom, alpha(@theme_selected_bg_color, 0.3), alpha(@theme_selected_bg_color, 0.6));
-}
-
-headerbar button:active,
-headerbar button:checked {
-    border-color: shade(@theme_selected_bg_color, 0.8);
-    background-color: shade(@theme_bg_color, 0.95);
-    background-image: linear-gradient(to bottom, alpha(@theme_selected_bg_color, 0.3), alpha(@theme_selected_bg_color, 0.6));
-}
-
-headerbar button:active:hover {
-    border-color: shade(@theme_bg_color, 0.7);
-}
-
-headerbar button:focus,
-headerbar button:hover:focus,
-headerbar button:active:focus,
-headerbar button:active:hover:focus {
-    border-color: shade(@theme_bg_color, 0.7);
-}
-
-headerbar button:disabled {
-    border-color: shade(@theme_bg_color, 0.85);
-    background-color: shade(@theme_bg_color, 0.9);
-    background-image: none;
-}
-
-headerbar button:active *:disabled {
-    border-color: shade(@theme_bg_color, 0.75);
-    background-color: shade(@theme_bg_color, 0.80);
-    background-image: none;
-}
-
 headerbar entry {
     border-width: 1px;
     border-color: shade(@bg_color, 0.6);
@@ -2407,9 +2364,6 @@ toolbar button:active:hover:focus {
 
 .primary-toolbar button:disabled,
 toolbar button:disabled {
-    border-color: transparent;
-    background-color: @toolbar_bg_color;
-    background-image: none;
 }
 
 .primary-toolbar button:active *:disabled,

@@ -27,42 +27,34 @@ stage {
 .button {
 	border-radius: 0px;
 	border: solid 1px #4c4c4c;
-	margin-top: 0.5em;
-	padding: 4px 32px;
-	color: #4c4c4c;
+	color: #000;
 	font-weight: normal;
 	background-color: rgba(255,255,255,0.95);
-	background-gradient-direction: vertical;
-	background-gradient-start: rgba(255,255,255,1.0);
-	background-gradient-end: rgba(205,205,205,1);
+	border: 4px solid transparent;
+	border-image: url('assets/button.png') 4 4 4 4;
 	box-shadow: none;
 	text-shadow: none;
 	icon-shadow: none; }
 	.button:hover, .button:focus {
-		color: #4c4c4c;
-		border: solid 1px #4c4c4c;
+		color: #000;
 		background-color: #1f1f1f;
-		background-gradient-direction: vertical;
-		background-gradient-start: rgba(255,255,255,1);
-		background-gradient-end: rgba(230,230,230,1);
+	    border-image: url('assets/button.png') 4 4 4 4;
 		box-shadow: none;
+		background-gradient-direction: none;
 		text-shadow: none;
 		icon-shadow: none; }
 	.button:insensitive {
 		color: gray;
-		border: solid 1px black;
 		background-color: rgba(180,180,180,1);
 		background-gradient-direction: none;
 		box-shadow: none;
 		text-shadow: none;
 		icon-shadow: none; }
 	.button:active {
-		color: white;
-		border: solid 1px #4c4c4c;
+		color: #000;
 		background-color: rgba(0,0,0,0.95);
-		background-gradient-direction: vertical;
-		background-gradient-start: shade(rgba(28,122,236,1), 1.0);
-		background-gradient-end: shade(rgba(28,122,236,1), 0.9);
+		background-gradient-direction: none;
+		border-image: url('assets/button-pressed.png') 4 4 4 4;
 		box-shadow: none;
 		text-shadow: none;
 		icon-shadow: none; }
@@ -596,8 +588,9 @@ StScrollBar {
 	height: 24px;
 	background-color: rgba(255,255,255,0);
 	box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.5);
-	text-shadow: 1px 1px black;
-}
+	text-shadow: 1px 1px black; }
+    #panel.solid {
+        background-gradient-direction: none; }
 	#panel.unlock-screen, #panel.login-screen, #panel.lock-screen {
 		background-color: transparent; }
 	#panel #panelLeft, #panel #panelCenter {
@@ -745,11 +738,9 @@ StScrollBar {
 	color: gray;
 	background-color: transparent;
 	width: 32px;
-	border-radius: 4px; }
-	.pager-button:hover, .pager-button:focus {
-		background-color: rgba(160,160,160,0.2); }
-	.pager-button:active {
-		background-color: rgba(28,122,236,0.5); }
+	border-radius: 0; }
+	.pager-button:hover, .pager-button:focus {}
+	.pager-button:active {}
 
 .calendar-change-month-back {
 	background-image: url("assets/calendar-arrow-left.svg"); }
@@ -768,14 +759,12 @@ StScrollBar {
 	height: 2.4em;
 	padding: 0.1em;
 	margin: 2px;
-	border-radius: 1.4em;
+	border-radius: 0;
 	border: none; }
 	.calendar-day-base:hover, .calendar-day-base:focus {
-		background-color: rgba(160,160,160,0.5); }
+		color: black; }
 	.calendar-day-base:active {
-		color: white;
-		background-color:rgba(28,122,236,0.6);
-		border-color: transparent; }
+		color: black; }
 	.calendar-day-base.calendar-day-heading {
 		color: gray;
 		margin-top: 1em;
@@ -791,22 +780,22 @@ StScrollBar {
 	border-left-width: 0px; }
 
 .calendar-nonwork-day {
-	background-color: rgba(160,160,160,0.6);
-	color: white; }
+	color: gray; }
 
-.calendar-today {
+.calendar-today,
+.calendar-day-base:selected {
 	background-image: none;
-	text-shadow:none;
-	font-weight: normal;
-	background-color: rgba(159, 176, 185, 0.3);
-	border: 0px solid rgba(0,0,0,0.2); }
+	background-color: #0000aa;
+	text-shadow: none;
+	font-weight: bold;
+	color: #fff; }
 
 .calendar-day-with-events {
 	color: rgba(28,122,236,0.8);
 	font-weight: normal; }
 
 .calendar-other-month-day {
-	color: rgba(160,160,160,0.4);
+	color: rgba(160,160,160,0.8);
 	opacity: 0.5; }
 
 /* Message list */
@@ -869,9 +858,11 @@ StScrollBar {
 	icon-size: 16px; }
 
 .message-title {
+    color: black;
 	font-weight: normal; }
 
 .message-content {
+    color: black;
 	padding: 8px; }
 
 .messages-indicator-highlight {
@@ -1207,16 +1198,15 @@ StScrollBar {
 	box-shadow: none;
 	text-shadow: none;
 	icon-shadow: none;
+	border-radius: 0;
 	box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
 }
 .app-view-control:first-child {
 	background-gradient-direction: none;
-	border-radius: 4px 0 0 4px;
 }
 .app-view-control:last-child {
 	border-right-width: 0;
 	background-gradient-direction: none;
-	border-radius: 0 4px 4px 0;
 }
 
 .search-provider-icon:active, .search-provider-icon:checked,
@@ -1375,9 +1365,9 @@ StScrollBar {
 	font-size: 11pt;
 	width: 34em;
 	margin: 5px;
-	border-radius: 4px;
+	border-radius: 0;
 	color: gray;
-	background-color: rgba(255,255,255,0.75);
+	background-color: rgba(255,255,255,1);
 	border: none;
 	border-width: 0px;
 	box-shadow: 3px 3px 8px 5px rgba(0,0,0,0.5); }
