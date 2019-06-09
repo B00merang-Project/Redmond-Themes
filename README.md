@@ -1,5 +1,34 @@
 # Redmond Themes repository
 
+> ## We have moved every theme to its own repository listed down below:
+> [Windows 3.11](https://github.com/B00merang-Project/Windows-3.11)
+>
+> [Windows 95](https://github.com/B00merang-Project/Windows-95)
+>
+> [Windows XP](https://github.com/B00merang-Project/Windows-XP)
+>
+> [Windows Vista](https://github.com/B00merang-Project/Windows-Vista)
+>
+> [Windows 7](https://github.com/B00merang-Project/Windows-7)
+>
+> [Windows 8.1](https://github.com/B00merang-Project/Windows-8.1)
+>
+> [Windows 8.1 Metro](https://github.com/B00merang-Project/Windows-8.1-Metro)
+>
+> [Windows Phone 8.1](https://github.com/B00merang-Project/Windows-Phone-8.1)
+>
+> [Windows 10](https://github.com/B00merang-Project/Windows-10)
+>
+> [Windows 10 Dark](https://github.com/B00merang-Project/Windows-10-Dark)
+>
+> [Windows 10 Acrylic](https://github.com/B00merang-Project/Windows-10-Acrylic)
+>
+> [Windows 10 Acrylic Dark](https://github.com/B00merang-Project/Windows-10-Acrylic-Dark)
+>
+> we're keeping this online momentarily while some tools migrate to the new repos.
+
+**Original readme**
+
 Here is where we push our latest development on our [Redmond Themes](http://b00merang.weebly.com/redmond-collection.html). This project aims to provide the complete Windows experience for easy use on Linux and GNOME-compatible OSes
 
 ## Also available:
